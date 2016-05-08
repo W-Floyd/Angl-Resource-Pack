@@ -39,16 +39,27 @@ for image in $(ls *.svg 2> /dev/null); do
 	fi
 
 	if [ $image = $RENDERFILE ]; then
-	inkscape \
-	--export-dpi=$(echo "(90*"$RES")/128" | bc) \
-	--export-png \
-	$(basename $image .svg)".png" $image
+
+	if [ -a $(echo $(basename $image .svg)".sh") ]; then
+		bash $(echo $(basename $image .svg)".sh") $RES
+		rm $(echo $(basename $image .svg)".sh")
+	else
+		if ! [ -a $(echo $(basename $image .svg)".png") ]; then
+			inkscape \
+			--export-dpi=$(echo "(90*"$RES")/128" | bc) \
+			--export-png \
+			$(basename $image .svg)".png" $image
+		fi
 	fi
+
+	fi
+done
+
+for image in $(ls *.svg 2> /dev/null); do
 	rm $image
 done
 
-for script in $(ls -1 *.sh 2> /dev/null); do
-	bash $script
+for script in $(ls *.sh 2> /dev/null); do
 	rm $script
 done
 
