@@ -13,8 +13,8 @@ cd assets
 recurse () {
 
 for image in $(ls *.png 2> /dev/null); do
-	IMGSEQ=$(for tile in $(seq 1 16); do echo -n $image" "; done)
-	montage -geometry +0+0 -tile 4x4 $IMGSEQ "montage_"$image
+	IMGSEQ=$(for tile in $(seq 1 9); do echo -n $image" "; done)
+	montage -geometry +0+0 -tile 3x3 $IMGSEQ "montage_"$image
 	rm $image
 	mv "montage_"$image $ENDDIR"montage_"$image
 done
@@ -35,9 +35,9 @@ rm -r ./*
 
 cd ../tmp
 
-TILEDFILE=$(ls -1)
-
-mv $TILEDFILE ../Angl-128px/$TILEDFILE
+for outfile in $(ls -1); do
+	mv $outfile ../Angl-128px/$outfile
+done
 
 cd ../
 
