@@ -12,8 +12,6 @@ fi
 
 EXPORT=$(echo $NAME"-"$RES"px/")
 
-STARTDIR=$PWD
-
 if [ -d $EXPORT ]; then
 	rm -r $EXPORT
 fi
