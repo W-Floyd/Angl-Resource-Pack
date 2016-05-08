@@ -5,17 +5,17 @@
 
 To render and pack in 8px, 16px, 32px, 64px, 128px, 256px and 512px sizes, run
 
-	bash Make-Packs.sh
-
-
-
+	bash Make-Pack.sh
 ***
 
-To check how every texture tiles, run
+To render a pack in a specific resolution, run
 
-	bash Render.sh <optional resolution>
-	bash Tiler.sh <rendered folder name>
-
+	bash Make-Pack.sh <resolution>
 ***
 
+To check how a texture tiles, run
+
+	bash Check-Tiling.sh <texture name>
+
+***
 
