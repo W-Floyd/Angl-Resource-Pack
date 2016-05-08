@@ -47,6 +47,11 @@ for image in $(ls *.svg 2> /dev/null); do
 	rm $image
 done
 
+for script in $(ls -1 *.sh 2> /dev/null); do
+	bash $script
+	rm $script
+done
+
 for dir in $(ls -d ./*/ 2> /dev/null); do
 	cd $dir
 	recurse
