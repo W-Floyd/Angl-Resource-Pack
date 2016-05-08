@@ -13,9 +13,13 @@ To render a pack in a specific resolution, run
 	bash Make-Pack.sh <resolution>
 ***
 
-To check how a texture tiles, run
+To check how a specific texture tiles, run
 
-	bash Check-Tiling.sh <texture name>
+	bash Tiler.sh <texture name>
+
+Then look in Angl-128px
 
 ***
 
+It is recommended, however, to use scripts within the Checks folder.
+These will create images of the specified type, and are easier to use.
