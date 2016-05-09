@@ -1,25 +1,27 @@
 # Angl-Resource-Pack
 ##An open-source vector based Minecraft resource pack.
+***
+
+Feel free to commit, but keep a few things in mind - this is an artisitic work, and if I dont happen to like the way youve done somehting, I reserve the right to deny pull requests. Sorry, thats just how it is.
+
+Also keep in mind that if you commit, and if I accept, you will be credited, but you **may not** post it as your own unless you have contributed more than 50% of the work in the pack.
+
+Mostly though, this is to showcase my method and history of development, hopefully to help someone else someday.
+
+You ***are*** free to use any included* scripts *in any way you like.
+Having said that though, I developed them in conjunction with the textures, meaning they are not a toolbox in themselves, but may be adapted to new images fairly easily.
+
+Also, documentation could be better - I may eventaully clean things up.
 
 ***
+
+###Usage
 
 To render and pack in 8px, 16px, 32px, 64px, 128px, 256px and 512px sizes, run
 
 	bash Make-Pack.sh
-***
 
 To render a pack in a specific resolution, run
 
 	bash Make-Pack.sh <resolution>
 ***
-
-To check how a specific texture tiles, run
-
-	bash Tiler.sh <texture name>
-
-Then look in Angl-128px
-
-***
-
-It is recommended, however, to use scripts within the Checks folder.
-These will create images of the specified type, and are easier to use.
