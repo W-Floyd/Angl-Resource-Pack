@@ -6,7 +6,7 @@ else
 	RES=128
 fi
 
-TEXTURE="planks_big_oak"
+TEXTURE="planks_jungle"
 
 cd ../
 
