@@ -2,7 +2,7 @@
 ##An open-source vector based Minecraft resource pack.
 ***
 
-Feel free to commit, but keep a few things in mind - this is an artisitic work, and if I dont happen to like the way youve done somehting, I reserve the right to deny pull requests. Sorry, thats just how it is.
+Feel free to commit, but keep a few things in mind - this is an artisitic work, and if I don't happen to like the way you've done something, I reserve the right to deny pull requests. Sorry, that's just how it is.
 
 Also keep in mind that if you commit, and if I accept, you will be credited, but you **may not** post it as your own unless you have contributed more than 50% of the work in the pack.
 
