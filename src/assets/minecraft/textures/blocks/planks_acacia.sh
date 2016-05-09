@@ -1,7 +1,7 @@
 #!/bin/bash
 
-BASE="dirt"
-OVERLAY="grass_side"
+BASE="planks_oak"
+OVERLAY="planks_acacia"
 
 inkscape \
 --export-dpi=$(echo "(90*"$1")/128" | bc) \
@@ -17,7 +17,7 @@ if ! [ -a $BASE".png" ]; then
 	$BASE".png" $BASE".svg"
 fi
 
-composite $OVERLAY".png" $BASE".png" $OVERLAY"_.png"
+composite -compose Multiply $OVERLAY".png" $BASE".png" $OVERLAY"_.png"
 
 rm $OVERLAY".png"
 
