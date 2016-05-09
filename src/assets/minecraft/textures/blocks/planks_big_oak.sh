@@ -4,7 +4,7 @@ BASE="planks_oak"
 OVERLAY="planks_big_oak"
 
 inkscape \
---export-dpi=$(echo "(90*"$1")/128" | bc) \
+--export-dpi=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev) \
 --export-png \
 $OVERLAY".png" $OVERLAY".svg"
 
@@ -12,7 +12,7 @@ REMOVE=0
 if ! [ -a $BASE".png" ]; then
 	REMOVE=1
 	inkscape \
-	--export-dpi=$(echo "(90*"$1")/128" | bc) \
+	--export-dpi=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev) \
 	--export-png \
 	$BASE".png" $BASE".svg"
 fi

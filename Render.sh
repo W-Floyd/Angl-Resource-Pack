@@ -46,7 +46,7 @@ for image in $(ls *.svg 2> /dev/null); do
 	else
 		if ! [ -a $(echo $(basename $image .svg)".png") ]; then
 			inkscape \
-			--export-dpi=$(echo "(90*"$RES")/128" | bc) \
+			--export-dpi=$(echo "(90*"$RES")/128" | bc -l | rev | sed 's/0*//' | rev) \
 			--export-png \
 			$(basename $image .svg)".png" $image
 		fi

@@ -1,29 +1,37 @@
 #!/bin/bash
 
+if ! [ -z $1 ]; then
+	RES=$1
+else
+	RES=128
+fi
+
+TEXTURE="planks_oak"
+
 cd ../
 
-bash Render.sh 128 planks_oak
+bash Render.sh $RES $TEXTURE
 
-mv ./Angl-128px/assets/minecraft/textures/blocks/planks_oak.png ./Checks/planks_oak.png
+mv "./Angl-"$RES"px/assets/minecraft/textures/blocks/"$TEXTURE".png" ./Checks/$TEXTURE".png"
 
 rm -r ./Angl-128px/
 
 cd Checks
 
-if [ -a Oak_Planks.png ]; then
-	rm Oak_Planks.png
+if [ -a "montage_"$TEXTURE".png" ]; then
+	rm "montage_"$TEXTURE".png"
 fi
 
-if [ -a Oak_Planks_.png ]; then
-	rm Oak_Planks_.png
+if [ -a "montage_"$TEXTURE"_.png" ]; then
+	rm "montage_"$TEXTURE"_.png"
 fi
 
-IMGSEQ=$(for tile in $(seq 1 9); do echo -n "planks_oak.png "; done)
+IMGSEQ=$(for tile in $(seq 1 9); do echo -n $TEXTURE".png "; done)
 
-montage -geometry +0+0 -tile 3x3 $IMGSEQ Oak_Planks.png
+montage -geometry +0+0 -tile 3x3 $IMGSEQ "montage_"$TEXTURE".png"
 
-montage -geometry +1+1 -tile 3x3 $IMGSEQ Oak_Planks_.png
+montage -geometry +1+1 -tile 3x3 $IMGSEQ "montage_"$TEXTURE"_.png"
 
-rm planks_oak.png
+rm $TEXTURE".png"
 
 exit
