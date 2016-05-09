@@ -1,32 +1,37 @@
 #!/bin/bash
 
+if ! [ -z $1 ]; then
+	RES=$1
+else
+	RES=128
+fi
+
+TEXTURE="dirt"
+
 cd ../
 
-bash Render.sh 128 dirt
+bash Render.sh $RES $TEXTURE
 
-mv ./Angl-128px/assets/minecraft/textures/blocks/dirt.png ./Checks/dirt.png
+mv "./Angl-"$RES"px/assets/minecraft/textures/blocks/"$TEXTURE".png" ./Checks/$TEXTURE".png"
 
 rm -r ./Angl-128px/
 
 cd Checks
 
-if [ -a Dirt.png ]; then
-	rm Dirt.png
+if [ -a "montage_"$TEXTURE".png" ]; then
+	rm "montage_"$TEXTURE".png"
 fi
 
-if [ -a Dirt_.png ]; then
-	rm Dirt_.png
+if [ -a "montage_"$TEXTURE"_.png" ]; then
+	rm "montage_"$TEXTURE"_.png"
 fi
 
-IMGSEQ=$(for tile in $(seq 1 3); do echo -n "dirt.png "; done)
-IMGSEQ2=$(for tile in $(seq 1 6); do echo -n "dirt.png "; done)
+IMGSEQ=$(for tile in $(seq 1 9); do echo -n $TEXTURE".png "; done)
 
-IMGSEQ=$(echo $IMGSEQ""$IMGSEQ2)
+montage -geometry +0+0 -tile 3x3 $IMGSEQ "montage_"$TEXTURE".png"
 
-montage -geometry +0+0 -tile 3x3 $IMGSEQ Dirt.png
+montage -geometry +1+1 -tile 3x3 $IMGSEQ "montage_"$TEXTURE"_.png"
 
-montage -geometry +1+1 -tile 3x3 $IMGSEQ Dirt_.png
-
-rm dirt.png
+rm $TEXTURE".png"
 
 exit
