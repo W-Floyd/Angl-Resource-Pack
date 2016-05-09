@@ -21,6 +21,18 @@
      id="defs4">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient4181">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4183" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4185" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient4428">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
@@ -212,6 +224,15 @@
        x2="86"
        y2="942.36218"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4181"
+       id="linearGradient4187"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="128"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -220,11 +241,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="32.67477"
-     inkscape:cy="35.400784"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="54.129894"
+     inkscape:cy="70.031828"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:window-width="1366"
@@ -250,6 +271,19 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Gradient"
+     style="opacity:0.184">
+    <rect
+       style="opacity:0.15;fill:url(#linearGradient4187);fill-opacity:1;stroke:none;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4179"
+       width="128"
+       height="128"
+       x="0"
+       y="0" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
