@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE="!ignore!log_top"
+BASE="~ignore~log_top"
 OVERLAY="log_oak_top"
 
 render () {

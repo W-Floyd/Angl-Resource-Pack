@@ -1,8 +1,8 @@
 #!/bin/bash
 
-BASE="!ignore!log_top"
+BASE="~ignore~log_top"
 OVERLAY="log_birch_top"
-COLOUR="birch_jungle"
+COLOUR="planks_birch"
 
 render () {
 inkscape \

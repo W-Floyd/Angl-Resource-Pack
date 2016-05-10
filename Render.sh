@@ -40,21 +40,21 @@ for image in $(ls *.svg 2> /dev/null); do
 
 	if [ $image = $RENDERFILE ]; then
 
-	if [ -z $(echo $image | grep -o "!ignore!"]; then
+		if [ -z $(echo $image | grep -o "~ignore~") ]; then
 
-	if [ -a $(echo $(basename $image .svg)".sh") ]; then
-		bash $(echo $(basename $image .svg)".sh") $RES
-		rm $(echo $(basename $image .svg)".sh")
-	else
-		if ! [ -a $(echo $(basename $image .svg)".png") ]; then
-			inkscape \
-			--export-dpi=$(echo "(90*"$RES")/128" | bc -l | rev | sed 's/0*//' | rev) \
-			--export-png \
-			$(basename $image .svg)".png" $image
+			if [ -a $(echo $(basename $image .svg)".sh") ]; then
+				bash $(echo $(basename $image .svg)".sh") $RES
+				rm $(echo $(basename $image .svg)".sh")
+			else
+				if ! [ -a $(echo $(basename $image .svg)".png") ]; then
+					inkscape \
+					--export-dpi=$(echo "(90*"$RES")/128" | bc -l | rev | sed 's/0*//' | rev) \
+					--export-png \
+					$(basename $image .svg)".png" $image
+				fi
+			fi
+
 		fi
-	fi
-
-	fi
 
 	fi
 done
