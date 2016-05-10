@@ -8,7 +8,7 @@ Also keep in mind that if you commit, and if I accept, you will be credited, but
 
 Mostly though, this is to showcase my method and history of development, hopefully to help someone else someday.
 
-You ***are*** free to use any included* scripts *in any way you like.
+You ***are*** free to use any included *scripts* in any way you like.
 Having said that though, I developed them in conjunction with the textures, meaning they are not a toolbox in themselves, but may be adapted to new images fairly easily.
 
 Also, documentation could be better - I may eventaully clean things up.
