@@ -6,7 +6,7 @@ else
 	RES=128
 fi
 
-TEXTURE="dirt"
+TEXTURE="stone"
 
 cd ../
 
