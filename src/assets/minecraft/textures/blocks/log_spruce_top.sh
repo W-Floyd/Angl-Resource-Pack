@@ -1,6 +1,6 @@
 #!/bin/bash
 
-KEYNAME="acacia"
+KEYNAME="spruce"
 
 BASE="log_oak_top"
 # What to overlay things onto
@@ -62,7 +62,7 @@ mv $OVERLAY1"__.png" $OVERLAY1"_.png"
 
 # At this point, OVERLAY1_ is the clipped outer ring to be applied to BASE_
 
-composite -compose Screen $OVERLAY1"_.png" $BASE"_.png" $BASE"__.png"
+composite -compose Multiply $OVERLAY1"_.png" $BASE"_.png" $BASE"__.png"
 
 rm $BASE"_.png"
 
