@@ -40,6 +40,8 @@ for image in $(ls *.svg 2> /dev/null); do
 
 	if [ $image = $RENDERFILE ]; then
 
+	if [ -z $(echo $image | grep -o "!ignore!"); then
+
 	if [ -a $(echo $(basename $image .svg)".sh") ]; then
 		bash $(echo $(basename $image .svg)".sh") $RES
 		rm $(echo $(basename $image .svg)".sh")
@@ -50,6 +52,8 @@ for image in $(ls *.svg 2> /dev/null); do
 			--export-png \
 			$(basename $image .svg)".png" $image
 		fi
+	fi
+
 	fi
 
 	fi
