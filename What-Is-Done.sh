@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RES="16"
+RES="1"
 
 bash Render.sh $RES &> /dev/null
 
