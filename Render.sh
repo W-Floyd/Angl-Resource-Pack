@@ -12,6 +12,25 @@ else
 	RES=128
 fi
 
+DPI=$(echo "(90*"$RES")/128" | bc -l | rev | sed 's/0*//' | rev)
+
+# quick or slow
+# Not really much different, but it will become more apparent
+# with larger image sets
+MODE="slow"
+
+if [ $MODE = "quick" ]; then
+render () {
+# DPI and FILE inputs
+rsvg-convert -d $1 -p $1 $2 -o $(basename $2 .svg)".png"
+}
+elif [ $MODE = "slow" ]; then
+render () {
+# DPI and FILE inputs
+inkscape --export-dpi=$1 --export-png $(basename $2 .svg)".png" $2
+}
+fi
+
 if [ -z $2 ]; then
 	ONLYFILE=0
 else
@@ -47,10 +66,7 @@ for image in $(ls *.svg 2> /dev/null); do
 				rm $(echo $(basename $image .svg)".sh")
 			else
 				if ! [ -a $(echo $(basename $image .svg)".png") ]; then
-					inkscape \
-					--export-dpi=$(echo "(90*"$RES")/128" | bc -l | rev | sed 's/0*//' | rev) \
-					--export-png \
-					$(basename $image .svg)".png" $image
+					render $DPI $image
 				fi
 			fi
 
@@ -84,7 +100,7 @@ rm pack.mcmeta
 mv tmp_pack.mcmeta pack.mcmeta
 
 if [ $ONLYFILE = 0 ]; then
-	inkscape --export-png "pack.png" "pack.svg"
+	render 90 "pack.svg"
 fi
 rm "pack.svg"
 

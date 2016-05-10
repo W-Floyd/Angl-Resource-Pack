@@ -5,7 +5,7 @@ PACKFILE=$(echo $PACK".zip")
 
 cd $PACK"/"
 
-zip -9 -r $PACKFILE ./
+zip -Z store -r $PACKFILE ./
 
 mv $PACKFILE ../$PACKFILE
 

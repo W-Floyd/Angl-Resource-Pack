@@ -108,9 +108,9 @@ IMGSEQ2=$(echo $TEXTURE1".png "$TEXTURE2".png "$TEXTURE3".png "$TEXTURE4".png "$
 IMGSEQ3=$(for row in $(seq 1 3); do echo -n $IMGSEQ2" "; done)
 
 
-montage -geometry +0+0 -tile 6x4 $IMGSEQ1""$IMGSEQ3 "montage_planks_all.png"
+montage -geometry +0+0 -tile 6x4 $IMGSEQ1""$IMGSEQ3 "montage_logs_all.png"
 
-montage -geometry +1+1 -tile 6x4 $IMGSEQ1""$IMGSEQ3 "montage_planks_all_.png"
+montage -geometry +1+1 -tile 6x4 $IMGSEQ1""$IMGSEQ3 "montage_logs_all_.png"
 
 rm $TEXTURE1".png"
 rm $TEXTURE2".png"
