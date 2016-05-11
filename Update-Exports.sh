@@ -1,7 +1,8 @@
 #!/bin/bash
 
-bash Make-Pack.sh
+DATE=$(date +%Y-%m-%d_%H-%M-%S)
 
+bash Make-Pack.sh
 
 for file in $(ls -1 *.zip); do
 	mv $file ../Angl-Resource-Pack-Export/$file
@@ -9,11 +10,11 @@ done
 
 cd ../Angl-Resource-Pack-Export
 
-for file in $(ls -1); do
-	git add $file
-done
+sed -i '3s/.*/'$DATE'/' README.md
 
-git commit -m ""$(date +%Y-%m-%d_%H-%M-%S)""
+git add *
+
+git commit -m ""$DATE""
 
 git push
 
