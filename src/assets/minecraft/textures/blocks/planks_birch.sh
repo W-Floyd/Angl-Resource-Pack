@@ -11,10 +11,7 @@ $OVERLAY".png" $OVERLAY".svg"
 REMOVE=0
 if ! [ -a $BASE".png" ]; then
 	REMOVE=1
-	inkscape \
-	--export-dpi=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev) \
-	--export-png \
-	$BASE".png" $BASE".svg"
+	bash $BASE".sh" $1
 fi
 
 composite -compose Screen $OVERLAY".png" $BASE".png" $OVERLAY"_.png"
