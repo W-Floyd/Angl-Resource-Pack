@@ -6,14 +6,14 @@ If you just want to download the resource pack, look here: https://github.com/W-
 
 ***
 
-Feel free to commit, but keep a few things in mind - this is an artisitic work, and if I don't happen to like the way you've done something, I reserve the right to deny pull requests. Sorry, that's just how it is.
+This is to showcase my method and history of development, hopefully to help someone else someday.
 
-Also keep in mind that if you commit, and if I accept, you will be credited, but you **may not** post it as your own unless you have contributed more than 50% of the work in the pack.
+**It is not a free liscence to steal my work.***
 
-Mostly though, this is to showcase my method and history of development, hopefully to help someone else someday.
+Open source doesn't mean you can do whatever you want with it. Follow common etiquette - this is my work, don't steal. Or 'borrow'.
 
 You ***are*** free to use any included *scripts* in any way you like.
-Having said that though, I developed them in conjunction with the textures, meaning they are not a toolbox in themselves, but may be adapted to new images fairly easily.
+Having said that, I developed them in conjunction with the textures, meaning they are not a toolbox in themselves, but may be adapted to new images fairly easily.
 
 Also, documentation could be better - I may eventaully clean things up.
 
