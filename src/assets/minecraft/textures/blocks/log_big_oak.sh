@@ -3,18 +3,19 @@
 BASE="log_oak"
 OVERLAY="log_big_oak"
 
-inkscape \
---export-dpi=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev) \
---export-png \
-$OVERLAY".png" $OVERLAY".svg"
+DPI=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev)
+
+# Takes DPI and FILE in
+render () {
+inkscape --export-dpi=$1 --export-png $2".png" $2".svg"
+}
+
+render $DPI $OVERLAY
 
 REMOVE=0
 if ! [ -a $BASE".png" ]; then
 	REMOVE=1
-	inkscape \
-	--export-dpi=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev) \
-	--export-png \
-	$BASE".png" $BASE".svg"
+	render $DPI $BASE
 fi
 
 composite -compose Multiply $OVERLAY".png" $BASE".png" $OVERLAY"_.png"

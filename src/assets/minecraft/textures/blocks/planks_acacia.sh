@@ -13,6 +13,7 @@ if ! [ -a $BASE".png" ]; then
 	REMOVE=1
 	bash $BASE".sh" $1
 fi
+
 composite -compose Multiply $OVERLAY".png" $BASE".png" $OVERLAY"_.png"
 
 rm $OVERLAY".png"
