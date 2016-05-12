@@ -2,7 +2,7 @@
 
 DPI=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev)
 GENERICBASE=$(basename $0 .sh)
-GENERICOVERLAY="~ignore~planks"
+GENERICOVERLAY="planks~ignore~"
 
 # Takes DPI and FILE in
 render () {

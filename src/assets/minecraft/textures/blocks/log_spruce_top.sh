@@ -1,99 +1,81 @@
 #!/bin/bash
 
-KEYNAME="spruce"
-
-BASE="log_oak_top"
-# What to overlay things onto
-
-OVERLAY1="log_$KEYNAME"
-# The outer ring colour
-# May need to match mode to the other script
-
-OVERLAY2="planks_$KEYNAME"
-# The inner circle colour
-# May need to match mode to the other script
-
-CLIP=$(echo $OVERLAY1"_top")
-# A black clip of the inner area to apply
-# The outer ring will be applied with the inverse of this
-
 render () {
 inkscape \
 --export-dpi=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev) \
 --export-png \
 $2".png" $2".svg"
-}
+} 
 
-REMOVEBASE="0"
-if ! [ -a $BASE".png" ]; then
-	REMOVEBASE="1"
-	bash $BASE".sh" $1
-fi
+#The plank colour
+BASE1=$(basename $0 .sh | sed 's/_top//' | sed 's/log_/planks_/')
 
-cp $BASE".png" $BASE"_.png"
+#Generic log ring pattern top
+OVERLAY1="log_generic_top_1~ignore~"
 
-cp $OVERLAY1".svg" $OVERLAY1"_.svg"
+#The log bark colour
+BASE2=$(basename $0 .sh | sed 's/_top/_colour~ignore~/')
 
-render $1 $OVERLAY1"_"
+#Generic log bark pattern top
+OVERLAY2="log_generic_top_2~ignore~"
 
-rm $OVERLAY1"_.svg"
+cp $BASE1".svg" $BASE1"_.svg"
 
-cp $OVERLAY2".svg" $OVERLAY2"_.svg"
+BASE1=$(echo $BASE1"_")
 
-render $1 $OVERLAY2"_"
+render $1 $BASE1
 
-rm $OVERLAY2"_.svg"
+rm $BASE1".svg"
 
-render $1 $CLIP
+render $1 $OVERLAY1
 
-mv $CLIP".png" $CLIP"_.png"
+composite -compose Multiply $OVERLAY1".png" $BASE1".png" $BASE1"_.png"
 
-# Just to keep things straight in my own head:
-# BASE_ holds the base to be applied to 
-# OVERLAY1_ now holds the outer ring colour to be applied
-# OVERLAY2_ now holds the inner cicle colour to be applied
-# CLIP_ now holds the silhouette to apply to the inner colour
+rm $OVERLAY1".png"
 
-composite -compose dst-out $CLIP"_.png" $OVERLAY1"_.png" $OVERLAY1"__.png"
+rm $BASE1".png"
 
-rm $OVERLAY1"_.png"
+mv $BASE1"_.png" $BASE1".png"
 
-mv $OVERLAY1"__.png" $OVERLAY1"_.png"
+# BASE1 now holds the plank coloured ring pattern
 
-# At this point, OVERLAY1_ is the clipped outer ring to be applied to BASE_
+cp $BASE2".svg" $BASE2"_.svg"
 
-composite -compose Multiply $OVERLAY1"_.png" $BASE"_.png" $BASE"__.png"
+BASE2=$(echo $BASE2"_")
 
-rm $BASE"_.png"
+render $1 $BASE2
 
-mv $BASE"__.png" $BASE"_.png"
+rm $BASE2".svg"
 
-# BASE_ now has the outer ring applied. Need to do inner ring
+render $1 $OVERLAY2
 
-composite -compose dst-in $CLIP"_.png" $OVERLAY2"_.png" $OVERLAY2"__.png"
+composite -compose dst-in $OVERLAY2".png" $BASE2".png" $BASE2"_.png"
 
-rm $OVERLAY2"_.png"
+rm $BASE2".png"
 
-mv $OVERLAY2"__.png" $OVERLAY2"_.png"
+mv $BASE2"_.png" $BASE2".png"
 
-# OVERLAY2_ now has the inner circle, ready to be applied to BASE_
+# We now have:
+# BASE1 - ring pattern
+# BASE2 - outer ring to be shaded
+# OVERLAY2 - outer ring to shade with
 
-rm $CLIP"_.png"
+composite -compose Multiply $OVERLAY2".png" $BASE2".png" $BASE2"_.png"
 
-composite -compose Multiply $OVERLAY2"_.png" $BASE"_.png" $CLIP"_.png"
+rm $OVERLAY2".png"
 
-# CLIP_ now has the final image
+rm $BASE2".png"
 
-if [ $REMOVEBASE = "1" ]; then
-	rm $BASE".png"
-fi
+mv $BASE2"_.png" $BASE2".png"
 
-rm $BASE"_.png"
+# We now have:
+# BASE1 - ring pattern
+# BASE2 - outer ring
 
-rm $OVERLAY1"_.png"
+composite $BASE2".png" $BASE1".png" $(basename $0 .sh)".png"
 
-rm $OVERLAY2"_.png"
+rm $BASE1".png"
 
-mv $CLIP"_.png" $CLIP".png"
+rm $BASE2".png"
 
 exit

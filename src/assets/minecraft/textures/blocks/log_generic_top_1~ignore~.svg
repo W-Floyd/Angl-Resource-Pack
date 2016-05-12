@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r"
-   sodipodi:docname="!ignore!log_top.svg"
+   sodipodi:docname="~ignore~log_top.svg"
    enable-background="new">
   <defs
      id="defs4">
@@ -38,10 +38,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="-20.292059"
-     inkscape:cy="43.843717"
+     inkscape:cx="8.4644729"
+     inkscape:cy="53.519918"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:window-width="1366"
@@ -72,16 +72,9 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-924.36216)">
-    <rect
-       style="display:inline;opacity:1;fill:#a05a2c;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4427"
-       width="128"
-       height="128"
-       x="1.1038302e-06"
-       y="924.36218" />
     <g
        transform="translate(4.6491419e-7,924.36216)"
-       style="display:inline"
+       style="display:inline;stroke:#cccccc"
        id="g4974">
       <rect
          transform="matrix(0.70710677,0.70710679,-0.70710677,0.70710679,0,0)"
@@ -90,7 +83,7 @@
          height="54.384266"
          width="54.384266"
          id="rect4429-1"
-         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#784421;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
          transform="matrix(0.70710677,0.70710679,-0.70710677,0.70710679,0,0)"
          y="-49.435852"
@@ -98,7 +91,7 @@
          height="99.802307"
          width="99.802307"
          id="rect4429"
-         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#784421;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
          transform="matrix(0.70710677,0.70710679,-0.70710677,0.70710679,0,0)"
          y="-4.4831367"
@@ -106,9 +99,9 @@
          height="8.9662342"
          width="8.9662342"
          id="rect4429-1-3"
-         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#784421;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#784421;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect4531"
          width="145.22035"
          height="145.22035"
@@ -266,13 +259,5 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     style="filter:url(#filter4182);opacity:0.469">
-    <rect
-       style="display:inline;opacity:1;fill:#504416;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4235)"
-       id="rect4159"
-       width="128"
-       height="128"
-       x="0"
-       y="1.9999999e-05" />
-  </g>
+     style="filter:url(#filter4182);opacity:0.469" />
 </svg>

@@ -1,40 +1,81 @@
 #!/bin/bash
 
-BASE="~ignore~log_top"
-OVERLAY="log_birch_top"
-COLOUR="planks_birch"
-
 render () {
 inkscape \
 --export-dpi=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev) \
 --export-png \
 $2".png" $2".svg"
-}
+} 
 
-render $1 $BASE
+#The plank colour
+BASE1=$(basename $0 .sh | sed 's/_top//' | sed 's/log_/planks_/')
 
-cp $COLOUR".svg" $COLOUR"_.svg"
+#Generic log ring pattern top
+OVERLAY1="log_generic_top_1~ignore~"
 
-render $1 $COLOUR"_"
+#The log bark colour
+BASE2=$(basename $0 .sh | sed 's/_top/_colour~ignore~/')
 
-rm $COLOUR"_.svg"
+#Generic log bark pattern top
+OVERLAY2="log_generic_top_2~ignore~"
 
-render $1 $OVERLAY
+cp $BASE1".svg" $BASE1"_.svg"
 
-composite -compose Screen $COLOUR"_.png" $OVERLAY".png" $OVERLAY"_.png"
+BASE1=$(echo $BASE1"_")
 
-rm $COLOUR"_.png"
+render $1 $BASE1
 
-rm $OVERLAY".png"
+rm $BASE1".svg"
 
-mv $OVERLAY"_.png" $OVERLAY".png"
+render $1 $OVERLAY1
 
-composite $OVERLAY".png" $BASE".png" $OVERLAY"_.png"
+composite -compose Multiply $OVERLAY1".png" $BASE1".png" $BASE1"_.png"
 
-rm $BASE".png"
+rm $OVERLAY1".png"
 
-rm $OVERLAY".png"
+rm $BASE1".png"
 
-mv $OVERLAY"_.png" $OVERLAY".png"
+mv $BASE1"_.png" $BASE1".png"
+
+# BASE1 now holds the plank coloured ring pattern
+
+cp $BASE2".svg" $BASE2"_.svg"
+
+BASE2=$(echo $BASE2"_")
+
+render $1 $BASE2
+
+rm $BASE2".svg"
+
+render $1 $OVERLAY2
+
+composite -compose dst-in $OVERLAY2".png" $BASE2".png" $BASE2"_.png"
+
+rm $BASE2".png"
+
+mv $BASE2"_.png" $BASE2".png"
+
+# We now have:
+# BASE1 - ring pattern
+# BASE2 - outer ring to be shaded
+# OVERLAY2 - outer ring to shade with
+
+composite -compose Multiply $OVERLAY2".png" $BASE2".png" $BASE2"_.png"
+
+rm $OVERLAY2".png"
+
+rm $BASE2".png"
+
+mv $BASE2"_.png" $BASE2".png"
+
+# We now have:
+# BASE1 - ring pattern
+# BASE2 - outer ring
+
+composite $BASE2".png" $BASE1".png" $(basename $0 .sh)".png"
+
+rm $BASE1".png"
+
+rm $BASE2".png"
 
 exit

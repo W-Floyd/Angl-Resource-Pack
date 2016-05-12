@@ -1,7 +1,9 @@
 #!/bin/bash
 
-BASE="log_oak"
-OVERLAY="log_big_oak"
+#Input RES BASE OVERLAY
+
+BASE=$(echo $(basename $0 .sh)"_colour~ignore~")
+OVERLAY=$(basename $0 .sh)
 
 DPI=$(echo "(90*"$1")/128" | bc -l | rev | sed 's/0*//' | rev)
 
