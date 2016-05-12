@@ -67,7 +67,7 @@ for file in $(ls -1 *.{svg,sh} | grep -v "~ignore~" | rev | sed 's/.*\.//' | rev
 
 	if [ $file = $RENDERFILE ]; then
 
-		if ! [ -z $(ls -1 $file"."* | grep '.sh') ]; then
+		if ! [ -z $(ls -1 $file"."* | grep -o "\.sh") ]; then
 			bash $file".sh" $RES
 		else
 			render $DPI $file".svg"
