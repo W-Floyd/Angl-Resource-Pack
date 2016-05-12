@@ -12,6 +12,8 @@ else
 	RES=128
 fi
 
+DATE=$(date +%Y-%m-%d_%H-%M-%S)
+
 DPI=$(echo "(90*"$RES")/128" | bc -l | rev | sed 's/0*//' | rev)
 
 # quick or slow
@@ -98,6 +100,10 @@ cd ../
 cat pack.mcmeta | sed 's/\$RESOLUTION\$/'$RES'px/' > tmp_pack.mcmeta
 rm pack.mcmeta
 mv tmp_pack.mcmeta pack.mcmeta
+
+cp ../EXPORTREADME.md ./README.md
+
+sed -i '5s/.*/'$DATE'/' README.md
 
 if [ $ONLYFILE = 0 ]; then
 	render 90 "pack.svg"
