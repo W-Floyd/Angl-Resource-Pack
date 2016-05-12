@@ -59,7 +59,7 @@ cd assets
 
 recurse () {
 
-for file in $(ls -1 *.{svg,sh} | grep -v "~ignore~" | rev | sed 's/.*\.//' | rev | sort | uniq 2> /dev/null); do
+for file in $(ls -1 *.{svg,sh} 2> /dev/null | grep -v "~ignore~" | rev | sed 's/.*\.//' | rev | sort | uniq); do
 
 	if [ $ONLYFILE = 0 ]; then
 		RENDERFILE=$file
@@ -80,7 +80,7 @@ for image in $(ls -1 *.{svg,sh} 2> /dev/null); do
 	rm $image
 done
 
-for ignore in $(ls -1 | grep '~ignore~' 2> /dev/null); do
+for ignore in $(ls -1 2> /dev/null | grep '~ignore~'); do
 	rm $ignore
 done
 
