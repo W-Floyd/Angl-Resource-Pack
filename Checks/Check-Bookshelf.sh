@@ -36,9 +36,9 @@ fi
 IMGSEQ1=$(for tile in $(seq 1 3); do echo -n $TEXTURE1".png "; done)
 IMGSEQ2=$(for tile in $(seq 1 3); do echo -n $TEXTURE2".png "; done)
 
-montage -geometry +0+0 -tile 3x3 $IMGSEQ1 $IMGSEQ2 $IMGSEQ1 "montage_"$TEXTURE".png"
+montage -geometry +0+0 -tile 3x3 $IMGSEQ1 $IMGSEQ2 $IMGSEQ1 "montage_"$TEXTURE2".png"
 
-montage -geometry +1+1 -tile 3x3 $IMGSEQ1 $IMGSEQ2 $IMGSEQ1 "montage_"$TEXTURE"_.png"
+montage -geometry +1+1 -tile 3x3 $IMGSEQ1 $IMGSEQ2 $IMGSEQ1 "montage_"$TEXTURE2"_.png"
 
 rm $TEXTURE1".png"
 
