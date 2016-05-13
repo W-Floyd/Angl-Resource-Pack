@@ -6,7 +6,9 @@ If you just want to download the resource pack, look here: https://github.com/W-
 
 ***
 
-***ALSO NOTE*** - I have made extensive use of multiple hardlinks in the work here! Git does not support hardlinks - so cloning will be largely useless.
+***ALSO NOTE*** - I have made extensive use of multiple hardlinks in the work here! Git does not support hardlinks - so cloning would be largely useless. As a workaround, I have included a .tar archive of the src folder which includes hardlinks properly. I will try to update this after any changes are made to src.
+
+This basically means development is Linux only - sorry, not sorry ;)
 
 ***
 
