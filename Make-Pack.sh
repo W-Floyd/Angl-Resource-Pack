@@ -4,7 +4,7 @@ NAME="Angl"
 
 if [ -z $1 ]; then
 
-	for size in $(seq 3 9); do
+	for size in $(seq 5 9); do
 
 		RESOLUTION=$(echo "2^"$size | bc)
 
