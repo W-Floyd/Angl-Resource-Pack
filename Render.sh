@@ -105,7 +105,12 @@ cp ../EXPORTREADME.md ./README.md
 sed -i '5s/.*/'$DATE'/' README.md
 
 if [ $ONLYFILE = 0 ]; then
-	render 90 "pack.svg"
+	inkscape \
+	--export-dpi=90 \
+	--export-background=white \
+	--export-background-opacity=1.0 \
+	--export-png "pack.png" \
+	"pack.svg"
 fi
 rm "pack.svg"
 
