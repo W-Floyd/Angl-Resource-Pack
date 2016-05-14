@@ -22,10 +22,10 @@ composite $OVERLAY".png" $BASE".png" $OVERLAY"_.png"
 
 rm $OVERLAY".png"
 
+mv $OVERLAY"_.png" $OVERLAY".png"
+
 if [ $REMOVE = 1 ]; then
 	rm $BASE".png"
 fi
-
-mv $OVERLAY"_.png" $OVERLAY".png"
 
 exit
