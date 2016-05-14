@@ -18,7 +18,7 @@ if ! [ -a $BASE".png" ]; then
 	render $DPI $BASE
 fi
 
-composite $OVERLAY".png" $BASE".png" $OVERLAY"_.png"
+composite -compose Multiply $OVERLAY".png" $BASE".png" $OVERLAY"_.png"
 
 rm $OVERLAY".png"
 
