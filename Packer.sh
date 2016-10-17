@@ -1,13 +1,13 @@
 #!/bin/bash
 
-PACK=$1
-PACKFILE=$(echo $PACK".zip")
+pack=$1
+packfile=$(echo $PACK".zip")
 
-cd $PACK"/"
+cd $pack"/"
 
-zip -Z store -r $PACKFILE ./
+zip -Z store -r $packfile ./
 
-mv $PACKFILE ../$PACKFILE
+mv $packfile ../$packfile
 
 cd ../
 

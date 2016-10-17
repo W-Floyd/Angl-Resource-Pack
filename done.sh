@@ -2,7 +2,7 @@
 
 RES="1"
 
-bash Render.sh $RES &> /dev/null
+./Render.sh $RES &> /dev/null
 
 cd "Angl-"$RES"px"
 

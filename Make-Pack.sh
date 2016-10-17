@@ -1,30 +1,30 @@
 #!/bin/bash
 
-NAME="Angl"
+name="Angl"
 
 if [ -z $1 ]; then
 
 	for size in $(seq 5 9); do
 
-		RESOLUTION=$(echo "2^"$size | bc)
+		res=$(echo "2^"$size | bc)
 
-		bash Render.sh $RESOLUTION
+		./Render.sh $res
 
-		bash Packer.sh $NAME"-"$RESOLUTION"px"
+		./Packer.sh $name"-"$res"px"
 
-		rm -r $NAME"-"$RESOLUTION"px/"
+		rm -r $name"-"$res"px/"
 
 	done
 
 else
 
-	RESOLUTION=$1
+	res=$1
 
-	bash Render.sh $RESOLUTION
+	./Render.sh $res
 
-	bash Packer.sh $NAME"-"$RESOLUTION"px"
+	./Packer.sh $name"-"$res"px"
 
-	rm -r $NAME"-"$RESOLUTION"px/"
+	rm -r $name"-"$res"px/"
 
 fi
 

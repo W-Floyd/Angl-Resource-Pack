@@ -2,7 +2,7 @@
 
 DATE=$(date +%Y-%m-%d_%H-%M-%S)
 
-bash Make-Pack.sh
+./Make-Pack.sh
 
 for file in $(ls -1 *.zip); do
 	mv $file ../Angl-Resource-Pack-Export/$file
