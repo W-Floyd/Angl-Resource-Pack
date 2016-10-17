@@ -5,8 +5,9 @@
 # then the file, with no .png or .svg
 #
 # Will choose a .sh file over a .svg file of the same name
-# It will also run any .sh files wihtout an ~ignore~ tag
-# It will delete any ~ignore files once all work is done
+# It will also run any .sh files without an ~ignore~ tag
+# It will not render any files with an ~ignore~ tag
+# It will delete any ~ignore~ files once all work is done
 # It will delete any .sh or .svg files once all work is done
 
 NAME="Angl"
