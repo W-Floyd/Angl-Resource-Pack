@@ -8,6 +8,7 @@ If you just want to download the resource pack, look here: https://github.com/W-
 ***
 
 ###Usage
+# Deprocated, wait for me to update this info
 
 To render and pack in 32px, 64px, 128px, 256px and 512px sizes, run
 
