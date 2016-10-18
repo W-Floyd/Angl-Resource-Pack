@@ -35,13 +35,13 @@
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>assets/minecraft/textures/blocks/grass_side.svg</CLEANUP>
+		<CLEANUP>assets/minecraft/textures/blocks/grass_side_overlay.svg</CLEANUP>
 	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>
 		<NAME>pack.mcmeta</NAME>
-		<CONFIG>./conf/pack_mcmeta.sh</CONFIG>
+		<CONFIG>./conf/pack_meta.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
