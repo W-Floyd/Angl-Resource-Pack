@@ -1,39 +1,39 @@
 <RENDER>
-	<TEXTURE>
-		<NAME>./$__dir/pack.png</NAME>
+	<ITEM>
+		<NAME>pack.png</NAME>
 		<CONFIG>./conf/pack.sh</CONFIG>
-		<OPTIONS></OPTIONS>
 		<SIZE>128</SIZE>
-		<DEST>./$__dir/pack.png</DEST>
+		<OPTIONS></OPTIONS>
+		<DEST>pack.png</DEST>
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
-	</TEXTURE>
-	<TEXTURE>
-		<NAME>./$__dir/assets/minecraft/textures/blocks/dirt.png</NAME>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/ITEMs/blocks/dirt.png</NAME>
 		<CONFIG>./conf/dirt.sh</CONFIG>
+		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
-		<SIZE>$__size</SIZE>
-		<DEST>./$__dir/assets/minecraft/textures/blocks/dirt.png</DEST>
+		<DEST>assets/minecraft/ITEMs/blocks/dirt.png</DEST>
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
-	</TEXTURE>
-	<TEXTURE>
-		<NAME>./$__dir/assets/minecraft/textures/blocks/grass_side.png</NAME>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/ITEMs/blocks/grass_side.png</NAME>
 		<CONFIG>./conf/grass_side.sh</CONFIG>
+		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
-		<SIZE>$__size</SIZE>
-		<DEST>./$__dir/assets/minecraft/textures/blocks/grass_side.png</DEST>
+		<DEST>assets/minecraft/ITEMs/blocks/grass_side.png</DEST>
 		<KEEP>YES</KEEP>
-		<DEPENDS>./$__dir/assets/minecraft/textures/blocks/dirt.png
-		</DEPENDS>
-	</TEXTURE>
+		<DEPENDS>assets/minecraft/ITEMs/blocks/dirt.png</DEPENDS>
+	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>
-		<NAME>./$__dir/pack.mcmeta</NAME>
+		<NAME>pack.mcmeta</NAME>
 		<CONFIG>./conf/pack_mcmeta.sh</CONFIG>
-		<OPTIONS>$__date</OPTIONS>
-		<DEST>./$__dir/pack.mcmeta</DEST>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<DEST>pack.mcmeta</DEST>
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
 	</ITEM>
