@@ -1,6 +1,6 @@
 # Angl-Resource-Pack
 ##An open-source vector based Minecraft resource pack.
-# This is my working branch, trying to clean things up and make the system as generic as possible, so others can use my scripts
+# This is a WIP, some things have yet to be added to the catalogue
 ***
 
 If you just want to download the resource pack, look here: https://github.com/W-Floyd/Angl-Resource-Pack-Export
