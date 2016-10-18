@@ -1,7 +1,6 @@
 #!/bin/bash
 #set -x
 #trap read debug
-
 #
 # NEED TO CHECK __get_value
 #
@@ -46,7 +45,7 @@ source ./conf/__functions.sh
 for __range in $(__get_range $__catalogue ITEM); do
 	__read_range "$__catalogue" "$__range" > $__tmp_directory"readrangetmp"
 	__name=$(__get_value "${__tmp_directory}readrangetmp" NAME)
-	__tmp_name=$(echo "${__tmp_directory}xml/${__name}\.xml")
+	__tmp_name=$(echo "${__tmp_directory}xml/${__name}.xml")
 	mkdir -p "$(dirname "$__tmp_name")"
 	__read_range "$__catalogue" "$__range" > "$__tmp_name"
 done
@@ -81,7 +80,7 @@ until [ "$(cat "$__tmp_directory"'listing' | sha1sum | sed 's/ .*//')" = "$(cat 
 
 for __config in $(cat "$__tmp_directory"'listing' | grep '\.xml'); do
 	if ! [ -z "$(__get_value "$__config" DEPENDS)" ]; then
-		break
+		continue
 	fi
 	__name="$(__get_value "$__config" NAME)"
 	__config_script="$(__get_value "$__config" CONFIG)"
@@ -94,8 +93,11 @@ for __config in $(cat "$__tmp_directory"'listing' | grep '\.xml'); do
 	echo "$__name" >> "$__tmp_directory"'rendered'
 	rm "$(basename "$__config_script")"
 	for __config2 in $(cat "$__tmp_directory"'listing'); do
-		__set_value "$__config2" DEPENDS "$(__get_value "$__config2" DEPENDS | sed 's/'"$__name"'//')"
+		if ! [ -z $(__get_value $__config2 DEPENDS | grep "$__name") ]; then
+			__set_value $__config2 DEPENDS "$(__get_value $__config2 DEPENDS | sed -e 's/'"$__name"'//' -e 's/^$//')"
+		fi
 	done
+		
 done
 
 done

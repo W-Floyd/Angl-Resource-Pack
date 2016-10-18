@@ -6,7 +6,7 @@
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>pack.svg</CLENUP>
+		<CLEANUP>pack.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/dirt.png</NAME>
