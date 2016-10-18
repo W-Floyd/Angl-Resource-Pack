@@ -1,9 +1,4 @@
 #!/bin/bash
-#set -x
-#trap read debug
-#
-# NEED TO CHECK __get_value
-#
 ###############################################################
 # Will render the resource pack at the given resolution
 # Or, if no inputs are given, 128px
