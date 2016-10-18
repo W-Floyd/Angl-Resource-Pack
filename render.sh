@@ -39,6 +39,28 @@ fi
 source ./conf/__functions.sh
 
 ###############################################################
+#
+# __exec <XML>
+#
+# Execute
+# To be used later
+#
+###############################################################
+
+__exec () {
+if [ -z "$(__get_value $1 SIZE)" ]; then
+	__tmp_res=$__resolution
+else
+	__tmp_res="$(__get_value $1 SIZE)"
+fi
+
+__config_script="$(__get_value $1 CONFIG)"
+cp $__config_script ./
+
+eval "$(echo '\./'"$(basename "$__config_script")" "$__tmp_res" "$(__get_value "$1" OPTIONS)")"
+}
+
+###############################################################
 # Split all files into their own .xml records
 ###############################################################
 
@@ -58,6 +80,8 @@ cd $__tmp_directory'xml/'
 
 find "$(pwd)" | grep '\.xml' > ../listing
 
+cp ../listing ../to_render
+
 touch ../rendered
 
 cd "$__tmppwd"
@@ -76,30 +100,32 @@ cd "$__directory"
 # Start rendering
 ###############################################################
 
-until [ "$(cat "$__tmp_directory"'listing' | sha1sum | sed 's/ .*//')" = "$(cat "$__tmp_directory"'rendered' | sha1sum | sed 's/ .*//')" ]; do
+while true; do
 
-for __config in $(cat "$__tmp_directory"'listing' | grep '\.xml'); do
-	if ! [ -z "$(__get_value "$__config" DEPENDS)" ]; then
-		continue
-	fi
-	__name="$(__get_value "$__config" NAME)"
-	__config_script="$(__get_value "$__config" CONFIG)"
-	cp "$__config_script" ./
-	__tmp_resolution="$(__get_value "$__config" SIZE)"
-	if [ -z "$__tmp_resolution" ]; then
-		__tmp_resolution="$__resolution"
-	fi
-	eval "$(echo '\./'"$(basename $__config_script)" "$__tmp_resolution" "$(__get_value $__config OPTIONS)")"
-	echo "$__name" >> "$__tmp_directory"'rendered'
-	rm "$(basename "$__config_script")"
-	for __config2 in $(cat "$__tmp_directory"'listing'); do
-		if ! [ -z $(__get_value $__config2 DEPENDS | grep "$__name") ]; then
-			__set_value $__config2 DEPENDS "$(__get_value $__config2 DEPENDS | sed -e 's/'"$__name"'//' -e 's/^$//')"
-		fi
-	done
+if [ -z $(cat ../to_render) ]; then
+
+	break
+	
+else
+	__config=$(cat ../to_render | head -n 1)
+	
+	__get_value $__config DEPENDS > $__tmp_directory'tmpdeps'
+	
+	if [ -z $(grep -xvf $__tmp_directory'rendered' $__tmp_directory'tmpdeps') ]; then
+		__exec "$__config"
 		
-done
-
+		echo $__config >> $__tmp_directory'rendered'
+	
+	else
+	
+		echo $__config >> $__tmp_directory'to_render'
+	
+	fi
+	
+	sed -i '1d' $__tmp_directory'to_render'
+	
+fi
+	
 done
 
 ###############################################################
