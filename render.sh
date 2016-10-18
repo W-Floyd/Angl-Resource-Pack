@@ -58,6 +58,8 @@ __config_script="$(__get_value $1 CONFIG)"
 cp $__config_script ./
 
 eval "$(echo '\./'"$(basename "$__config_script")" "$__tmp_res" "$(__get_value "$1" OPTIONS)")"
+
+rm $(basename "$__config_script")
 }
 
 ###############################################################
@@ -100,21 +102,30 @@ cd "$__directory"
 # Start rendering
 ###############################################################
 
-while true; do
+__should_exit=0
 
-if [ -z $(cat ../to_render) ]; then
+while [ "$__should_exit" = 0 ]; do
 
-	break
+if [ -z "$(cat "$__tmp_directory"'to_render')" ]; then
+
+	__should_exit=1
 	
 else
-	__config=$(cat ../to_render | head -n 1)
+	__config=$(cat $__tmp_directory'to_render' | head -n 1)
 	
-	__get_value $__config DEPENDS > $__tmp_directory'tmpdeps'
+	__get_value $__config DEPENDS | sed 's/^$//' > $__tmp_directory'tmpdeps'
 	
-	if [ -z $(grep -xvf $__tmp_directory'rendered' $__tmp_directory'tmpdeps') ]; then
+	if [ -a $__tmp_directory'tmpdeps2' ]; then
+		rm $__tmp_directory'tmpdeps2'
+	fi
+	
+	grep -Fxv -f $__tmp_directory'rendered' $__tmp_directory'tmpdeps' > $__tmp_directory'tmpdeps2'
+	
+	if [ -z "$(cat $__tmp_directory'tmpdeps2')" ]; then
+		
 		__exec "$__config"
 		
-		echo $__config >> $__tmp_directory'rendered'
+		__get_value $__config NAME >> $__tmp_directory'rendered'
 	
 	else
 	
@@ -134,13 +145,15 @@ done
 
 for __config in $(cat $__tmp_directory'listing' | grep '\.xml'); do
 	if [ "$(__get_value $__config KEEP)" = NO ]; then
-		rm '\./'"$(__get_value $__config NAME)"
+		rm './'"$(__get_value $__config NAME)"
 	fi
 	__get_value "$__config" CLEANUP >> "$__tmp_directory"'cleanup'
 done
 
-for __file in $(cat "$__tmp_directory"'cleanup' | sort | uniq); do
-	rm '\./'"$__file"
+cat "$__tmp_directory"'cleanup' | sort | uniq > "$__tmp_directory"'cleanup2'
+
+for __file in $(cat "$__tmp_directory"'cleanup2' | sort | uniq); do
+	rm './'"$__file"
 done
 
 rm -rf ./conf/

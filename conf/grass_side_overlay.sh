@@ -7,5 +7,3 @@ __render "$1" grass_side_overlay.svg
 cd ../../../../
 
 exit
-
-exit

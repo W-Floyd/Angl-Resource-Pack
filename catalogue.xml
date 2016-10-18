@@ -26,7 +26,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/dirt.png
 		assets/minecraft/textures/blocks/grass_side_overlay.png</DEPENDS>
 		<CLEANUP>assets/minecraft/textures/blocks/grass_side_overlay.svg
-		assets/minecraft/texture/blocks/dirt.svg</CLEANUP>
+		assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
