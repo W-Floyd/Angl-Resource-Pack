@@ -9,22 +9,22 @@
 		<CLEANUP>pack.svg</CLENUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/texture/blocks/dirt.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/dirt.png</NAME>
 		<CONFIG>./conf/dirt.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>assets/minecraft/texture/blocks/dirt.svg</CLEANUP>
+		<CLEANUP>assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/texture/blocks/grass_side.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/grass_side.png</NAME>
 		<CONFIG>./conf/grass_side.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>assets/minecraft/textures/blocks/dirt.png</DEPENDS>
-		<CLEANUP>assets/minecraft/texture/blocks/grass_side.svg
+		<CLEANUP>assets/minecraft/textures/blocks/grass_side.svg
 		assets/minecraft/texture/blocks/dirt.svg</CLEANUP>
 	</ITEM>
 </RENDER>
