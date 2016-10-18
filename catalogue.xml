@@ -1,0 +1,40 @@
+<RENDER>
+	<TEXTURE>
+		<NAME>./$__dir/pack.png</NAME>
+		<CONFIG>./conf/pack.sh</CONFIG>
+		<OPTIONS></OPTIONS>
+		<SIZE>128</SIZE>
+		<DEST>./$__dir/pack.png</DEST>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+	</TEXTURE>
+	<TEXTURE>
+		<NAME>./$__dir/assets/minecraft/textures/blocks/dirt.png</NAME>
+		<CONFIG>./conf/dirt.sh</CONFIG>
+		<OPTIONS></OPTIONS>
+		<SIZE>$__size</SIZE>
+		<DEST>./$__dir/assets/minecraft/textures/blocks/dirt.png</DEST>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+	</TEXTURE>
+	<TEXTURE>
+		<NAME>./$__dir/assets/minecraft/textures/blocks/grass_side.png</NAME>
+		<CONFIG>./conf/grass_side.sh</CONFIG>
+		<OPTIONS></OPTIONS>
+		<SIZE>$__size</SIZE>
+		<DEST>./$__dir/assets/minecraft/textures/blocks/grass_side.png</DEST>
+		<KEEP>YES</KEEP>
+		<DEPENDS>./$__dir/assets/minecraft/textures/blocks/dirt.png
+		</DEPENDS>
+	</TEXTURE>
+</RENDER>
+<OTHER>
+	<ITEM>
+		<NAME>./$__dir/pack.mcmeta</NAME>
+		<CONFIG>./conf/pack_mcmeta.sh</CONFIG>
+		<OPTIONS>$__date</OPTIONS>
+		<DEST>./$__dir/pack.mcmeta</DEST>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+	</ITEM>
+</OTHER>
