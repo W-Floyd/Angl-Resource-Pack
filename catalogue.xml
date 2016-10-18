@@ -1,0 +1,51 @@
+<RENDER>
+	<ITEM>
+		<NAME>pack.png</NAME>
+		<CONFIG>./conf/pack.sh</CONFIG>
+		<SIZE>128</SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>pack.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/dirt.png</NAME>
+		<CONFIG>./conf/dirt.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/grass_side.png</NAME>
+		<CONFIG>./conf/grass_side.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>assets/minecraft/textures/blocks/dirt.png
+		assets/minecraft/textures/blocks/grass_side_overlay.png</DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/grass_side_overlay.svg
+		assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
+		<CONFIG>./conf/grass_side_overlay.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/grass_side_overlay.svg</CLEANUP>
+	</ITEM>
+</RENDER>
+<OTHER>
+	<ITEM>
+		<NAME>pack.mcmeta</NAME>
+		<CONFIG>./conf/pack_meta.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+	</ITEM>
+</OTHER>
