@@ -4,27 +4,28 @@
 		<CONFIG>./conf/pack.sh</CONFIG>
 		<SIZE>128</SIZE>
 		<OPTIONS></OPTIONS>
-		<DEST>pack.png</DEST>
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
+		<CLEANUP>pack.svg</CLENUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/ITEMs/blocks/dirt.png</NAME>
+		<NAME>assets/minecraft/texture/blocks/dirt.png</NAME>
 		<CONFIG>./conf/dirt.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
-		<DEST>assets/minecraft/ITEMs/blocks/dirt.png</DEST>
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/texture/blocks/dirt.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/ITEMs/blocks/grass_side.png</NAME>
+		<NAME>assets/minecraft/texture/blocks/grass_side.png</NAME>
 		<CONFIG>./conf/grass_side.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
-		<DEST>assets/minecraft/ITEMs/blocks/grass_side.png</DEST>
 		<KEEP>YES</KEEP>
-		<DEPENDS>assets/minecraft/ITEMs/blocks/dirt.png</DEPENDS>
+		<DEPENDS>assets/minecraft/textures/blocks/dirt.png</DEPENDS>
+		<CLEANUP>assets/minecraft/texture/blocks/grass_side.svg
+		assets/minecraft/texture/blocks/dirt.svg</CLEANUP>
 	</ITEM>
 </RENDER>
 <OTHER>
@@ -33,8 +34,8 @@
 		<CONFIG>./conf/pack_mcmeta.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
-		<DEST>pack.mcmeta</DEST>
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
 	</ITEM>
 </OTHER>

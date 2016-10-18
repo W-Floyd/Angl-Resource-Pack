@@ -30,19 +30,6 @@ sed 's|\(.*\)\(\.\).*|\1|' <<< "$1"
 
 ###############################################################
 #
-# __mfile <string>
-#
-# Minus File
-# Strips filename from string, leaving only directory
-#
-###############################################################
-
-__mfile () {
-sed 's|\(.*\)\(\/\).*|\1\2|' <<< "$1"
-}
-
-###############################################################
-#
 # __render <DPI> <FILE.svg>
 #
 # Render Image
@@ -50,21 +37,21 @@ sed 's|\(.*\)\(\/\).*|\1\2|' <<< "$1"
 #
 ###############################################################
 
-if [ $__mode = "quick" ]; then
+if [ $__mode = 'quick' ]; then
 __render () {
-rsvg-convert \
--d $(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev) \
--p $(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev) \
+rsvg-convert 
+-d "$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
+-p "$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
 "$2" \
--o $(__mext "$2")".png"
+-o "$(__mext "$2")"".png"
 }
-elif [ $__mode = "slow" ]; then
+elif [ $__mode = 'slow' ]; then
 __render () {
-# DPI and FILE.svg inputs
 inkscape \
---export-dpi=$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev) \
---export-png $(__mext "$2")".png" "$2"
+--export-dpi="$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
+--export-png "$(__mext "$2").png" "$2"
 }
+fi
 
 ###############################################################
 # Composition functions
@@ -272,12 +259,30 @@ cat "$1" | sed "$2"'!d' | sed 's/^	*//'
 #
 # Get Value
 # Gets the value/s of <FIELD_NAME> from <DATASET>
+# Meant to be used on separated datasets
 #
 ###############################################################
 
 __get_value () {
-__read_range $1 $(__get_range "$1" "$2") | sed -r 's/(<|<\/)'"$2"'>//g'
+__read_range "$1" "$(__get_range "$1" "$2")" | sed -r 's/(<|<\/)'"$2"'>//g'
 }
+
+###############################################################
+#
+# __set_value <DATASET> <FIELD_NAME> <VALUE>
+#
+# Set Value
+# Sets the <VALUE> of the specified <FIELD_NAME>
+#
+###############################################################
+
+__set_value () {
+cat "$1" | sed -n '1,/<'"$2"'>.*/p' | head -n -1 > /tmp/__set_value
+echo '<'"$2"'>'"$3"'</'"$2"'>' >> /tmp/__set_value
+cat "$1" | sed -n '/<\/'"$2"'>/,$p' | tail -n +2 >> /tmp/__set_value
+mv /tmp/__set_value "$1"
+}
+
 
 ###############################################################
 # Export functions
