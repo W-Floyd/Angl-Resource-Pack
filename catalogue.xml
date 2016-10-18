@@ -23,9 +23,19 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
-		<DEPENDS>assets/minecraft/textures/blocks/dirt.png</DEPENDS>
-		<CLEANUP>assets/minecraft/textures/blocks/grass_side.svg
+		<DEPENDS>assets/minecraft/textures/blocks/dirt.png
+		assets/minecraft/textures/blocks/grass_side_overlay.png</DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/grass_side_overlay.svg
 		assets/minecraft/texture/blocks/dirt.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
+		<CONFIG>./conf/grass_side_overlay.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/grass_side.svg</CLEANUP>
 	</ITEM>
 </RENDER>
 <OTHER>

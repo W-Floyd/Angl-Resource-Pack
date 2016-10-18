@@ -1,5 +1,5 @@
 #!/bin/bash
 
-$(date +%Y-%m-%d_%H-%M-%S)
+sed -i 's/\$RESOLUTION\$/'"$1"'px/' pack.mcmeta
 
 exit
