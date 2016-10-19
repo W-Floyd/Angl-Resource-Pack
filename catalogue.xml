@@ -924,6 +924,7 @@
 		assets/minecraft/textures/blocks/log_generic_top_2.svg
 		colour_planks_acacia.svg
 		colour_log_acacia.svg</CLEANUP>
+	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/log_big_oak_top.png</NAME>
 		<CONFIG>./conf/log_top.sh</CONFIG>

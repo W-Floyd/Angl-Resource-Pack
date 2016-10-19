@@ -43,13 +43,13 @@ rsvg-convert
 -d "$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
 -p "$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
 "$2" \
--o "$(__mext "$2")"".png"
+-o "$(__mext "$2")"".png" 1> /dev/null
 }
 elif [ $__mode = 'slow' ]; then
 __render () {
 inkscape \
 --export-dpi="$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
---export-png "$(__mext "$2").png" "$2"
+--export-png "$(__mext "$2").png" "$2" 1> /dev/null
 }
 fi
 
