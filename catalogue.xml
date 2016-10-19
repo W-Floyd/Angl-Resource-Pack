@@ -37,6 +37,15 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>assets/minecraft/textures/blocks/grass_side_overlay.svg</CLEANUP>
 	</ITEM>
+	<ITEM>
+		<NAME>colour_black.png</NAME>
+		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>black</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>colour_black.svg</CLEANUP>
+	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>
