@@ -8,27 +8,21 @@ If you just want to download the resource pack, look here: https://github.com/W-
 ***
 
 ###Usage
-# Deprocated, wait for me to update this info
 
-To render and pack in 32px, 64px, 128px, 256px and 512px sizes, run
+To render, run
 
-	./Make-Pack.sh
+	./render.sh
 
 To render a pack in a specific resolution, run
 
-	./Make-Pack.sh <resolution>
+	./render.sh <resolution>
 
 ***
-
-~~***ALSO NOTE*** - I have made extensive use of multiple hardlinks in the work here! Git does not support hardlinks - so cloning would be largely useless. As a workaround, I have included a .tar archive of the src folder which includes hardlinks properly. I will try to update this after any changes are made to src.
-
-This basically means development is Linux only - sorry, not sorry ;)
-
+###To-do
+####Make packaging scripts again.
 ***
 
-This is *only* to showcase my method and history of development, hopefully to help someone else someday.~~
-
-Currently trying to make things work without hard links
+This is *only* to showcase my method and history of development, hopefully to help someone else someday.
 
 **It does not give you a right to take credit for my work.**
 
@@ -43,6 +37,8 @@ Also, documentation could be better - I may eventually clean things up.
 
 ###Known issues
 
-I had to compile a newer version of Imagemagick from source to make some compositing work. If you get odd results, that may the issue.
+At one point I had to compile a newer version of Imagemagick from source to make some compositing work. If you get odd results, that may the issue.
+
+Also, last I checked, glass was not transparent in Minecraft. Have yet to verify since redoing the script system.
 
 ***
