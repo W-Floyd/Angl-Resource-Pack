@@ -558,7 +558,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_black.png</DEPENDS>
 		<CLEANUP>colour_black.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_blue.png</NAME>
@@ -569,7 +569,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_blue.png</DEPENDS>
 		<CLEANUP>colour_blue.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_brown.png</NAME>
@@ -580,7 +580,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_brown.png</DEPENDS>
 		<CLEANUP>colour_brown.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_cyan.png</NAME>
@@ -591,7 +591,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_cyan.png</DEPENDS>
 		<CLEANUP>colour_cyan.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_gray.png</NAME>
@@ -602,7 +602,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_gray.png</DEPENDS>
 		<CLEANUP>colour_gray.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_green.png</NAME>
@@ -613,7 +613,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_green.png</DEPENDS>
 		<CLEANUP>colour_green.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_light_blue.png</NAME>
@@ -624,7 +624,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_light_blue.png</DEPENDS>
 		<CLEANUP>colour_light_blue.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_lime.png</NAME>
@@ -635,7 +635,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_lime.png</DEPENDS>
 		<CLEANUP>colour_lime.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_magenta.png</NAME>
@@ -646,7 +646,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_magenta.png</DEPENDS>
 		<CLEANUP>colour_magenta.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_orange.png</NAME>
@@ -657,7 +657,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_orange.png</DEPENDS>
 		<CLEANUP>colour_orange.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_pink.png</NAME>
@@ -668,7 +668,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_pink.png</DEPENDS>
 		<CLEANUP>colour_pink.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_purple.png</NAME>
@@ -679,7 +679,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_purple.png</DEPENDS>
 		<CLEANUP>colour_purple.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_red.png</NAME>
@@ -690,7 +690,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_red.png</DEPENDS>
 		<CLEANUP>colour_red.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_silver.png</NAME>
@@ -701,7 +701,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_silver.png</DEPENDS>
 		<CLEANUP>colour_silver.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_white.png</NAME>
@@ -712,7 +712,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_white.png</DEPENDS>
 		<CLEANUP>colour_white.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
 		<NAME>assets/minecraft/textures/blocks/wool_colored_yellow.png</NAME>
@@ -723,7 +723,7 @@
 		<DEPENDS>assets/minecraft/textures/blocks/wool_generic_overlay.png
 		colour_yellow.png</DEPENDS>
 		<CLEANUP>colour_yellow.svg
-		assets/minecraft/textures/blocks/wool_generic_overlay/svg</CLEANUP>
+		assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 	</ITEM>
 </RENDER>
 <OTHER>
