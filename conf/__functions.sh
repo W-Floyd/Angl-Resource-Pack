@@ -44,12 +44,16 @@ rsvg-convert
 -p "$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
 "$2" \
 -o "$(__mext "$2")"".png" 1> /dev/null
+convert "$(__mext "$2")"".png" -define png:color-type=6 "$(__mext "$2")"'_'".png"
+mv "$(__mext "$2")"'_'".png" "$(__mext "$2")"".png"
 }
 elif [ $__mode = 'slow' ]; then
 __render () {
 inkscape \
 --export-dpi="$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
 --export-png "$(__mext "$2").png" "$2" 1> /dev/null
+convert "$(__mext "$2")"".png" -define png:color-type=6 "$(__mext "$2")"'_'".png"
+mv "$(__mext "$2")"'_'".png" "$(__mext "$2")"".png"
 }
 fi
 
@@ -66,7 +70,7 @@ fi
 ###############################################################
 
 __overlay () {
-composite -compose src-over "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-over "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -79,7 +83,7 @@ composite -compose src-over "$2" "$1" "$3"
 ###############################################################
 
 __multiply () {
-composite -compose Multiply "$2" "$1" "$3"
+composite -define png:color-type=6 -compose Multiply "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -92,7 +96,7 @@ composite -compose Multiply "$2" "$1" "$3"
 ###############################################################
 
 __screen () {
-composite -compose Screen "$2" "$1" "$3"
+composite -define png:color-type=6 -compose Screen "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -105,7 +109,7 @@ composite -compose Screen "$2" "$1" "$3"
 ###############################################################
 
 __clip_src_over () {
-composite -compose src-over "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-over "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -118,7 +122,7 @@ composite -compose src-over "$2" "$1" "$3"
 ###############################################################
 
 __clip_dst_over () {
-composite -compose dst-over "$2" "$1" "$3"
+composite -define png:color-type=6 -compose dst-over "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -131,7 +135,7 @@ composite -compose dst-over "$2" "$1" "$3"
 ###############################################################
 
 __clip_src_in () {
-composite -compose src-in "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-in "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -144,7 +148,7 @@ composite -compose src-in "$2" "$1" "$3"
 ###############################################################
 
 __clip_dst_in () {
-composite -compose dst-in "$2" "$1" "$3"
+composite -define png:color-type=6 -compose dst-in "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -157,7 +161,7 @@ composite -compose dst-in "$2" "$1" "$3"
 ###############################################################
 
 __clip_src_out () {
-composite -compose src-out "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-out "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -170,7 +174,7 @@ composite -compose src-out "$2" "$1" "$3"
 ###############################################################
 
 __clip_dst_out () {
-composite -compose dst-out "$2" "$1" "$3"
+composite -define png:color-type=6 -compose dst-out "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -183,7 +187,7 @@ composite -compose dst-out "$2" "$1" "$3"
 ###############################################################
 
 __clip_src_atop () {
-composite -compose src-atop "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-atop "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -196,7 +200,7 @@ composite -compose src-atop "$2" "$1" "$3"
 ###############################################################
 
 __clip_dst_atop () {
-composite -compose dst-atop "$2" "$1" "$3"
+composite -define png:color-type=6 -compose dst-atop "$2" "$1" "$3"
 }
 
 ###############################################################
@@ -209,7 +213,7 @@ composite -compose dst-atop "$2" "$1" "$3"
 ###############################################################
 
 __clip_xor () {
-composite -compose xor "$2" "$1" "$3"
+composite -define png:color-type=6 -compose xor "$2" "$1" "$3"
 }
 
 ###############################################################
