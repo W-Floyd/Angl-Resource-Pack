@@ -224,7 +224,7 @@ composite -compose xor "$2" "$1" "$3"
 #
 # Example:
 #
-# __get_range catalogue.xml TEXTURE
+# __get_range catalogue.xml ITEM
 #
 # will print
 #

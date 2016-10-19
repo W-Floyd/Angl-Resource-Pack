@@ -11,11 +11,13 @@ If you just want to download the resource pack, look here: https://github.com/W-
 
 To render, run
 
-	./render.sh
-
-To render a pack in a specific resolution, run
-
 	./render.sh <resolution>
+	
+To make a Minecraft ready zip file, run
+
+	./make-pack.sh <resolution>
+	
+If no resolution is specified, sizes 32x32, 64x64, 128x128, 256x256, 512x512 will be packaged up
 
 ***
 ###To-do
