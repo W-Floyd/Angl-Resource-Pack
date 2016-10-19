@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sed -i '5s/.*/'"$(date +%Y-%m-%d_%H-%M-%S)"'/' README.md
+
+sed -i '8s/.*/'"${1}x${1}px"'/' README.md
+
+exit

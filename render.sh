@@ -1,10 +1,13 @@
 #!/bin/bash
+
 ###############################################################
 # Will render the resource pack at the given resolution
 # Or, if no inputs are given, 128px
 ###############################################################
 # Set up variables
 ###############################################################
+
+__start_time=$(date +%s)
 
 __pack_name="Angl"
 
@@ -117,6 +120,8 @@ else
 	grep -Fxv -f $__tmp_directory'rendered' $__tmp_directory'tmpdeps' > $__tmp_directory'tmpdeps2'
 	
 	if [ -z "$(cat $__tmp_directory'tmpdeps2')" ]; then
+	
+		echo "Processing ./$(__get_value $__config NAME)"
 		
 		__exec "$__config"
 		
@@ -156,5 +161,11 @@ rm -rf ./conf/
 rm -rf "$__tmp_directory"
 
 cd ../
+
+__end_time=$(date +%s)
+
+echo
+echo
+echo "Rendered in $((__end_time-__start_time)) seconds"
 
 exit
