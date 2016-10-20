@@ -80,25 +80,147 @@ cd $__tmp_directory'xml/'
 
 find "$(pwd)" | grep '\.xml' > ../listing
 
-cp ../listing ../to_render
-
-touch ../rendered
-
 cd "$__tmppwd"
+
+###############################################################
+# Record hashes in .xml record
+###############################################################
+
+for __config in $(cat $__tmp_directory'listing'); do
+
+	__get_value "$__config" CLEANUP >> $__tmp_directory'tmpcleanup'
+
+done
+
+cat $__tmp_directory'tmpcleanup' | sort | uniq > $__tmp_directory'tmpcleanup2'
+
+rm $__tmp_directory'tmpcleanup'
+
+echo '<HASHES>' > $__tmp_directory'tmpcleanuphashes2.xml'
+
+for __source in $(cat $__tmp_directory'tmpcleanup2'); do
+
+	echo '	<ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+
+	echo '		<NAME>'"$__source"'</NAME>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '		<HASH>'"$(md5sum '\./src/'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '	</ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	
+done
+
+echo '</HASHES>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+
+rm $__tmp_directory'tmpcleanup2'
+
+mv $__tmp_directory'tmpcleanuphashes2.xml' './hashes_new.xml'
+
+if ! [ -a './hashes.xml' ]; do
+
+	cp './hashes_new.xml' './hashes.xml'
+	
+	sed -i 's/\(HASH\)\(.*\)\(\/HASH\)/\1\2/'
+	
+fi
+
+###############################################################
+# Split hashes into separate .xml records
+###############################################################
+
+for __hash_name in $(echo 'hashes
+hashes_new'); do
+
+	for __range in $(__get_range './'$__hash_name'.xml' ITEM); do
+		__read_range './'$__hash_name'.xml' "$__range" > $__tmp_directory"readrangetmp"
+		__name=$(__get_value "${__tmp_directory}readrangetmp" NAME)
+		__tmp_name=$(echo "${__tmp_directory}${__hash_name}/${__name}.xml")
+		mkdir -p "$(dirname "$__tmp_name")"
+		__read_range './'"$__hash_name"'.xml' "$__range" > "$__tmp_name"
+	done
+	
+	rm $__tmp_directory"readrangetmp"
+	
+	cd "${__tmp_directory}${__hash_name}/"
+	
+	find | grep '\.xml' | sed 's/^\.\///' > "${__tmp_directory}${__hash_name}_listing"
+	
+	cd "$__tmppwd"
+
+done
+
+###############################################################
+# Compare hashes
+###############################################################
+
+for __hash in $(cat "$__tmp_directory"hash_new_listing); do
+	if [ -a "$(echo "${__tmp_directory}hash/${__hash}")" ]; then
+		if ! [ "$(__get_value "$(echo "${__tmp_directory}hash/${__hash}")" HASH)" = "$("$(echo "${__tmp_directory}hash_new/${__hash}")")" ]; then
+			if ! [ -z "$(__get_value "$(echo "${__tmp_directory}hash/${__hash}")" HASH | sed 's/^$//')" ]; then
+				echo "${__tmp_directory}hash_new/${__hash}" >> "$__tmp_directory"hash_files_differ
+			else
+				__get_value "${__tmp_directory}hash_new/${__hash}" NAME >> "$__tmp_directory"to_render
+			
+		fi
+	else
+		echo "${__tmp_directory}hash_new/${__hash}" >> "$__tmp_directory"hash_files_new
+	fi
+done
+
+for __hash in $(cat "$__tmp_directory"hash_listing); do
+	if ! [ -a "$(echo "${__tmp_directory}hash_new/${__hash}")" ]; then
+		echo "${__tmp_directory}hash/${__hash}" >> "$__tmp_directory"hash_files_removed
+	fi
+done
+
+###############################################################
+# List files to re-render, render, and remove
+###############################################################
+
+for __source in $(cat "$__tmp_directory"hash_files_differ); do
+	__tmp_name=$(__get_value $__source NAME)
+	for __item in $(cat "$__tmp_directory"listing); do
+		if ! [ -z "$(__get_value "$__item" CLEANUP | grep -x "$__tmp_name")" ]; then
+			echo "$__item" >> "$__tmp_directory"'re_render'
+		fi
+	done
+done
+
+for __source in $(cat "$__tmp_directory"hash_files_new); do
+	__tmp_name=$(__get_value $__source NAME)
+	echo "$__tmp_name" >> $__tmp_directory'to_render'
+done
+
+for __source in $(cat "$__tmp_directory"hash_files_removed); do
+	__tmp_name=$(__get_value $__source NAME)
+	echo "$__tmp_name" >> $__tmp_directory'to_remove'
+done
 
 ###############################################################
 # Set up working space
 ###############################################################
 
-if [ -d "$__directory" ]; then
-	rm -r $__directory
+if ! [ -d "$__directory" ]; then
+	mkdir "$__directory"
 fi
 
-cp -r src/ "$__directory"
+cp -r src/* "$__directory"
 
 cp -r conf/ './'"$__directory"
 
+fi
+
 cd "$__directory"
+
+###############################################################
+# Remove files to re-render and remove
+###############################################################
+
+for __file in $(cat "$__tmp_directory"'re_render'); do
+	rm $__file
+done
+
+for __file in $(cat "$__tmp_directory"'to_remove'); do
+	rm $__file
+done
 
 ###############################################################
 # Start rendering
