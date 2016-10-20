@@ -80,6 +80,8 @@ cd $__tmp_directory'xml/'
 
 find "$(pwd)" | grep '\.xml' > ../listing
 
+#cp ../listing ../to_render
+
 cd "$__tmppwd"
 
 ###############################################################
@@ -100,11 +102,11 @@ echo '<HASHES>' > $__tmp_directory'tmpcleanuphashes2.xml'
 
 for __source in $(cat $__tmp_directory'tmpcleanup2'); do
 
-	echo '	<ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '<ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 
-	echo '		<NAME>'"$__source"'</NAME>' >> $__tmp_directory'tmpcleanuphashes2.xml'
-	echo '		<HASH>'"$(md5sum './src/'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
-	echo '	</ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '<NAME>'"$__source"'</NAME>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '<HASH>'"$(md5sum './src/'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '</ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 	
 done
 
@@ -146,10 +148,8 @@ hashes_new'); do
 		__name=$(__get_value "${__tmp_directory}readrangetmp" NAME)
 		__tmp_name=$(echo "${__tmp_directory}${__hash_name}/${__name}.xml")
 		mkdir -p "$(dirname "$__tmp_name")"
-		__read_range './'"$__hash_name"'.xml' "$__range" > "$__tmp_name"
+		mv $__tmp_directory"readrangetmp" "$__tmp_name"
 	done
-	
-	rm $__tmp_directory"readrangetmp"
 	
 	cd "${__tmp_directory}${__hash_name}/"
 	
@@ -160,60 +160,29 @@ hashes_new'); do
 done
 
 ###############################################################
-# Compare hashes
+# List source files that have been changed, added or removed
 ###############################################################
 
-touch "$__tmp_directory"hashes_files_differ
-touch "$__tmp_directory"hashes_files_new
-touch "$__tmp_directory"hashes_files_removed
-touch "$__tmp_directory"re_render
-touch "$__tmp_directory"to_remove
-touch "$__tmp_directory"re_render
-touch "$__tmp_directory"rendered
-
-for __hash in $(cat "$__tmp_directory"hashes_new_listing); do
-	if [ -a "$(echo "${__tmp_directory}hashes/${__hash}")" ]; then
-		if ! [ "$(__get_value "$(echo "${__tmp_directory}hashes/${__hash}")" HASH)" = "$(__get_value "$(echo "${__tmp_directory}hashes_new/${__hash}")" HASH)" ]; then
-			if ! [ -z "$(__get_value "$(echo "${__tmp_directory}hashes/${__hash}")" HASH | sed 's/^$//')" ]; then
-				echo "${__tmp_directory}hashes_new/${__hash}" >> "$__tmp_directory"hashes_files_differ
+for __xml in $(cat "${__tmp_directory}hashes_new_listing"); do
+	if [ -a "${__tmp_directory}hashes/${__xml}" ]; then
+		if ! [ -z "$(__get_value "${__tmp_directory}hashes/${__xml}" HASH)" ]; then
+			if ! [ "$(__get_value "${__tmp_directory}hashes/${__xml}" HASH)" = "$(__get_value "${__tmp_directory}hashes_new/${__xml}" HASH)" ]; then
+				echo './'"$(__get_value "${__tmp_directory}hashes/${__xml}" NAME)" >> "${__tmp_directory}changed_source"
 			else
-				__get_value "${__tmp_directory}hashes_new/${__hash}" NAME >> "$__tmp_directory"to_render
-				
+				echo './'"$(__get_value "${__tmp_directory}hashes/${__xml}" NAME)" >> "${__tmp_directory}unchanged_source"
 			fi
-			
+		else
+			echo './'"$(__get_value "${__tmp_directory}hashes/${__xml}" NAME)" >> "${__tmp_directory}new_source"
 		fi
 	else
-		echo "${__tmp_directory}hashes_new/${__hash}" >> "$__tmp_directory"hashes_files_new
+		echo './'"$(__get_value "${__tmp_directory}hashes/${__xml}" NAME)" >> "${__tmp_directory}new_source"
 	fi
 done
 
-for __hash in $(cat "$__tmp_directory"hashes_listing); do
-	if ! [ -a "$(echo "${__tmp_directory}hashes_new/${__hash}")" ]; then
-		echo "${__tmp_directory}hash/${__hash}" >> "$__tmp_directory"hashes_files_removed
+for __xml in $(cat "${__tmp_directory}hashes_listing"); do
+	if ! [ -a "${__tmp_directory}hashes_new/${__xml}" ]; then
+		echo './'"$(__get_value "${__tmp_directory}hashes/${__xml}" NAME)" >> "${__tmp_directory}removed_source"
 	fi
-done
-
-###############################################################
-# List files to re-render, render, and remove
-###############################################################
-
-for __source in $(cat "$__tmp_directory"hashes_files_differ); do
-	__tmp_name=$(__get_value $__source NAME)
-	for __item in $(cat "$__tmp_directory"listing); do
-		if ! [ -z "$(__get_value "$__item" CLEANUP | grep -x "$__tmp_name")" ]; then
-			echo "$__item" >> "$__tmp_directory"'re_render'
-		fi
-	done
-done
-
-for __source in $(cat "$__tmp_directory"hashes_files_new); do
-	__tmp_name=$(__get_value $__source NAME)
-	echo "$__tmp_name" >> $__tmp_directory'to_render'
-done
-
-for __source in $(cat "$__tmp_directory"hashes_files_removed); do
-	__tmp_name=$(__get_value $__source NAME)
-	echo "$__tmp_name" >> $__tmp_directory'to_remove'
 done
 
 ###############################################################
@@ -231,15 +200,17 @@ cp -r conf/ './'"$__directory"
 cd "$__directory"
 
 ###############################################################
-# Remove files to re-render and remove
+# Determine files to render, re-render and remove
 ###############################################################
 
-for __file in $(cat "$__tmp_directory"'re_render'); do
-	rm $__file
-done
-
-for __file in $(cat "$__tmp_directory"'to_remove'); do
-	rm $__file
+for __config in $(cat "${__tmp_directory}listing"); do
+	if ! [ -z "$(__get_value "$__config" CLEANUP | grep -Fx "$(cat "${__tmp_directory}changed_source")")" ]; then
+		rm "$(__get_value "$__config" NAME)"
+		echo "$(__get_value "$__config" NAME)" >> "${__tmp_directory}to_render"
+	elif ! [ -z "$(__get_value "$__config" CLEANUP | grep -Fx "$(cat "${__tmp_directory}new_source")")" ]; then
+		rm "$(__get_value "$__config" NAME)"
+		echo "$(__get_value "$__config" NAME)" >> "${__tmp_directory}to_render"
+	fi
 done
 
 ###############################################################
@@ -289,6 +260,16 @@ done
 # Remove non-keep and cleanup files
 ###############################################################
 
+cd ../
+
+if [ -d "$__directory"_cleaned ]; then
+	rm -r "$__directory"_cleaned
+fi
+
+cp -r "$__directory" "$__directory"_cleaned
+
+cd "$__directory"_cleaned
+
 for __config in $(cat $__tmp_directory'listing' | grep '\.xml'); do
 	if [ "$(__get_value $__config KEEP)" = NO ]; then
 		rm './'"$(__get_value $__config NAME)"
@@ -304,7 +285,7 @@ done
 
 rm -rf ./conf/
 
-rm -rf "$__tmp_directory"
+#rm -rf "$__tmp_directory"
 
 cd ../
 
