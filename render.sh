@@ -80,8 +80,6 @@ cd $__tmp_directory'xml/'
 
 find "$(pwd)" | grep '\.xml' > ../listing
 
-#cp ../listing ../to_render
-
 cd "$__tmppwd"
 
 ###############################################################
@@ -167,6 +165,7 @@ touch "${__tmp_directory}changed_source"
 touch "${__tmp_directory}new_source"
 touch "${__tmp_directory}unchanged_source"
 touch "${__tmp_directory}rendered"
+touch "${__tmp_directory}to_render"
 
 for __xml in $(cat "${__tmp_directory}hashes_new_listing"); do
 	if [ -a "${__tmp_directory}hashes/${__xml}" ]; then
