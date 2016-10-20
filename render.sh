@@ -90,6 +90,10 @@ cd "$__tmppwd"
 # Set up working space
 ###############################################################
 
+if [ -d "$__directory" ]; then
+	rm -r $__directory
+fi
+
 cp -r src/ "$__directory"
 
 cp -r conf/ './'"$__directory"

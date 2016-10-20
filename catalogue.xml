@@ -1185,6 +1185,26 @@
 		<CLEANUP>assets/minecraft/textures/blocks/glass_pane_top.svg
 		colour_yellow.svg</CLEANUP>
 	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/stonebrick.png</NAME>
+		<CONFIG>./conf/stonebrick.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>assets/minecraft/textures/blocks/stonebrick_overlay.png
+		assets/minecraft/textures/blocks/stone.png</DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/stonebrick_overlay.svg
+		assets/minecraft/textures/blocks/stone.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/stonebrick_overlay.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>stonebrick_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/stonebrick_overlay.svg</CLEANUP>
+	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>
