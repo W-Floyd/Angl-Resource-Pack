@@ -134,6 +134,17 @@ if ! [ -a './hashes.xml' ]; then
 	
 fi
 
+if [ "$(cat './hashes.xml' | md5sum)" = "$(cat './hashes_new.xml' | md5sum)" ]; then
+	rm -r "$__tmp_directory"
+	rm './hashes_new.xml'
+	__end_time=$(date +%s)
+	
+	echo
+	echo "No changes"
+	echo "Rendered in $((__end_time-__start_time)) seconds"
+	exit
+fi
+
 ###############################################################
 # Split hashes into separate .xml records
 ###############################################################
