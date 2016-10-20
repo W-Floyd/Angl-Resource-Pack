@@ -280,12 +280,12 @@ rm -r ./conf/
 cd ../
 
 if [ -d "$__directory"_cleaned ]; then
-	rm -r "$__directory"_cleaned
+	rm -r "$(echo "$__directory" | sed 's/\/$//')_cleaned"
 fi
 
 cp -r "$__directory" "$(echo "$__directory" | sed 's/\/$//')_cleaned"
 
-cd "$__directory"_cleaned
+cd "$(echo "$__directory" | sed 's/\/$//')_cleaned"
 
 for __config in $(cat $__tmp_directory'listing' | grep '\.xml'); do
 	if [ "$(__get_value $__config KEEP)" = NO ]; then
