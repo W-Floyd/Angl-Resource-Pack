@@ -2,7 +2,7 @@
 
 cd ./assets/minecraft/textures/blocks/
 
-__render "$1" grass_side_overlay.svg
+__multiply stone.png cobblestone_overlay.png cobblestone.png
 
 cd ../../../../
 
