@@ -103,7 +103,7 @@ for __source in $(cat $__tmp_directory'tmpcleanup2'); do
 	echo '	<ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 
 	echo '		<NAME>'"$__source"'</NAME>' >> $__tmp_directory'tmpcleanuphashes2.xml'
-	echo '		<HASH>'"$(md5sum '\./src/'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '		<HASH>'"$(md5sum './src/'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 	echo '	</ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 	
 done
@@ -114,11 +114,23 @@ rm $__tmp_directory'tmpcleanup2'
 
 mv $__tmp_directory'tmpcleanuphashes2.xml' './hashes_new.xml'
 
-if ! [ -a './hashes.xml' ]; do
+if ! [ -a './hashes.xml' ]; then
 
-	cp './hashes_new.xml' './hashes.xml'
+	echo '<HASHES>' > $__tmp_directory'tmpcleanuphashes2.xml'
+
+	for __range in $(__get_range './hashes_new.xml' ITEM); do
+		
+		__read_range './hashes_new.xml' "$__range" > /tmp/__read_range
+		__set_value '/tmp/__read_range' HASH ''
+		cat '/tmp/__read_range' >> $__tmp_directory'tmpcleanuphashes2.xml'
+		
+	done
 	
-	sed -i 's/\(HASH\)\(.*\)\(\/HASH\)/\1\2/'
+	echo '</HASHES>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	
+	rm '/tmp/__read_range'
+	
+	mv $__tmp_directory'tmpcleanuphashes2.xml' './hashes.xml'
 	
 fi
 
@@ -151,23 +163,33 @@ done
 # Compare hashes
 ###############################################################
 
-for __hash in $(cat "$__tmp_directory"hash_new_listing); do
-	if [ -a "$(echo "${__tmp_directory}hash/${__hash}")" ]; then
-		if ! [ "$(__get_value "$(echo "${__tmp_directory}hash/${__hash}")" HASH)" = "$("$(echo "${__tmp_directory}hash_new/${__hash}")")" ]; then
-			if ! [ -z "$(__get_value "$(echo "${__tmp_directory}hash/${__hash}")" HASH | sed 's/^$//')" ]; then
-				echo "${__tmp_directory}hash_new/${__hash}" >> "$__tmp_directory"hash_files_differ
+touch "$__tmp_directory"hashes_files_differ
+touch "$__tmp_directory"hashes_files_new
+touch "$__tmp_directory"hashes_files_removed
+touch "$__tmp_directory"re_render
+touch "$__tmp_directory"to_remove
+touch "$__tmp_directory"re_render
+touch "$__tmp_directory"rendered
+
+for __hash in $(cat "$__tmp_directory"hashes_new_listing); do
+	if [ -a "$(echo "${__tmp_directory}hashes/${__hash}")" ]; then
+		if ! [ "$(__get_value "$(echo "${__tmp_directory}hashes/${__hash}")" HASH)" = "$(__get_value "$(echo "${__tmp_directory}hashes_new/${__hash}")" HASH)" ]; then
+			if ! [ -z "$(__get_value "$(echo "${__tmp_directory}hashes/${__hash}")" HASH | sed 's/^$//')" ]; then
+				echo "${__tmp_directory}hashes_new/${__hash}" >> "$__tmp_directory"hashes_files_differ
 			else
-				__get_value "${__tmp_directory}hash_new/${__hash}" NAME >> "$__tmp_directory"to_render
+				__get_value "${__tmp_directory}hashes_new/${__hash}" NAME >> "$__tmp_directory"to_render
+				
+			fi
 			
 		fi
 	else
-		echo "${__tmp_directory}hash_new/${__hash}" >> "$__tmp_directory"hash_files_new
+		echo "${__tmp_directory}hashes_new/${__hash}" >> "$__tmp_directory"hashes_files_new
 	fi
 done
 
-for __hash in $(cat "$__tmp_directory"hash_listing); do
-	if ! [ -a "$(echo "${__tmp_directory}hash_new/${__hash}")" ]; then
-		echo "${__tmp_directory}hash/${__hash}" >> "$__tmp_directory"hash_files_removed
+for __hash in $(cat "$__tmp_directory"hashes_listing); do
+	if ! [ -a "$(echo "${__tmp_directory}hashes_new/${__hash}")" ]; then
+		echo "${__tmp_directory}hash/${__hash}" >> "$__tmp_directory"hashes_files_removed
 	fi
 done
 
@@ -175,7 +197,7 @@ done
 # List files to re-render, render, and remove
 ###############################################################
 
-for __source in $(cat "$__tmp_directory"hash_files_differ); do
+for __source in $(cat "$__tmp_directory"hashes_files_differ); do
 	__tmp_name=$(__get_value $__source NAME)
 	for __item in $(cat "$__tmp_directory"listing); do
 		if ! [ -z "$(__get_value "$__item" CLEANUP | grep -x "$__tmp_name")" ]; then
@@ -184,12 +206,12 @@ for __source in $(cat "$__tmp_directory"hash_files_differ); do
 	done
 done
 
-for __source in $(cat "$__tmp_directory"hash_files_new); do
+for __source in $(cat "$__tmp_directory"hashes_files_new); do
 	__tmp_name=$(__get_value $__source NAME)
 	echo "$__tmp_name" >> $__tmp_directory'to_render'
 done
 
-for __source in $(cat "$__tmp_directory"hash_files_removed); do
+for __source in $(cat "$__tmp_directory"hashes_files_removed); do
 	__tmp_name=$(__get_value $__source NAME)
 	echo "$__tmp_name" >> $__tmp_directory'to_remove'
 done
@@ -205,8 +227,6 @@ fi
 cp -r src/* "$__directory"
 
 cp -r conf/ './'"$__directory"
-
-fi
 
 cd "$__directory"
 
