@@ -163,6 +163,11 @@ done
 # List source files that have been changed, added or removed
 ###############################################################
 
+touch "${__tmp_directory}changed_source"
+touch "${__tmp_directory}new_source"
+touch "${__tmp_directory}unchanged_source"
+touch "${__tmp_directory}rendered"
+
 for __xml in $(cat "${__tmp_directory}hashes_new_listing"); do
 	if [ -a "${__tmp_directory}hashes/${__xml}" ]; then
 		if ! [ -z "$(__get_value "${__tmp_directory}hashes/${__xml}" HASH)" ]; then
@@ -185,6 +190,10 @@ for __xml in $(cat "${__tmp_directory}hashes_listing"); do
 	fi
 done
 
+cat "${__tmp_directory}changed_source" | sed 's/^\.\///' > "${__tmp_directory}changed_source2"
+cat "${__tmp_directory}new_source" | sed 's/^\.\///' > "${__tmp_directory}new_source2"
+cat "${__tmp_directory}unchanged_source" | sed 's/^\.\///' > "${__tmp_directory}unchanged_source2"
+
 ###############################################################
 # Set up working space
 ###############################################################
@@ -200,16 +209,22 @@ cp -r conf/ './'"$__directory"
 cd "$__directory"
 
 ###############################################################
-# Determine files to render, re-render and remove
+# Determine files rendered, to render, re-render and remove
 ###############################################################
 
 for __config in $(cat "${__tmp_directory}listing"); do
-	if ! [ -z "$(__get_value "$__config" CLEANUP | grep -Fx "$(cat "${__tmp_directory}changed_source")")" ]; then
-		rm "$(__get_value "$__config" NAME)"
-		echo "$(__get_value "$__config" NAME)" >> "${__tmp_directory}to_render"
-	elif ! [ -z "$(__get_value "$__config" CLEANUP | grep -Fx "$(cat "${__tmp_directory}new_source")")" ]; then
-		rm "$(__get_value "$__config" NAME)"
-		echo "$(__get_value "$__config" NAME)" >> "${__tmp_directory}to_render"
+	if ! [ -z "$(__get_value "$__config" CLEANUP | grep -Fx "$(cat "${__tmp_directory}changed_source2")")" ]; then
+		if [ -a "./$(__get_value "$__config" NAME)" ]; then
+			rm "./$(__get_value "$__config" NAME)"
+		fi
+		echo "$__config" >> "${__tmp_directory}to_render"
+	elif ! [ -z "$(__get_value "$__config" CLEANUP | grep -Fx "$(cat "${__tmp_directory}new_source2")")" ]; then
+		if [ -a "./$(__get_value "$__config" NAME)" ]; then
+			rm "./$(__get_value "$__config" NAME)"
+		fi
+		echo "$__config" >> "${__tmp_directory}to_render"
+	else
+		echo "$__config" >> "${__tmp_directory}rendered"
 	fi
 done
 
@@ -242,11 +257,11 @@ else
 		
 		__exec "$__config"
 		
-		__get_value $__config NAME >> $__tmp_directory'rendered'
+		__get_value "$__config" NAME >> $__tmp_directory'rendered'
 	
 	else
 	
-		echo $__config >> $__tmp_directory'to_render'
+		echo "$__config" >> $__tmp_directory'to_render'
 	
 	fi
 	
@@ -260,19 +275,23 @@ done
 # Remove non-keep and cleanup files
 ###############################################################
 
+rm -r ./conf/
+
 cd ../
 
 if [ -d "$__directory"_cleaned ]; then
 	rm -r "$__directory"_cleaned
 fi
 
-cp -r "$__directory" "$__directory"_cleaned
+cp -r "$__directory" "$(echo "$__directory" | sed 's/\/$//')_cleaned"
 
 cd "$__directory"_cleaned
 
 for __config in $(cat $__tmp_directory'listing' | grep '\.xml'); do
 	if [ "$(__get_value $__config KEEP)" = NO ]; then
-		rm './'"$(__get_value $__config NAME)"
+		if [ -a './'"$(__get_value $__config NAME)" ]; then
+			rm './'"$(__get_value $__config NAME)"
+		fi
 	fi
 	__get_value "$__config" CLEANUP >> "$__tmp_directory"'cleanup'
 done
@@ -280,14 +299,18 @@ done
 cat "$__tmp_directory"'cleanup' | sort | uniq > "$__tmp_directory"'cleanup2'
 
 for __file in $(cat "$__tmp_directory"'cleanup2' | sort | uniq); do
-	rm './'"$__file"
+	if [ -a './'"$__file" ]; then
+		rm './'"$__file"
+	fi
 done
 
-rm -rf ./conf/
-
-#rm -rf "$__tmp_directory"
-
 cd ../
+
+rm -r "$__tmp_directory"
+
+rm 'hashes.xml'
+
+mv 'hashes_new.xml' 'hashes.xml'
 
 __end_time=$(date +%s)
 
