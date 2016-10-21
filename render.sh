@@ -96,6 +96,10 @@ fi
 
 cp -r src/* "$__directory"
 
+if [ -d './'"${__directory}"'conf/' ]; then
+	rm -r './'"${__directory}"'conf/'
+fi
+
 cp -r conf/ './'"$__directory"
 
 ###############################################################
@@ -105,10 +109,13 @@ cp -r conf/ './'"$__directory"
 for __config in $(cat $__tmp_directory'listing'); do
 
 	__get_value "$__config" CLEANUP >> $__tmp_directory'tmpcleanup'
+	__get_value "$__config" CONFIG | sed 's/^\.\///' >> $__tmp_directory'tmpcleanup_config'
 
 done
 
 cat $__tmp_directory'tmpcleanup' | sort | uniq > $__tmp_directory'tmpcleanup2'
+
+cat $__tmp_directory'tmpcleanup_config' | sort | uniq > $__tmp_directory'tmpcleanup2_config'
 
 rm $__tmp_directory'tmpcleanup'
 
@@ -121,12 +128,24 @@ for __source in $(cat $__tmp_directory'tmpcleanup2'); do
 	echo '		<NAME>'"$__source"'</NAME>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 	echo '		<HASH>'"$(md5sum './src/'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 	echo '	</ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
-	
+
+done
+
+for __source in $(cat $__tmp_directory'tmpcleanup2_config'); do
+
+	echo '	<CONFIG>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+
+	echo '		<NAME>'"$__source"'</NAME>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '		<HASH>'"$(md5sum './'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '	</CONFIG>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+
 done
 
 echo '</HASHES>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 
 rm $__tmp_directory'tmpcleanup2'
+
+rm $__tmp_directory'tmpcleanup2_config'
 
 mv $__tmp_directory'tmpcleanuphashes2.xml' './hashes_new.xml'
 
@@ -135,6 +154,14 @@ if ! [ -a './hashes.xml' ]; then
 	echo '<HASHES>' > $__tmp_directory'tmpcleanuphashes2.xml'
 
 	for __range in $(__get_range './hashes_new.xml' ITEM); do
+		
+		__read_range './hashes_new.xml' "$__range" > /tmp/__read_range
+		__set_value '/tmp/__read_range' HASH ''
+		cat '/tmp/__read_range' >> $__tmp_directory'tmpcleanuphashes2.xml'
+		
+	done
+	
+	for __range in $(__get_range './hashes_new.xml' CONFIG); do
 		
 		__read_range './hashes_new.xml' "$__range" > /tmp/__read_range
 		__set_value '/tmp/__read_range' HASH ''
@@ -151,7 +178,7 @@ if ! [ -a './hashes.xml' ]; then
 fi
 
 if [ "$(cat './hashes.xml' | md5sum)" = "$(cat './hashes_new.xml' | md5sum)" ]; then
-	echo "No changes to source"
+	echo "No changes to sources"
 fi
 
 ###############################################################
@@ -162,6 +189,14 @@ for __hash_name in $(echo 'hashes
 hashes_new'); do
 
 	for __range in $(__get_range './'$__hash_name'.xml' ITEM); do
+		__read_range './'$__hash_name'.xml' "$__range" > $__tmp_directory"readrangetmp"
+		__name=$(__get_value "${__tmp_directory}readrangetmp" NAME)
+		__tmp_name=$(echo "${__tmp_directory}${__hash_name}/${__name}.xml")
+		mkdir -p "$(dirname "$__tmp_name")"
+		mv $__tmp_directory"readrangetmp" "$__tmp_name"
+	done
+	
+	for __range in $(__get_range './'$__hash_name'.xml' CONFIG); do
 		__read_range './'$__hash_name'.xml' "$__range" > $__tmp_directory"readrangetmp"
 		__name=$(__get_value "${__tmp_directory}readrangetmp" NAME)
 		__tmp_name=$(echo "${__tmp_directory}${__hash_name}/${__name}.xml")
@@ -230,6 +265,11 @@ for __config in $(cat "${__tmp_directory}listing"); do
 		fi
 		echo "$__config" >> "${__tmp_directory}to_render"
 	elif ! [ -z "$(__get_value "$__config" CLEANUP | grep -Fx "$(cat "${__tmp_directory}new_source2")")" ]; then
+		if [ -a "./$(__get_value "$__config" NAME)" ]; then
+			rm "./$(__get_value "$__config" NAME)"
+		fi
+		echo "$__config" >> "${__tmp_directory}to_render"
+	elif ! [ -z "$(__get_value "$__config" CONFIG | grep -Fx "$(cat "${__tmp_directory}changed_source2")")" ]; then
 		if [ -a "./$(__get_value "$__config" NAME)" ]; then
 			rm "./$(__get_value "$__config" NAME)"
 		fi
