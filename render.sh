@@ -100,11 +100,11 @@ echo '<HASHES>' > $__tmp_directory'tmpcleanuphashes2.xml'
 
 for __source in $(cat $__tmp_directory'tmpcleanup2'); do
 
-	echo '<ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '	<ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 
-	echo '<NAME>'"$__source"'</NAME>' >> $__tmp_directory'tmpcleanuphashes2.xml'
-	echo '<HASH>'"$(md5sum './src/'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
-	echo '</ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '		<NAME>'"$__source"'</NAME>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '		<HASH>'"$(md5sum './src/'$__source)"'</HASH>' >> $__tmp_directory'tmpcleanuphashes2.xml'
+	echo '	</ITEM>' >> $__tmp_directory'tmpcleanuphashes2.xml'
 	
 done
 

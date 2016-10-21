@@ -1,190 +1,190 @@
 <HASHES>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/bookshelf_overlay.svg</NAME>
-<HASH>fa3b8614a1f75aa8e9faf176d7521f67  ./src/assets/minecraft/textures/blocks/bookshelf_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/brick.svg</NAME>
-<HASH>49d0878fd921a0a1104246149535f2f1  ./src/assets/minecraft/textures/blocks/brick.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/cobblestone_overlay.svg</NAME>
-<HASH>e3b0e76e819928a084a729d478b76eae  ./src/assets/minecraft/textures/blocks/cobblestone_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/dirt.svg</NAME>
-<HASH>43873050ed6f23637e11aeb1fa33ccb8  ./src/assets/minecraft/textures/blocks/dirt.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/glass_pane_top.svg</NAME>
-<HASH>32635e7a84f8e2c6869c5b97e9ebe75e  ./src/assets/minecraft/textures/blocks/glass_pane_top.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/glass.svg</NAME>
-<HASH>081504f172932c7000d26d3af4ade14f  ./src/assets/minecraft/textures/blocks/glass.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/grass_side_overlay.svg</NAME>
-<HASH>aee394e74943383e48e022368c3f019f  ./src/assets/minecraft/textures/blocks/grass_side_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/log_birch_overlay.svg</NAME>
-<HASH>360f260d905c5a226d2d46f3e5761453  ./src/assets/minecraft/textures/blocks/log_birch_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/log_generic_overlay.svg</NAME>
-<HASH>a90d7cca3bf7f9134bff17ecbea1f64d  ./src/assets/minecraft/textures/blocks/log_generic_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/log_generic_top_1.svg</NAME>
-<HASH>7bcd2e8e87fe08acdf238c00fafae5bf  ./src/assets/minecraft/textures/blocks/log_generic_top_1.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/log_generic_top_2.svg</NAME>
-<HASH>84749396173f8e1cc3800104c3920bdb  ./src/assets/minecraft/textures/blocks/log_generic_top_2.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/log_jungle_overlay.svg</NAME>
-<HASH>2cb16abd361b001288aa287618b1e635  ./src/assets/minecraft/textures/blocks/log_jungle_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/planks_generic_overlay.svg</NAME>
-<HASH>7122fcf1296b3e45f0147634c7c07485  ./src/assets/minecraft/textures/blocks/planks_generic_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/stonebrick_overlay.svg</NAME>
-<HASH>158fea3396be2bd7b747c0d2dde51c34  ./src/assets/minecraft/textures/blocks/stonebrick_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/stone.svg</NAME>
-<HASH>9bf1938b413f9ea0dc358341d504114a  ./src/assets/minecraft/textures/blocks/stone.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>assets/minecraft/textures/blocks/wool_generic_overlay.svg</NAME>
-<HASH>6a9c3777042cb8843bab002ca0c1845a  ./src/assets/minecraft/textures/blocks/wool_generic_overlay.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_black.svg</NAME>
-<HASH>41b63d4f777189fadc356a16522c231e  ./src/colour_black.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_blue.svg</NAME>
-<HASH>6082fa8de1f1cc0f57af52fd91f93931  ./src/colour_blue.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_brown.svg</NAME>
-<HASH>9940572f4cbd9d8a2562a26cf31703a0  ./src/colour_brown.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_cyan.svg</NAME>
-<HASH>327618f3203f5a821bfb4720c479057a  ./src/colour_cyan.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_gray.svg</NAME>
-<HASH>d01ac964184e2b7f0ab50767b81968ae  ./src/colour_gray.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_green.svg</NAME>
-<HASH>8db674f47f2f2fc9885fa8a40bdd3376  ./src/colour_green.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_light_blue.svg</NAME>
-<HASH>92e49e070148704d205515ac60b2bea7  ./src/colour_light_blue.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_lime.svg</NAME>
-<HASH>ccb149717131572f556656413f61fec2  ./src/colour_lime.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_log_acacia.svg</NAME>
-<HASH>1d1aed474926021813a18959ade2ca53  ./src/colour_log_acacia.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_log_big_oak.svg</NAME>
-<HASH>3d743f9d232935afe66799b6c44fb2a3  ./src/colour_log_big_oak.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_log_birch.svg</NAME>
-<HASH>c1e15f88b8dcd1f614f0556b49c24b5e  ./src/colour_log_birch.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_log_jungle.svg</NAME>
-<HASH>1e87a8a4605bdc50eccbbc36a2437894  ./src/colour_log_jungle.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_log_oak.svg</NAME>
-<HASH>7a369008c46c8ef659226afddadd2cd6  ./src/colour_log_oak.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_log_spruce.svg</NAME>
-<HASH>1f0ed92fc9282fda44975ce98e546152  ./src/colour_log_spruce.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_magenta.svg</NAME>
-<HASH>fd2e30c0e11ab41ad5b6b59b6725ecfa  ./src/colour_magenta.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_orange.svg</NAME>
-<HASH>0c2b8e12b7c9991cadc1799deb4a231b  ./src/colour_orange.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_pink.svg</NAME>
-<HASH>74f091ef48c9a159d132f50f0e4de276  ./src/colour_pink.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_planks_acacia.svg</NAME>
-<HASH>828a489c5a21cd2bd6cbb147b0121c59  ./src/colour_planks_acacia.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_planks_big_oak.svg</NAME>
-<HASH>739dfa93b6fcfd800e63daa33bdd498c  ./src/colour_planks_big_oak.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_planks_birch.svg</NAME>
-<HASH>43a0ae5adb91ed73a5039cb0e3a447ad  ./src/colour_planks_birch.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_planks_jungle.svg</NAME>
-<HASH>7625cc5de2417239981c9f171bd7034c  ./src/colour_planks_jungle.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_planks_oak.svg</NAME>
-<HASH>794397a3990b541205f9c52ea101839f  ./src/colour_planks_oak.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_planks_spruce.svg</NAME>
-<HASH>53e4fe13f847750976dbd6549fc49a5a  ./src/colour_planks_spruce.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_purple.svg</NAME>
-<HASH>1cba317925947c907b52e79be52cf57a  ./src/colour_purple.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_red.svg</NAME>
-<HASH>a5c7cae50fbdaade7a2de4d9451798d0  ./src/colour_red.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_silver.svg</NAME>
-<HASH>3171db4c6298c1c7b5ea01bf5352000f  ./src/colour_silver.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_white.svg</NAME>
-<HASH>e9fc29caa1415b5a46275fd3179265c5  ./src/colour_white.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>colour_yellow.svg</NAME>
-<HASH>b979311e11882f8a5b0a721b3f8aad2f  ./src/colour_yellow.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>pack.svg</NAME>
-<HASH>6c730ae38abff7244e47003a9dd98810  ./src/pack.svg</HASH>
-</ITEM>
-<ITEM>
-<NAME>pack_template.mcmeta</NAME>
-<HASH>2c7f187636835366c6617439cb33e006  ./src/pack_template.mcmeta</HASH>
-</ITEM>
-<ITEM>
-<NAME>README_template.md</NAME>
-<HASH>146bb7126ad5acca9187ced1dfc69b99  ./src/README_template.md</HASH>
-</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/bookshelf_overlay.svg</NAME>
+		<HASH>fa3b8614a1f75aa8e9faf176d7521f67  ./src/assets/minecraft/textures/blocks/bookshelf_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/brick.svg</NAME>
+		<HASH>49d0878fd921a0a1104246149535f2f1  ./src/assets/minecraft/textures/blocks/brick.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/cobblestone_overlay.svg</NAME>
+		<HASH>e3b0e76e819928a084a729d478b76eae  ./src/assets/minecraft/textures/blocks/cobblestone_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/dirt.svg</NAME>
+		<HASH>43873050ed6f23637e11aeb1fa33ccb8  ./src/assets/minecraft/textures/blocks/dirt.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/glass_pane_top.svg</NAME>
+		<HASH>32635e7a84f8e2c6869c5b97e9ebe75e  ./src/assets/minecraft/textures/blocks/glass_pane_top.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/glass.svg</NAME>
+		<HASH>081504f172932c7000d26d3af4ade14f  ./src/assets/minecraft/textures/blocks/glass.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/grass_side_overlay.svg</NAME>
+		<HASH>aee394e74943383e48e022368c3f019f  ./src/assets/minecraft/textures/blocks/grass_side_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/log_birch_overlay.svg</NAME>
+		<HASH>360f260d905c5a226d2d46f3e5761453  ./src/assets/minecraft/textures/blocks/log_birch_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/log_generic_overlay.svg</NAME>
+		<HASH>a90d7cca3bf7f9134bff17ecbea1f64d  ./src/assets/minecraft/textures/blocks/log_generic_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/log_generic_top_1.svg</NAME>
+		<HASH>7bcd2e8e87fe08acdf238c00fafae5bf  ./src/assets/minecraft/textures/blocks/log_generic_top_1.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/log_generic_top_2.svg</NAME>
+		<HASH>84749396173f8e1cc3800104c3920bdb  ./src/assets/minecraft/textures/blocks/log_generic_top_2.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/log_jungle_overlay.svg</NAME>
+		<HASH>2cb16abd361b001288aa287618b1e635  ./src/assets/minecraft/textures/blocks/log_jungle_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/planks_generic_overlay.svg</NAME>
+		<HASH>7122fcf1296b3e45f0147634c7c07485  ./src/assets/minecraft/textures/blocks/planks_generic_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/stonebrick_overlay.svg</NAME>
+		<HASH>158fea3396be2bd7b747c0d2dde51c34  ./src/assets/minecraft/textures/blocks/stonebrick_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/stone.svg</NAME>
+		<HASH>9bf1938b413f9ea0dc358341d504114a  ./src/assets/minecraft/textures/blocks/stone.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/wool_generic_overlay.svg</NAME>
+		<HASH>6a9c3777042cb8843bab002ca0c1845a  ./src/assets/minecraft/textures/blocks/wool_generic_overlay.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_black.svg</NAME>
+		<HASH>e9925641a30667408ca46750e8dba1b7  ./src/colour_black.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_blue.svg</NAME>
+		<HASH>6082fa8de1f1cc0f57af52fd91f93931  ./src/colour_blue.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_brown.svg</NAME>
+		<HASH>9940572f4cbd9d8a2562a26cf31703a0  ./src/colour_brown.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_cyan.svg</NAME>
+		<HASH>327618f3203f5a821bfb4720c479057a  ./src/colour_cyan.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_gray.svg</NAME>
+		<HASH>d01ac964184e2b7f0ab50767b81968ae  ./src/colour_gray.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_green.svg</NAME>
+		<HASH>8db674f47f2f2fc9885fa8a40bdd3376  ./src/colour_green.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_light_blue.svg</NAME>
+		<HASH>92e49e070148704d205515ac60b2bea7  ./src/colour_light_blue.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_lime.svg</NAME>
+		<HASH>ccb149717131572f556656413f61fec2  ./src/colour_lime.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_log_acacia.svg</NAME>
+		<HASH>1d1aed474926021813a18959ade2ca53  ./src/colour_log_acacia.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_log_big_oak.svg</NAME>
+		<HASH>3d743f9d232935afe66799b6c44fb2a3  ./src/colour_log_big_oak.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_log_birch.svg</NAME>
+		<HASH>c1e15f88b8dcd1f614f0556b49c24b5e  ./src/colour_log_birch.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_log_jungle.svg</NAME>
+		<HASH>1e87a8a4605bdc50eccbbc36a2437894  ./src/colour_log_jungle.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_log_oak.svg</NAME>
+		<HASH>7a369008c46c8ef659226afddadd2cd6  ./src/colour_log_oak.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_log_spruce.svg</NAME>
+		<HASH>1f0ed92fc9282fda44975ce98e546152  ./src/colour_log_spruce.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_magenta.svg</NAME>
+		<HASH>fd2e30c0e11ab41ad5b6b59b6725ecfa  ./src/colour_magenta.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_orange.svg</NAME>
+		<HASH>0c2b8e12b7c9991cadc1799deb4a231b  ./src/colour_orange.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_pink.svg</NAME>
+		<HASH>74f091ef48c9a159d132f50f0e4de276  ./src/colour_pink.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_planks_acacia.svg</NAME>
+		<HASH>828a489c5a21cd2bd6cbb147b0121c59  ./src/colour_planks_acacia.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_planks_big_oak.svg</NAME>
+		<HASH>739dfa93b6fcfd800e63daa33bdd498c  ./src/colour_planks_big_oak.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_planks_birch.svg</NAME>
+		<HASH>43a0ae5adb91ed73a5039cb0e3a447ad  ./src/colour_planks_birch.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_planks_jungle.svg</NAME>
+		<HASH>7625cc5de2417239981c9f171bd7034c  ./src/colour_planks_jungle.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_planks_oak.svg</NAME>
+		<HASH>794397a3990b541205f9c52ea101839f  ./src/colour_planks_oak.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_planks_spruce.svg</NAME>
+		<HASH>53e4fe13f847750976dbd6549fc49a5a  ./src/colour_planks_spruce.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_purple.svg</NAME>
+		<HASH>1cba317925947c907b52e79be52cf57a  ./src/colour_purple.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_red.svg</NAME>
+		<HASH>a5c7cae50fbdaade7a2de4d9451798d0  ./src/colour_red.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_silver.svg</NAME>
+		<HASH>3171db4c6298c1c7b5ea01bf5352000f  ./src/colour_silver.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_white.svg</NAME>
+		<HASH>e9fc29caa1415b5a46275fd3179265c5  ./src/colour_white.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>colour_yellow.svg</NAME>
+		<HASH>b979311e11882f8a5b0a721b3f8aad2f  ./src/colour_yellow.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>pack.svg</NAME>
+		<HASH>6c730ae38abff7244e47003a9dd98810  ./src/pack.svg</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>pack_template.mcmeta</NAME>
+		<HASH>2c7f187636835366c6617439cb33e006  ./src/pack_template.mcmeta</HASH>
+	</ITEM>
+	<ITEM>
+		<NAME>README_template.md</NAME>
+		<HASH>146bb7126ad5acca9187ced1dfc69b99  ./src/README_template.md</HASH>
+	</ITEM>
 </HASHES>
