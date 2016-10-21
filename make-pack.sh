@@ -10,9 +10,9 @@ if [ -z "$1" ]; then
 
 		./render.sh "$__resolution"
 
-		./packer.sh $__name"-"$__resolution"px"
+		./packer.sh $__name"-"$__resolution"px_cleaned"
 
-		rm -r $__name"-"$__resolution"px/"
+		rm -r $__name"-"$__resolution"px_cleaned/"
 
 	done
 
@@ -22,9 +22,9 @@ else
 
 	./render.sh "$__resolution"
 
-	./packer.sh $__name"-"$__resolution"px"
+	./packer.sh $__name"-"$__resolution"px_cleaned"
 
-	rm -r $__name"-"$__resolution"px/"
+	rm -r $__name"-"$__resolution"px_cleaned/"
 
 fi
 
