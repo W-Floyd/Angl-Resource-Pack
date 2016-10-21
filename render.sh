@@ -135,17 +135,12 @@ if ! [ -a './hashes.xml' ]; then
 fi
 
 if [ "$(cat './hashes.xml' | md5sum)" = "$(cat './hashes_new.xml' | md5sum)" ]; then
-	echo "No changes"
-	__no_changes=1
-else
-	__no_changes=0
+	echo "No changes to source"
 fi
 
 ###############################################################
 # Split hashes into separate .xml records
 ###############################################################
-
-if [ "$__no_changes" = 0 ]; then
 
 for __hash_name in $(echo 'hashes
 hashes_new'); do
@@ -232,7 +227,11 @@ for __config in $(cat "${__tmp_directory}listing"); do
 		fi
 		echo "$__config" >> "${__tmp_directory}to_render"
 	else
-		__get_value "${__config}" NAME >> "${__tmp_directory}rendered"
+		if [ -a "$(echo "$(__get_value "$__config" NAME)")" ]; then
+			__get_value "${__config}" NAME >> "${__tmp_directory}rendered"
+		else
+			echo "$__config" >> "${__tmp_directory}to_render"
+		fi
 	fi
 done
 
@@ -286,8 +285,6 @@ done
 rm -r ./conf/
 
 cd ../
-
-fi
 
 if [ -d "$__directory"_cleaned ]; then
 	rm -r "$(echo "$__directory" | sed 's/\/$//')_cleaned"

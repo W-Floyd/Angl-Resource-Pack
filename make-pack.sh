@@ -2,17 +2,23 @@
 
 __name="Angl"
 
+__pack_and_render () {
+./render.sh "$2"
+
+./packer.sh $1"-"$2"px_cleaned"
+
+rm -r $1"-"$2"px_cleaned/"
+
+mv $1"-"$2"px_cleaned.zip" $1"-"$2"px.zip"
+}
+
 if [ -z "$1" ]; then
 
 	for __size in $(seq 5 10); do
 
 		__resolution=$(echo "2^"$__size | bc)
 
-		./render.sh "$__resolution"
-
-		./packer.sh $__name"-"$__resolution"px_cleaned"
-
-		rm -r $__name"-"$__resolution"px_cleaned/"
+		__pack_and_render "$__name" "$__resolution"
 
 	done
 
@@ -20,11 +26,7 @@ else
 
 	__resolution="$1"
 
-	./render.sh "$__resolution"
-
-	./packer.sh $__name"-"$__resolution"px_cleaned"
-
-	rm -r $__name"-"$__resolution"px_cleaned/"
+	__pack_and_render "$__name" "$__resolution"
 
 fi
 

@@ -735,7 +735,7 @@
 		<CLEANUP>assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_black.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_black.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
@@ -746,7 +746,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_blue.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_blue.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
@@ -757,7 +757,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_brown.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_brown.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
@@ -768,7 +768,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_cyan.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_cyan.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
@@ -779,7 +779,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_gray.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_gray.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
@@ -790,7 +790,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_green.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_green.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
@@ -801,7 +801,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_light_blue.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_light_blue.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
@@ -812,7 +812,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_lime.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_lime.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
@@ -823,7 +823,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_magenta.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_magenta.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
@@ -834,7 +834,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_orange.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_orange.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
@@ -845,7 +845,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_pink.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_pink.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
@@ -856,7 +856,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_purple.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_purple.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
@@ -867,7 +867,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_red.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_red.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
@@ -878,7 +878,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_silver.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_silver.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
@@ -889,7 +889,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_white.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_white.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
@@ -900,7 +900,7 @@
 		assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/glass_yellow.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/glass_colored_yellow.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
