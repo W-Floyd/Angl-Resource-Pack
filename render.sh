@@ -83,6 +83,22 @@ find "$(pwd)" | grep '\.xml' > ../listing
 cd "$__tmppwd"
 
 ###############################################################
+# Set up working space
+###############################################################
+
+if ! [ -d "$__directory" ]; then
+	mkdir "$__directory"
+else
+	if [ -a './'"$__directory"'hashes.xml' ]; then
+		mv './'"$__directory"'hashes.xml' './hashes.xml'
+	fi
+fi
+
+cp -r src/* "$__directory"
+
+cp -r conf/ './'"$__directory"
+
+###############################################################
 # Record hashes in .xml record
 ###############################################################
 
@@ -198,16 +214,8 @@ cat "${__tmp_directory}new_source" | sed 's/^\.\///' > "${__tmp_directory}new_so
 cat "${__tmp_directory}unchanged_source" | sed 's/^\.\///' > "${__tmp_directory}unchanged_source2"
 
 ###############################################################
-# Set up working space
+# Getting to the right place
 ###############################################################
-
-if ! [ -d "$__directory" ]; then
-	mkdir "$__directory"
-fi
-
-cp -r src/* "$__directory"
-
-cp -r conf/ './'"$__directory"
 
 cd "$__directory"
 
@@ -318,6 +326,8 @@ rm -r "$__tmp_directory"
 rm 'hashes.xml'
 
 mv 'hashes_new.xml' 'hashes.xml'
+
+mv 'hashes.xml' "$__directory"'hashes.xml'
 
 __end_time=$(date +%s)
 
