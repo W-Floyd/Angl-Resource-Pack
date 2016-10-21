@@ -2,7 +2,7 @@
 
 cd ./assets/minecraft/textures/blocks/
 
-__fade stonebrick_overlay.png stonebrick_overlay_.png 0.375
+__fade stonebrick_overlay.png stonebrick_overlay_.png 0.25
 
 __overlay stone.png stonebrick_overlay_.png stonebrick_.png
 

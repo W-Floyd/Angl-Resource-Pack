@@ -269,11 +269,19 @@ for __config in $(cat "${__tmp_directory}listing"); do
 			rm "./$(__get_value "$__config" NAME)"
 		fi
 		echo "$__config" >> "${__tmp_directory}to_render"
-	elif ! [ -z "$(__get_value "$__config" CONFIG | grep -Fx "$(cat "${__tmp_directory}changed_source2")")" ]; then
+	elif ! [ -z "$(__get_value "$__config" CONFIG | grep -Fx "$(cat "${__tmp_directory}changed_source")")" ]; then
 		if [ -a "./$(__get_value "$__config" NAME)" ]; then
 			rm "./$(__get_value "$__config" NAME)"
 		fi
 		echo "$__config" >> "${__tmp_directory}to_render"
+		for __config2 in $(cat "${__tmp_directory}listing"); do
+			if ! [ -z "$(__get_value "$__config2" DEPENDS | grep -Fx $(__get_value "$__config" NAME))" ]; then
+				if [ -a "./$(__get_value "$__config2" NAME)" ]; then
+					rm "./$(__get_value "$__config2" NAME)"
+				fi
+				echo "$__config2" >> "${__tmp_directory}to_render"
+			fi
+		done
 	else
 		if [ -a "$(echo "$(__get_value "$__config" NAME)")" ]; then
 			__get_value "${__config}" NAME >> "${__tmp_directory}rendered"
