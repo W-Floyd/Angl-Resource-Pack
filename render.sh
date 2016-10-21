@@ -234,7 +234,7 @@ for __config in $(cat "${__tmp_directory}listing"); do
 		fi
 		echo "$__config" >> "${__tmp_directory}to_render"
 	else
-		echo "$__config" >> "${__tmp_directory}rendered"
+		__get_value "${__config}" NAME >> "${__tmp_directory}rendered"
 	fi
 done
 
@@ -256,7 +256,7 @@ else
 	__get_value $__config DEPENDS | sed 's/^$//' > $__tmp_directory'tmpdeps'
 	
 	if [ -a $__tmp_directory'tmpdeps2' ]; then
-		rm $__tmp_directory'tmpdeps2'
+		echo '' > $__tmp_directory'tmpdeps2'
 	fi
 	
 	grep -Fxv -f $__tmp_directory'rendered' $__tmp_directory'tmpdeps' > $__tmp_directory'tmpdeps2'
@@ -271,7 +271,7 @@ else
 	
 	else
 	
-		echo "$__config" >> $__tmp_directory'to_render'
+		echo "${__config}" >> $__tmp_directory'to_render'
 	
 	fi
 	
