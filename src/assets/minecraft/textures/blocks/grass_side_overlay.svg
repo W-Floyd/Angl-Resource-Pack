@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="grass_side_overlay_main.svg">
+   sodipodi:docname="grass_side_overlay.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -35,7 +35,7 @@
        inkscape:collect="always"
        id="linearGradient4146">
       <stop
-         style="stop-color:#338000;stop-opacity:1"
+         style="stop-color:#58873e;stop-opacity:1"
          offset="0"
          id="stop4148" />
       <stop
@@ -207,9 +207,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="-76.416223"
-     inkscape:cy="60.943169"
+     inkscape:zoom="11.313708"
+     inkscape:cx="-1.0544824"
+     inkscape:cy="89.564217"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
