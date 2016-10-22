@@ -1262,6 +1262,15 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>assets/minecraft/textures/blocks/stonebrick_cracked_overlay.svg</CLEANUP>
 	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/grass_top.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>grass_top</OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/grass_top.svg</CLEANUP>
+	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>
