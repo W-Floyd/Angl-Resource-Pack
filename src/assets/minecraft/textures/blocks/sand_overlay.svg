@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="sand.svg">
+   sodipodi:docname="sand_overlay.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -732,7 +732,8 @@
        y1="984.36218"
        x2="96"
        y2="984.36218"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,-10)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5177"
@@ -831,7 +832,8 @@
        y1="976.36218"
        x2="104"
        y2="976.36218"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-4,0)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5177"
@@ -894,7 +896,8 @@
        y1="996.36218"
        x2="108"
        y2="996.36218"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(12,-10)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5177"
@@ -1029,7 +1032,8 @@
        y1="970.3623"
        x2="93"
        y2="970.3623"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-6,0)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5177"
@@ -1092,7 +1096,8 @@
        y1="940.3623"
        x2="116"
        y2="940.3623"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-4,0)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5177"
@@ -1128,7 +1133,8 @@
        y1="952.36218"
        x2="72"
        y2="952.36218"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-2,0)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5177"
@@ -1155,7 +1161,8 @@
        y1="1008.3622"
        x2="100.00015"
        y2="1008.3622"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-4,6)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5177"
@@ -1471,10 +1478,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="53.263606"
+     inkscape:cx="55.406463"
      inkscape:cy="44.417924"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:window-width="1920"
@@ -1506,26 +1513,11 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="base"
-     style="display:inline">
-    <rect
-       transform="translate(0,-924.36216)"
-       style="display:inline;opacity:1;fill:#d0c27c;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4134"
-       width="128"
-       height="128"
-       x="0"
-       y="924.36218" />
-  </g>
-  <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-924.36216)"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <path
        style="opacity:0.03299997;fill:url(#linearGradient4859);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 8,932.36216 8,-8 8,8 z"
@@ -1913,7 +1905,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="opacity:0.03299997;fill:url(#linearGradient5013);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 64,976.36216 16,16 16,-16 z"
+       d="m 64,966.36216 16,16 16,-16 z"
        id="path5055-86"
        inkscape:connector-curvature="0" />
     <path
@@ -1968,7 +1960,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="opacity:0.03299997;fill:url(#linearGradient5035);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 104,960.36216 -16,16 16,16 z"
+       d="m 100,960.36216 -16,16 16,16 z"
        id="path5055-86-68-4"
        inkscape:connector-curvature="0" />
     <path
@@ -2003,7 +1995,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="opacity:0.03299997;fill:url(#linearGradient5049);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 108,980.36216 -16,16 16,16.00004 z"
+       d="m 120,970.36216 -16,16 16,16.00004 z"
        id="path5055-86-68-4-67"
        inkscape:connector-curvature="0" />
     <path
@@ -2078,7 +2070,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;opacity:0.03299997;fill:url(#linearGradient5079);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 29,986.36247 32,-32.00031 32,32.00031 z"
+       d="m 23,986.36247 32,-32.00031 32,32.00031 z"
        id="path5055-2-5"
        inkscape:connector-curvature="0" />
     <path
@@ -2113,7 +2105,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;opacity:0.03299997;fill:url(#linearGradient5093);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 52,956.36247 32,-32.00031 32,32.00031 z"
+       d="m 48,956.36247 32,-32.00031 32,32.00031 z"
        id="path5055-2-5-9"
        inkscape:connector-curvature="0" />
     <path
@@ -2133,7 +2125,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;opacity:0.03299997;fill:url(#linearGradient5101);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 72,936.36201 40,968.36231 8,936.36201 Z"
+       d="M 70,936.36201 38,968.36231 6,936.36201 Z"
        id="path5055-2-5-12-6"
        inkscape:connector-curvature="0" />
     <path
@@ -2148,7 +2140,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;opacity:0.03299997;fill:url(#linearGradient5107);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 100.00015,1040.3622 -32.0003,-32.0001 32.0003,-31.99996 z"
+       d="m 96.00015,1046.3622 -32.0003,-32.0001 32.0003,-31.99996 z"
        id="path5055-2-5-12-3-9"
        inkscape:connector-curvature="0" />
     <path

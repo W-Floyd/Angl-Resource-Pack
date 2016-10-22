@@ -1301,13 +1301,53 @@
 		<CLEANUP>assets/minecraft/textures/blocks/tallgrass.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-		<NAME>assets/minecraft/textures/blocks/sand.png</NAME>
+		<NAME>assets/minecraft/textures/blocks/sand_overlay.png</NAME>
 		<CONFIG>./conf/basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>sand</OPTIONS>
-		<KEEP>YES</KEEP>
+		<OPTIONS>sand_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>assets/minecraft/textures/blocks/sand.svg</CLEANUP>
+		<CLEANUP>assets/minecraft/textures/blocks/sand_overlay.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/sand_colour.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>sand_colour</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/sand_colour.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/sand.png</NAME>
+		<CONFIG>./conf/sand.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>assets/minecraft/textures/blocks/sand_colour.png
+		assets/minecraft/textures/blocks/sand_overlay.png</DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/sand_colour.svg
+		assets/minecraft/textures/blocks/sand_overlay.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/red_sand_colour.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>red_sand_colour</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/red_sand_colour.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/red_sand.png</NAME>
+		<CONFIG>./conf/red_sand.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>assets/minecraft/textures/blocks/red_sand_colour.png
+		assets/minecraft/textures/blocks/sand_overlay.png</DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/red_sand_colour.svg
+		assets/minecraft/textures/blocks/sand_overlay.svg</CLEANUP>
 	</ITEM>
 </RENDER>
 <OTHER>
