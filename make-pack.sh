@@ -14,7 +14,7 @@ mv $1"-"$2"px_cleaned.zip" $1"-"$2"px.zip"
 
 if [ -z "$1" ]; then
 
-	for __size in $(seq 5 10); do
+	for __size in $(seq 5 9); do
 
 		__resolution=$(echo "2^"$__size | bc)
 

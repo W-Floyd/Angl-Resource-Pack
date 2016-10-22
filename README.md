@@ -13,7 +13,7 @@ To make a Minecraft ready zip file, run
 
 	./make-pack.sh <resolution>
 	
-If no resolution is specified, sizes 32x32, 64x64, 128x128, 256x256, 512x512 and 1024x1024 will be packaged up
+If no resolution is specified, sizes 32x32, 64x64, 128x128, 256x256 and 512x512 will be packaged up
 
 To only render, and not zip, run
 
@@ -45,5 +45,7 @@ Also, documentation could be better - I may eventually clean things up.
 ###Known issues
 
 At one point I had to compile a newer version of Imagemagick from source to make some compositing work. If you get odd results, that may the issue.
+
+Size 1024 is known to cause errors due to large images.
 
 ***
