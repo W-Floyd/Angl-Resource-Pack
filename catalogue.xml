@@ -1291,6 +1291,24 @@
 		<CLEANUP>colour_planks_oak.svg
 		assets/minecraft/textures/blocks/ladder_overlay.svg</CLEANUP>
 	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/tallgrass.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>tallgrass</OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/tallgrass.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/sand.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>sand</OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/sand.svg</CLEANUP>
+	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>
