@@ -1271,6 +1271,26 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>assets/minecraft/textures/blocks/grass_top.svg</CLEANUP>
 	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/ladder_overlay.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>ladder_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/ladder_overlay.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/ladder.png</NAME>
+		<CONFIG>./conf/ladder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>colour_planks_oak.png
+		assets/minecraft/textures/blocks/ladder_overlay.png</DEPENDS>
+		<CLEANUP>colour_planks_oak.svg
+		assets/minecraft/textures/blocks/ladder_overlay.svg</CLEANUP>
+	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>
