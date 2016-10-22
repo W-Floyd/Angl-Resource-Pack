@@ -1,6 +1,6 @@
 # Angl-Resource-Pack
 ##An open-source vector based Minecraft resource pack.
-### This is a WIP, *many* textures have yet to be added, but the script system is done
+### This is a WIP, *many* textures have yet to be added, but the script system is (mostly?) done
 ***
 
 If you just want to download the resource pack, look here: https://github.com/W-Floyd/Angl-Resource-Pack-Export
@@ -19,7 +19,13 @@ To only render, and not zip, run
 
 	./render.sh <resolution>
 	
+This is not recommended
+	
 If no resolution is specified, the pack will be rendered at size 128x128
+
+***
+
+If things don't render properly after modifying some of the catalogue stuff, just delete the Angle-*px folders and re-render.
 
 ***
 

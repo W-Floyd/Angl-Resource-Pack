@@ -15,22 +15,10 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
-   sodipodi:docname="grass_side.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="grass_side_overlay_main.svg">
   <defs
      id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4181">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0"
-         id="stop4183" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0;"
-         offset="1"
-         id="stop4185" />
-    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient4428">
@@ -64,19 +52,6 @@
        x2="8"
        y2="976.36218"
        gradientUnits="userSpaceOnUse" />
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter4422"
-       x="-0.1265625"
-       width="1.253125"
-       y="-0.31153846"
-       height="1.6230769">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="6.75"
-         id="feGaussianBlur4424" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4428"
@@ -224,15 +199,6 @@
        x2="86"
        y2="942.36218"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4181"
-       id="linearGradient4187"
-       x1="0"
-       y1="0"
-       x2="0"
-       y2="128"
-       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -241,17 +207,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="54.129894"
-     inkscape:cy="70.031828"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="-76.416223"
+     inkscape:cy="60.943169"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="true"
      units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="707"
+     inkscape:window-width="3840"
+     inkscape:window-height="2018"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="86"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -273,29 +239,9 @@
   </metadata>
   <g
      inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="Gradient"
-     style="opacity:0.184">
-    <rect
-       style="opacity:0.15;fill:url(#linearGradient4187);fill-opacity:1;stroke:none;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4179"
-       width="128"
-       height="128"
-       x="0"
-       y="0" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Grass"
-     style="display:inline"
-     sodipodi:insensitive="true">
-    <path
-       transform="translate(0,-924.36216)"
-       inkscape:connector-curvature="0"
-       id="path4288"
-       d="m 0,928.36216 0,40 8,8 20,-20 8,8 4,-4 8,8 4,-4 4,4 12,-12 20,20 4,-4 8,8 12,-12 8,8 8,-8 0,-40 z"
-       style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4422)" />
+     style="display:inline">
     <path
        transform="translate(0,-924.36216)"
        style="fill:url(#linearGradient4152);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -365,11 +311,11 @@
        id="path4514"
        inkscape:connector-curvature="0" />
     <path
-       transform="translate(0,-924.36216)"
        inkscape:connector-curvature="0"
        id="path4524"
        d="m 128,964.36216 c 40,-40 40,-40 40,-40 l -80,0 z"
-       style="opacity:0.15;fill:url(#linearGradient4526);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="opacity:0.15;fill:url(#linearGradient4526);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(0,-924.36216)" />
     <path
        transform="translate(0,-924.36216)"
        style="opacity:0.15;fill:url(#linearGradient4536);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

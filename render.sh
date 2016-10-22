@@ -213,6 +213,18 @@ hashes_new'); do
 done
 
 ###############################################################
+# Make sure hash .xml records exist for new files
+###############################################################
+
+for __hash in $(cat "${__tmp_directory}hashes_new_listing"); do
+	if ! [ -a "${__tmp_directory}hashes/${__hash}" ]; then
+		mkdir -p "$(dirname "${__tmp_directory}hashes/${__hash}")"
+		cp "${__tmp_directory}hashes_new/${__hash}" "${__tmp_directory}hashes/${__hash}"
+		__set_value "${__tmp_directory}hashes/${__hash}" HASH ''
+	fi
+done
+
+###############################################################
 # List source files that have been changed, added or removed
 ###############################################################
 
