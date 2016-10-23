@@ -394,7 +394,7 @@ mv 'hashes.xml' "$__directory"'hashes.xml'
 __end_time=$(date +%s)
 
 echo
-echo "Rendered in $((__end_time-__start_time)) seconds"
+echo "Rendered ${__resolution}px in $((__end_time-__start_time)) seconds"
 echo
 
 exit
