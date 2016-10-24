@@ -30,6 +30,8 @@ else
 	mkdir $__tmp_directory
 fi
 
+echo "Rendering ${__resolution}px"
+
 ###############################################################
 # Set up functions
 ###############################################################
@@ -392,7 +394,7 @@ mv 'hashes.xml' "$__directory"'hashes.xml'
 __end_time=$(date +%s)
 
 echo
-echo
 echo "Rendered in $((__end_time-__start_time)) seconds"
+echo
 
 exit
