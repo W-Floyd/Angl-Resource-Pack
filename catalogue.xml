@@ -1349,6 +1349,26 @@
 		<CLEANUP>assets/minecraft/textures/blocks/red_sand_colour.svg
 		assets/minecraft/textures/blocks/sand_overlay.svg</CLEANUP>
 	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/coal_ore_overlay.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>coal_ore_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/coal_ore_overlay.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/coal_ore.png</NAME>
+		<CONFIG>./conf/coal_ore.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>assets/minecraft/textures/blocks/stone.png
+		assets/minecraft/textures/blocks/coal_ore_overlay.png</DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/stone.svg
+		assets/minecraft/textures/blocks/coal_ore_overlay.svg</CLEANUP>
+	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>
