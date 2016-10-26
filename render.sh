@@ -16,9 +16,16 @@ __tmp_directory='/tmp/texpack/'
 __catalogue='catalogue.xml'
 
 if ! [ -z "$1" ]; then
-	__resolution="$1"
+	if [ "$1" = -p ]; then
+		__prehashed=1
+		if ! [ -z "$2" ]; then
+			__resolution="$1"
+		else
+			__resolution=128
+		fi
 else
 	__resolution=128
+	__prehashed=0
 fi
 
 __directory=$(echo "${__pack_name}-${__resolution}px/")
@@ -105,6 +112,12 @@ fi
 cp -r conf/ './'"$__directory"
 
 ###############################################################
+# Hash sources unless told not to
+###############################################################
+
+if [ "$__prehashed" = 0 ]; then
+
+###############################################################
 # Record hashes in .xml record
 ###############################################################
 
@@ -181,6 +194,14 @@ fi
 
 if [ "$(cat './hashes.xml' | md5sum)" = "$(cat './hashes_new.xml' | md5sum)" ]; then
 	echo "No changes to sources"
+fi
+
+###############################################################
+# If told not to
+###############################################################
+
+else
+	cp './hashes.xml' './hashes_new.xml'
 fi
 
 ###############################################################
