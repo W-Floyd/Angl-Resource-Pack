@@ -4,7 +4,7 @@ __name="Angl"
 
 __pack_and_render () {
 
-if [ -z "$3" ]; then
+if ! [ -z "$3" ]; then
 
 	./render.sh "${3}"''"${2}"
 
@@ -27,9 +27,9 @@ if [ -z "$1" ]; then
 	
 	for __size in $(echo "$__seq" | head -n 1); do
 	
-	__resolution=$(echo "2^"$__size | bc)
+		__resolution=$(echo "2^"$__size | bc)
 	
-	__pack_and_render "$__name" "$__resolution" "-f "
+		__pack_and_render "$__name" "$__resolution" "-f "
 	
 	done
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x
 ###############################################################
 # Will render the resource pack at the given resolution
 # Or, if no inputs are given, 128px
@@ -36,7 +36,6 @@ if ! [ -z "$1" ]; then
 	fi
 else
 	__resolution=128
-	__preprocessed=0
 fi
 
 __directory=$(echo "${__pack_name}-${__resolution}px/")
@@ -434,6 +433,8 @@ cp "$__tmp_directory"hashes_new_listing "$__verytemporary"hashes_new_listing
 rm -r "$__tmp_directory"
 
 cp -r "$__verytemporary" "$__tmp_directory"
+
+rm -r "$__verytemporary"
 
 fi
 
