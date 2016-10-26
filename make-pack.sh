@@ -3,7 +3,16 @@
 __name="Angl"
 
 __pack_and_render () {
-./render.sh "${3}${2}"
+
+if [ -z "$3" ]; then
+
+	./render.sh "${3}"''"${2}"
+
+else
+	
+	./render.sh -p "${2}"
+	
+fi
 
 ./packer.sh $1"-"$2"px_cleaned"
 
@@ -20,7 +29,7 @@ if [ -z "$1" ]; then
 	
 	__resolution=$(echo "2^"$__size | bc)
 	
-	__pack_and_render "$__name" "$__resolution"
+	__pack_and_render "$__name" "$__resolution" "-f "
 	
 	done
 
@@ -28,13 +37,11 @@ if [ -z "$1" ]; then
 
 		__resolution=$(echo "2^"$__size | bc)
 		
-		cp "./${__name}-$(echo '2^'$(echo "$__seq" | head -n 1) | bc)/hashes.xml" './hashes.xml'
+		cp "./${__name}-$(echo '2^'$(echo "$__seq" | head -n 1) | bc)px/hashes.xml" './hashes_new.xml'
 		
-		__pack_and_render -p "$__name" "$__resolution"
+		__pack_and_render "$__name" "$__resolution" "-p "
 
 	done
-	
-	rm 'hashes.xml'
 
 else
 

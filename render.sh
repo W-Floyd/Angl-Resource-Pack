@@ -15,17 +15,28 @@ __tmp_directory='/tmp/texpack/'
 
 __catalogue='catalogue.xml'
 
+__preprocessed=0
+__savework=0
+
 if ! [ -z "$1" ]; then
-	if [ "$1" = -p ]; then
-		__prehashed=1
-		if ! [ -z "$2" ]; then
-			__resolution="$1"
-		else
-			__resolution=128
-		fi
+	if [ "$1" = '-p' ]; then
+		__preprocessed=1
+		__savework=1
+		
+	elif [ "$1" = '-f' ]; then
+		__savework=1
+	else
+		__resolution="$1"
+	fi
+	
+	if ! [ -z "$2" ]; then
+		__resolution="$2"
+	else
+		__resolution=128
+	fi
 else
 	__resolution=128
-	__prehashed=0
+	__preprocessed=0
 fi
 
 __directory=$(echo "${__pack_name}-${__resolution}px/")
@@ -70,8 +81,10 @@ rm $(basename "$__config_script")
 }
 
 ###############################################################
-# Split all files into their own .xml records
+# Split all files into their own .xml records, unless told no
 ###############################################################
+
+if [ "$__preprocessed" = 0 ]; then
 
 for __range in $(__get_range $__catalogue ITEM); do
 	__read_range "$__catalogue" "$__range" > $__tmp_directory"readrangetmp"
@@ -90,6 +103,8 @@ cd $__tmp_directory'xml/'
 find "$(pwd)" | grep '\.xml' > ../listing
 
 cd "$__tmppwd"
+
+fi
 
 ###############################################################
 # Set up working space
@@ -115,7 +130,7 @@ cp -r conf/ './'"$__directory"
 # Hash sources unless told not to
 ###############################################################
 
-if [ "$__prehashed" = 0 ]; then
+if [ "$__preprocessed" = 0 ]; then
 
 ###############################################################
 # Record hashes in .xml record
@@ -197,19 +212,13 @@ if [ "$(cat './hashes.xml' | md5sum)" = "$(cat './hashes_new.xml' | md5sum)" ]; 
 fi
 
 ###############################################################
-# If told not to
-###############################################################
-
-else
-	cp './hashes.xml' './hashes_new.xml'
-fi
-
-###############################################################
 # Split hashes into separate .xml records
 ###############################################################
 
 for __hash_name in $(echo 'hashes
 hashes_new'); do
+
+	if ! [ "$__preprocessed" = 1 -a "$__hash_name" = 'hashes_new' ]; then
 
 	for __range in $(__get_range './'$__hash_name'.xml' ITEM); do
 		__read_range './'$__hash_name'.xml' "$__range" > $__tmp_directory"readrangetmp"
@@ -232,8 +241,12 @@ hashes_new'); do
 	find | grep '\.xml' | sed 's/^\.\///' > "${__tmp_directory}${__hash_name}_listing"
 	
 	cd "$__tmppwd"
+	
+	fi
 
 done
+
+fi
 
 ###############################################################
 # Make sure hash .xml records exist for new files
@@ -404,7 +417,25 @@ done
 
 cd ../
 
+if [ "$__savework" = 0 ]; then
+
 rm -r "$__tmp_directory"
+
+else
+
+__verytemporary="$(dirname $__tmp_directory)/__verytemporary/"
+
+mkdir "$__verytemporary"
+
+cp "$__tmp_directory"listing "$__verytemporary"listing
+cp -r "$__tmp_directory"hashes_new/ "$__verytemporary"
+cp "$__tmp_directory"hashes_new_listing "$__verytemporary"hashes_new_listing
+
+rm -r "$__tmp_directory"
+
+cp -r "$__verytemporary" "$__tmp_directory"
+
+fi
 
 rm 'hashes.xml'
 
