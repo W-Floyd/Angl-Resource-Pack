@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+
 ###############################################################
 # Will render the resource pack at the given resolution
 # Or, if no inputs are given, 128px
