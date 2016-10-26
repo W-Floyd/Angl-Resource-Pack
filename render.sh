@@ -22,17 +22,13 @@ if ! [ -z "$1" ]; then
 	if [ "$1" = '-p' ]; then
 		__preprocessed=1
 		__savework=1
+		__resolution="$2"
 		
 	elif [ "$1" = '-f' ]; then
 		__savework=1
-	else
-		__resolution="$1"
-	fi
-	
-	if ! [ -z "$2" ]; then
 		__resolution="$2"
 	else
-		__resolution=128
+		__resolution="$1"
 	fi
 else
 	__resolution=128
