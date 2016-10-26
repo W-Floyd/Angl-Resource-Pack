@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# extract.sh <SIZE> [-p] <file1> <file2> <file3>...
 
 __name="Angl"
 

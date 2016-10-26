@@ -8,7 +8,7 @@ if ! [ -z "$1" ]; then
 	if [ "$1" = '-p' ]; then
 		__pre_rendered="1"
 		if ! [ -z "$2" ]; then
-			__resolution="$1"
+			__resolution="$2"
 		else
 			__resolution="128"
 		fi
@@ -31,7 +31,7 @@ cd ../
 if [ "$__pre_rendered" = "0" ]; then
 	./extract.sh "${__resolution}" "${__texture1}" "${__texture2}"
 else
-	./extract.sh "${__resolution}" -p "${__texture1}" "${__texture2}"
+	./extract.sh "${__resolution}" '-p' "${__texture1}" "${__texture2}"
 fi
 
 mv "${__texture1_name}" "./checks/${__texture1_name}"
