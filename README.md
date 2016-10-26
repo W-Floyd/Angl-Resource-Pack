@@ -7,6 +7,10 @@ If you just want to download the resource pack, look here: https://github.com/W-
 
 ***
 
+The whole render system may be broken at any given time, especially if I have been commiting recently. Unless you see me adding textures and not un-breaking my scripts, proceed with extreme caution.
+
+***
+
 ###Usage
 
 To make a Minecraft ready zip file, run
@@ -15,17 +19,19 @@ To make a Minecraft ready zip file, run
 	
 If no resolution is specified, sizes 32x32, 64x64, 128x128, 256x256 and 512x512 will be packaged up
 
+***
+
 To only render, and not zip, run
 
 	./render.sh <resolution>
 	
-This is not recommended
+This is not recommended, please use make-pack.sh, it cleans up after itself.
 	
 If no resolution is specified, the pack will be rendered at size 128x128
 
 ***
 
-If things don't render properly after modifying some of the catalogue stuff, just delete the Angle-*px folders and re-render.
+If things don't render properly after modifying some of the catalogue stuff, just delete the Angle-*px folders and re-render. This is a known issue, but my XML parsing system is slow, stupid, and already more bloated than it should be. Adding checks to the catalogue would just make it worse.
 
 ***
 
@@ -42,10 +48,13 @@ Also, documentation could be better - I may eventually clean things up.
 
 ***
 
+If you wish to add textures, use the included template.svg  
+It includes preset grids and canvas size to keep you on track.
+
 ###Known issues
 
-At one point I had to compile a newer version of Imagemagick from source to make some compositing work. If you get odd results, that may the issue.
+At one point I had to compile a newer version of Imagemagick from source to make some compositing work. If you get odd results, that may be the issue. This *seems* to have been solved by setting some options on all image operations.
 
-Size 1024 is known to cause errors due to large images.
+Size 1024 is known to cause errors due to large images, and so 512px is the largest default size. It does look damn good though.
 
 ***
