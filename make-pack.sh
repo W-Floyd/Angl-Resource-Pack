@@ -47,6 +47,8 @@ if [ -z "$1" ]; then
 		__pack_and_render "$__name" "$__resolution" "-p"
 
 	done
+	
+	rm -r /tmp/texpack/
 
 else
 
