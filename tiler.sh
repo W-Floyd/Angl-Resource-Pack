@@ -16,12 +16,18 @@ __image="${2}"
 
 cd "${__name}-${1}px_cleaned"
 
-__imgseq=$(for __tile in $(seq 1 "$(echo "$(echo ${3} | sed 's/x/\*/')" | bc)"); do echo -n "./${__image} "; done)
-montage -geometry +0+0 -tile ${3} ${__imgseq} "./${__image}_montage" 2> /dev/null
-montage -geometry +1+1 -tile ${3} ${__imgseq} "./${__image}_montage_" 2> /dev/null
+__tile () {
 
-mv "./${__image}_montage" "../$(basename ./$(__mext "${__image}")_montage.png)"
-mv "./${__image}_montage_" "../$(basename ./$(__mext "${__image}")_montage_.png)"
+__imgseq=$(for __tile in $(seq 1 "$(echo "$(echo ${2} | sed 's/x/\*/')" | bc)"); do echo -n "./${__image} "; done)
+montage -geometry +0+0 -tile ${2} ${__imgseq} "${1}_montage" 2> /dev/null
+montage -geometry +1+1 -tile ${2} ${__imgseq} "${1}_montage_" 2> /dev/null
+
+mv "${1}_montage" "../$(basename ./$(__mext "${1}")_montage.png)"
+mv "${1}_montage_" "../$(basename ./$(__mext "${1}")_montage_.png)"
+
+}
+
+__tile './'"${__image}" "${3}"
 
 cd ../
 
