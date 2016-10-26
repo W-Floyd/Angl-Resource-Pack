@@ -220,8 +220,6 @@ fi
 # Split hashes into separate .xml records
 ###############################################################
 
-if [ "$__preprocessed" = 0 ]; then
-
 for __hash_name in $(echo 'hashes
 hashes_new'); do
 
@@ -252,8 +250,6 @@ hashes_new'); do
 	fi
 
 done
-
-fi
 
 ###############################################################
 # Make sure hash .xml records exist for new files
