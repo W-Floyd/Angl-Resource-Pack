@@ -87,6 +87,8 @@ rm $(basename "$__config_script")
 # Split all files into their own .xml records, unless told no
 ###############################################################
 
+__tmppwd=$(pwd)
+
 if [ "$__preprocessed" = 0 ]; then
 
 for __range in $(__get_range $__catalogue ITEM); do
@@ -98,8 +100,6 @@ for __range in $(__get_range $__catalogue ITEM); do
 done
 
 rm $__tmp_directory"readrangetmp"
-
-__tmppwd=$(pwd)
 
 cd $__tmp_directory'xml/'
 
