@@ -40,11 +40,15 @@ fi
 
 __directory=$(echo "${__pack_name}-${__resolution}px/")
 
+if [ "$__preprocessed" = 0 ]; then
+
 if ! [ -d $__tmp_directory ]; then
 	mkdir $__tmp_directory
 else
-	rm -rf $__tmp_directory
+	rm -r $__tmp_directory
 	mkdir $__tmp_directory
+fi
+
 fi
 
 echo "Rendering ${__resolution}px"
@@ -178,6 +182,8 @@ rm $__tmp_directory'tmpcleanup2_config'
 
 mv $__tmp_directory'tmpcleanuphashes2.xml' './hashes_new.xml'
 
+fi
+
 if ! [ -a './hashes.xml' ]; then
 
 	echo '<HASHES>' > $__tmp_directory'tmpcleanuphashes2.xml'
@@ -213,6 +219,8 @@ fi
 ###############################################################
 # Split hashes into separate .xml records
 ###############################################################
+
+if [ "$__preprocessed" = 0 ]; then
 
 for __hash_name in $(echo 'hashes
 hashes_new'); do
@@ -428,6 +436,7 @@ mkdir "$__verytemporary"
 
 cp "$__tmp_directory"listing "$__verytemporary"listing
 cp -r "$__tmp_directory"hashes_new/ "$__verytemporary"
+cp -r "$__tmp_directory"xml/ "$__verytemporary"
 cp "$__tmp_directory"hashes_new_listing "$__verytemporary"hashes_new_listing
 
 rm -r "$__tmp_directory"
