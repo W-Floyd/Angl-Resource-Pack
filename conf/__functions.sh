@@ -250,9 +250,9 @@ else
 	__spacer=0
 fi
 
-__imgseq=$(for __tile in $(seq 1 "$(echo "$(echo ${2} | sed 's/x/\*/')" | bc)"); do echo -n "./${1} "; done)
+__imgseq=$(for __tile in $(seq 1 "$(echo "$(echo ${2} | sed 's/x/\*/')" | bc)"); do echo -n "${1} "; done)
 
-montage -geometry "+${__spacer}+${__spacer}" -tile "${2}" "${__imgseq}" "${3}" 2> /dev/null
+montage -geometry "+${__spacer}+${__spacer}" -tile "${2}" ${__imgseq} "${3}" 2> /dev/null
 
 }
 
@@ -333,16 +333,19 @@ mogrify -rotate "${__angle}" "$1"
 
 ###############################################################
 #
-# __shift 
+# __shift <IMAGE> <PROPORTION>
 #
 # Shift
 # Tiles an image vertically, then crops at the specified
-# proportion
+# proportion. Equivalent to looping by shifting UP
 #
 ###############################################################
 
 __shift () {
-
+__tile "$1" 1x2 "$1"_
+mv "$1"_ "$1"
+convert "$1" -crop "$(identify -format "%wx%w" "$1")+0+$(printf "%.0f" $(echo $(identify -format "%w" "$1")*$2 | bc))" "$1"_
+mv "$1"_ "$1"
 }
 
 ###############################################################
