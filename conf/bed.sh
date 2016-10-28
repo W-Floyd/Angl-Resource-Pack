@@ -9,28 +9,43 @@ case "$2" in
 		__start="0 0"
 		;;
 	"bed_feet_side")
+		__shift="0.5"
+		__rotate="0"
+		__start="1 1"
+		;;
+	"bed_head_side")
+		__shift="0.5"
+		__rotate="0"
+		__start="2 1"
+		;;
+	"bed_head_end")
+		__shift="0.5"
+		__rotate="1"
+		__start="3 0"
+		;;
+	"bed_feet_top")
 		__shift="0"
 		__rotate="0"
-		__start="+$(echo ${1}'*1' | bc)+$(echo ${1}'*1' | bc)"
+		__start="1 0"
 		;;
-	"bed_head_side")
-		__shift=1
+	"bed_head_top")
+		__shift="0"
 		__rotate="0"
-		__start="+$(echo ${1}'*2' | bc)+$(echo ${1}'*1' | bc)"
-		;;
-	"bed_head_side")
-		__shift=1
-		__rotate="0"
-		__start="+$(echo ${1}'*2' | bc)+$(echo ${1}'*1' | bc)"
+		__start="2 0"
 		;;
 esac
 
+__crop "bed_covers.png" "$1" $__start "${2}_covers.png"
+__crop "bed_wood.png" "$1" $__start "${2}_wood.png"
 
+__overlay "${2}_wood.png" "${2}_covers.png" "${2}.png"
 
-for __image in $(echo "bed_covers.png
-bed_wood_overlay.png"); do
+rm "${2}_covers.png"
+rm "${2}_wood.png"
 
-convert "${__image}" -crop 
+__rotate "${2}.png" "$__rotate"
+
+__shift "${2}.png" "$__shift"
 
 cd ../../../../
 

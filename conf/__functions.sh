@@ -252,7 +252,7 @@ fi
 
 __imgseq=$(for __tile in $(seq 1 "$(echo "$(echo ${2} | sed 's/x/\*/')" | bc)"); do echo -n "${1} "; done)
 
-montage -geometry "+${__spacer}+${__spacer}" -tile "${2}" ${__imgseq} "${3}" 2> /dev/null
+montage -geometry "+${__spacer}+${__spacer}" -background none -tile "${2}" ${__imgseq} "${3}" 2> /dev/null
 
 }
 
