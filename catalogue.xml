@@ -1369,6 +1369,24 @@
 		<CLEANUP>assets/minecraft/textures/blocks/stone.svg
 		assets/minecraft/textures/blocks/coal_ore_overlay.svg</CLEANUP>
 	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/bed_covers.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>bed_covers</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/bed_covers.svg</CLEANUP>
+	</ITEM>
+	<ITEM>
+		<NAME>assets/minecraft/textures/blocks/bed_wood_overlay.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>bed_wood_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>assets/minecraft/textures/blocks/bed_wood_overlay.svg</CLEANUP>
+	</ITEM>
 </RENDER>
 <OTHER>
 	<ITEM>

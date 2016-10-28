@@ -234,6 +234,118 @@ convert "$1" -alpha set -channel Alpha -evaluate Divide "$__tmptrans" -define pn
 }
 
 ###############################################################
+#
+# __tile <FILE> <GRID> <OUTPUT> <DIVIDER>
+#
+# Tile
+# Tiles image at the specified grid size, with an optional
+# divider width
+#
+###############################################################
+
+__tile () {
+if ! [ -z "$4" ]; then
+	__spacer="$4"
+else
+	__spacer=0
+fi
+
+__imgseq=$(for __tile in $(seq 1 "$(echo "$(echo ${2} | sed 's/x/\*/')" | bc)"); do echo -n "./${1} "; done)
+
+montage -geometry "+${__spacer}+${__spacer}" -tile "${2}" "${__imgseq}" "${3}" 2> /dev/null
+
+}
+
+###############################################################
+#
+# __crop <INPUT> <RESOLUTION> <X-CORD> <Y-CORD> <OUTPUT>
+#
+# Crop
+# Crops an image to the specified square
+#
+# Example:
+# __crop image.png 128 2 1 out.png
+#
+# That will crop the image to the third square across and the
+# second square down.
+#
+# Example:
+# __crop image.png 512 0 0 out.png
+#
+# That will crop the top-left square, assuming a resolution of
+# 512px
+#
+###############################################################
+
+__crop () {
+convert "$1" -crop "${2}x${2}+$(echo ${3}'*'${2} | bc)+$(echo ${4}'*'${2} | bc)" "$5"
+}
+
+###############################################################
+#
+# __rotate <IMAGE> <STEP>
+#
+# Rotate
+# Rotates the image 0, 90, 180, 270, 360
+# Give option +/- 0, 1, 2, 3 or 4
+#
+# 0 = 0 degrees
+# 1, -3 = 90 degrees
+# 2, -2 = 180 degrees
+# 3, -1 = 270 degrees
+# 4, -4 = 360 degrees
+#
+###############################################################
+
+__rotate () {
+case "$2" in
+	"0")
+		__angle="0"
+		;;
+	"1")
+		__angle="90"
+		;;
+	"2")
+		__angle="180"
+		;;
+	"3")
+		__angle="270"
+		;;
+	"4")
+		__angle="360"
+		;;
+	"-1")
+		__angle="270"
+		;;
+	"-2")
+		__angle="180"
+		;;
+	"-3")
+		__angle="90"
+		;;
+	"-4")
+		__angle="360"
+		;;
+esac
+
+mogrify -rotate "${__angle}" "$1"
+}
+
+###############################################################
+#
+# __shift 
+#
+# Shift
+# Tiles an image vertically, then crops at the specified
+# proportion
+#
+###############################################################
+
+__shift () {
+
+}
+
+###############################################################
 # XML Functions
 ###############################################################
 #
