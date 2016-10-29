@@ -1,8 +1,13 @@
 #!/bin/bash
+###############################################################
 # checks.sh [-p] <SIZE>
 #
-# -p tells the script to assume all textures are present and current
+# -p tells the script to assume all textures are present and
+# current
 #
+###############################################################
+
+source ./conf/__functions.sh
 
 if ! [ -z "$1" ]; then
 	if [ "$1" = '-p' ]; then

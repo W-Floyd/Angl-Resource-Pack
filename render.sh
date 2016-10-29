@@ -72,11 +72,17 @@ else
 fi
 
 __config_script="$(__get_value $1 CONFIG)"
-cp $__config_script ./
 
-eval "$(echo '\./'"$(basename "$__config_script")" "$__tmp_res" "$(__get_value "$1" OPTIONS)")"
+if ! [ -z "$__config_script" ]; then
+	cp $__config_script ./
 
-rm $(basename "$__config_script")
+	eval "$(echo '\./'"$(basename "$__config_script")" "$__tmp_res" "$(__get_value "$1" OPTIONS)")"
+
+	rm $(basename "$__config_script")
+
+fi
+
+
 }
 
 ###############################################################
