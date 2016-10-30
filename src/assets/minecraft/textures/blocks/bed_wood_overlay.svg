@@ -68,9 +68,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="203.45462"
-     inkscape:cy="158.2107"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="219.01615"
+     inkscape:cy="128.35999"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -138,12 +138,13 @@
        y="383.99997"
        transform="matrix(0,-1,1,0,0,0)" />
     <path
-       style="fill:url(#linearGradient4169);fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 128,988.3622 0,-32 256,0 0,32 -32,0 0,-24 -192,0 0,24 z"
+       style="fill:url(#linearGradient4169);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 128,996.3622 0,-40 256,0 0,40 -32,0 0,-32 -192,0 0,32 z"
        id="path4157"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
     <path
-       style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="m 160,972.3622 8,-8 -8,0 z"
        id="path4159"
        inkscape:connector-curvature="0" />
@@ -151,31 +152,31 @@
        inkscape:connector-curvature="0"
        id="path4161"
        d="m 344,964.3622 8,8 0,-8 z"
-       style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path4171"
-       d="m 64,796.3622 32,0 0,128 -32,0 0,-32 24,0 0,-64 -24,0 z"
+       d="m 56,796.3622 40,0 0,128 -40,0 0,-32 32,0 0,-64 -32,0 z"
        style="fill:url(#linearGradient4177);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        sodipodi:nodetypes="ccccccccc" />
     <path
        inkscape:connector-curvature="0"
        id="path4173"
        d="m 80,828.3622 8,8 0,-8 z"
-       style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
     <path
-       style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="m 88,884.3622 -8,8 8,0 z"
        id="path4175"
        inkscape:connector-curvature="0" />
     <path
        sodipodi:nodetypes="ccccccccc"
        style="fill:url(#linearGradient4185);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 448,924.3622 -32,0 0,-128 32,0 0,32 -24,0 0,64 24,0 z"
+       d="m 456,924.3622 -40,0 0,-128 40,0 0,32 -32,0 0,64 32,0 z"
        id="path4179"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="m 432,892.3622 -8,-8 0,8 z"
        id="path4181"
        inkscape:connector-curvature="0" />
@@ -183,6 +184,6 @@
        inkscape:connector-curvature="0"
        id="path4183"
        d="m 424,836.3622 8,-8 -8,0 z"
-       style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
   </g>
 </svg>
