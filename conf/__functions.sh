@@ -420,6 +420,25 @@ mv /tmp/__set_value "$1"
 }
 
 ###############################################################
+# Other stuff
+###############################################################
+#
+# __emergency_exit
+#
+# Prints the last known command and exits, to be used when a
+# commmand fails
+#
+# Example:
+# cd "${__dir}" || __emergency_exit
+#
+###############################################################
+
+__emergency_exit () {
+echo "Last command run was ["!:0"] with arguments ["!:*"]"
+exit 1
+}
+
+###############################################################
 # Export functions
 ###############################################################
 # 
