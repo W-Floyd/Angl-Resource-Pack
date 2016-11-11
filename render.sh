@@ -159,9 +159,9 @@ echo '<HASHES>' > "${__tmp_directory}tmpcleanuphashes2.xml"
 while read __source; do
 
 	echo "	<ITEM>
-        <NAME>${__source}</NAME>
+		<NAME>${__source}</NAME>
 		<HASH>$(md5sum "./src/${__source}")</HASH>
-        </ITEM>" >> "${__tmp_directory}tmpcleanuphashes2.xml"
+		</ITEM>" >> "${__tmp_directory}tmpcleanuphashes2.xml"
 
 done < "${__tmp_directory}tmpcleanup2"
 
@@ -248,7 +248,7 @@ hashes_new'); do
 	cd "${__tmppwd}" || __emergency_exit
 	
 	fi
-
+    
 done
 
 ###############################################################
