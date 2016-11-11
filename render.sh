@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 ###############################################################
 # Will render the resource pack at the given resolution
