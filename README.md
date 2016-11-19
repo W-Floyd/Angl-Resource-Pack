@@ -2,7 +2,8 @@
 ##An open-source vector based Minecraft resource pack.
 ### This is a WIP, *many* textures have yet to be added, but the script system is (mostly?) done
 ***
-
+Currently the render script spends ***way*** too long hashing and comparing files. I am slowly going to be learning Python, with the aim to replace bash with something I little more suited to the task. I have yet to determine how I will implement this, or if it will be done at all.
+***
 If you just want to download the resource pack, look here: https://github.com/W-Floyd/Angl-Resource-Pack-Export
 
 ***
