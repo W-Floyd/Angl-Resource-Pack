@@ -14,7 +14,7 @@ sed -i '3s/.*/'"${__date}"'/' README.md
 
 git add *
 
-git commit -m "$__date"
+git commit -m "${__date}"
 
 git push
 

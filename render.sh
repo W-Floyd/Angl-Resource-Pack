@@ -5,6 +5,7 @@
 # Or, if no inputs are given, 128px
 ###############################################################
 # Set up variables
+echo "Setting up variables"
 ###############################################################
 
 __start_time=$(date +%s)
@@ -23,7 +24,7 @@ if ! [ -z "${1}" ]; then
 		__preprocessed='1'
 		__savework='1'
 		__resolution="${2}"
-		
+
 	elif [ "${1}" = '-f' ]; then
 		__savework='1'
 		__resolution="${2}"
@@ -51,6 +52,9 @@ echo "Rendering ${__resolution}px"
 
 ###############################################################
 # Set up functions
+echo "Done.
+
+Setting up functions"
 ###############################################################
 
 source ./conf/__functions.sh
@@ -82,11 +86,18 @@ if ! [ -z "${__config_script}" ]; then
 
 fi
 
+}
 
+__emergency_exit () {
+rm -r "${__tmp_directory}"
+exit 1
 }
 
 ###############################################################
 # Split all files into their own .xml records, unless told no
+echo "Done.
+
+Split all files into XML records"
 ###############################################################
 
 __tmppwd=$(pwd)
@@ -113,6 +124,9 @@ fi
 
 ###############################################################
 # Set up working space
+echo "Done.
+
+Set up working space"
 ###############################################################
 
 if ! [ -d "${__directory}" ]; then
@@ -139,6 +153,9 @@ if [ "${__preprocessed}" = 0 ]; then
 
 ###############################################################
 # Record hashes in .xml record
+echo "Done.
+
+Record hashes in XML record"
 ###############################################################
 
 while read __config; do
@@ -189,27 +206,27 @@ if ! [ -a './hashes.xml' ]; then
 	echo '<HASHES>' > "${__tmp_directory}tmpcleanuphashes2.xml"
 
 	for __range in $(__get_range './hashes_new.xml' ITEM); do
-		
+
 		__read_range './hashes_new.xml' "${__range}" > /tmp/__read_range
 		__set_value '/tmp/__read_range' HASH ''
 		cat '/tmp/__read_range' >> "${__tmp_directory}tmpcleanuphashes2.xml"
-		
+
 	done
-	
+
 	for __range in $(__get_range './hashes_new.xml' CONFIG); do
-		
+
 		__read_range './hashes_new.xml' "${__range}" > /tmp/__read_range
 		__set_value '/tmp/__read_range' HASH ''
 		cat '/tmp/__read_range' >> "${__tmp_directory}tmpcleanuphashes2.xml"
-		
+
 	done
-	
+
 	echo '</HASHES>' >> "${__tmp_directory}tmpcleanuphashes2.xml"
-	
+
 	rm '/tmp/__read_range'
-	
+
 	mv "${__tmp_directory}tmpcleanuphashes2.xml" './hashes.xml'
-	
+
 fi
 
 if [ "$(md5sum < './hashes.xml')" = "$(md5sum < './hashes_new.xml')" ]; then
@@ -218,6 +235,9 @@ fi
 
 ###############################################################
 # Split hashes into separate .xml records
+echo "Done.
+
+Split hashes into separate XML records"
 ###############################################################
 
 for __hash_name in $(echo 'hashes
@@ -232,7 +252,7 @@ hashes_new'); do
 		mkdir -p "$(dirname "${__tmp_name}")"
 		mv "${__tmp_directory}readrangetmp" "${__tmp_name}"
 	done
-	
+
 	for __range in $(__get_range "./${__hash_name}.xml" CONFIG); do
 		__read_range "./${__hash_name}.xml" "${__range}" > "${__tmp_directory}readrangetmp"
 		__name=$(__get_value "${__tmp_directory}readrangetmp" NAME)
@@ -240,19 +260,22 @@ hashes_new'); do
 		mkdir -p "$(dirname "${__tmp_name}")"
 		mv "${__tmp_directory}readrangetmp" "${__tmp_name}"
 	done
-	
+
 	cd "${__tmp_directory}${__hash_name}/" || __emergency_exit
-	
+
 	find . | grep '\.xml' | sed 's/^\.\///' > "${__tmp_directory}${__hash_name}_listing"
-	
+
 	cd "${__tmppwd}" || __emergency_exit
-	
+
 	fi
-    
+
 done
 
 ###############################################################
 # Make sure hash .xml records exist for new files
+echo "Done.
+
+Make sure XML files exist for new files."
 ###############################################################
 
 while read __hash; do
@@ -265,6 +288,9 @@ done < "${__tmp_directory}hashes_new_listing"
 
 ###############################################################
 # List source files that have been changed, added or removed
+echo "Done.
+
+List source files that have changed."
 ###############################################################
 
 touch "${__tmp_directory}changed_source"
@@ -301,12 +327,18 @@ sed -e 's/^\.\///' "${__tmp_directory}unchanged_source" > "${__tmp_directory}unc
 
 ###############################################################
 # Getting to the right place
+echo "Done.
+
+Getting to the right place"
 ###############################################################
 
 cd "$__directory" || __emergency_exit
 
 ###############################################################
 # Determine files rendered, to render, re-render and remove
+echo "Done.
+
+Determine files rendered, to render, re-render and remove."
 ###############################################################
 
 for __config in $(cat "${__tmp_directory}listing"); do
@@ -344,6 +376,9 @@ done
 
 ###############################################################
 # Start rendering
+echo "Done.
+
+Starting to render."
 ###############################################################
 
 __should_exit='0'
@@ -353,40 +388,43 @@ while [ "${__should_exit}" = '0' ]; do
 if [ -z "$(cat "${__tmp_directory}to_render")" ]; then
 
 	__should_exit='1'
-	
+
 else
 	__config=$(head -n 1 "${__tmp_directory}to_render")
-	
+
 	__get_value "${__config}" DEPENDS | sed 's/^$//' > "${__tmp_directory}tmpdeps"
-	
+
 	if [ -a "${__tmp_directory}tmpdeps2" ]; then
 		echo '' > "${__tmp_directory}tmpdeps2"
 	fi
-	
+
 	grep -Fxv -f "${__tmp_directory}rendered" "${__tmp_directory}tmpdeps" > "${__tmp_directory}tmpdeps2"
-	
+
 	if [ -z "$(cat "${__tmp_directory}tmpdeps2")" ]; then
-	
+
 		echo "Processing ./$(__get_value "${__config}" NAME)"
-		
+
 		__exec "${__config}"
-		
+
 		__get_value "${__config}" NAME >> "${__tmp_directory}rendered"
-	
+
 	else
-	
+
 		echo "${__config}" >> "${__tmp_directory}to_render"
-	
+
 	fi
-	
+
 	sed -i '1d' "${__tmp_directory}to_render"
-	
+
 fi
-	
+
 done
 
 ###############################################################
 # Remove non-keep and cleanup files
+echo "Done.
+
+Cleaning up."
 ###############################################################
 
 rm -r ./conf/
@@ -450,6 +488,8 @@ mv 'hashes_new.xml' 'hashes.xml'
 mv 'hashes.xml' "${__directory}hashes.xml"
 
 __end_time=$(date +%s)
+
+echo "Done!"
 
 echo
 echo "Rendered ${__resolution}px in $((__end_time-__start_time)) seconds"

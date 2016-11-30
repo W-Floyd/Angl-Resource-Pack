@@ -25,7 +25,7 @@ __mode="slow"
 ###############################################################
 
 __mext () {
-sed 's|\(.*\)\(\.\).*|\1|' <<< "$1"
+sed 's|\(.*\)\(\.\).*|\1|' <<< "${1}"
 }
 
 ###############################################################
@@ -39,28 +39,28 @@ sed 's|\(.*\)\(\.\).*|\1|' <<< "$1"
 
 if [ $__mode = 'quick' ]; then
 __render () {
-rsvg-convert 
--d "$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
--p "$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
-"$2" \
--o "$(__mext "$2")"".png" 1> /dev/null
-convert "$(__mext "$2")"".png" -define png:color-type=6 "$(__mext "$2")"'_'".png"
-mv "$(__mext "$2")"'_'".png" "$(__mext "$2")"".png"
+rsvg-convert
+-d "$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)" \
+-p "$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)" \
+"${2}" \
+-o "$(__mext "${2}")"".png" 1> /dev/null
+convert "$(__mext "${2}")"".png" -define png:color-type=6 "$(__mext "$2")"'_'".png"
+mv "$(__mext "${2}")"'_'".png" "$(__mext "${2}")"".png"
 }
-elif [ $__mode = 'slow' ]; then
+elif [ "{$__mode}" = 'slow' ]; then
 __render () {
 inkscape \
---export-dpi="$(echo "(90*$1)/128" | bc -l | rev | sed 's/0*//' | rev)" \
---export-png "$(__mext "$2").png" "$2" 1> /dev/null
-convert "$(__mext "$2")"".png" -define png:color-type=6 "$(__mext "$2")"'_'".png"
-mv "$(__mext "$2")"'_'".png" "$(__mext "$2")"".png"
+--export-dpi="$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)" \
+--export-png "$(__mext "${2}").png" "${2}" 1> /dev/null
+convert "$(__mext "${2}")"".png" -define png:color-type=6 "$(__mext "${2}")"'_'".png"
+mv "$(__mext "${2}")"'_'".png" "$(__mext "${2}")"".png"
 }
 fi
 
 ###############################################################
 # Composition functions
 ###############################################################
-# 
+#
 # __overlay <BASE.png> <OVERLAY> <OUTPUT.png>
 #
 # Overlay Images
@@ -70,7 +70,7 @@ fi
 ###############################################################
 
 __overlay () {
-composite -define png:color-type=6 -compose src-over "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-over "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -83,7 +83,7 @@ composite -define png:color-type=6 -compose src-over "$2" "$1" "$3"
 ###############################################################
 
 __multiply () {
-composite -define png:color-type=6 -compose Multiply "$2" "$1" "$3"
+composite -define png:color-type=6 -compose Multiply "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -96,7 +96,7 @@ composite -define png:color-type=6 -compose Multiply "$2" "$1" "$3"
 ###############################################################
 
 __screen () {
-composite -define png:color-type=6 -compose Screen "$2" "$1" "$3"
+composite -define png:color-type=6 -compose Screen "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -109,7 +109,7 @@ composite -define png:color-type=6 -compose Screen "$2" "$1" "$3"
 ###############################################################
 
 __clip_src_over () {
-composite -define png:color-type=6 -compose src-over "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-over "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -122,7 +122,7 @@ composite -define png:color-type=6 -compose src-over "$2" "$1" "$3"
 ###############################################################
 
 __clip_dst_over () {
-composite -define png:color-type=6 -compose dst-over "$2" "$1" "$3"
+composite -define png:color-type=6 -compose dst-over "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -135,7 +135,7 @@ composite -define png:color-type=6 -compose dst-over "$2" "$1" "$3"
 ###############################################################
 
 __clip_src_in () {
-composite -define png:color-type=6 -compose src-in "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-in "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -148,7 +148,7 @@ composite -define png:color-type=6 -compose src-in "$2" "$1" "$3"
 ###############################################################
 
 __clip_dst_in () {
-composite -define png:color-type=6 -compose dst-in "$2" "$1" "$3"
+composite -define png:color-type=6 -compose dst-in "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -161,7 +161,7 @@ composite -define png:color-type=6 -compose dst-in "$2" "$1" "$3"
 ###############################################################
 
 __clip_src_out () {
-composite -define png:color-type=6 -compose src-out "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-out "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -174,7 +174,7 @@ composite -define png:color-type=6 -compose src-out "$2" "$1" "$3"
 ###############################################################
 
 __clip_dst_out () {
-composite -define png:color-type=6 -compose dst-out "$2" "$1" "$3"
+composite -define png:color-type=6 -compose dst-out "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -187,7 +187,7 @@ composite -define png:color-type=6 -compose dst-out "$2" "$1" "$3"
 ###############################################################
 
 __clip_src_atop () {
-composite -define png:color-type=6 -compose src-atop "$2" "$1" "$3"
+composite -define png:color-type=6 -compose src-atop "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -200,7 +200,7 @@ composite -define png:color-type=6 -compose src-atop "$2" "$1" "$3"
 ###############################################################
 
 __clip_dst_atop () {
-composite -define png:color-type=6 -compose dst-atop "$2" "$1" "$3"
+composite -define png:color-type=6 -compose dst-atop "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -213,7 +213,7 @@ composite -define png:color-type=6 -compose dst-atop "$2" "$1" "$3"
 ###############################################################
 
 __clip_xor () {
-composite -define png:color-type=6 -compose xor "$2" "$1" "$3"
+composite -define png:color-type=6 -compose xor "${2}" "${1}" "${3}"
 }
 
 ###############################################################
@@ -229,8 +229,8 @@ composite -define png:color-type=6 -compose xor "$2" "$1" "$3"
 ###############################################################
 
 __fade () {
-__tmptrans=$(echo '1/'"$3" | bc)
-convert "$1" -alpha set -channel Alpha -evaluate Divide "$__tmptrans" -define png:color-type=6 "$2"
+__tmptrans=$(echo '1/'"${3}" | bc)
+convert "${1}" -alpha set -channel Alpha -evaluate Divide "${__tmptrans}" -define png:color-type=6 "${2}"
 }
 
 ###############################################################
@@ -244,13 +244,13 @@ convert "$1" -alpha set -channel Alpha -evaluate Divide "$__tmptrans" -define pn
 ###############################################################
 
 __tile () {
-if ! [ -z "$4" ]; then
-	__spacer="$4"
+if ! [ -z "${4}" ]; then
+	__spacer="${4}"
 else
 	__spacer=0
 fi
 
-__imgseq=$(for __tile in $(seq 1 "$(echo "$(echo ${2} | sed 's/x/\*/')" | bc)"); do echo -n "${1} "; done)
+__imgseq=$(for __tile in $(seq 1 "$(echo "$(echo "${2}" | sed 's/x/\*/')" | bc)"); do echo -n "${1} "; done)
 
 montage -geometry "+${__spacer}+${__spacer}" -background none -tile "${2}" ${__imgseq} "${3}" 2> /dev/null
 
@@ -278,7 +278,7 @@ montage -geometry "+${__spacer}+${__spacer}" -background none -tile "${2}" ${__i
 ###############################################################
 
 __crop () {
-convert "$1" -crop "${2}x${2}+$(echo ${3}'*'${2} | bc)+$(echo ${4}'*'${2} | bc)" "$5"
+convert "${1}" -crop "${2}x${2}+$(echo ${3}'*'${2} | bc)+$(echo ${4}'*'${2} | bc)" "${5}"
 }
 
 ###############################################################
@@ -298,7 +298,7 @@ convert "$1" -crop "${2}x${2}+$(echo ${3}'*'${2} | bc)+$(echo ${4}'*'${2} | bc)"
 ###############################################################
 
 __rotate () {
-case "$2" in
+case "${2}" in
 	"0")
 		__angle="0"
 		;;
@@ -328,7 +328,7 @@ case "$2" in
 		;;
 esac
 
-mogrify -rotate "${__angle}" "$1"
+mogrify -rotate "${__angle}" "${1}"
 }
 
 ###############################################################
@@ -342,10 +342,10 @@ mogrify -rotate "${__angle}" "$1"
 ###############################################################
 
 __shift () {
-__tile "$1" 1x2 "$1"_
-mv "$1"_ "$1"
-convert "$1" -crop "$(identify -format "%wx%w" "$1")+0+$(printf "%.0f" $(echo $(identify -format "%w" "$1")*$2 | bc))" "$1"_
-mv "$1"_ "$1"
+__tile "${1}" 1x2 "${1}"_
+mv "${1}"_ "${1}"
+convert "${1}" -crop "$(identify -format "%wx%w" "${1}")+0+$(printf "%.0f" $(echo $(identify -format "%w" "${1}")*${2} | bc))" "${1}"_
+mv "${1}"_ "${1}"
 }
 
 ###############################################################
@@ -372,7 +372,7 @@ mv "$1"_ "$1"
 ###############################################################
 
 __get_range () {
-cat "$1" | grep -n '[</|<]'"$2"'>' | sed 's/\:.*//' |  sed 'N;s/\n/,/'
+cat "${1}" | grep -n '[</|<]'"${2}"'>' | sed 's/\:.*//' |  sed 'N;s/\n/,/'
 }
 
 ###############################################################
@@ -386,7 +386,7 @@ cat "$1" | grep -n '[</|<]'"$2"'>' | sed 's/\:.*//' |  sed 'N;s/\n/,/'
 ###############################################################
 
 __read_range () {
-cat "$1" | sed "$2"'!d' | sed 's/^[ |	]*//'
+cat "${1}" | sed "${2}"'!d' | sed 's/^[ |	]*//'
 }
 
 ###############################################################
@@ -400,7 +400,7 @@ cat "$1" | sed "$2"'!d' | sed 's/^[ |	]*//'
 ###############################################################
 
 __get_value () {
-__read_range "$1" "$(__get_range "$1" "$2")" | sed -e 's/^<'"$2"'>//' -e 's/<\/'"$2"'>$//'
+__read_range "${1}" "$(__get_range "${1}" "${2}")" | sed -e 's/^<'"${2}"'>//' -e 's/<\/'"${2}"'>$//'
 }
 
 ###############################################################
@@ -413,10 +413,10 @@ __read_range "$1" "$(__get_range "$1" "$2")" | sed -e 's/^<'"$2"'>//' -e 's/<\/'
 ###############################################################
 
 __set_value () {
-cat "$1" | sed -n '1,/<'"$2"'>.*/p' | head -n -1 > /tmp/__set_value
-echo '<'"$2"'>'"$3"'</'"$2"'>' >> /tmp/__set_value
-cat "$1" | sed -n '/<\/'"$2"'>/,$p' | tail -n +2 >> /tmp/__set_value
-mv /tmp/__set_value "$1"
+cat "${1}" | sed -n '1,/<'"${2}"'>.*/p' | head -n -1 > /tmp/__set_value
+echo '<'"${2}"'>'"${3}"'</'"${2}"'>' >> /tmp/__set_value
+cat "${1}" | sed -n '/<\/'"${2}"'>/,$p' | tail -n +2 >> /tmp/__set_value
+mv /tmp/__set_value "${1}"
 }
 
 ###############################################################
@@ -441,7 +441,7 @@ exit 1
 ###############################################################
 # Export functions
 ###############################################################
-# 
+#
 # Do this so that any child shells have these functions
 ###############################################################
 for __function in $(compgen -A function); do
