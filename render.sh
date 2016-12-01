@@ -155,16 +155,22 @@ __get_value "${1}" DEPENDS
 # __check_deps_loop <DATASET>
 ###############################
 __check_deps_loop () {
-for __dep in $(__check_deps "./src/xml/${__dep}"); do
+for __dep in $(__check_deps "${1}"); do
     echo "${__dep}"
-    __check_deps_loop "./src/xml/${__dep}"
+    __check_deps_loop "${__dep}.xml"
+done
 }
 ###############################
 
 __pushd ./src/xml/
 
-for __xml in $(find './src/xml/' -type f); do
-    __check_deps_loop
+for __xml in $(find -type f); do
+    __check_deps_loop "${__xml}"
+    echo "
+${__xml}
+
+
+    "
 done
 
 __popd
