@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./assets/minecraft/textures/blocks/
+pushd ./assets/minecraft/textures/blocks/
 
 case "$2" in
 	"bed_feet_end")
@@ -47,6 +47,6 @@ __rotate "${2}.png" "$__rotate"
 
 __shift "${2}.png" "$__shift"
 
-cd ../../../../
+popd
 
 exit

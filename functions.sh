@@ -250,7 +250,7 @@ else
 	__spacer=0
 fi
 
-__imgseq=$(for __tile in $(seq 1 "$(echo "$(echo "${2}" | sed 's/x/\*/')" | bc)"); do echo -n "${1} "; done)
+__imgseq=$(for __tile in $(seq 1 "$(echo "${2}" | sed 's/x/\*/' | bc)"); do echo -n "${1} "; done)
 
 montage -geometry "+${__spacer}+${__spacer}" -background none -tile "${2}" ${__imgseq} "${3}" 2> /dev/null
 
@@ -278,7 +278,7 @@ montage -geometry "+${__spacer}+${__spacer}" -background none -tile "${2}" ${__i
 ###############################################################
 
 __crop () {
-convert "${1}" -crop "${2}x${2}+$(echo ${3}'*'${2} | bc)+$(echo ${4}'*'${2} | bc)" "${5}"
+convert "${1}" -crop "${2}x${2}+$(echo "${3}*${2}" | bc)+$(echo "${4}*${2}" | bc)" "${5}"
 }
 
 ###############################################################
@@ -344,7 +344,7 @@ mogrify -rotate "${__angle}" "${1}"
 __shift () {
 __tile "${1}" 1x2 "${1}"_
 mv "${1}"_ "${1}"
-convert "${1}" -crop "$(identify -format "%wx%w" "${1}")+0+$(printf "%.0f" $(echo $(identify -format "%w" "${1}")*${2} | bc))" "${1}"_
+convert "${1}" -crop "$(identify -format "%wx%w" "${1}")+0+$(printf "%.0f" "$(echo "$(identify -format "%w" "${1}")*${2}" | bc)")" "${1}"_
 mv "${1}"_ "${1}"
 }
 
@@ -439,11 +439,47 @@ exit 1
 }
 
 ###############################################################
+#
+# __hash_folder <FILE>
+#
+# Hashes the current folder and outputs to <FILE>
+#
+###############################################################
+
+__hash_folder () {
+find -type f -exec md5sum '{}' \; > "${1}"
+}
+
+###############################################################
+#
+# __pushd <DIR>
+#
+# Same as regular pushd, just quiet
+#
+###############################################################
+
+__pushd () {
+pushd "${1}" 1> /dev/null
+}
+
+###############################################################
+#
+# __popd
+#
+# Same as regular popd, just quiet
+#
+###############################################################
+
+__popd () {
+popd 1> /dev/null
+}
+
+###############################################################
 # Export functions
 ###############################################################
 #
 # Do this so that any child shells have these functions
 ###############################################################
 for __function in $(compgen -A function); do
-	export -f $__function
+	export -f ${__function}
 done
