@@ -123,7 +123,7 @@ __popd
 
 ###############################################################
 # Split XML
-__announce "Splitting XML"
+__announce "Splitting XML files"
 ###############################################################
 
 __xml_current="${__tmp_dir}/xml_current"
@@ -139,10 +139,16 @@ for __range in $(__get_range "${__catalogue}" ITEM); do
 
     __item_name="$(__get_value "${__read_range_file}" NAME)"
     mkdir -p "$(__odir "${__xml_current}/${__item_name}")"
-    mv "${__read_range_file}" "${__xml_current}/${__item_name}"
+    mv "${__read_range_file}" "${__xml_current}/${__item_name}.xml"
 done &
 
 wait
+
+if [ -d './src/xml/' ]; then
+    rm -r './src/xml/'
+fi
+
+mv -r "${__tmp_dir}/xml_current" './src/xml/'
 
 ###############################################################
 # General Cleanup
