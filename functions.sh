@@ -30,6 +30,34 @@ sed 's|\(.*\)\(\.\).*|\1|' <<< "${1}"
 
 ###############################################################
 #
+# __oext <string>
+#
+# Only Extension
+# Returns the final extension of a filename
+# Opposite of __mext
+#
+###############################################################
+
+__oext () {
+sed 's|\(.*\)\(\.\)\(.*\)|\3|' <<< "$1"
+}
+
+###############################################################
+#
+# __odir <string>
+#
+# Only Directory
+# Returns the directory leading up to a filename
+# Opposite of basename
+#
+###############################################################
+
+__odir () {
+sed 's|\(.*\)\(\/\).*|\1\2|' <<< "$1"
+}
+
+###############################################################
+#
 # __render <DPI> <FILE.svg>
 #
 # Render Image
@@ -56,6 +84,25 @@ convert "$(__mext "${2}")"".png" -define png:color-type=6 "$(__mext "${2}")"'_'"
 mv "$(__mext "${2}")"'_'".png" "$(__mext "${2}")"".png"
 }
 fi
+
+###############################################################
+#
+# __optimize <IMAGE.png>
+#
+# Optimize Image
+# Accepts a PNG file as an input, optimizes with optipng, and
+# replaces if smaller. Will ignore if given file is not a
+# '.png' file.
+#
+###############################################################
+
+__optimize () {
+if [ "$(__oext "${1}")" = 'png' ]; then
+    optipng "${1}"
+else
+    echo "File ${1} cannot be optimized."
+fi
+}
 
 ###############################################################
 # Composition functions
@@ -223,7 +270,7 @@ composite -define png:color-type=6 -compose xor "${2}" "${1}" "${3}"
 # __fade <INPUT> <OUTPUT> <AMOUNT>
 #
 # Fade image
-# Makes an image transparent.Note that AMOUNT must be a value
+# Makes an image transparent. Note that AMOUNT must be a value
 # 0-1, 0 being fully transparent, 1 being unchanged
 #
 ###############################################################
@@ -386,7 +433,7 @@ cat "${1}" | grep -n '[</|<]'"${2}"'>' | sed 's/\:.*//' |  sed 'N;s/\n/,/'
 ###############################################################
 
 __read_range () {
-cat "${1}" | sed "${2}"'!d' | sed 's/^[ |	]*//'
+sed -e "${2}"'!d' "${1}" | sed -e 's/^	*//' -e 's/^ *//'
 }
 
 ###############################################################
@@ -447,31 +494,66 @@ exit 1
 ###############################################################
 
 __hash_folder () {
-find -type f -exec md5sum '{}' \; > "${1}"
+md5sum $(find -type f) > "${1}"
+}
+
+###############################################################
+#
+# __check_hash_folder <FILE> <OUTPUT>
+#
+# Hashes the current folder and compares to <FILE>, outputting
+# to <OUTPUT>
+#
+###############################################################
+
+__check_hash_folder () {
+md5sum -c "${1}" > "${2}"
 }
 
 ###############################################################
 #
 # __pushd <DIR>
 #
-# Same as regular pushd, just quiet
+# Same as regular pushd, just quiet unless told not to be
 #
 ###############################################################
 
 __pushd () {
-pushd "${1}" 1> /dev/null
+if [ "${__very_verbose}" = 1 ]; then
+    pushd "${1}"
+else
+    pushd "${1}" 1> /dev/null
+fi
 }
 
 ###############################################################
 #
 # __popd
 #
-# Same as regular popd, just quiet
+# Same as regular popd, just quiet unless told not to be
 #
 ###############################################################
 
 __popd () {
-popd 1> /dev/null
+if [ "${__very_verbose}" = 1 ]; then
+    popd
+else
+    popd 1> /dev/null
+fi
+}
+
+###############################################################
+#
+# __announce <MESSAGE>
+# Echos a statement, only if __verbose is equal to 1
+#
+###############################################################
+
+__announce () {
+if [ "${__verbose}" = 1 ]; then
+    echo "
+${1}"
+fi
 }
 
 ###############################################################
