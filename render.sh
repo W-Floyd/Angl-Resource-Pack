@@ -148,7 +148,7 @@ if [ -d './src/xml/' ]; then
     rm -r './src/xml/'
 fi
 
-mv -r "${__tmp_dir}/xml_current" './src/xml/'
+mv "${__tmp_dir}/xml_current" './src/xml/'
 
 ###############################################################
 # General Cleanup
