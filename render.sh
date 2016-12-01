@@ -138,10 +138,11 @@ fi
 mv "${__tmp_dir}/xml_current" './src/xml/'
 
 ###############################################################
-# Inherit deps
-__announce "Inheriting dependancies"
+# Inherit deps and cleanup
+__announce "Inheriting and creating dependancies and cleanup files"
 ###############################################################
 
+mkdir "${__tmp_dir}/tmp_deps"
 
 ###############################
 # __check_deps <DATASET>
@@ -155,9 +156,14 @@ __get_value "${1}" DEPENDS
 # __check_deps_loop <DATASET>
 ###############################
 __check_deps_loop () {
+__get_value "${1}" CONFIG
 for __dep in $(__check_deps "${1}"); do
     echo "${__dep}"
-    __check_deps_loop "${__dep}.xml"
+    if [ -a "${__dep}.xml" ]; then
+        __get_value "${__dep}.xml" CONFIG
+        __get_value "${__dep}.xml" CLEANUP
+        __check_deps_loop "${__dep}.xml"
+    fi
 done
 }
 ###############################
@@ -165,13 +171,23 @@ done
 __pushd ./src/xml/
 
 for __xml in $(find -type f); do
-    __check_deps_loop "${__xml}" | sort | uniq
-    echo "
-${__xml}
+    __dep_list="${__tmp_dir}/tmp_deps/${__xml}"
+    mkdir -p "$(__odir "${__dep_list}")"
+    __check_deps_loop "${__xml}" | sort | uniq > "${__dep_list}"
+    __set_value "${__xml}" DEPENDS "$(cat "${__dep_list}")"
 
+    __get_value "${__xml}" CLEANUP >> "${__dep_list}_cleanup"
+    for __dep in $(cat "${__dep_list}"); do
+        if [ -a "${__dep}.xml" ]; then
+            __get_value "${__dep}.xml" CLEANUP >> "${__dep_list}_cleanup"
+        fi
+    done
 
-    "
-done
+    __set_value "${__xml}" CLEANUP "$(cat "${__dep_list}_cleanup" | sort | uniq)"
+
+done &
+
+wait
 
 __popd
 
