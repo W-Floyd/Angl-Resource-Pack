@@ -539,9 +539,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bookshelf_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./colour_planks_oak.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bookshelf_overlay.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg
 		./colour_planks_oak.svg</CLEANUP>
@@ -553,9 +551,7 @@
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/bookshelf_overlay.png
-		./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./colour_planks_oak.png</DEPENDS>
+		./assets/minecraft/textures/blocks/planks_oak.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bookshelf_overlay.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg
 		./colour_planks_oak.svg</CLEANUP>
@@ -1223,9 +1219,7 @@
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png
-		./assets/minecraft/textures/blocks/stonebrick.png
-		./assets/minecraft/textures/blocks/stonebrick_overlay.png
-		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
+		./assets/minecraft/textures/blocks/stonebrick.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.svg
 		./assets/minecraft/textures/blocks/stonebrick_overlay.svg
 		./assets/minecraft/textures/blocks/stone.svg</CLEANUP>
@@ -1246,9 +1240,7 @@
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png
-		./assets/minecraft/textures/blocks/stonebrick.png
-		./assets/minecraft/textures/blocks/stonebrick_overlay.png
-		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
+		./assets/minecraft/textures/blocks/stonebrick.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.svg
 		./assets/minecraft/textures/blocks/stonebrick_overlay.svg
 		./assets/minecraft/textures/blocks/stone.svg</CLEANUP>
@@ -1393,10 +1385,8 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
-		<DEPENDS>./colour_planks_oak.png
-		./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/bed_wood_overlay.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
+		./assets/minecraft/textures/blocks/bed_wood_overlay.png</DEPENDS>
 		<CLEANUP>./colour_planks_oak.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg
 		./assets/minecraft/textures/blocks/bed_wood_overlay.svg</CLEANUP>
@@ -1408,11 +1398,7 @@
 		<OPTIONS>bed_feet_end</OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./colour_planks_oak.png
-		./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/bed_wood_overlay.png
-		./assets/minecraft/textures/blocks/bed_wood.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
+		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers.svg
 		./colour_planks_oak.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg
@@ -1425,11 +1411,7 @@
 		<OPTIONS>bed_feet_side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./colour_planks_oak.png
-		./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/bed_wood_overlay.png
-		./assets/minecraft/textures/blocks/bed_wood.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
+		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers.svg
 		./colour_planks_oak.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg
@@ -1442,11 +1424,7 @@
 		<OPTIONS>bed_feet_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./colour_planks_oak.png
-		./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/bed_wood_overlay.png
-		./assets/minecraft/textures/blocks/bed_wood.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
+		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers.svg
 		./colour_planks_oak.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg
@@ -1459,11 +1437,7 @@
 		<OPTIONS>bed_head_side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./colour_planks_oak.png
-		./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/bed_wood_overlay.png
-		./assets/minecraft/textures/blocks/bed_wood.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
+		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers.svg
 		./colour_planks_oak.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg
@@ -1476,11 +1450,7 @@
 		<OPTIONS>bed_head_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./colour_planks_oak.png
-		./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/bed_wood_overlay.png
-		./assets/minecraft/textures/blocks/bed_wood.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
+		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers.svg
 		./colour_planks_oak.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg
@@ -1493,11 +1463,7 @@
 		<OPTIONS>bed_head_end</OPTIONS>
 		<KEEP>YES</KEEP>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./colour_planks_oak.png
-		./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/bed_wood_overlay.png
-		./assets/minecraft/textures/blocks/bed_wood.png
-		./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
+		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers.svg
 		./colour_planks_oak.svg
 		./assets/minecraft/textures/blocks/planks_generic_overlay.svg

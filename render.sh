@@ -165,7 +165,7 @@ done
 __pushd ./src/xml/
 
 for __xml in $(find -type f); do
-    __check_deps_loop "${__xml}"
+    __check_deps_loop "${__xml}" | sort | uniq
     echo "
 ${__xml}
 
