@@ -457,6 +457,10 @@ pcregrep -M "<${2}>(\n|.)*</${2}>" "${1}" | sed -e 's/^<'"${2}"'>//' -e 's/<\/'"
 # Set Value
 # Sets the <VALUE> of the specified <FIELD_NAME>
 #
+# TODO
+#
+# Redo in a more efficient way.
+#
 ###############################################################
 
 __set_value () {

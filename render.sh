@@ -109,19 +109,6 @@ if [ -d "${__pack}" ]; then
 fi
 
 ###############################################################
-# Hash sources
-__announce "Hashing sources"
-###############################################################
-
-__source_hashes="${__tmp_dir}/source_hashes"
-
-__pushd src
-
-__hash_folder "${__source_hashes}"
-
-__popd
-
-###############################################################
 # Split XML
 __announce "Splitting XML files"
 ###############################################################
@@ -135,7 +122,7 @@ for __range in $(__get_range "${__catalogue}" ITEM); do
     __read_range "${__catalogue}" "${__range}" > "${__read_range_file}"
 
     #TODO
-    # Optimize __get_value
+    # Optimize xml functions more
 
     __item_name="$(__get_value "${__read_range_file}" NAME)"
     mkdir -p "$(__odir "${__xml_current}/${__item_name}")"
@@ -151,10 +138,42 @@ fi
 mv "${__tmp_dir}/xml_current" './src/xml/'
 
 ###############################################################
+# Inherit deps
+__announce "Inheriting dependancies"
+###############################################################
+
+
+###############################
+# __check_deps <DATASET>
+###############################
+__check_deps () {
+__get_value "${1}" DEPENDS
+}
+###############################
+
+###############################
+# __check_deps_loop <DATASET>
+###############################
+__check_deps_loop () {
+for __dep in $(__check_deps "./src/xml/${__dep}"); do
+    echo "${__dep}"
+    __check_deps_loop "./src/xml/${__dep}"
+}
+###############################
+
+__pushd ./src/xml/
+
+for __xml in $(find './src/xml/' -type f); do
+    __check_deps_loop
+done
+
+__popd
+
+###############################################################
 # General Cleanup
 __announce "Cleaning up"
 ###############################################################
 
-#rm -r "${__tmp_dir}"
+rm -r "${__tmp_dir}"
 
 exit
