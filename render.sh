@@ -208,7 +208,7 @@ else
 fi
 
 ###############################################################
-# List new and matching files
+# List new and matching XML entries
 __announce "Listing new and matching XML entries."
 ###############################################################
 
