@@ -88,6 +88,7 @@ fi
 ###############################################################
 
 __pack="${__name}-${__size}px"
+__old_pack="${__pack}-old"
 
 ###############################################################
 # Announce size
@@ -190,6 +191,83 @@ done &
 wait
 
 __popd
+
+###############################################################
+# Set up folders for re-use
+__announce "Setting up folders."
+###############################################################
+
+if ! [ -d "${__pack}" ]; then
+    mkdir -p "${__pack}/xml"
+else
+    cp -r "${__pack}" "${__old_pack}"
+    mv "${__pack}/xml" "${__tmp_dir}/xml"
+    rm -r "${__pack}"
+    mkdir "${__pack}"
+    mv "${__tmp_dir}/xml" "${__pack}"
+fi
+
+###############################################################
+# List new and matching files
+__announce "Listing new and matching XML entries."
+###############################################################
+
+__new_xml_list="${__tmp_dir}/xml_list_new"
+__old_xml_list="${__tmp_dir}/xml_list_old"
+__new_split_xml_list="${__tmp_dir}/xml_list_new_shared"
+__shared_xml_list="${__tmp_dir}/xml_list_shared"
+
+__pushd ./src/xml
+
+find -type f > "${__new_xml_list}"
+
+__popd
+
+__pushd "./${__pack}/xml"
+
+find -type f > "${__old_xml_list}"
+
+__popd
+
+grep -Fxvf "${__old_xml_list}" "${__new_xml_list}" > "${__new_split_xml_list}"
+grep -Fxf "${__old_xml_list}" "${__new_xml_list}" > "${__shared_xml_list}"
+
+###############################################################
+# Check changes in XML files
+__announce "Checking changes in XML files."
+###############################################################
+
+__new_hashes="${__tmp_dir}/new_hashes"
+__old_hashes="${__tmp_dir}/old_hashes"
+
+__changed="${__tmp_dir}/changed_xml"
+
+__pushd ./src/xml
+
+__hash_folder "${__new_hashes}"
+
+__popd
+
+__pushd "./${__pack}/xml"
+
+__hash_folder "${__old_hashes}"
+
+__popd
+
+for __shared in $(cat "${__shared_xml_list}"); do
+    __old_hash="$(cat "${__old_hashes}" | grep -w "${__shared}")"
+    __new_hash="$(cat "${__new_hashes}" | grep -w "${__shared}")"
+    if [ "${__old_hash}" = "${__new_hash}" ]; then
+        echo "${__shared}" >> "${__changed}"
+    fi
+done
+
+###############################################################
+# Check changes in source files
+__announce "Checking changes in source files."
+###############################################################
+
+
 
 ###############################################################
 # General Cleanup
