@@ -201,7 +201,7 @@ if ! [ -d "${__pack}" ]; then
     mkdir -p "${__pack}/xml"
 else
     cp -r "${__pack}" "${__old_pack}"
-    mv "${__pack}/xml" "${__tmp_dir}/xml"
+    mv "${__pack}/xml" "${__tmp_dir}/xml" ### TODO
     rm -r "${__pack}"
     mkdir "${__pack}"
     mv "${__tmp_dir}/xml" "${__pack}"
