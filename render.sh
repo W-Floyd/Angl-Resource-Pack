@@ -32,7 +32,8 @@ Options:
   -v  --verbose         Verbose
   -vv --very-verbose    Very verbose
   -o  --optimize        Optimize
-  -p  --process-id      Using PID as given after\
+  -p  --process-id      Using PID as given after
+  -r  --re-use          Re-use split xml files\
 "
 }
 
@@ -74,6 +75,9 @@ for __option in $(seq "${#}"); do
                     __optimize='1'
                     ;;
                 "-p" | "--process-id")
+                    ;;
+                "-r" | "--re-use")
+                    __re_use='1'
                     ;;
                 "-d" | "--debug")
                     echo "Debugging mode enabled"
@@ -146,7 +150,7 @@ if [ -d "${__pack}" ]; then
         __re_use='1'
     fi
 else
-    mkdir "${__pack}/xml"
+    mkdir -p "${__pack}/xml"
 fi
 
 ###############################################################
@@ -232,13 +236,6 @@ wait
 __popd
 
 ###############################################################
-# Set up folders for xml
-__announce "Setting up folders for xml."
-###############################################################
-
-mv "${__pack}" "${__old_pack}"
-
-###############################################################
 # List new and matching XML entries
 __announce "Listing new and matching XML entries."
 ###############################################################
@@ -254,7 +251,7 @@ find -type f > "${__new_xml_list}"
 
 __popd
 
-__pushd "./${__old_pack}/xml"
+__pushd "./${__pack}/xml"
 
 find -type f > "${__old_xml_list}"
 
