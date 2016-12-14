@@ -1,17 +1,4 @@
 #!/bin/bash
-###############################################################
-# Debugging flag
-###############################################################
-
-#set -x
-
-###############################################################
-# Set variables
-###############################################################
-
-__name='Angl'
-__tmp_dir="/tmp/texpack$$"
-__catalogue='catalogue.xml'
 
 ###############################
 # Defaults
@@ -23,6 +10,9 @@ __very_verbose='0'
 __force='0'
 __cores='1'
 __optimize='0'
+__re_use='0'
+__pid="$$"
+__debug='0'
 
 ###############################################################
 # Setting up functions
@@ -41,7 +31,8 @@ Options:
   -f  --force           Discard pre-rendered data
   -v  --verbose         Verbose
   -vv --very-verbose    Very verbose
-  -o  --optimize        Optimize\
+  -o  --optimize        Optimize
+  -p  --process-id      Using PID as given after\
 "
 }
 
@@ -49,73 +40,122 @@ Options:
 # Read options
 ###############################################################
 
-if ! [ "$#" = 0 ]; then
-for __option in $(seq "$#"); do
-    case "$1" in
-        "-h" | "--help")
-            __usage
-            exit 0
+if ! [ "${#}" = 0 ]; then
+for __option in $(seq "${#}"); do
+    case "${__last_option}" in
+        "-p" | "--process-id")
+            if [ "${1}" -eq "${1}" ] 2>/dev/null; then
+                __pid="${1}"
+            else
+                echo "Invalid process ID \"${1}\""
+                echo
+                __usage
+                exit 1
+            fi
             ;;
-        "-f" | "--force")
-            __force='1'
-            echo "Discarding pre-rendered data"
-            ;;
-        "-v" | "--verbose")
-            __verbose='1'
-            ;;
-        "-vv" | "--very-verbose")
-            __verbose='1'
-            __very_verbose='1'
-            ;;
-        "-o" | "--optimize")
-            __optimize='1'
-            ;;
-        [0-9]*)
-            __size="${1}"
-            ;;
-	    *)
-            echo "Unknown option \"${1}\""
-            __usage
-            exit 1
+        *)
+            case "${1}" in
+                "-h" | "--help")
+                    __usage
+                    exit 0
+                    ;;
+                "-f" | "--force")
+                    __force='1'
+                    echo "Discarding pre-rendered data"
+                    ;;
+                "-v" | "--verbose")
+                    __verbose='1'
+                    ;;
+                "-vv" | "--very-verbose")
+                    __verbose='1'
+                    __very_verbose='1'
+                    ;;
+                "-o" | "--optimize")
+                    __optimize='1'
+                    ;;
+                "-p" | "--process-id")
+                    ;;
+                "-d" | "--debug")
+                    echo "Debugging mode enabled"
+                    __debug='1'
+                    __verbose='1'
+                    ;;
+                [0-9]*)
+                    __size="${1}"
+                    ;;
+	            *)
+                    echo "Unknown option \"${1}\""
+                    echo
+                    __usage
+                    exit 1
+                    ;;
+            esac
             ;;
     esac
+    __last_option="${1}"
     shift
 done
 fi
 
 ###############################################################
-# Set variables dependant on options
+# Set variables
 ###############################################################
 
+__name='Angl'
+__tmp_dir="/tmp/texpack${__pid}"
+__catalogue='catalogue.xml'
 __pack="${__name}-${__size}px"
 __old_pack="${__pack}-old"
 
 ###############################################################
+# Debugging flag
+###############################################################
+
+if [ "${__debug}" = '1' ]; then
+    if [ "${__very_verbose}" = '1' ]; then
+        set -x
+    fi
+fi
+
+###############################################################
 # Announce size
-__announce "Using size ${__size}px"
+__announce "Using size ${__size}px."
+###############################################################
+# Announce PID
+__announce "Using PID ${__pid}."
 ###############################################################
 
 ###############################################################
 # Set up folders
+__announce "Setting up folders."
 ###############################################################
+
+if [ -d "${__tmp_dir}" ]; then
+    rm -r "${__tmp_dir}"
+fi
 
 mkdir "${__tmp_dir}"
 
 if [ -d "${__pack}" ]; then
     if [ "${__force}" = 1 ]; then
+        __announce "Purging rendered data"
         rm -r "${__pack}"
+        mkdir -p "${__pack}/xml"
     else
-        echo "Reusing rendered data"
+        __announce "Re-using rendered data"
+        __re_use='1'
     fi
+else
+    mkdir "${__pack}/xml"
 fi
 
 ###############################################################
 # Split XML
-__announce "Splitting XML files"
+__announce "Splitting XML files."
 ###############################################################
 
+# This files (which eventually ends up in './src/xml/') is where
 __xml_current="${__tmp_dir}/xml_current"
-__xml_old="${__tmp_dir}/xml_old"
 
 for __range in $(__get_range "${__catalogue}" ITEM); do
     __random="${RANDOM}"
@@ -136,11 +176,11 @@ if [ -d './src/xml/' ]; then
     rm -r './src/xml/'
 fi
 
-mv "${__tmp_dir}/xml_current" './src/xml/'
+#mv "${__xml_current}" './src/xml/'
 
 ###############################################################
 # Inherit deps and cleanup
-__announce "Inheriting and creating dependancies and cleanup files"
+__announce "Inheriting and creating dependancies and cleanup files."
 ###############################################################
 
 mkdir "${__tmp_dir}/tmp_deps"
@@ -193,19 +233,15 @@ wait
 __popd
 
 ###############################################################
-# Set up folders for re-use
-__announce "Setting up folders."
+# Set up folders for xml
+__announce "Setting up folders for xml."
 ###############################################################
 
-if ! [ -d "${__pack}" ]; then
-    mkdir -p "${__pack}/xml"
-else
-    cp -r "${__pack}" "${__old_pack}"
-    mv "${__pack}/xml" "${__tmp_dir}/xml" ### TODO
-    rm -r "${__pack}"
-    mkdir "${__pack}"
-    mv "${__tmp_dir}/xml" "${__pack}"
-fi
+cp -r "${__pack}" "${__old_pack}"
+mv "${__pack}/xml" "${__tmp_dir}/xml"
+rm -r "${__pack}"
+mkdir -p "${__pack}/xml"
+mv "${__tmp_dir}/xml" "${__pack}"
 
 ###############################################################
 # List new and matching XML entries
@@ -271,9 +307,11 @@ __announce "Checking changes in source files."
 
 ###############################################################
 # General Cleanup
-__announce "Cleaning up"
 ###############################################################
 
-rm -r "${__tmp_dir}"
+if [ "${__debug}" = '0' ]; then
+    __announce "Cleaning up."
+    rm -r "${__tmp_dir}"
+fi
 
 exit
