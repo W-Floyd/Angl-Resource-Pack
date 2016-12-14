@@ -236,7 +236,7 @@ __popd
 __announce "Setting up folders for xml."
 ###############################################################
 
-mv -r "${__pack}" "${__old_pack}"
+mv "${__pack}" "${__old_pack}"
 
 ###############################################################
 # List new and matching XML entries
