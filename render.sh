@@ -154,7 +154,6 @@ fi
 __announce "Splitting XML files."
 ###############################################################
 
-# This files (which eventually ends up in './src/xml/') is where
 __xml_current="${__tmp_dir}/xml_current"
 
 for __range in $(__get_range "${__catalogue}" ITEM); do
@@ -176,14 +175,12 @@ if [ -d './src/xml/' ]; then
     rm -r './src/xml/'
 fi
 
-#mv "${__xml_current}" './src/xml/'
+mv "${__xml_current}" './src/xml/'
 
 ###############################################################
 # Inherit deps and cleanup
 __announce "Inheriting and creating dependancies and cleanup files."
 ###############################################################
-
-mkdir "${__tmp_dir}/tmp_deps"
 
 ###############################
 # __check_deps <DATASET>
@@ -208,6 +205,8 @@ for __dep in $(__check_deps "${1}"); do
 done
 }
 ###############################
+
+mkdir "${__tmp_dir}/tmp_deps"
 
 __pushd ./src/xml/
 
@@ -237,11 +236,7 @@ __popd
 __announce "Setting up folders for xml."
 ###############################################################
 
-cp -r "${__pack}" "${__old_pack}"
-mv "${__pack}/xml" "${__tmp_dir}/xml"
-rm -r "${__pack}"
-mkdir -p "${__pack}/xml"
-mv "${__tmp_dir}/xml" "${__pack}"
+mv -r "${__pack}" "${__old_pack}"
 
 ###############################################################
 # List new and matching XML entries
@@ -259,7 +254,7 @@ find -type f > "${__new_xml_list}"
 
 __popd
 
-__pushd "./${__pack}/xml"
+__pushd "./${__old_pack}/xml"
 
 find -type f > "${__old_xml_list}"
 
