@@ -372,18 +372,23 @@ __announce "Listing new and matching XML entries."
 
 # This is where all new xml files are listed
 __new_xml_list="${__tmp_dir}/xml_list_new"
+touch "${__new_xml_list}"
 
 # This is where all old xml files are listed
 __old_xml_list="${__tmp_dir}/xml_list_old"
+touch "${__old_xml_list}"
 
 # This is files only in the new list
 __new_split_xml_list="${__tmp_dir}/xml_list_new_split"
+touch "${__new_split_xml_list}"
 
 # This is files shared between list_new and list_old
 __shared_xml_list="${__tmp_dir}/xml_list_shared"
+touch "${__shared_xml_list}"
 
 # This is files only in old list
 __old_split_xml_list="${__tmp_dir}/xml_list_old_split"
+touch "${__old_split_xml_list}"
 
 # Get to xml directory again
 __pushd ./src/xml
@@ -415,12 +420,19 @@ __announce "Checking changes in XML files."
 
 # Where all new xml files are hashed to
 __new_hashes="${__tmp_dir}/new_hashes_xml"
+touch "${__new_hashes}"
 
 # Where all old xml files are hashed to
 __old_hashes="${__tmp_dir}/old_hashes_xml"
+touch "${__old_hashes}"
 
 # Where shared, but changed xml files are listed to
-__changed="${__tmp_dir}/changed_xml"
+__changed_xml="${__tmp_dir}/changed_xml"
+touch "${__changed_xml}"
+
+# Where unchanged xml files are listed
+__unchanged_xml="${__tmp_dir}/unchanged_xml"
+touch "${__unchanged_xml}"
 
 # Get to xml directory again
 __pushd ./src/xml
@@ -451,8 +463,10 @@ for __shared in $(cat "${__shared_xml_list}"); do
 
 # If the two hashes do not match, we know the xml file
 # for that file has changed, and so needs to be re-rendered
-    if [ "${__old_hash}" = "${__new_hash}" ]; then
-        echo "${__shared}" >> "${__changed}"
+    if ! [ "${__old_hash}" = "${__new_hash}" ]; then
+        echo "${__shared}" >> "${__changed_xml}"
+    else
+        echo "${__shared}" >> "${__unchanged_xml}"
     fi
 
 # Done with the hash checking
@@ -464,10 +478,20 @@ __announce "Checking changes in source files."
 ###############################################################
 
 # Where new source files are hashed to
-__source_hash_new="${__tmp_dir}/new_hashes"
+__source_hash_new="${__tmp_dir}/new_hashes_source"
+touch "${__source_hash_new}"
 
 # Where old source files are hashed to
-__source_hash_old="${__tmp_dir}/old_hashes"
+__source_hash_old="${__tmp_dir}/old_hashes_source"
+touch "${__source_hash_old}"
+
+# Where changed source files are listed
+__changed_source="${__tmp_dir}/changed_source"
+touch "${__changed_source}"
+
+# Where unchanged source files are listed
+__unchanged_source="${__tmp_dir}/unchanged_source"
+touch "${__unchanged_source}"
 
 # Get to the source directory
 __pushd ./src
@@ -487,12 +511,41 @@ __hash_folder "${__source_hash_old}" xml
 # Get back to main directory
 __popd
 
+# For every file in the shared xml list,
+for __shared in $(cat "${__shared_xml_list}"); do
+
+# Get the old hash
+    __old_hash="$(cat "${__source_hash_old}" | grep -w "${__shared}")"
+
+# Get the new hash
+    __new_hash="$(cat "${__source_hash_new}" | grep -w "${__shared}")"
+
+# If the two hashes do not match, we know the source file
+# for that file has changed, and so needs to be re-rendered
+    if ! [ "${__old_hash}" = "${__new_hash}" ]; then
+        echo "${__shared}" >> "${__changed_source}"
+    else
+        echo "${__shared}" >> "${__unchanged_source}"
+    fi
+
+# Done with the hash checking
+done
+
 ###############################################################
-# TODO | Make sure these files are re-rendered
+# TODO | These list files are to be processed
 #
-# "${__changed}"
+# "${__changed_source}"
+# "${__changed_xml}"
+# "${__new_xml_list}"
+#
+#
+# These list files that are okay
+#
+# "${__}"
 #
 ###############################################################
+
+
 
 ###############################################################
 # General Cleanup
