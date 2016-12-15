@@ -491,15 +491,21 @@ exit 1
 
 ###############################################################
 #
-# __hash_folder <FILE>
+# __hash_folder <FILE> <EXCLUDEDIR>
 #
 # Hashes the current folder and outputs to <FILE>
+# EXCLUDEDIR is optional (in the form of "xml", not "./xml/")
 #
 ###############################################################
 
 __hash_folder () {
-if ! [ -z "$(find -type f)" ]; then
-    md5sum $(find -type f) > "${1}"
+if [ -z "$2" ]; then
+__listing="$(find -type f)"
+else
+__listing="$(find -not -path "./${2}/*" -type f)"
+fi
+if ! [ -z "${__listing}" ]; then
+    md5sum ${__listing} > "${1}"
 fi
 }
 
