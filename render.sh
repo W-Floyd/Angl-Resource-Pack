@@ -414,10 +414,10 @@ __announce "Checking changes in XML files."
 ###############################################################
 
 # Where all new xml files are hashed to
-__new_hashes="${__tmp_dir}/new_hashes"
+__new_hashes="${__tmp_dir}/new_hashes_xml"
 
 # Where all old xml files are hashed to
-__old_hashes="${__tmp_dir}/old_hashes"
+__old_hashes="${__tmp_dir}/old_hashes_xml"
 
 # Where shared, but changed xml files are listed to
 __changed="${__tmp_dir}/changed_xml"
@@ -463,7 +463,29 @@ done
 __announce "Checking changes in source files."
 ###############################################################
 
+# Where new source files are hashed to
+__source_hash_new="${__tmp_dir}/new_hashes"
 
+# Where old source files are hashed to
+__source_hash_old="${__tmp_dir}/old_hashes"
+
+# Get to the source directory
+__pushd ./src
+
+# Hash source files into designated file, exluding xml files
+__hash_folder "${__source_hash_new}" xml
+
+# Get back to main directory
+__popd
+
+# Get to old xml directory again
+__pushd "./${__pack}"
+
+# Hash source files into designated file, exluding xml files
+__hash_folder "${__source_hash_old}" xml
+
+# Get back to main directory
+__popd
 
 ###############################################################
 # TODO | Make sure these files are re-rendered
