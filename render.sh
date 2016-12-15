@@ -314,16 +314,29 @@ done
 }
 ###############################
 
+# Make directory for dependency work
 mkdir "${__tmp_dir}/tmp_deps"
 
+# Get into the xml directory
 __pushd ./src/xml/
 
+# For every xml file,
 for __xml in $(find -type f); do
+
+# Set the location for the dep list
     __dep_list="${__tmp_dir}/tmp_deps/${__xml}"
+
+# Make the directory for the dep list if need be
     mkdir -p "$(__odir "${__dep_list}")"
+
+# Recursively get ALL dependencies for said xml files
     __check_deps_loop "${__xml}" | sort | uniq > "${__dep_list}"
+
+# Set the value of the dependancies according to previous
+# dependency list
     __set_value "${__xml}" DEPENDS "$(cat "${__dep_list}")"
 
+# Recurse cleanup
     __get_value "${__xml}" CLEANUP >> "${__dep_list}_cleanup"
     for __dep in $(cat "${__dep_list}"); do
         if [ -a "${__dep}.xml" ]; then
@@ -331,12 +344,16 @@ for __xml in $(find -type f); do
         fi
     done
 
+# Set cleanup as well
     __set_value "${__xml}" CLEANUP "$(cat "${__dep_list}_cleanup" | sort | uniq)"
 
+# Finish loop and start again, so it is in parallel
 done &
 
+# Wait for all loops to finish
 wait
 
+# Go back to the regular directory
 __popd
 
 # Else, if we're supposed to re-use xml files
@@ -353,24 +370,42 @@ fi
 __announce "Listing new and matching XML entries."
 ###############################################################
 
+# This is where all new xml files are listed
 __new_xml_list="${__tmp_dir}/xml_list_new"
+
+# This is where all old xml files are listed
 __old_xml_list="${__tmp_dir}/xml_list_old"
-__new_split_xml_list="${__tmp_dir}/xml_list_new_shared"
+
+# This is files only in the new list
+__new_split_xml_list="${__tmp_dir}/xml_list_new_split"
+
+# This is files shared between list_new and list_old
 __shared_xml_list="${__tmp_dir}/xml_list_shared"
 
+# This is files only in old list
+__old_split_xml_list="${__tmp_dir}/xml_list_old_split"
+
+# Get to xml directory again
 __pushd ./src/xml
 
+# List all files into new list
 find -type f > "${__new_xml_list}"
 
+# Get back to main directory
 __popd
 
+# Get to old xml directory again
 __pushd "./${__pack}/xml"
 
+# List all files into old list
 find -type f > "${__old_xml_list}"
 
+# Get back to main directory
 __popd
 
+# Grep stuff to get uniq entries from different lists
 grep -Fxvf "${__old_xml_list}" "${__new_xml_list}" > "${__new_split_xml_list}"
+grep -Fxvf "${__new_xml_list}" "${__old_xml_list}" > "${__old_split_xml_list}"
 grep -Fxf "${__old_xml_list}" "${__new_xml_list}" > "${__shared_xml_list}"
 
 ###############################################################
@@ -378,29 +413,49 @@ grep -Fxf "${__old_xml_list}" "${__new_xml_list}" > "${__shared_xml_list}"
 __announce "Checking changes in XML files."
 ###############################################################
 
+# Where all new xml files are hashed to
 __new_hashes="${__tmp_dir}/new_hashes"
+
+# Where all old xml files are hashed to
 __old_hashes="${__tmp_dir}/old_hashes"
 
+# Where shared, but changed xml files are listed to
 __changed="${__tmp_dir}/changed_xml"
 
+# Get to xml directory again
 __pushd ./src/xml
 
+# Hash the folder, and output to the new hashes file
 __hash_folder "${__new_hashes}"
 
+# Get back to main directory
 __popd
 
+# Get to old xml directory again
 __pushd "./${__pack}/xml"
 
+# Hash the folder, and output to the old hashes file
 __hash_folder "${__old_hashes}"
 
+# Get back to main directory
 __popd
 
+# For every file in the shared xml list,
 for __shared in $(cat "${__shared_xml_list}"); do
+
+# Get the old hash
     __old_hash="$(cat "${__old_hashes}" | grep -w "${__shared}")"
+
+# Get the new hash
     __new_hash="$(cat "${__new_hashes}" | grep -w "${__shared}")"
+
+# If the two hashes do not match, we know the xml file
+# for that file has changed, and so needs to be re-rendered
     if [ "${__old_hash}" = "${__new_hash}" ]; then
         echo "${__shared}" >> "${__changed}"
     fi
+
+# Done with the hash checking
 done
 
 ###############################################################
@@ -411,9 +466,17 @@ __announce "Checking changes in source files."
 
 
 ###############################################################
+# TODO | Make sure these files are re-rendered
+#
+# "${__changed}"
+#
+###############################################################
+
+###############################################################
 # General Cleanup
 ###############################################################
 
+# If we're debugging, don't clean up (it will be done on next run)
 if [ "${__debug}" = '0' ]; then
     __announce "Cleaning up."
     rm -r "${__tmp_dir}"
