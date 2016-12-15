@@ -11,6 +11,7 @@ __force='0'
 __cores='1'
 __optimize='0'
 __re_use='0'
+__re_use_xml='0'
 __pid="$$"
 __debug='0'
 
@@ -114,7 +115,7 @@ for __option in $(seq "${#}"); do
 
 # tell the script to not re-split the xml file, since it's all current
                 "-r" | "--re-use")
-                    __re_use='1'
+                    __re_use_xml='1'
                     ;;
 
 # make the script be verbose and not clean up,
@@ -215,13 +216,13 @@ if [ -d "${__pack}" ]; then
     if [ "${__force}" = 1 ]; then
 
 # Announce and remove it
-        __announce "Purging rendered data"
+        __announce "Purging rendered data."
         rm -r "${__pack}"
         mkdir -p "${__pack}/xml"
 
 # Otherwise, re-use rendered data
     else
-        __announce "Re-using rendered data"
+        __announce "Re-using rendered data."
         __re_use='1'
     fi
 
@@ -232,35 +233,61 @@ fi
 
 ###############################################################
 # Split XML
-__announce "Splitting XML files."
 ###############################################################
 
+# If we're told not to re-use xml, then
+if [ "${__re_use_xml}" = '0' ]; then
+
+__announce "Splitting XML files."
+
+# Where current xml files are split off to temporarily
 __xml_current="${__tmp_dir}/xml_current"
 
+# For every ITEM in catalogue,
 for __range in $(__get_range "${__catalogue}" ITEM); do
+
+# Use a random value (so this can be run in parallel)
     __random="${RANDOM}"
+
+# File to use for reading ranges
     __read_range_file="${__tmp_dir}/${__range}${__random}"
+
+# Actually read the range into file. This now contains an ITEM.
     __read_range "${__catalogue}" "${__range}" > "${__read_range_file}"
 
-    #TODO
-    # Optimize xml functions more
+# TODO
+# Optimize xml functions more
+# Currently way too slow (though better than before)
 
+# Get the NAME of this ITEM
     __item_name="$(__get_value "${__read_range_file}" NAME)"
+
+# Make the correct directory for dumping the xml into an
+# appropriately named file
     mkdir -p "$(__odir "${__xml_current}/${__item_name}")"
+
+# Move that temporary read range file from before to somewhere
+# more useful, according to the item's name
     mv "${__read_range_file}" "${__xml_current}/${__item_name}.xml"
+
+# Finish loop, but don't block the loop until it finishes
 done &
 
+# Wait here as all those loops from above finish
 wait
 
+# If xml files currently exist, and we're not told to re-use
+# them, delete them and move new xml in
 if [ -d './src/xml/' ]; then
     rm -r './src/xml/'
 fi
 
+# Move xml into src now, so it can be used later
 mv "${__xml_current}" './src/xml/'
 
 ###############################################################
 # Inherit deps and cleanup
-__announce "Inheriting and creating dependancies and cleanup files."
+__announce "Inheriting and creating dependencies and cleanup files."
 ###############################################################
 
 ###############################
@@ -311,6 +338,15 @@ done &
 wait
 
 __popd
+
+# Else, if we're supposed to re-use xml files
+else
+
+# Let the user know we're re-using xml
+__announce "Re-using xml files."
+
+# End if statement whether to split xml again or not
+fi
 
 ###############################################################
 # List new and matching XML entries
