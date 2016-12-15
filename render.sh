@@ -18,8 +18,10 @@ __debug='0'
 # Setting up functions
 ###############################################################
 
+# Gets functions from file
 source functions.sh
 
+# Print help
 __usage () {
 echo "render.sh <OPTIONS> <SIZE>
 
@@ -41,63 +43,117 @@ Options:
 # Read options
 ###############################################################
 
+# If there are are options,
 if ! [ "${#}" = 0 ]; then
+
+# then let's look at them in sequence.
 for __option in $(seq "${#}"); do
+
+# So, let's say the last given option was
     case "${__last_option}" in
+
+# to use a special PID.
         "-p" | "--process-id")
+
+# So, if it's a number,
             if [ "${1}" -eq "${1}" ] 2>/dev/null; then
+
+# set the PID to this
                 __pid="${1}"
+
+# If it isn't though,
             else
+
+# warn the user and exit, because they're doing it wrong.
                 echo "Invalid process ID \"${1}\""
                 echo
                 __usage
                 exit 1
             fi
             ;;
+
+# Now, with the option to the last option out of the way, let's
+# look at regular options.
         *)
+
+# So, again, if the options matches any of these:
             case "${1}" in
+
+# help the user out if they ask and exit nicely,
                 "-h" | "--help")
                     __usage
                     exit 0
                     ;;
+
+# let the script and user know it should and will force rendering,
                 "-f" | "--force")
                     __force='1'
                     echo "Discarding pre-rendered data"
                     ;;
+
+# tell the script to be verbose,
                 "-v" | "--verbose")
                     __verbose='1'
                     ;;
+
+# tell the script to be very verbose,
                 "-vv" | "--very-verbose")
                     __verbose='1'
                     __very_verbose='1'
                     ;;
+
+# tell the script to optimize the produced files,
                 "-o" | "--optimize")
                     __optimize='1'
                     ;;
+
+# tell the script to use a specified PID (this is taken care of
+# earlier) using the last option which is set later,
                 "-p" | "--process-id")
                     ;;
+
+# tell the script to not re-split the xml file, since it's all current
                 "-r" | "--re-use")
                     __re_use='1'
                     ;;
+
+# make the script be verbose and not clean up,
                 "-d" | "--debug")
                     echo "Debugging mode enabled"
                     __debug='1'
                     __verbose='1'
                     ;;
+
+# general catch all for any number input that isn't for the PID
+# which is set as the render size,
                 [0-9]*)
                     __size="${1}"
                     ;;
+
+# any other options are invalid so the script says what it was
+# and exits after telling you how to use it.
 	            *)
                     echo "Unknown option \"${1}\""
                     echo
                     __usage
                     exit 1
                     ;;
+
+# We're done with single flag options
             esac
             ;;
+
+# We're done with 2 flag options
     esac
+
+# Let the script know what the last option was, for use in two
+# flag options
     __last_option="${1}"
+
+# Make option 2 option 1, so we can loop through nicely
     shift
+
+# Done with out loop and if statement
 done
 fi
 
@@ -105,16 +161,23 @@ fi
 # Set variables
 ###############################################################
 
+# Master name of pack, so re-branding is easy.
 __name='Angl'
+
+# Designated temporary directory
 __tmp_dir="/tmp/texpack${__pid}"
+
+# Location of catalogue file, just to be pedantic
 __catalogue='catalogue.xml'
+
+# Rendered folder name
 __pack="${__name}-${__size}px"
-__old_pack="${__pack}-old"
 
 ###############################################################
 # Debugging flag
 ###############################################################
 
+# If we're supposed to be in debugging mode and be very verbose
 if [ "${__debug}" = '1' ]; then
     if [ "${__very_verbose}" = '1' ]; then
         set -x
@@ -128,27 +191,41 @@ __announce "Using size ${__size}px."
 # Announce PID
 __announce "Using PID ${__pid}."
 ###############################################################
+# Announce optimize
+__announce "Will optimize output files."
+###############################################################
 
 ###############################################################
 # Set up folders
 __announce "Setting up folders."
 ###############################################################
 
+# Clean out the temporary directory if need be
 if [ -d "${__tmp_dir}" ]; then
     rm -r "${__tmp_dir}"
 fi
 
+# Make the temporary directory
 mkdir "${__tmp_dir}"
 
+# If the pack folder already exists, then
 if [ -d "${__pack}" ]; then
+
+# If we must remove it
     if [ "${__force}" = 1 ]; then
+
+# Announce and remove it
         __announce "Purging rendered data"
         rm -r "${__pack}"
         mkdir -p "${__pack}/xml"
+
+# Otherwise, re-use rendered data
     else
         __announce "Re-using rendered data"
         __re_use='1'
     fi
+
+# Otherwise, make the pack and xml folder
 else
     mkdir -p "${__pack}/xml"
 fi
