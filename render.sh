@@ -679,7 +679,7 @@ __rendered_list="${__tmp_dir}/rendered_list"
 touch "${__rendered_list}"
 
 # Combine and sort all changed source and changed xml files (also new)
-__changed_both="${__tmp_dir}/changed_both"
+__changed_both="${__tmp_dir}/changed_all"
 touch "${__changed_both}"
 sort "${__changed_source}" "${__changed_xml}" "${__new_split_source_list}" "${__new_split_xml_list}" | uniq > "${__changed_both}"
 
@@ -697,13 +697,15 @@ for __xml in $(find -type f); do
 # Get dependancies
     __get_value "${__xml}" DEPENDS > "${__tmp_dir}/tmp_deps2"
 
+    echo "${__xml}" >> "${__tmp_dir}/tmp_deps2"
+
     __xml_name="$(echo "${__xml}" | sed 's/^\.\///')"
 
 # Compare to list of changed ITEMS, and check if file exists,
     if ! [ -z "$(grep -Fxf "${__tmp_dir}/tmp_deps2" "${__changed_both}")" ]; then
 
-# otherwise, ensure the old file does not exist, and make sure
-# to be re/rendered
+# ensure the old file does not exist, and make sure to be
+# re/rendered
         if [ -a "${__working_dir}/${__pack}/${__xml}" ]; then
             rm "${__working_dir}/${__pack}/${__xml}"
         fi
@@ -711,8 +713,8 @@ for __xml in $(find -type f); do
 
     elif [ -a "${__working_dir}/${__pack}/${__xml_name}" ]; then
 
-# and if not present, and file exists, add to a list of
-# properly processed files and copy file across,
+# otherwise if file exists, add to a list of properly processed
+# files and copy file across,
 
         mkdir -p "$(__odir "$(echo "${__working_dir}/${__pack_new}/${__xml_name}")")"
         cp "${__working_dir}/${__pack}/${__xml_name}" "${__working_dir}/${__pack_new}/${__xml_name}"
