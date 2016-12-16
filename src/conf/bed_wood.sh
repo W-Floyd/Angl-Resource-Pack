@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./assets/minecraft/textures/blocks/
+__pushd ./assets/minecraft/textures/blocks/
 
 __tile planks_oak.png 4x2 planks_oak_.png
 
@@ -12,6 +12,6 @@ rm planks_oak_.png
 
 mv bed_wood_.png bed_wood.png
 
-cd ../../../../
+__popd
 
 exit

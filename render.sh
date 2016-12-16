@@ -344,6 +344,7 @@ __get_value "${1}" DEPENDS
 ###############################
 __check_deps_loop () {
 __get_value "${1}" CONFIG
+__get_value "${1}" CLEANUP
 for __dep in $(__check_deps "${1}"); do
     echo "${__dep}"
     if [ -a "${__dep}" ]; then
@@ -677,10 +678,10 @@ touch "${__render_list}"
 __rendered_list="${__tmp_dir}/rendered_list"
 touch "${__rendered_list}"
 
-# Combine and sort all changed source and changed xml files
+# Combine and sort all changed source and changed xml files (also new)
 __changed_both="${__tmp_dir}/changed_both"
 touch "${__changed_both}"
-sort "${__changed_source}" "${__changed_xml}" | uniq > "${__changed_both}"
+sort "${__changed_source}" "${__changed_xml}" "${__new_split_source_list}" "${__new_split_xml_list}" | uniq > "${__changed_both}"
 
 # Combine and sort all unchanged source and unchanged xml files
 __unchanged_both="${__tmp_dir}/unchanged_both"
@@ -696,23 +697,26 @@ for __xml in $(find -type f); do
 # Get dependancies
     __get_value "${__xml}" DEPENDS > "${__tmp_dir}/tmp_deps2"
 
+    __xml_name="$(echo "${__xml}" | sed 's/^\.\///')"
+
 # Compare to list of changed ITEMS, and check if file exists,
-    if [ -z "$(grep -Fxf "${__tmp_dir}/tmp_deps2" "${__changed_both}")" ] && [ -a "${__working_dir}/${__pack}/${__xml}" ]; then
-
-# and if not present, and file exists, add to a list of
-# properly processed files and copy file across,
-
-       mkdir -p "$(basename "$(echo "${__working_dir}/${__pack_new}/${__xml}")")"
-        cp "${__working_dir}/${__pack}/${__xml}" "${__working_dir}/${__pack_new}/${__xml}"
-        echo "${__xml}" >> "${__rendered_list}"
+    if ! [ -z "$(grep -Fxf "${__tmp_dir}/tmp_deps2" "${__changed_both}")" ]; then
 
 # otherwise, ensure the old file does not exist, and make sure
 # to be re/rendered
-    else
         if [ -a "${__working_dir}/${__pack}/${__xml}" ]; then
             rm "${__working_dir}/${__pack}/${__xml}"
         fi
         echo "${__xml}" >> "${__render_list}"
+
+    elif [ -a "${__working_dir}/${__pack}/${__xml_name}" ]; then
+
+# and if not present, and file exists, add to a list of
+# properly processed files and copy file across,
+
+        mkdir -p "$(__odir "$(echo "${__working_dir}/${__pack_new}/${__xml_name}")")"
+        cp "${__working_dir}/${__pack}/${__xml_name}" "${__working_dir}/${__pack_new}/${__xml_name}"
+        echo "${__xml}" >> "${__rendered_list}"
 
 # Done with if statement
     fi
