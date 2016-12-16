@@ -328,6 +328,9 @@ mv "${__xml_current}" './src/xml/'
 __announce "Inheriting and creating dependencies and cleanup files."
 ###############################################################
 
+# End if statement whether to split xml again or not
+fi
+
 ###############################
 # __check_deps <DATASET>
 ###############################
@@ -351,6 +354,9 @@ for __dep in $(__check_deps "${1}"); do
 done
 }
 ###############################
+
+# If we're told not to re-use xml, then
+if [ "${__re_use_xml}" = '0' ]; then
 
 # Make directory for dependency work
 mkdir "${__tmp_dir}/tmp_deps"
@@ -695,6 +701,8 @@ for __xml in $(find -type f); do
 
 # and if not present, and file exists, add to a list of
 # properly processed files and copy file across,
+
+       mkdir -p "$(basename "$(echo "${__working_dir}/${__pack_new}/${__xml}")")"
         cp "${__working_dir}/${__pack}/${__xml}" "${__working_dir}/${__pack_new}/${__xml}"
         echo "${__xml}" >> "${__rendered_list}"
 
@@ -715,6 +723,10 @@ done
 # Go back to the regular directory
 __popd
 
+# sort and uniq render list
+sort "${__render_list}" | uniq > "${__render_list}_"
+mv "${__render_list}_" "${__render_list}"
+
 ###############################################################
 # Copy all source, xml and conf scripts
 __announce "Setting up files for processing."
@@ -733,7 +745,9 @@ __pushd "${__pack}"
 
 while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
 
-    __config="./xml/$(head -n 1 "${__render_list}" | sed 's/^\.\///')"
+    __orig_config="$(head -n 1 "${__render_list}")"
+
+    __config="./xml/$(echo "${__orig_config}" | sed 's/^\.\///')"
 
     __check_deps "${__config}" > "${__tmp_dir}/tmpdeps"
 
@@ -755,6 +769,8 @@ while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
 
         if ! [ -z "${__config_script}" ]; then
 
+            __announce "Processing \"${__config}\""
+
             cp "${__config_script}" ./
 
             eval '\./'"$(basename "${__config_script}")" "${__tmp_size}" "$(__get_value "${__config}" OPTIONS)"
@@ -765,7 +781,7 @@ while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
 
     else
 
-        echo "${__config}" >> "${__render_list}"
+        echo "${__orig_config}" >> "${__render_list}"
 
     fi
 
