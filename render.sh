@@ -268,7 +268,7 @@ for __range in $(__get_range "${__catalogue}" ITEM); do
 
 # Move that temporary read range file from before to somewhere
 # more useful, according to the item's name
-    mv "${__read_range_file}" "${__xml_current}/${__item_name}.xml"
+    mv "${__read_range_file}" "${__xml_current}/${__item_name}"
 
 # Finish loop, but don't block the loop until it finishes
 done &
@@ -305,10 +305,10 @@ __check_deps_loop () {
 __get_value "${1}" CONFIG
 for __dep in $(__check_deps "${1}"); do
     echo "${__dep}"
-    if [ -a "${__dep}.xml" ]; then
-        __get_value "${__dep}.xml" CONFIG
-        __get_value "${__dep}.xml" CLEANUP
-        __check_deps_loop "${__dep}.xml"
+    if [ -a "${__dep}" ]; then
+        __get_value "${__dep}" CONFIG
+        __get_value "${__dep}" CLEANUP
+        __check_deps_loop "${__dep}"
     fi
 done
 }
@@ -339,8 +339,8 @@ for __xml in $(find -type f); do
 # Recurse cleanup
     __get_value "${__xml}" CLEANUP >> "${__dep_list}_cleanup"
     for __dep in $(cat "${__dep_list}"); do
-        if [ -a "${__dep}.xml" ]; then
-            __get_value "${__dep}.xml" CLEANUP >> "${__dep_list}_cleanup"
+        if [ -a "${__dep}" ]; then
+            __get_value "${__dep}" CLEANUP >> "${__dep_list}_cleanup"
         fi
     done
 
@@ -473,6 +473,54 @@ for __shared in $(cat "${__shared_xml_list}"); do
 done
 
 ###############################################################
+# List new and matching source files
+__announce "Listing new and matching source files."
+###############################################################
+
+# This is where all new source files are listed
+__new_source_list="${__tmp_dir}/source_list_new"
+touch "${__new_source_list}"
+
+# This is where all old source files are listed
+__old_source_list="${__tmp_dir}/source_list_old"
+touch "${__old_source_list}"
+
+# This is files only in the new list
+__new_split_source_list="${__tmp_dir}/source_list_new_split"
+touch "${__new_split_source_list}"
+
+# This is files shared between list_new and list_old
+__shared_source_list="${__tmp_dir}/source_list_shared"
+touch "${__shared_source_list}"
+
+# This is files only in old list
+__old_split_source_list="${__tmp_dir}/source_list_old_split"
+touch "${__old_split_source_list}"
+
+# Get to source directory again
+__pushd ./src
+
+# List all files into new list
+find -not -path "./xml/*" -type f > "${__new_source_list}"
+
+# Get back to main directory
+__popd
+
+# Get to old xml directory again
+__pushd "./${__pack}"
+
+# List all files into old list
+find -not -path "./xml/*" -type f > "${__old_source_list}"
+
+# Get back to main directory
+__popd
+
+# Grep stuff to get uniq entries from different lists
+grep -Fxvf "${__old_source_list}" "${__new_source_list}" > "${__new_split_source_list}"
+grep -Fxvf "${__new_source_list}" "${__old_source_list}" > "${__old_split_source_list}"
+grep -Fxf "${__old_source_list}" "${__new_source_list}" > "${__shared_source_list}"
+
+###############################################################
 # Check changes in source files
 __announce "Checking changes in source files."
 ###############################################################
@@ -512,7 +560,7 @@ __hash_folder "${__source_hash_old}" xml
 __popd
 
 # For every file in the shared xml list,
-for __shared in $(cat "${__shared_xml_list}"); do
+for __shared in $(cat "${__shared_source_list}"); do
 
 # Get the old hash
     __old_hash="$(cat "${__source_hash_old}" | grep -w "${__shared}")"
@@ -532,20 +580,64 @@ for __shared in $(cat "${__shared_xml_list}"); do
 done
 
 ###############################################################
-# TODO | These list files are to be processed
+# Before we go on, let's recap. These are the files we want
+#
+# "${__changed_xml}"
+# "${__unchanged_xml}"
 #
 # "${__changed_source}"
-# "${__changed_xml}"
-# "${__new_xml_list}"
+# "${__unchanged_source}"
 #
+# "${__new_split_xml_list}"
 #
-# These list files that are okay
+# So, the plan is to:
 #
-# "${__}"
+# Find all valid existing rendered items to bring across.
+# To do so, all files in "${__unchanged_xml}" should be checked
+# whether they exist, then put on a list. If yes, just
+# list. If not, add to a different list (re/render list)
+#
+# Combine "${__changed_source}" and "${__changed_xml}", then
+# find any xml files that *depend* upon them. Then add
+# "${__changed_xml}" itself.
+#
+# Find entries only in pre-rendered list and not in depends
+# list to be re-rendered. Replace that list, and copy all files
+# to the new folder.
+#
+# Next, add files from "${__new_split_xml_list}" to that list.
+# These are new entries, and shouldn't have any problems
+#
+# At this point, we have a file with a list of files to render.
+# All resultant files have been cleaned as needed.
 #
 ###############################################################
+# Get names source
+###############################################################
 
+# Where we'll start putting new work in, will eventually be
+# renamed to regular
+__pack_new="${__pack}_new"
+mkdir "${__pack_new}"
 
+# List of xml files to re/render
+__render_list="${__tmp_dir}/render_list"
+touch "${__render_list}"
+
+__
+
+# Get into working directory
+__pushd "./${__pack}"
+
+# For every xml item that is
+for __item in $(cat "${__unchanged_xml}"); do
+    if [ -a "${__item}" ]; then
+        cp "${__item}" "../${__pack_new}"
+    else
+        echo
+done
+
+__popd
 
 ###############################################################
 # General Cleanup
