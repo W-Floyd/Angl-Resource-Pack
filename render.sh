@@ -758,44 +758,31 @@ fi
 
 ###############################################################
 
-__should_exit='0'
+__pushd "${__pack}"
 
-while [ "${__should_exit}" = '0' ]; do
+while ! [ -z "$(cat "${__tmp_dir}/render_list")" ]; do
 
-if [ -z "$(cat "${__tmp_dir}/render_list")" ]; then
+    __config=$(head -n 1 "${__tmp_dir}/render_list" | sed 's/^\.\///')
 
-	__should_exit='1'
+    if [ -z "$(grep -Fxvf "${__tmp_dir}/rendered_list" "$(__get_value "./xml/${__config}" DEPENDS | sed 's/^$//')")" ]; then
 
-else
-	__config=$(head -n 1 "${__tmp_dir}/render_list")
+        __announce "Processing \"${__config}\""
 
-	__get_value "${__config}" DEPENDS | sed 's/^$//' > "${__tmp_dir}/tmpdeps"
+        __exec "./xml/${__config}"
 
-	if [ -a "${__tmp_dir}tmpdeps2" ]; then
-		echo '' > "${__tmp_dir}tmpdeps2"
-	fi
+        echo "${__config}" >> "${__tmp_dir}/rendered_list"
 
-	grep -Fxv -f "${__tmp_dir}/rendered_list" "${__tmp_dir}/tmpdeps" > "${__tmp_dir}/tmpdeps2"
+    else
 
-	if [ -z "$(cat "${__tmp_dir}/tmpdeps2")" ]; then
+        echo "${__config}" >> "${__tmp_dir}/render_list"
 
-		echo "Processing $(__get_value "${__config}" NAME)"
+    fi
 
-		__exec "./xml/${__config}"
-
-		__get_value "${__config}" NAME >> "${__tmp_dir}/rendered_list"
-
-	else
-
-		echo "${__config}" >> "${__tmp_dir}/render_list"
-
-	fi
-
-	sed -i '1d' "${__tmp_dir}/render_list"
-
-fi
+    sed -i '1d' "${__tmp_dir}/render_list"
 
 done
+
+__popd
 
 ###############################################################
 # Final stats

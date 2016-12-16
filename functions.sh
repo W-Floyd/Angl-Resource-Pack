@@ -65,7 +65,7 @@ sed 's|\(.*\)\(\/\).*|\1\2|' <<< "$1"
 #
 ###############################################################
 
-if [ $__mode = 'quick' ]; then
+if [ "${__mode}" = 'quick' ]; then
 __render () {
 rsvg-convert
 -d "$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)" \
@@ -75,7 +75,7 @@ rsvg-convert
 convert "$(__mext "${2}")"".png" -define png:color-type=6 "$(__mext "$2")"'_'".png"
 mv "$(__mext "${2}")"'_'".png" "$(__mext "${2}")"".png"
 }
-elif [ "{$__mode}" = 'slow' ]; then
+elif [ "${__mode}" = 'slow' ]; then
 __render () {
 inkscape \
 --export-dpi="$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)" \
