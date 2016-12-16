@@ -728,57 +728,48 @@ mv "${__pack_new}" "${__pack}"
 # Render loop
 __announce "Starting to render."
 ###############################################################
-#
-# __exec <XML>
-#
-# Execute
-# To be used later
-#
-###############################################################
-
-__exec () {
-if [ -z "$(__get_value "$1" SIZE)" ]; then
-	__tmp_res=${__size}
-else
-	__tmp_res=$(__get_value "${1}" SIZE)
-fi
-
-__config_script=$(__get_value "${1}" CONFIG)
-
-if ! [ -z "${__config_script}" ]; then
-	cp "${__config_script}" ./
-
-	eval '\./'"$(basename "${__config_script}")" "${__tmp_res}" "$(__get_value "${1}" OPTIONS)"
-
-	rm "$(basename "${__config_script}")"
-
-fi
-
-}
-
-###############################################################
 
 __pushd "${__pack}"
 
-while ! [ -z "$(cat "${__tmp_dir}/render_list")" ]; do
+while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
 
-    __config=$(head -n 1 "${__tmp_dir}/render_list" | sed 's/^\.\///')
+    __config="./xml/$(head -n 1 "${__render_list}" | sed 's/^\.\///')"
 
-    if [ -z "$(grep -Fxvf "${__tmp_dir}/rendered_list" "$(__get_value "./xml/${__config}" DEPENDS | sed 's/^$//')")" ]; then
+    __check_deps "${__config}" > "${__tmp_dir}/tmpdeps"
 
-        __announce "Processing \"${__config}\""
+    if [ -z "$(grep -Fxf "${__tmp_dir}/tmpdeps" "${__render_list}")" ]; then
 
-        __exec "./xml/${__config}"
+        __tmp_val="$(__get_value "${__config}" SIZE)"
 
-        echo "${__config}" >> "${__tmp_dir}/rendered_list"
+        if ! [ -z "${__tmp_val}" ]; then
+
+            __tmp_size="${__tmp_val}"
+
+        else
+
+            __tmp_size="${__size}"
+
+        fi
+
+        __config_script="$(__get_value "${__config}" CONFIG)"
+
+        if ! [ -z "${__config_script}" ]; then
+
+            cp "${__config_script}" ./
+
+            eval '\./'"$(basename "${__config_script}")" "${__tmp_size}" "$(__get_value "${__config}" OPTIONS)"
+
+            rm "$(basename "${__config_script}")"
+
+        fi
 
     else
 
-        echo "${__config}" >> "${__tmp_dir}/render_list"
+        echo "${__config}" >> "${__render_list}"
 
     fi
 
-    sed -i '1d' "${__tmp_dir}/render_list"
+    sed -i '1d' "${__render_list}"
 
 done
 
