@@ -614,7 +614,8 @@ done
 # All resultant files have been cleaned as needed.
 #
 ###############################################################
-# Get names source
+# Checking files to re/render
+__announce "Checking for items to re/process."
 ###############################################################
 
 # Where we'll start putting new work in, will eventually be
@@ -627,7 +628,7 @@ __render_list="${__tmp_dir}/render_list"
 touch "${__render_list}"
 
 # List of xml files that are correctly rendered
-__render_list="${__tmp_dir}/rendered_list"
+__rendered_list="${__tmp_dir}/rendered_list"
 touch "${__rendered_list}"
 
 # Combine and sort all changed source and changed xml files
@@ -640,15 +641,6 @@ __unchanged_both="${__tmp_dir}/unchanged_both"
 touch "${__unchanged_both}"
 sort "${__unchanged_source}" "${__unchanged_xml}" | uniq > "${__unchanged_both}"
 
-# Find all ITEMS that rely on the list of changed sources and
-# list of changed xml, then add any of the xml ITEMs themselves
-
-
-
-
-
-
-
 # Get into the xml directory
 __pushd ./src/xml/
 
@@ -659,18 +651,18 @@ for __xml in $(find -type f); do
     __get_value "${__xml}" DEPENDS > "${__tmp_dir}/tmp_deps2"
 
 # Compare to list of changed ITEMS, and check if file exists,
-    if [ -z "$(grep -Fxf "${__tmp_dir}/tmp_deps2" "${__changed_both}")" ] && [ -a "${__working_dir}/${__pack}" ]; then
+    if [ -z "$(grep -Fxf "${__tmp_dir}/tmp_deps2" "${__changed_both}")" ] && [ -a "${__working_dir}/${__pack}/${__xml}" ]; then
 
 # and if not present, and file exists, add to a list of
 # properly processed files and copy file across,
-        cp "${__working_dir}/${__pack}" "${__working_dir}/${__pack_new}"
+        cp "${__working_dir}/${__pack}/${__xml}" "${__working_dir}/${__pack_new}/${__xml}"
         echo "${__xml}" >> "${__rendered_list}"
 
 # otherwise, ensure the old file does not exist, and make sure
 # to be re/rendered
     else
-        if [ -a "${__working_dir}/${__pack}" ]; then
-            rm "${__working_dir}/${__pack}"
+        if [ -a "${__working_dir}/${__pack}/${__xml}" ]; then
+            rm "${__working_dir}/${__pack}/${__xml}"
         fi
         echo "${__xml}" >> "${__render_list}"
 
@@ -682,6 +674,22 @@ done
 
 # Go back to the regular directory
 __popd
+
+###############################################################
+# Copy all source, xml and conf scripts
+__announce "Setting up files for processing."
+###############################################################
+
+cp -r "./src/"* "${__pack_new}"
+rm -r "${__pack}"
+mv "${__pack_new}" "${__pack}"
+
+###############################################################
+# Render loop
+__announce "Starting to render."
+###############################################################
+
+
 
 ###############################################################
 # General Cleanup
