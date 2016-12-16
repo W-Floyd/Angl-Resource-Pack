@@ -36,7 +36,6 @@ Options:
   -f  --force           Discard pre-rendered data
   -v  --verbose         Verbose
   -vv --very-verbose    Very verbose
-  -o  --optimize        Optimize
   -p  --process-id      Using PID as given after
   -x  --xml-only        Only process xml files
   -r  --re-use          Re-use xml files\
@@ -104,11 +103,6 @@ for __option in $(seq "${#}"); do
                 "-vv" | "--very-verbose")
                     __verbose='1'
                     __very_verbose='1'
-                    ;;
-
-# tell the script to optimize the produced files,
-                "-o" | "--optimize")
-                    __optimize='1'
                     ;;
 
 # tell the script to use a specified PID (this is taken care of
@@ -803,12 +797,61 @@ __popd
 
 __end_time=$(date +%s)
 
-__announce "Done!
+__announce "Done rendering!
 Rendered ${__size}px in $((__end_time-__start_time)) seconds"
 
 ###############################################################
 # End if only xml splitting
 fi
+
+###############################################################
+# Make cleaned folder
+__announce "Making cleaned folder."
+###############################################################
+
+__cleanup_all="${__tmp_dir}/cleanup_all"
+touch "${__cleanup_all}"
+
+__pack_cleaned="${__pack}_cleaned"
+
+if [ -d "${__pack_cleaned}" ]; then
+    rm -r "${__pack_cleaned}"
+fi
+
+__pushd ./src/xml
+
+for __xml in $(find -type f); do
+
+    __get_value "${__xml}" CLEANUP >> "${__cleanup_all}"
+
+    if [ "$(__get_value "${__xml}" KEEP)" = "NO" ]; then
+
+        echo "${__xml}" >> "${__cleanup_all}"
+
+    fi
+
+done
+
+sort "${__cleanup_all}" | uniq > "${__cleanup_all}_"
+
+mv "${__cleanup_all}_" "${__cleanup_all}"
+
+__popd
+
+cp -r "${__pack}" "${__pack_cleaned}"
+
+__pushd "${__pack_cleaned}"
+
+for __file in $(cat "${__cleanup_all}"); do
+
+    rm "${__file}"
+
+done
+
+rm -r ./xml
+rm -r ./conf
+
+__popd
 
 ###############################################################
 # General Cleanup

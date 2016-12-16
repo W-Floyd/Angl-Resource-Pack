@@ -26,4 +26,4 @@ The script system, however, is fair game.
 
 ***
 
-(c) William Floyd - 2016
+(c) William Floyd - %YEAR%
