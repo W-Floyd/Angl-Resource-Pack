@@ -762,36 +762,36 @@ __should_exit='0'
 
 while [ "${__should_exit}" = '0' ]; do
 
-if [ -z "$(cat "${__tmp_directory}/render_list")" ]; then
+if [ -z "$(cat "${__tmp_dir}/render_list")" ]; then
 
 	__should_exit='1'
 
 else
-	__config=$(head -n 1 "${__tmp_directory}/render_list")
+	__config=$(head -n 1 "${__tmp_dir}/render_list")
 
-	__get_value "${__config}" DEPENDS | sed 's/^$//' > "${__tmp_directory}/tmpdeps"
+	__get_value "${__config}" DEPENDS | sed 's/^$//' > "${__tmp_dir}/tmpdeps"
 
-	if [ -a "${__tmp_directory}tmpdeps2" ]; then
-		echo '' > "${__tmp_directory}tmpdeps2"
+	if [ -a "${__tmp_dir}tmpdeps2" ]; then
+		echo '' > "${__tmp_dir}tmpdeps2"
 	fi
 
-	grep -Fxv -f "${__tmp_directory}/rendered_list" "${__tmp_directory}/tmpdeps" > "${__tmp_directory}/tmpdeps2"
+	grep -Fxv -f "${__tmp_dir}/rendered_list" "${__tmp_dir}/tmpdeps" > "${__tmp_dir}/tmpdeps2"
 
-	if [ -z "$(cat "${__tmp_directory}/tmpdeps2")" ]; then
+	if [ -z "$(cat "${__tmp_dir}/tmpdeps2")" ]; then
 
 		echo "Processing $(__get_value "${__config}" NAME)"
 
-		__exec "${__config}"
+		__exec "./xml/${__config}"
 
-		__get_value "${__config}" NAME >> "${__tmp_directory}/rendered_list"
+		__get_value "${__config}" NAME >> "${__tmp_dir}/rendered_list"
 
 	else
 
-		echo "${__config}" >> "${__tmp_directory}/render_list"
+		echo "${__config}" >> "${__tmp_dir}/render_list"
 
 	fi
 
-	sed -i '1d' "${__tmp_directory}/render_list"
+	sed -i '1d' "${__tmp_dir}/render_list"
 
 fi
 
