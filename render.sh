@@ -1,5 +1,7 @@
 #!/bin/bash
 
+__start_time=$(date +%s)
+
 ###############################
 # Defaults
 ###############################
@@ -13,6 +15,7 @@ __re_use='0'
 __re_use_xml='0'
 __pid="$$"
 __debug='0'
+__xml_only='0'
 
 ###############################################################
 # Setting up functions
@@ -35,7 +38,8 @@ Options:
   -vv --very-verbose    Very verbose
   -o  --optimize        Optimize
   -p  --process-id      Using PID as given after
-  -r  --re-use          Re-use split xml files\
+  -x  --xml-only        Only process xml files
+  -r  --re-use          Re-use xml files\
 "
 }
 
@@ -114,7 +118,14 @@ for __option in $(seq "${#}"); do
 
 # tell the script to not re-split the xml file, since it's all current
                 "-r" | "--re-use")
+                    echo "Re-using xml files"
                     __re_use_xml='1'
+                    if [ "${__xml_only}" = '1' ]; then
+                        echo "You're an idiot, read usage again."
+                        echo
+                        __usage
+                        exit 1
+                    fi
                     ;;
 
 # make the script be verbose and not clean up,
@@ -122,6 +133,18 @@ for __option in $(seq "${#}"); do
                     echo "Debugging mode enabled"
                     __debug='1'
                     __verbose='1'
+                    ;;
+
+# only process xml files
+                "-x" | "--xml-only")
+                    echo "Only processing xml files"
+                    __xml_only='1'
+                    if [ "${__re_use_xml}" = '1' ]; then
+                        echo "You're an idiot, read usage again."
+                        echo
+                        __usage
+                        exit 1
+                    fi
                     ;;
 
 # general catch all for any number input that isn't for the PID
@@ -188,6 +211,10 @@ if [ "${__debug}" = '1' ]; then
 fi
 
 ###############################################################
+# If not only doing xml
+if [ "${__xml_only}" = '0' ]; then
+
+###############################################################
 # Announce size
 __announce "Using size ${__size}px."
 ###############################################################
@@ -203,6 +230,9 @@ __announce "Will optimize output files."
 __announce "Setting up folders."
 ###############################################################
 
+# End conditional if onyl doing xml processing
+fi
+
 # Clean out the temporary directory if need be
 if [ -d "${__tmp_dir}" ]; then
     rm -r "${__tmp_dir}"
@@ -210,6 +240,10 @@ fi
 
 # Make the temporary directory
 mkdir "${__tmp_dir}"
+
+###############################################################
+# If not only doing xml
+if [ "${__xml_only}" = '0' ]; then
 
 # If the pack folder already exists, then
 if [ -d "${__pack}" ]; then
@@ -233,6 +267,8 @@ else
     mkdir -p "${__pack}/xml"
 fi
 
+# End conditional if onyl doing xml processing
+fi
 ###############################################################
 # Split XML
 ###############################################################
@@ -366,6 +402,10 @@ __announce "Re-using xml files."
 
 # End if statement whether to split xml again or not
 fi
+
+###############################################################
+# If only xml splitting
+if [ "${__xml_only}" = '0' ]; then
 
 ###############################################################
 # List new and matching XML entries
@@ -688,8 +728,87 @@ mv "${__pack_new}" "${__pack}"
 # Render loop
 __announce "Starting to render."
 ###############################################################
+#
+# __exec <XML>
+#
+# Execute
+# To be used later
+#
+###############################################################
 
+__exec () {
+if [ -z "$(__get_value "$1" SIZE)" ]; then
+	__tmp_res=${__size}
+else
+	__tmp_res=$(__get_value "${1}" SIZE)
+fi
 
+__config_script=$(__get_value "${1}" CONFIG)
+
+if ! [ -z "${__config_script}" ]; then
+	cp "${__config_script}" ./
+
+	eval '\./'"$(basename "${__config_script}")" "${__tmp_res}" "$(__get_value "${1}" OPTIONS)"
+
+	rm "$(basename "${__config_script}")"
+
+fi
+
+}
+
+###############################################################
+
+__should_exit='0'
+
+while [ "${__should_exit}" = '0' ]; do
+
+if [ -z "$(cat "${__tmp_directory}/render_list")" ]; then
+
+	__should_exit='1'
+
+else
+	__config=$(head -n 1 "${__tmp_directory}/render_list")
+
+	__get_value "${__config}" DEPENDS | sed 's/^$//' > "${__tmp_directory}/tmpdeps"
+
+	if [ -a "${__tmp_directory}tmpdeps2" ]; then
+		echo '' > "${__tmp_directory}tmpdeps2"
+	fi
+
+	grep -Fxv -f "${__tmp_directory}/rendered_list" "${__tmp_directory}/tmpdeps" > "${__tmp_directory}/tmpdeps2"
+
+	if [ -z "$(cat "${__tmp_directory}/tmpdeps2")" ]; then
+
+		echo "Processing $(__get_value "${__config}" NAME)"
+
+		__exec "${__config}"
+
+		__get_value "${__config}" NAME >> "${__tmp_directory}/rendered_list"
+
+	else
+
+		echo "${__config}" >> "${__tmp_directory}/render_list"
+
+	fi
+
+	sed -i '1d' "${__tmp_directory}/render_list"
+
+fi
+
+done
+
+###############################################################
+# Final stats
+###############################################################
+
+__end_time=$(date +%s)
+
+__announce "Done!
+Rendered ${__size}px in $((__end_time-__start_time)) seconds"
+
+###############################################################
+# End if only xml splitting
+fi
 
 ###############################################################
 # General Cleanup
