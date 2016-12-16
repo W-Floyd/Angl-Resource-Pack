@@ -8,7 +8,6 @@ __size='128'
 __verbose='0'
 __very_verbose='0'
 __force='0'
-__cores='1'
 __optimize='0'
 __re_use='0'
 __re_use_xml='0'
@@ -161,6 +160,9 @@ fi
 ###############################################################
 # Set variables
 ###############################################################
+
+# Master folder
+__working_dir="$PWD"
 
 # Master name of pack, so re-branding is easy.
 __name='Angl'
@@ -624,19 +626,61 @@ mkdir "${__pack_new}"
 __render_list="${__tmp_dir}/render_list"
 touch "${__render_list}"
 
-__
+# List of xml files that are correctly rendered
+__render_list="${__tmp_dir}/rendered_list"
+touch "${__rendered_list}"
 
-# Get into working directory
-__pushd "./${__pack}"
+# Combine and sort all changed source and changed xml files
+__changed_both="${__tmp_dir}/changed_both"
+touch "${__changed_both}"
+sort "${__changed_source}" "${__changed_xml}" | uniq > "${__changed_both}"
 
-# For every xml item that is
-for __item in $(cat "${__unchanged_xml}"); do
-    if [ -a "${__item}" ]; then
-        cp "${__item}" "../${__pack_new}"
+# Combine and sort all unchanged source and unchanged xml files
+__unchanged_both="${__tmp_dir}/unchanged_both"
+touch "${__unchanged_both}"
+sort "${__unchanged_source}" "${__unchanged_xml}" | uniq > "${__unchanged_both}"
+
+# Find all ITEMS that rely on the list of changed sources and
+# list of changed xml, then add any of the xml ITEMs themselves
+
+
+
+
+
+
+
+# Get into the xml directory
+__pushd ./src/xml/
+
+# For every xml file,
+for __xml in $(find -type f); do
+
+# Get dependancies
+    __get_value "${__xml}" DEPENDS > "${__tmp_dir}/tmp_deps2"
+
+# Compare to list of changed ITEMS, and check if file exists,
+    if [ -z "$(grep -Fxf "${__tmp_dir}/tmp_deps2" "${__changed_both}")" ] && [ -a "${__working_dir}/${__pack}" ]; then
+
+# and if not present, and file exists, add to a list of
+# properly processed files and copy file across,
+        cp "${__working_dir}/${__pack}" "${__working_dir}/${__pack_new}"
+        echo "${__xml}" >> "${__rendered_list}"
+
+# otherwise, ensure the old file does not exist, and make sure
+# to be re/rendered
     else
-        echo
+        if [ -a "${__working_dir}/${__pack}" ]; then
+            rm "${__working_dir}/${__pack}"
+        fi
+        echo "${__xml}" >> "${__render_list}"
+
+# Done with if statement
+    fi
+
+# Finish loop
 done
 
+# Go back to the regular directory
 __popd
 
 ###############################################################
