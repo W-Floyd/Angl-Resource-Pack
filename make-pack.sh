@@ -1,60 +1,88 @@
 #!/bin/bash
 
-__name="Angl"
+__size=''
 
-__pack_and_render () {
+# Print help
+__usage () {
+echo "render.sh <OPTIONS> <SIZE>
 
-if [ -z "$3" ]; then
+Renders the texture pack at the specified size (or default 128)
+Order of options and size are not important.
 
-	./render.sh "${2}"
+Options:
+  -h  --help            This help message
+  -r  --re-use          Re-use xml files\
+"
+}
 
-elif [ "$3" = '-f' ]; then
+# If there are are options,
+if ! [ "${#}" = 0 ]; then
 
-	./render.sh '-f' "${2}"
+# then let's look at them in sequence.
+for __option in $(seq "${#}"); do
 
+    case "${1}" in
 
-elif [ "$3" = '-p' ]; then
+        "-r" | "--re-use")
+            __re_use_xml_processed='1'
+            ;;
 
-	./render.sh '-p' "${2}"
+        [0-9]*)
+            __size="${1}"
+            ;;
+
+        *)
+            echo "Unknown option \"${1}\""
+            echo
+            __usage
+            exit 1
+            ;;
+
+    esac
+
+    shift
+
+done
 
 fi
 
-./packer.sh "${1}-${2}px_cleaned"
+__sizes="32
+64
+128
+256
+512"
 
-rm -r "${1}-${2}px_cleaned/"
+__render_and_pack () {
 
-mv "${1}-${2}px_cleaned.zip" "${1}-${2}px.zip"
+__packfile="$(./render.sh --name-only "${1}")"
+
+./render.sh -r "${1}"
+
+cd "${__packfile}"
+
+zip -qZ store -r "../${__packfile}" ./
+
+cd ../
+
 }
 
-if [ -z "$1" ]; then
+if [ "${__re_use_xml_processed}" = 0 ]; then
 
-	__seq=$(seq 5 9)
+    ./render.sh -x
 
-	for __size in $(echo "$__seq" | head -n 1); do
+fi
 
-		__resolution=$(echo "2^${__size}" | bc)
+if [ -z "${__size}" ]; then
 
-		__pack_and_render "$__name" "$__resolution" "-f"
+    for __size in "$(echo "${__sizes}")"; do
 
-	done
+        __render_and_pack "${__size}"
 
-	for __size in $(echo "$__seq" | sed '1d'); do
-
-		__resolution=$(echo "2^${__size}" | bc)
-
-		cp "./${__name}-$(echo '2^'"$(echo "$__seq" | head -n 1)" | bc)px/hashes.xml" './hashes_new.xml'
-
-		__pack_and_render "$__name" "$__resolution" "-p"
-
-	done
-
-	rm -r /tmp/texpack/
+    done
 
 else
 
-	__resolution="$1"
-
-	__pack_and_render "$__name" "$__resolution"
+    __render_and_pack "${1}"
 
 fi
 

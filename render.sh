@@ -16,6 +16,7 @@ __re_use_xml='0'
 __pid="$$"
 __debug='0'
 __xml_only='0'
+__name_only='0'
 
 ###############################################################
 # Setting up functions
@@ -38,7 +39,8 @@ Options:
   -vv --very-verbose    Very verbose
   -p  --process-id      Using PID as given after
   -x  --xml-only        Only process xml files
-  -r  --re-use          Re-use xml files\
+  -r  --re-use          Re-use xml files
+  -n  --name-only       Print output folder name\
 "
 }
 
@@ -141,6 +143,11 @@ for __option in $(seq "${#}"); do
                     fi
                     ;;
 
+# Whether or not to just print the exported folder name
+                "-n" | "--name-only")
+                    __name_only='1'
+                    ;;
+
 # general catch all for any number input that isn't for the PID
 # which is set as the render size,
                 [0-9]*)
@@ -193,6 +200,11 @@ __catalogue='catalogue.xml'
 # Rendered folder name
 __pack="${__name}-${__size}px"
 
+if [ "${__name_only}" = '1' ]; then
+    echo "${__pack}"
+    exit
+fi
+
 ###############################################################
 # Debugging flag
 ###############################################################
@@ -224,7 +236,7 @@ __announce "Will optimize output files."
 __announce "Setting up folders."
 ###############################################################
 
-# End conditional if onyl doing xml processing
+# End conditional if only doing xml processing
 fi
 
 # Clean out the temporary directory if need be
@@ -261,7 +273,7 @@ else
     mkdir -p "${__pack}/xml"
 fi
 
-# End conditional if onyl doing xml processing
+# End conditional if only doing xml processing
 fi
 ###############################################################
 # Split XML
@@ -797,12 +809,8 @@ __popd
 
 __end_time=$(date +%s)
 
-__announce "Done rendering!
-Rendered ${__size}px in $((__end_time-__start_time)) seconds"
-
-###############################################################
-# End if only xml splitting
-fi
+__announce "Done rendering!"
+__announce "Rendered ${__size}px in $((__end_time-__start_time)) seconds"
 
 ###############################################################
 # Make cleaned folder
@@ -852,6 +860,10 @@ rm -r ./xml
 rm -r ./conf
 
 __popd
+
+###############################################################
+# End if only xml splitting
+fi
 
 ###############################################################
 # General Cleanup
