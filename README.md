@@ -2,8 +2,6 @@
 ##An open-source vector based Minecraft resource pack.
 ### This is a WIP, *many* textures have yet to be added, but the script system is (mostly?) done
 ***
-Currently the render script spends ***way*** too long hashing and comparing files. I am slowly going to be learning Python, with the aim to replace bash with something I little more suited to the task. I have yet to determine how I will implement this, or if it will be done at all.
-***
 If you just want to download the resource pack, look here: https://github.com/W-Floyd/Angl-Resource-Pack-Export
 
 ***
@@ -32,11 +30,11 @@ If no resolution is specified, the pack will be rendered at size 128x128
 
 ***
 
-If things don't render properly after modifying some of the catalogue stuff, just delete the Angle-*px folders and re-render. This is a known issue, but my XML parsing system is slow, stupid, and already more bloated than it should be. Adding checks to the catalogue would just make it worse.
+If things don't render properly after modifying some stuff, just delete the Angle-*px folders and re-render. This shouldn't happen, so if it does, please add an issue and describe the file changed so I can fix it.
 
 ***
 
-This is *only* to showcase my method and history of development, hopefully to help someone else someday.
+This is *mostly* to showcase my method and history of development, hopefully to help someone else someday.
 
 **It does not give you a right to take credit for my work.**
 
