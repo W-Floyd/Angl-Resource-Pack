@@ -1,6 +1,9 @@
 #!/bin/bash
 
 __size=''
+__use_size='0'
+__re_use_xml_processed='0'
+__verbose='0'
 
 # Print help
 __usage () {
@@ -11,7 +14,8 @@ Order of options and size are not important.
 
 Options:
   -h  --help            This help message
-  -r  --re-use          Re-use xml files\
+  -r  --re-use          Re-use xml files
+  -v  --verbose         Be verbose\
 "
 }
 
@@ -27,8 +31,13 @@ for __option in $(seq "${#}"); do
             __re_use_xml_processed='1'
             ;;
 
+        "-v" | "--verbose")
+            __verbose='1'
+            ;;
+
         [0-9]*)
             __size="${1}"
+            __use_size='1'
             ;;
 
         *)
@@ -56,7 +65,13 @@ __render_and_pack () {
 
 __packfile="$(./render.sh --name-only "${1}")"
 
-./render.sh -r "${1}"
+echo "Processing size ${1}"
+
+if [ "${__verbose}" = '1' ]; then
+    ./render.sh -v -r "${1}"
+else
+    ./render.sh -r "${1}" 1> /dev/null
+fi
 
 cd "${__packfile}_cleaned"
 
@@ -64,17 +79,25 @@ zip -qZ store -r "../${__packfile}" ./
 
 cd ../
 
+rm -r "${__packfile}_cleaned"
+
 }
 
 if [ "${__re_use_xml_processed}" = 0 ]; then
 
-    ./render.sh -x
+    echo "Processing xml files"
+
+    if [ "${__verbose}" = '1' ]; then
+        ./render.sh -x -v
+    else
+        ./render.sh -x 1> /dev/null
+    fi
 
 fi
 
-if [ -z "${__size}" ]; then
+if [ "${__use_size}" = '0' ]; then
 
-    for __size in "$(echo "${__sizes}")"; do
+    for __size in $(echo "${__sizes}"); do
 
         __render_and_pack "${__size}"
 
