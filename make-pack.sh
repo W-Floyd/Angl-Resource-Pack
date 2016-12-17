@@ -58,7 +58,7 @@ __packfile="$(./render.sh --name-only "${1}")"
 
 ./render.sh -r "${1}"
 
-cd "${__packfile}"
+cd "${__packfile}_cleaned"
 
 zip -qZ store -r "../${__packfile}" ./
 
