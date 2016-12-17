@@ -1,6 +1,6 @@
 #!/bin/bash
 
-__date=$(date +%Y-%m-%d_%H-%M-%S)
+__date="$(date +%Y-%m-%d_%H-%M-%S)"
 
 ./make-pack.sh
 
