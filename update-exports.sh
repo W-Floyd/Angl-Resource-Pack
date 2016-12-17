@@ -10,7 +10,7 @@ __date="$(date +%Y-%m-%d_%H-%M-%S)"
 ./make-pack.sh
 
 for __file in $(ls -1 *.zip); do
-	mv "${__file}" "../Angl-Resource-Pack-Export/${__file}"
+	cp "${__file}" "../Angl-Resource-Pack-Export/${__file}"
 done
 
 cd ../Angl-Resource-Pack-Export
