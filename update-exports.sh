@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! [ -d '../Angl-Resource-Pack-Export' ]; then
+    echo "Export dir does not exist."
+    exit 1
+fi
+
 __date="$(date +%Y-%m-%d_%H-%M-%S)"
 
 ./make-pack.sh
