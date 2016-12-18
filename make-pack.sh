@@ -105,7 +105,7 @@ if [ "${__use_size}" = '0' ]; then
 
 else
 
-    __render_and_pack "${1}"
+    __render_and_pack "${__size}"
 
 fi
 
