@@ -1365,13 +1365,13 @@
 		<CLEANUP>./assets/minecraft/textures/blocks/leaves_oak.svg</CLEANUP>
 	</ITEM>
 	<ITEM>
-	    <NAME>./assets/minecraft/textures/blocks/leaves_acacia.png
-	    <CONFIG>leaves.sh</CONFIG>
-	    <SIZE></SIZE>
-		<OPTIONS>acacia</OPTIONS>
+		<NAME>./assets/minecraft/textures/blocks/leaves_acacia.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>leaves_acacia</OPTIONS>
 		<KEEP>YES</KEEP>
-		<DEPENDS>./assets/minecraft/textures/blocks/leaves_oak.png</DEPENDS>
-		<CLEANUP></CLEANUP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/leaves_acacia.svg</CLEANUP>
 	</ITEM>
 </RENDER>
 <OTHER>
