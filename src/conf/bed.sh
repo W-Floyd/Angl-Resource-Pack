@@ -3,6 +3,10 @@
 __pushd ./assets/minecraft/textures/blocks/
 
 case "$2" in
+    "bed")
+        __overlay "bed_wood.png" "bed_covers.png" "bed.png"
+        exit
+        ;;
 	"bed_feet_end")
 		__shift="0.5625"
 		__rotate="-1"
@@ -35,13 +39,7 @@ case "$2" in
 		;;
 esac
 
-__crop "bed_covers.png" "$1" $__start "${2}_covers.png"
-__crop "bed_wood.png" "$1" $__start "${2}_wood.png"
-
-__overlay "${2}_wood.png" "${2}_covers.png" "${2}.png"
-
-rm "${2}_covers.png"
-rm "${2}_wood.png"
+__crop "bed.png" "$1" ${__start} "${2}.png"
 
 __rotate "${2}.png" "$__rotate"
 

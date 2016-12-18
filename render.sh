@@ -39,7 +39,6 @@ Options:
   -vv --very-verbose    Very verbose
   -p  --process-id      Using PID as given after
   -x  --xml-only        Only process xml files
-  -r  --re-use          Re-use xml files
   -n  --name-only       Print output folder name\
 "
 }
@@ -112,18 +111,6 @@ for __option in $(seq "${#}"); do
                 "-p" | "--process-id")
                     ;;
 
-# tell the script to not re-split the xml file, since it's all current
-                "-r" | "--re-use")
-                    echo "Re-using xml files"
-                    __re_use_xml='1'
-                    if [ "${__xml_only}" = '1' ]; then
-                        echo "You're an idiot, read usage again."
-                        echo
-                        __usage
-                        exit 1
-                    fi
-                    ;;
-
 # make the script be verbose and not clean up,
                 "-d" | "--debug")
                     echo "Debugging mode enabled"
@@ -135,12 +122,6 @@ for __option in $(seq "${#}"); do
                 "-x" | "--xml-only")
                     echo "Only processing xml files"
                     __xml_only='1'
-                    if [ "${__re_use_xml}" = '1' ]; then
-                        echo "You're an idiot, read usage again."
-                        echo
-                        __usage
-                        exit 1
-                    fi
                     ;;
 
 # Whether or not to just print the exported folder name
@@ -278,6 +259,24 @@ fi
 ###############################################################
 # Split XML
 ###############################################################
+
+__pushd ./src/xml
+
+if [ -a "${__catalogue}" ]; then
+
+    __old_catalogue_hash="$(md5sum "${__catalogue}")"
+
+    rm "${__catalogue}"
+
+fi
+
+__popd
+
+__new_catalogue_hash="$(md5sum "${__catalogue}")"
+
+if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ]; then
+    __re_use_xml='1'
+fi
 
 # If we're told not to re-use xml, then
 if [ "${__re_use_xml}" = '0' ]; then
@@ -864,6 +863,8 @@ __popd
 ###############################################################
 # End if only xml splitting
 fi
+
+cp "${__catalogue}" "./src/xml/${__catalogue}"
 
 ###############################################################
 # General Cleanup

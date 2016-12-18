@@ -1296,13 +1296,22 @@
 		<CLEANUP></CLEANUP>
 	</ITEM>
 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/bed.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>bed</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed_wood.png
+		./assets/minecraft/textures/blocks/bed_covers.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+	</ITEM>
+	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_end.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_end</OPTIONS>
 		<KEEP>YES</KEEP>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 	</ITEM>
 	<ITEM>
@@ -1311,8 +1320,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_side</OPTIONS>
 		<KEEP>YES</KEEP>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 	</ITEM>
 	<ITEM>
@@ -1321,8 +1329,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_top</OPTIONS>
 		<KEEP>YES</KEEP>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 	</ITEM>
 	<ITEM>
@@ -1331,8 +1338,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_side</OPTIONS>
 		<KEEP>YES</KEEP>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 	</ITEM>
 	<ITEM>
@@ -1341,8 +1347,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_top</OPTIONS>
 		<KEEP>YES</KEEP>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 	</ITEM>
 	<ITEM>
@@ -1351,8 +1356,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_end</OPTIONS>
 		<KEEP>YES</KEEP>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers.png
-		./assets/minecraft/textures/blocks/bed_wood.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 	</ITEM>
 	<ITEM>
