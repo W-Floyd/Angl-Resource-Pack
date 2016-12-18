@@ -275,6 +275,8 @@ __popd
 __new_catalogue_hash="$(md5sum "${__catalogue}")"
 
 if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ]; then
+    __announce "No changes to xml catalogue."
+
     __re_use_xml='1'
 fi
 
@@ -506,6 +508,8 @@ __hash_folder "${__old_hashes}"
 # Get back to main directory
 __popd
 
+# TODO - Make a more efficient method of doing this
+
 # For every file in the shared xml list,
 for __shared in $(cat "${__shared_xml_list}"); do
 
@@ -695,6 +699,8 @@ sort "${__unchanged_source}" "${__unchanged_xml}" | uniq > "${__unchanged_both}"
 
 # Get into the xml directory
 __pushd ./src/xml/
+
+# TODO - Make a more efficient method of doing this
 
 # For every xml file,
 for __xml in $(find -type f); do

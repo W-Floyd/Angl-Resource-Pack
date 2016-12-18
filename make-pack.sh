@@ -7,8 +7,9 @@ __verbose='0'
 __usage () {
 echo "make-pack.sh <OPTIONS> <SIZE>
 
-Makes the texture pack at the specified size (or using default
-list). Order of options and size are not important.
+Makes the texture pack at the specified size(s) (or using
+default list of sizes). Order of options and size(s) are not
+important.
 
 Options:
   -h  --help            This help message
@@ -23,6 +24,11 @@ if ! [ "${#}" = 0 ]; then
 for __option in $(seq "${#}"); do
 
     case "${1}" in
+
+        "-h" | "--help")
+            __usage
+            exit
+            ;;
 
         "-v" | "--verbose")
             __verbose='1'
