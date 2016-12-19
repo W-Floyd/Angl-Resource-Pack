@@ -1,4 +1,6 @@
 # TODO list
 
+Make tallgrass look good
 Finish leaves
-Get pack format up to speed with 1.11
+Complete chests, crafting bench, furnace.
+Complete torch
