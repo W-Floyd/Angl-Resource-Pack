@@ -21,6 +21,7 @@ Copy an entry from an existing texture similar to your own. I *HIGHLY* recommend
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
+		<COMMON>Dirt</COMMON>
 	</ITEM>
 ```
 
@@ -42,6 +43,8 @@ DEPENDS describes any files this file **directly** relies on. For instance, if y
 
 CLEANUP describes the source files to delete upon completion of the resource pack. Again, formatted relative to the top folder of the resource pack. For images composed entirely from pre-rendered images, this will be blank.
 
+COMMON describes the common name of the texture. This is optional, and might be hard to fill in at times. Only useful on KEEP files.
+
 ***
 
 So, we've added an antry that looks like:
@@ -55,6 +58,7 @@ So, we've added an antry that looks like:
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stone_andesite.svg</CLEANUP>
+		<COMMON>Andesite</COMMON>
 	</ITEM>
 ```
 
@@ -67,3 +71,5 @@ So, run './make-pack.sh 32', and the new texture should be found, rendered and p
 ***
 
 Note that if you have unsatisfied dependancies, the script currently does not know that, nor give any useful output to you, so keep an eye out for that. Overall, errors are unforgiving - things must be **perfect** to function correctly.
+
+Also, to elaborate on the COMMON field, it is subjective. For example, 'Andesite' could just as easily have been 'Stone (Andesite)'. Up to you, just keep it consistant.
