@@ -22,7 +22,7 @@ Copy an entry from an existing texture similar to your own. I *HIGHLY* recommend
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
 	</ITEM>
-'''
+```
 
 First, an explaination of the syntax in use here:
 
@@ -56,7 +56,7 @@ So, we've added an antry that looks like:
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stone_andesite.svg</CLEANUP>
 	</ITEM>
-'''
+```
 
 The script basic_block.sh saves us re-writing a script for each file. There are a lot of blocks that need no special processing, this saves us a lot of redundant work. The option given is specific to this script, and our knowlege of the use.
 
