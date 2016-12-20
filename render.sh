@@ -1,6 +1,6 @@
 #!/bin/bash
 
-__start_time=$(date +%s)
+__start_time="$(date +%s)"
 
 ###############################
 # Defaults
@@ -10,8 +10,6 @@ __size='128'
 __verbose='0'
 __very_verbose='0'
 __force='0'
-__optimize='0'
-__re_use='0'
 __re_use_xml='0'
 __pid="$$"
 __debug='0'
@@ -208,9 +206,6 @@ __announce "Using size ${__size}px."
 # Announce PID
 __announce "Using PID ${__pid}."
 ###############################################################
-# Announce optimize
-__announce "Will optimize output files."
-###############################################################
 
 ###############################################################
 # Set up folders
@@ -246,7 +241,6 @@ if [ -d "${__pack}" ]; then
 # Otherwise, re-use rendered data
     else
         __announce "Re-using rendered data."
-        __re_use='1'
     fi
 
 # Otherwise, make the pack and xml folder
@@ -812,7 +806,7 @@ __popd
 # Final stats
 ###############################################################
 
-__end_time=$(date +%s)
+__end_time="$(date +%s)"
 
 __announce "Done rendering!"
 __announce "Rendered ${__size}px in $((__end_time-__start_time)) seconds"
