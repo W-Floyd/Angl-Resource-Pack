@@ -74,7 +74,7 @@ else
     ./render.sh "${1}" 1> /dev/null
 fi
 
-if [ -a "${__packfile}" ]; then
+if [ -a "${__packfile}.zip" ]; then
     rm "${__packfile}.zip"
 fi
 

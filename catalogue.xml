@@ -52,283 +52,591 @@
 		<COMMON>Grass</COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_black.png</NAME>
+		<NAME>./colour_black_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_black.svg</CLEANUP>
+		<CLEANUP>./colour_black_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_blue.png</NAME>
+		<NAME>./colour_blue_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_blue.svg</CLEANUP>
+		<CLEANUP>./colour_blue_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_brown.png</NAME>
+		<NAME>./colour_brown_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_brown.svg</CLEANUP>
+		<CLEANUP>./colour_brown_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_cyan.png</NAME>
+		<NAME>./colour_cyan_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_cyan.svg</CLEANUP>
+		<CLEANUP>./colour_cyan_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_gray.png</NAME>
+		<NAME>./colour_gray_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_gray.svg</CLEANUP>
+		<CLEANUP>./colour_gray_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_green.png</NAME>
+		<NAME>./colour_green_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_green.svg</CLEANUP>
+		<CLEANUP>./colour_green_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_light_blue.png</NAME>
+		<NAME>./colour_light_blue_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_light_blue.svg</CLEANUP>
+		<CLEANUP>./colour_light_blue_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_lime.png</NAME>
+		<NAME>./colour_lime_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_lime.svg</CLEANUP>
+		<CLEANUP>./colour_lime_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_magenta.png</NAME>
+		<NAME>./colour_magenta_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_magenta.svg</CLEANUP>
+		<CLEANUP>./colour_magenta_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_orange.png</NAME>
+		<NAME>./colour_orange_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_orange.svg</CLEANUP>
+		<CLEANUP>./colour_orange_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_pink.png</NAME>
+		<NAME>./colour_pink_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_pink.svg</CLEANUP>
+		<CLEANUP>./colour_pink_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_purple.png</NAME>
+		<NAME>./colour_purple_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_purple.svg</CLEANUP>
+		<CLEANUP>./colour_purple_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_red.png</NAME>
+		<NAME>./colour_red_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_red.svg</CLEANUP>
+		<CLEANUP>./colour_red_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_silver.png</NAME>
+		<NAME>./colour_silver_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_silver.svg</CLEANUP>
+		<CLEANUP>./colour_silver_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_white.png</NAME>
+		<NAME>./colour_white_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_white.svg</CLEANUP>
+		<CLEANUP>./colour_white_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_yellow.png</NAME>
+		<NAME>./colour_yellow_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_yellow.svg</CLEANUP>
+		<CLEANUP>./colour_yellow_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_acacia.png</NAME>
+		<NAME>./colour_log_acacia_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_log_acacia.svg</CLEANUP>
+		<CLEANUP>./colour_log_acacia_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_big_oak.png</NAME>
+		<NAME>./colour_log_big_oak_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_log_big_oak.svg</CLEANUP>
+		<CLEANUP>./colour_log_big_oak_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_birch.png</NAME>
+		<NAME>./colour_log_birch_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_birch</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_log_birch.svg</CLEANUP>
+		<CLEANUP>./colour_log_birch_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_jungle.png</NAME>
+		<NAME>./colour_log_jungle_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_log_jungle.svg</CLEANUP>
+		<CLEANUP>./colour_log_jungle_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_oak.png</NAME>
+		<NAME>./colour_log_oak_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_log_oak.svg</CLEANUP>
+		<CLEANUP>./colour_log_oak_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_spruce.png</NAME>
+		<NAME>./colour_log_spruce_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_log_spruce.svg</CLEANUP>
+		<CLEANUP>./colour_log_spruce_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_acacia.png</NAME>
+		<NAME>./colour_planks_acacia_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_planks_acacia.svg</CLEANUP>
+		<CLEANUP>./colour_planks_acacia_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_big_oak.png</NAME>
+		<NAME>./colour_planks_big_oak_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_planks_big_oak.svg</CLEANUP>
+		<CLEANUP>./colour_planks_big_oak_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_birch.png</NAME>
+		<NAME>./colour_planks_birch_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_birch</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_planks_birch.svg</CLEANUP>
+		<CLEANUP>./colour_planks_birch_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_jungle.png</NAME>
+		<NAME>./colour_planks_jungle_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_planks_jungle.svg</CLEANUP>
+		<CLEANUP>./colour_planks_jungle_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_oak.png</NAME>
+		<NAME>./colour_planks_oak_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_planks_oak.svg</CLEANUP>
+		<CLEANUP>./colour_planks_oak_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_spruce.png</NAME>
+		<NAME>./colour_planks_spruce_base.png</NAME>
 		<CONFIG>./conf/base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./colour_planks_spruce.svg</CLEANUP>
+		<CLEANUP>./colour_planks_spruce_base.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_black.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>black</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_black_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_blue.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>blue</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_blue_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_brown.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>brown</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_brown_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_cyan.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>cyan</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_cyan_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_gray.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>gray</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_gray_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_green.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>green</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_green_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_light_blue.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>light_blue</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_light_blue_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_lime.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>lime</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_lime_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_magenta.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>magenta</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_magenta_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_orange.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>orange</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_orange_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_pink.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>pink</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_pink_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_purple.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>purple</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_purple_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_red.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>red</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_red_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_silver.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>silver</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_silver_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_white.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>white</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_white_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_yellow.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>yellow</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_yellow_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_log_acacia.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>log_acacia</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_log_acacia_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_log_big_oak.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>log_big_oak</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_log_big_oak_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_log_birch.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>log_birch</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_log_birch_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_log_jungle.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>log_jungle</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_log_jungle_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_log_oak.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>log_oak</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_log_oak_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_log_spruce.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>log_spruce</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_log_spruce_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_planks_acacia.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>planks_acacia</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_planks_acacia_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_planks_big_oak.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>planks_big_oak</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_planks_big_oak_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_planks_birch.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>planks_birch</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_planks_birch_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_planks_jungle.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>planks_jungle</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_planks_jungle_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_planks_oak.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>planks_oak</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_planks_oak_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./colour_planks_spruce.png</NAME>
+		<CONFIG>./conf/noise_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>planks_spruce</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise_colour.png
+		./colour_planks_spruce_base.png</DEPENDS>
+		<CLEANUP></CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
@@ -1518,6 +1826,26 @@
 		<KEEP>YES</KEEP>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/leaves_acacia.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./noise.png</NAME>
+		<CONFIG>./conf/any_texture.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>noise</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./noise.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./noise_colour.png</NAME>
+		<CONFIG>./conf/noise_faded_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./noise.png</DEPENDS>
+		<CLEANUP></CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 </RENDER>
