@@ -108,7 +108,7 @@ fi
 # Composition functions
 ###############################################################
 #
-# __overlay <BASE.png> <OVERLAY> <OUTPUT.png>
+# __overlay <BASE.png> <OVERLAY.png> <OUTPUT.png>
 #
 # Overlay Images
 # Composites specified images, one on the other

@@ -1,4 +1,4 @@
-<RENDER>
+<BLOCK>
 	<ITEM>
 		<NAME>./pack.png</NAME>
 		<CONFIG>./conf/pack.sh</CONFIG>
@@ -1848,7 +1848,88 @@
 		<CLEANUP></CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
-</RENDER>
+</BLOCK>
+
+<ENTITY>
+    <ITEM>
+		<NAME>./assets/minecraft/textures/entity/sign_planks_front_cutout.png</NAME>
+		<CONFIG>./conf/basic_entity.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>sign_planks_front_cutout</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/entity/sign_planks_front_cutout.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+    <ITEM>
+		<NAME>./assets/minecraft/textures/entity/sign_planks_front.png</NAME>
+		<CONFIG>./conf/sign.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>planks_front</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./assets/minecraft/textures/entity/sign_planks_front_cutout.png
+		./assets/minecraft/textures/blocks/planks_oak.png
+		./colour_planks_oak.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/sign_planks_base_cutout.png</NAME>
+		<CONFIG>./conf/basic_entity.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>sign_planks_base_cutout</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/entity/sign_planks_base_cutout.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+    <ITEM>
+		<NAME>./assets/minecraft/textures/entity/sign_planks_base.png</NAME>
+		<CONFIG>./conf/sign.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>planks_base</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./assets/minecraft/textures/entity/sign_planks_base_cutout.png
+		./assets/minecraft/textures/blocks/planks_oak.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/sign_log_cutout.png</NAME>
+		<CONFIG>./conf/basic_entity.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>sign_log_cutout</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/entity/sign_log_cutout.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+    <ITEM>
+		<NAME>./assets/minecraft/textures/entity/sign_log.png</NAME>
+		<CONFIG>./conf/sign.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>log</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./assets/minecraft/textures/entity/sign_log_cutout.png
+		./assets/minecraft/textures/blocks/log_oak.png
+		./colour_log_oak.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/sign.png</NAME>
+		<CONFIG>./conf/sign.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>all</OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>./assets/minecraft/textures/entity/sign_log.png
+		./assets/minecraft/textures/entity/sign_planks_base.png
+		./assets/minecraft/textures/entity/sign_planks_front.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON>Sign</COMMON>
+	</ITEM>
+</ENTITY>
+
 <OTHER>
 	<ITEM>
 		<NAME>./pack.mcmeta</NAME>
