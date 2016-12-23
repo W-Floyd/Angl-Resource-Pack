@@ -75,15 +75,15 @@ cd ../Angl-Resource-Pack-Export
 
 sed -i '3s/.*/'"${__date}"'/' README.md
 
-#git add *
+git add *
 
-#git commit -m "${__date}"
+git commit -m "${__date}"
 
-#git push
+git push
 
-#git tag -a "${__date}" -m "Exports updated at ${__date}"
+git tag -a "${__date}" -m "Exports updated at ${__date}"
 
-#git push --tags
+git push --tags
 
 cd ../Angl-Resource-Pack
 
