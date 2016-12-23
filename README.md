@@ -54,6 +54,6 @@ It includes preset grids and canvas size to keep you on track.
 
 At one point I had to compile a newer version of Imagemagick from source to make some compositing work. If you get odd results, that may be the issue. This *seems* to have been solved by setting some options on all image operations.
 
-Size 1024 is known to cause errors due to large images, and so 512px is the largest default size. It does look damn good though.
+Sizes 1024px and above are known not to be loaded in Minecraft, and so 512px is the largest default size. 4096px is the largest size I have sucessfully processed (over 15 minutes), as 8192px segfaults when I run out of memory (16gb RAM + 4gb swap).
 
 ***
