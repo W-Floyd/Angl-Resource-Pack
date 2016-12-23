@@ -2,7 +2,7 @@
 
 __pushd ./assets/minecraft/textures/entity/
 
-__fudge_value='0.91'
+__fudge_value='0.85'
 
 case "$2" in
     "planks_front")
