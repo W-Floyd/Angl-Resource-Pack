@@ -2,6 +2,7 @@
 
 __sizes=''
 __verbose='0'
+__install='0'
 
 # Print help
 __usage () {
@@ -13,7 +14,8 @@ important.
 
 Options:
   -h  --help            This help message
-  -v  --verbose         Be verbose\
+  -v  --verbose         Be verbose
+  -i  --install         Install or update .minecraft folder copy\
 "
 }
 
@@ -32,6 +34,10 @@ for __option in $(seq "${#}"); do
 
         "-v" | "--verbose")
             __verbose='1'
+            ;;
+
+        "-i" | "--install")
+            __install='1'
             ;;
 
         [0-9]*)
@@ -64,7 +70,7 @@ fi
 
 __render_and_pack () {
 
-__packfile="$(./render.sh --name-only "${1}")"
+__packfile="${2}"
 
 echo "Processing size ${1}"
 
@@ -90,7 +96,21 @@ rm -r "${__packfile}_cleaned"
 
 for __size in $(echo "${__sizes}"); do
 
-    __render_and_pack "${__size}"
+    __packfile="$(./render.sh --name-only "${__size}")"
+
+    __render_and_pack "${__size}" "${__packfile}"
+
+    __dest="${HOME}/.minecraft/resourcepacks/${__packfile}.zip"
+
+    if [ "${__install}" = '1' ]; then
+
+    if [ -a "${__dest}" ] ; then
+        rm "${__dest}"
+    fi
+
+    cp "${__packfile}.zip" "${__dest}"
+
+    fi
 
 done
 
