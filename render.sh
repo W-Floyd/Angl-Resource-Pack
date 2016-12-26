@@ -254,7 +254,7 @@ fi
 # Split XML
 ###############################################################
 
-if ![ -d ./src/xml/ ]; then
+if ! [ -d ./src/xml/ ]; then
     mkdir ./src/xml/
 fi
 
