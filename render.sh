@@ -254,6 +254,10 @@ fi
 # Split XML
 ###############################################################
 
+if ![ -d ./src/xml/ ]; then
+    mkdir ./src/xml/
+fi
+
 __pushd ./src/xml
 
 if [ -a "${__catalogue}" ]; then

@@ -531,10 +531,15 @@ md5sum -c "${1}" > "${2}"
 ###############################################################
 
 __pushd () {
+if [ -d "${1}" ]; then
 if [ "${__very_verbose}" = 1 ]; then
     pushd "${1}"
 else
     pushd "${1}" 1> /dev/null
+fi
+else
+    echo "Directory does not exist!"
+    exit 2
 fi
 }
 
