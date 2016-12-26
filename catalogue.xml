@@ -1848,6 +1848,48 @@
 		<CLEANUP></CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/torch_on_cutout.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>torch_on_cutout</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/torch_on_cutout.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/torch_on_base.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>torch_on_base</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/torch_on_base.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/torch_on_shaft.png</NAME>
+		<CONFIG>./conf/torch_shaft.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_cutout.png
+		./assets/minecraft/textures/blocks/log_oak.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/torch_on.png</NAME>
+		<CONFIG>./conf/torch.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_base.png
+		./assets/minecraft/textures/blocks/torch_on_shaft.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
 </BLOCK>
 
 <ENTITY>
