@@ -53,7 +53,7 @@ if ! [ -d '../Angl-Resource-Pack-Export' ]; then
     exit 1
 fi
 
-__date="$(date +%Y-%m-%d_%H-%M-%S)"
+__date="$(date -u +%Y-%m-%d_%H-%M-%S)"
 
 if [ "${__verbose}" = '1' ]; then
     ./make-pack.sh -v ${__sizes}
@@ -73,7 +73,7 @@ done
 
 cd ../Angl-Resource-Pack-Export
 
-sed -i '3s/.*/'"${__date}"'/' README.md
+sed -i '3s/.*/'"${__date}"' UTC/' README.md
 
 git add *
 
@@ -81,7 +81,7 @@ git commit -m "${__date}"
 
 git push
 
-git tag -a "${__date}" -m "Exports updated at ${__date}"
+git tag -a "${__date}" -m "Exports updated at ${__date} UTC"
 
 git push --tags
 
