@@ -56,9 +56,9 @@ fi
 __date="$(date -u +%Y-%m-%d_%H-%M-%S)"
 
 if [ "${__verbose}" = '1' ]; then
-    ./make-pack.sh -v ${__sizes}
+    ./make-pack.sh -m -v ${__sizes}
 else
-    ./make-pack.sh ${__sizes}
+    ./make-pack.sh -m ${__sizes}
 fi
 
 for __size in ${__sizes}; do
@@ -66,6 +66,10 @@ for __size in ${__sizes}; do
     __name="$(./render.sh -n "${__size}")"
 
     __file="${__name}.zip"
+
+	cp "${__file}" "../Angl-Resource-Pack-Export/${__file}"
+
+	__file="${__name}_mobile.zip"
 
 	cp "${__file}" "../Angl-Resource-Pack-Export/${__file}"
 

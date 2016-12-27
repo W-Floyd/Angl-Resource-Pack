@@ -3,6 +3,7 @@
 __sizes=''
 __verbose='0'
 __install='0'
+__mobile='0'
 
 # Print help
 __usage () {
@@ -15,7 +16,8 @@ important.
 Options:
   -h  --help            This help message
   -v  --verbose         Be verbose
-  -i  --install         Install or update .minecraft folder copy\
+  -i  --install         Install or update .minecraft folder copy
+  -m  --mobile          Make mobile resource pack as well\
 "
 }
 
@@ -40,6 +42,10 @@ for __option in $(seq "${#}"); do
             __install='1'
             ;;
 
+        "-m" | "--mobile")
+            __mobile='1'
+            ;;
+
         [0-9]*)
             __sizes="${__sizes}
 ${1}"
@@ -60,6 +66,12 @@ done
 
 fi
 
+if [ "${__mobile}" = '1' ]; then
+
+    __install='0'
+
+fi
+
 if [ -z "${__sizes}" ]; then
 __sizes="32
 64
@@ -70,27 +82,49 @@ fi
 
 __render_and_pack () {
 
-__packfile="${2}"
-
 echo "Processing size ${1}"
 
+__options="${1}"
+
+if [ "${__mobile}" = '1' ]; then
+    __options="${__options} -m"
+fi
+
 if [ "${__verbose}" = '1' ]; then
-    ./render.sh -v "${1}"
+    __options="${__options} -v"
 else
-    ./render.sh "${1}" 1> /dev/null
+    __options="${__options} &> /dev/null"
 fi
 
-if [ -a "${__packfile}.zip" ]; then
-    rm "${__packfile}.zip"
+./render.sh ${__options}
+
+if [ -a "${2}.zip" ]; then
+    rm "${2}.zip"
 fi
 
-cd "${__packfile}_cleaned"
+if [ "${__mobile}" = '1' ] && [ -a "${2}_mobile.zip" ]; then
+    rm "${2}_mobile.zip"
+fi
 
-zip -qZ store -r "../${__packfile}" ./
+cd "${2}_cleaned"
+
+zip -qZ store -r "../${2}" ./
 
 cd ../
 
-rm -r "${__packfile}_cleaned"
+if [ "${__mobile}" = '1' ]; then
+    cd "${2}_mobile"
+    zip -qZ store -r "../${2}_mobile" ./
+    cd ../
+fi
+
+if [ -d "${2}_cleaned" ]; then
+    rm -r "${2}_cleaned"
+fi
+
+if [ -d "${2}_mobile" ]; then
+    rm -r "${2}_mobile"
+fi
 
 }
 

@@ -15,6 +15,7 @@ __pid="$$"
 __debug='0'
 __xml_only='0'
 __name_only='0'
+__mobile='0'
 
 ###############################################################
 # Setting up functions
@@ -37,7 +38,8 @@ Options:
   -vv --very-verbose    Very verbose
   -p  --process-id      Using PID as given after
   -x  --xml-only        Only process xml files
-  -n  --name-only       Print output folder name\
+  -n  --name-only       Print output folder name
+  -m  --mobile          Make mobile resource pack\
 "
 }
 
@@ -127,6 +129,11 @@ for __option in $(seq "${#}"); do
                     __name_only='1'
                     ;;
 
+# whether to make mobile reousource pack
+                "-m" | "--mobile")
+                    __mobile='1'
+                    ;;
+
 # general catch all for any number input that isn't for the PID
 # which is set as the render size,
                 [0-9]*)
@@ -179,8 +186,18 @@ __catalogue='catalogue.xml'
 # Rendered folder name
 __pack="${__name}-${__size}px"
 
+if [ "${__mobile}" = '1' ]; then
+
+    __pack_end="${__pack}_mobile"
+
+else
+
+    __pack_end="${__pack}"
+
+fi
+
 if [ "${__name_only}" = '1' ]; then
-    echo "${__pack}"
+    echo "${__pack_end}"
     exit
 fi
 
@@ -205,6 +222,15 @@ __announce "Using size ${__size}px."
 ###############################################################
 # Announce PID
 __announce "Using PID ${__pid}."
+###############################################################
+
+###############################################################
+# Announce mobile if set on
+if [ "${__mobile}" = '1' ]; then
+
+    __announce "Making mobile resource pack."
+
+fi
 ###############################################################
 
 ###############################################################
@@ -863,6 +889,42 @@ rm -r ./xml
 rm -r ./conf
 
 __popd
+
+###############################################################
+# Make mobile pack if asked to
+###############################################################
+
+__mobile_script='convert_to_mobile.sh'
+
+if [ "${__mobile}" = '1' ]; then
+
+    if [ -d "${__pack_end}" ]; then
+
+        rm -r "${__pack_end}"
+
+    fi
+
+    cp -r "${__pack_cleaned}" "${__pack_end}"
+
+    if ! [ -a "${__mobile_script}" ]; then
+
+        echo "Missing mobile script system, aborting."
+
+        exit 1
+
+    fi
+
+    cp "${__mobile_script}" "${__pack_end}/${__mobile_script}"
+
+    __pushd "${__pack_end}"
+
+    "./${__mobile_script}"
+
+    rm "${__mobile_script}"
+
+    __popd
+
+fi
 
 ###############################################################
 # End if only xml splitting
