@@ -11,7 +11,7 @@
 #
 ###############################################################
 
-__mode="slow"
+#__fast="0"
 
 ###############################################################
 # Functions
@@ -65,25 +65,26 @@ sed 's|\(.*\)\(\/\).*|\1\2|' <<< "$1"
 #
 ###############################################################
 
-if [ "${__mode}" = 'quick' ]; then
 __render () {
+__dpi="$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)"
+if [ "${__quick}" = '1' ]; then
 rsvg-convert
--d "$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)" \
--p "$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)" \
+-d "${__dpi}" \
+-p "${__dpi}" \
 "${2}" \
 -o "$(__mext "${2}")"".png" 1> /dev/null
 convert "$(__mext "${2}")"".png" -define png:color-type=6 "$(__mext "$2")"'_'".png"
 mv "$(__mext "${2}")"'_'".png" "$(__mext "${2}")"".png"
-}
-elif [ "${__mode}" = 'slow' ]; then
-__render () {
+
+elif [ "${__quick}" = '0' ]; then
 inkscape \
---export-dpi="$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)" \
+--export-dpi="${__dpi}" \
 --export-png "$(__mext "${2}").png" "${2}" 1> /dev/null
 convert "$(__mext "${2}")"".png" -define png:color-type=6 "$(__mext "${2}")"'_'".png"
 mv "$(__mext "${2}")"'_'".png" "$(__mext "${2}")"".png"
-}
 fi
+}
+
 
 ###############################################################
 #

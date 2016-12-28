@@ -16,6 +16,7 @@ __debug='0'
 __xml_only='0'
 __name_only='0'
 __mobile='0'
+__quick='0'
 
 ###############################################################
 # Setting up functions
@@ -39,7 +40,8 @@ Options:
   -p  --process-id      Using PID as given after
   -x  --xml-only        Only process xml files
   -n  --name-only       Print output folder name
-  -m  --mobile          Make mobile resource pack\
+  -m  --mobile          Make mobile resource pack
+  -q  --quick           Use more efficient render engine\
 "
 }
 
@@ -132,6 +134,11 @@ for __option in $(seq "${#}"); do
 # whether to make mobile reousource pack
                 "-m" | "--mobile")
                     __mobile='1'
+                    ;;
+
+# whether to use quick render engine
+                "-q" | "--quick")
+                    __quick='1'
                     ;;
 
 # general catch all for any number input that isn't for the PID
