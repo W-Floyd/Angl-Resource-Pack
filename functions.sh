@@ -1,17 +1,8 @@
 ###############################################################
 # Configurables
 ###############################################################
-#
-# __mode="quick" or __mode="slow"
-#
-#
-# Render Mode
-# Not really much different, but it will become more apparent
-# with larger image sets. "slow" is safer (uses inkscape)
-#
-###############################################################
 
-#__fast="0"
+# __quick='0'
 
 ###############################################################
 # Functions
@@ -58,7 +49,7 @@ sed 's|\(.*\)\(\/\).*|\1\2|' <<< "$1"
 
 ###############################################################
 #
-# __render <DPI> <FILE.svg>
+# __render <RES> <FILE.svg>
 #
 # Render Image
 # Renders the specified .svg to a .png of the same name
@@ -66,13 +57,19 @@ sed 's|\(.*\)\(\/\).*|\1\2|' <<< "$1"
 ###############################################################
 
 __render () {
+if [ -z "${__quick}" ]; then
+    __quick='1'
+    echo "__quick has not been set correctly. Defaulting to rsvg."
+fi
 __dpi="$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)"
 if [ "${__quick}" = '1' ]; then
-rsvg-convert
--d "${__dpi}" \
--p "${__dpi}" \
+# GOD awful hack to catch svg size, TODO
+# FIX THIS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+rsvg-convert \
+--width="$(echo "($(cat "${2}" | grep "^   width=\"*\"" | sed -e 's/.*="//' -e 's/"$//')*${1})/128" | bc)" \
+-a \
 "${2}" \
--o "$(__mext "${2}")"".png" 1> /dev/null
+-o "$(__mext "${2}").png" 1> /dev/null
 convert "$(__mext "${2}")"".png" -define png:color-type=6 "$(__mext "$2")"'_'".png"
 mv "$(__mext "${2}")"'_'".png" "$(__mext "${2}")"".png"
 

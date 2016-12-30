@@ -16,7 +16,7 @@ __debug='0'
 __xml_only='0'
 __name_only='0'
 __mobile='0'
-__quick='0'
+export __quick='0'
 
 ###############################################################
 # Setting up functions
@@ -33,7 +33,7 @@ Renders the texture pack at the specified size (or default 128)
 Order of options and size are not important.
 
 Options:
-  -h  --help            This help message
+  -h  -?  --help        This help message
   -f  --force           Discard pre-rendered data
   -v  --verbose         Verbose
   -vv --very-verbose    Very verbose
@@ -86,7 +86,7 @@ for __option in $(seq "${#}"); do
             case "${1}" in
 
 # help the user out if they ask and exit nicely,
-                "-h" | "--help")
+                "-h" | "--help" | "-?")
                     __usage
                     exit 0
                     ;;
@@ -138,7 +138,7 @@ for __option in $(seq "${#}"); do
 
 # whether to use quick render engine
                 "-q" | "--quick")
-                    __quick='1'
+                    export __quick='1'
                     ;;
 
 # general catch all for any number input that isn't for the PID
@@ -177,6 +177,35 @@ fi
 ###############################################################
 # Set variables
 ###############################################################
+
+# Check software deps
+which inkscape &> /dev/null
+if [ "$?" = '0' ]; then
+    __has_inkscape='1'
+else
+    __has_inkscape='0'
+fi
+
+which rsvg-convert &> /dev/null
+if [ "$?" = '0' ]; then
+    __has_rsvg_convert='1'
+else
+    __has_rsvg_convert='0'
+fi
+
+if [ "${__has_inkscape}" = '0' ] && [ "${__has_rsvg_convert}" = '0' ]; then
+    echo "Missing both inkscape and rsvg-convert. Please install either/both to continue."
+    echo "Please install 'librsvg-devel' to obtain rsvg-convert, and 'inkscape' for Inkscape"
+    exit 1
+elif [ "${__has_inkscape}" = '1' ] && [ "${__has_rsvg_convert}" = '0' ] && [ "${__quick}" = '1' ]; then
+    echo "Missing rsvg-convert. Cannot continue in quick mode."
+    echo "Please install 'librsvg-devel'. Defaulting to inkscape."
+    export __quick='0'
+elif [ "${__has_inkscape}" = '0' ] && [ "${__has_rsvg_convert}" = '1' ] && [ "${__quick}" = '0' ]; then
+    echo "Missing Inkscape. Must continue in quick mode."
+    echo "Please install 'inkscape'. Defaulting to rsvg-convert."
+    export __quick='1'
+fi
 
 # Master folder
 __working_dir="$PWD"
@@ -761,6 +790,11 @@ for __xml in $(find -type f); do
         mkdir -p "$(__odir "$(echo "${__working_dir}/${__pack_new}/${__xml_name}")")"
         cp "${__working_dir}/${__pack}/${__xml_name}" "${__working_dir}/${__pack_new}/${__xml_name}"
         echo "${__xml}" >> "${__rendered_list}"
+
+# if the file does not exist, re-render
+    elif ! [ -a "${__working_dir}/${__pack}/${__xml_name}" ]; then
+        echo "${__xml}" >> "${__render_list}"
+
 
 # Done with if statement
     fi

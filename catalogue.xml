@@ -1890,6 +1890,38 @@
 		<CLEANUP></CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>crafting_table_top_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_top_overlay.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_decal.png</NAME>
+		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>crafting_table_top_decal</OPTIONS>
+		<KEEP>NO</KEEP>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_top_decal.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/crafting_table_top.png</NAME>
+		<CONFIG>./conf/crafting_table_top.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<DEPENDS>./colour_planks_oak.png
+		./assets/minecraft/textures/blocks/crafting_table_top_decal.png
+		./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON>Crafting Table</COMMON>
+	</ITEM>
 </BLOCK>
 
 <ENTITY>

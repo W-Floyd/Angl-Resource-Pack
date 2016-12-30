@@ -4,6 +4,7 @@ __sizes=''
 __verbose='0'
 __install='0'
 __mobile='0'
+__quick='0'
 
 # Print help
 __usage () {
@@ -46,6 +47,10 @@ for __option in $(seq "${#}"); do
             __mobile='1'
             ;;
 
+        "-q" | "--quick")
+            __quick='1'
+            ;;
+
         [0-9]*)
             __sizes="${__sizes}
 ${1}"
@@ -63,12 +68,6 @@ ${1}"
     shift
 
 done
-
-fi
-
-if [ "${__mobile}" = '1' ]; then
-
-    __install='0'
 
 fi
 
@@ -90,13 +89,15 @@ if [ "${__mobile}" = '1' ]; then
     __options="${__options} -m"
 fi
 
-if [ "${__verbose}" = '1' ]; then
-    __options="${__options} -v"
-else
-    __options="${__options} &> /dev/null"
+if [ "${__quick}" = '1' ]; then
+    __options="${__options} -q"
 fi
 
-./render.sh ${__options}
+if [ "${__verbose}" = '1' ]; then
+    ./render.sh ${__options} -v
+else
+    ./render.sh ${__options} &> /dev/null
+fi
 
 if [ -a "${2}.zip" ]; then
     rm "${2}.zip"
