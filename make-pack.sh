@@ -5,6 +5,7 @@ __verbose='0'
 __install='0'
 __mobile='0'
 __quick='0'
+__time='0'
 
 # Print help
 __usage () {
@@ -18,7 +19,8 @@ Options:
   -h  --help            This help message
   -v  --verbose         Be verbose
   -i  --install         Install or update .minecraft folder copy
-  -m  --mobile          Make mobile resource pack as well\
+  -m  --mobile          Make mobile resource pack as well
+  -t  --time            Time functions (for debugging)\
 "
 }
 
@@ -49,6 +51,10 @@ for __option in $(seq "${#}"); do
 
         "-q" | "--quick")
             __quick='1'
+            ;;
+
+        "-t" | "--time")
+            __time='1'
             ;;
 
         [0-9]*)
@@ -91,6 +97,10 @@ fi
 
 if [ "${__quick}" = '1' ]; then
     __options="${__options} -q"
+fi
+
+if [ "${__time}" = '1' ]; then
+    __options="${__options} -t"
 fi
 
 if [ "${__verbose}" = '1' ]; then

@@ -554,14 +554,50 @@ fi
 ###############################################################
 #
 # __announce <MESSAGE>
+#
+# Announce
 # Echos a statement, only if __verbose is equal to 1
 #
 ###############################################################
 
 __announce () {
+if [ "${__time}" = '0' ]; then
 if [ "${__verbose}" = 1 ]; then
     echo "
 ${1}"
+fi
+fi
+}
+
+###############################################################
+#
+# __time <MESSAGE> <start/end>
+#
+# Time
+# Times between two occurances of the function, as set by start
+# or end.
+#
+###############################################################
+
+__time () {
+if [ "${__name_only}" = '0' ]; then
+if [ -z "${2}" ]; then
+    echo "No input to __time function, disabling timer."
+    __time='0'
+else
+
+if [ "${2}" = 'start' ]; then
+    __function_start_time="$(date +%s.%N)"
+elif [ "${2}" = 'end' ]; then
+    __function_end_time="$(date +%s.%N)"
+    echo "
+Function \"${1}\" completed in $(echo "${__function_end_time}-${__function_start_time}" | bc) seconds"
+else
+    echo "Invalid input to __time, disabling timer."
+    __time='0'
+fi
+
+fi
 fi
 }
 

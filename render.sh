@@ -17,6 +17,7 @@ __xml_only='0'
 __name_only='0'
 __mobile='0'
 export __quick='0'
+__time='0'
 
 ###############################################################
 # Setting up functions
@@ -41,12 +42,14 @@ Options:
   -x  --xml-only        Only process xml files
   -n  --name-only       Print output folder name
   -m  --mobile          Make mobile resource pack
-  -q  --quick           Use more efficient render engine\
+  -q  --quick           Use more efficient render engine
+  -t  --time            Time operations (for debugging)\
 "
 }
 
 ###############################################################
 # Read options
+__time "Reading options" start
 ###############################################################
 
 # If there are are options,
@@ -141,6 +144,11 @@ for __option in $(seq "${#}"); do
                     export __quick='1'
                     ;;
 
+# whether to time functions
+                "-t" | "--time")
+                    __time='1'
+                    ;;
+
 # general catch all for any number input that isn't for the PID
 # which is set as the render size,
                 [0-9]*)
@@ -174,9 +182,13 @@ for __option in $(seq "${#}"); do
 done
 fi
 
+
+__time "Reading options" end
 ###############################################################
 # Set variables
 ###############################################################
+
+__time "Setting variables" start
 
 # Check software deps
 which inkscape &> /dev/null
@@ -248,9 +260,13 @@ if [ "${__debug}" = '1' ]; then
     fi
 fi
 
+__time "Setting variables" end
+
 ###############################################################
 # If not only doing xml
 if [ "${__xml_only}" = '0' ]; then
+
+__time "Setting up folders" start
 
 ###############################################################
 # Announce size
@@ -312,9 +328,14 @@ fi
 
 # End conditional if only doing xml processing
 fi
+
+__time "Setting up folders" end
+
 ###############################################################
 # Split XML
 ###############################################################
+
+__time "Splitting XML" start
 
 if ! [ -d ./src/xml/ ]; then
     mkdir ./src/xml/
@@ -390,6 +411,8 @@ fi
 # Move xml into src now, so it can be used later
 mv "${__xml_current}" './src/xml/'
 
+__time "Splitting XML" end
+
 ###############################################################
 # Inherit deps and cleanup
 __announce "Inheriting and creating dependencies and cleanup files."
@@ -425,6 +448,8 @@ done
 
 # If we're told not to re-use xml, then
 if [ "${__re_use_xml}" = '0' ]; then
+
+__time "Inheriting and creating dependencies" start
 
 # Make directory for dependency work
 mkdir "${__tmp_dir}/tmp_deps"
@@ -468,6 +493,8 @@ wait
 # Go back to the regular directory
 __popd
 
+__time "Inheriting and creating dependencies" end
+
 # Else, if we're supposed to re-use xml files
 else
 
@@ -485,6 +512,8 @@ if [ "${__xml_only}" = '0' ]; then
 # List new and matching XML entries
 __announce "Listing new and matching XML entries."
 ###############################################################
+
+__time "Listing new and matching XML entries" start
 
 # This is where all new xml files are listed
 __new_xml_list="${__tmp_dir}/xml_list_new"
@@ -529,10 +558,14 @@ grep -Fxvf "${__old_xml_list}" "${__new_xml_list}" > "${__new_split_xml_list}"
 grep -Fxvf "${__new_xml_list}" "${__old_xml_list}" > "${__old_split_xml_list}"
 grep -Fxf "${__old_xml_list}" "${__new_xml_list}" > "${__shared_xml_list}"
 
+__time "Listing new and matching XML entries" end
+
 ###############################################################
 # Check changes in XML files
 __announce "Checking changes in XML files."
 ###############################################################
+
+__time "Checking changes in XML files" start
 
 # Where all new xml files are hashed to
 __new_hashes="${__tmp_dir}/new_hashes_xml"
@@ -590,10 +623,14 @@ for __shared in $(cat "${__shared_xml_list}"); do
 # Done with the hash checking
 done
 
+__time "Checking changes in XML files" end
+
 ###############################################################
 # List new and matching source files
 __announce "Listing new and matching source files."
 ###############################################################
+
+__time "Listing new and matching source files" start
 
 # This is where all new source files are listed
 __new_source_list="${__tmp_dir}/source_list_new"
@@ -638,10 +675,14 @@ grep -Fxvf "${__old_source_list}" "${__new_source_list}" > "${__new_split_source
 grep -Fxvf "${__new_source_list}" "${__old_source_list}" > "${__old_split_source_list}"
 grep -Fxf "${__old_source_list}" "${__new_source_list}" > "${__shared_source_list}"
 
+__time "Listing new and matching source files" end
+
 ###############################################################
 # Check changes in source files
 __announce "Checking changes in source files."
 ###############################################################
+
+__time "Checking changes in source files" start
 
 # Where new source files are hashed to
 __source_hash_new="${__tmp_dir}/new_hashes_source"
@@ -697,6 +738,8 @@ for __shared in $(cat "${__shared_source_list}"); do
 # Done with the hash checking
 done
 
+__time "Checking changes in source files" end
+
 ###############################################################
 # Before we go on, let's recap. These are the files we want
 #
@@ -733,6 +776,8 @@ done
 # Checking files to re/render
 __announce "Checking for items to re/process."
 ###############################################################
+
+__time "Checking for items to re/process" start
 
 # Where we'll start putting new work in, will eventually be
 # renamed to regular
@@ -809,6 +854,8 @@ __popd
 sort "${__render_list}" | uniq > "${__render_list}_"
 mv "${__render_list}_" "${__render_list}"
 
+__time "Checking for items to re/process" end
+
 ###############################################################
 # Copy all source, xml and conf scripts
 __announce "Setting up files for processing."
@@ -822,6 +869,8 @@ mv "${__pack_new}" "${__pack}"
 # Render loop
 __announce "Starting to render."
 ###############################################################
+
+__time "Starting to render" start
 
 __pushd "${__pack}"
 
@@ -873,6 +922,8 @@ done
 
 __popd
 
+__time "Starting to render" end
+
 ###############################################################
 # Final stats
 ###############################################################
@@ -886,6 +937,8 @@ __announce "Rendered ${__size}px in $((__end_time-__start_time)) seconds"
 # Make cleaned folder
 __announce "Making cleaned folder."
 ###############################################################
+
+__time "Making cleaned folder" start
 
 __cleanup_all="${__tmp_dir}/cleanup_all"
 touch "${__cleanup_all}"
@@ -931,6 +984,8 @@ rm -r ./conf
 
 __popd
 
+__time "Making cleaned folder" end
+
 ###############################################################
 # Make mobile pack if asked to
 ###############################################################
@@ -938,6 +993,8 @@ __popd
 __mobile_script='convert_to_mobile.sh'
 
 if [ "${__mobile}" = '1' ]; then
+
+    __time "Making mobile pack" start
 
     if [ -d "${__pack_end}" ]; then
 
@@ -964,6 +1021,8 @@ if [ "${__mobile}" = '1' ]; then
     rm "${__mobile_script}"
 
     __popd
+
+    __time "Making mobile pack" end
 
 fi
 
