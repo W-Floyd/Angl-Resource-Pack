@@ -1,10 +1,4 @@
 ###############################################################
-# Configurables
-###############################################################
-
-# __quick='0'
-
-###############################################################
 # Functions
 ###############################################################
 #
@@ -59,7 +53,7 @@ sed 's|\(.*\)\(\/\).*|\1\2|' <<< "$1"
 __render () {
 if [ -z "${__quick}" ]; then
     __quick='1'
-    echo "__quick has not been set correctly. Defaulting to rsvg."
+    echo "__quick has not been set correctly. Defaulting to rsvg-convert."
 fi
 __dpi="$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)"
 if [ "${__quick}" = '1' ]; then
@@ -483,7 +477,7 @@ mv /tmp/__set_value "${1}"
 ###############################################################
 
 __emergency_exit () {
-echo "Last command run was ["!:0"] with arguments ["!:*"]"
+echo "Last command run was ["!!"]"
 exit 1
 }
 
