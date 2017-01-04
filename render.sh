@@ -770,7 +770,7 @@ for __xml in $(find -type f); do
 
     echo "${__xml}" >> "${__tmp_dir}/tmp_deps2"
 
-    __xml_name="$(echo "${__xml}" | sed 's/^\.\///')"
+    __xml_name="${__xml//.\//}"
 
 # Compare to list of changed ITEMS, and check if file exists,
     if ! [ -z "$(grep -Fxf "${__tmp_dir}/tmp_deps2" "${__changed_both}")" ]; then
