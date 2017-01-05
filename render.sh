@@ -372,11 +372,8 @@ __xml_current="${__tmp_dir}/xml_current"
 # For every ITEM in catalogue,
 for __range in $(__get_range "${__catalogue}" ITEM); do
 
-# Use a random value (so this can be run in parallel)
-    __random="${RANDOM}"
-
 # File to use for reading ranges
-    __read_range_file="${__tmp_dir}/${__range}${__random}"
+    __read_range_file="${__tmp_dir}/${__range}"
 
 # Actually read the range into file. This now contains an ITEM.
     __read_range "${__catalogue}" "${__range}" > "${__read_range_file}"
@@ -397,10 +394,7 @@ for __range in $(__get_range "${__catalogue}" ITEM); do
     mv "${__read_range_file}" "${__xml_current}/${__item_name}"
 
 # Finish loop, but don't block the loop until it finishes
-done &
-
-# Wait here as all those loops from above finish
-wait
+done
 
 # If xml files currently exist, and we're not told to re-use
 # them, delete them and move new xml in
