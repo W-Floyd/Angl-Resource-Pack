@@ -107,6 +107,12 @@ for __option in $(seq "${#}"); do
                 "-vv" | "--very-verbose")
                     __verbose='1'
                     __very_verbose='1'
+# If we're supposed to be in debugging mode and be very verbose
+                    if [ "${__debug}" = '1' ]; then
+                        if [ "${__very_verbose}" = '1' ]; then
+                            set -x
+                        fi
+                    fi
                     ;;
 
 # tell the script to use a specified PID (this is taken care of
@@ -119,6 +125,12 @@ for __option in $(seq "${#}"); do
                     echo "Debugging mode enabled"
                     __debug='1'
                     __verbose='1'
+# If we're supposed to be in debugging mode and be very verbose
+                    if [ "${__debug}" = '1' ]; then
+                        if [ "${__very_verbose}" = '1' ]; then
+                            set -x
+                        fi
+                    fi
                     ;;
 
 # only process xml files
@@ -279,17 +291,6 @@ if [ "${__name_only}" = '1' ]; then
     exit
 
 # exit the name only if statement
-fi
-
-###############################################################
-# Debugging flag
-###############################################################
-
-# If we're supposed to be in debugging mode and be very verbose
-if [ "${__debug}" = '1' ]; then
-    if [ "${__very_verbose}" = '1' ]; then
-        set -x
-    fi
 fi
 
 __time "Setting variables" end

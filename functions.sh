@@ -577,19 +577,22 @@ fi
 ###############################################################
 
 __time () {
+if [ "${2}" = 'start' ]; then
+    __function_start_time="$(date +%s.%N)"
+elif [ "${2}" = 'end' ]; then
+    __function_end_time="$(date +%s.%N)"
+fi
+
 if [ "${__name_only}" = '0' ] && [ "${__time}" = '1' ]; then
 if [ -z "${2}" ]; then
     echo "No input to __time function, disabling timer."
     __time='0'
 else
 
-if [ "${2}" = 'start' ]; then
-    __function_start_time="$(date +%s.%N)"
-elif [ "${2}" = 'end' ]; then
-    __function_end_time="$(date +%s.%N)"
-    echo "
-Function \"${1}\" completed in $(echo "${__function_end_time}-${__function_start_time}" | bc) seconds"
-else
+if [ "${2}" = 'end' ]; then
+    echo
+    echo "Function \"${1}\" completed in $(echo "${__function_end_time}-${__function_start_time}" | bc) seconds"
+elif ! [ "${2}" = 'start' ]; then
     echo "Invalid input to __time, disabling timer."
     __time='0'
 fi
