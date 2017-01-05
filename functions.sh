@@ -580,7 +580,7 @@ fi
 ###############################################################
 
 __time () {
-if [ "${__name_only}" = '0' ]; then
+if [ "${__name_only}" = '0' ] && [ "${__time}" = '1' ]; then
 if [ -z "${2}" ]; then
     echo "No input to __time function, disabling timer."
     __time='0'
