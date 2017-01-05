@@ -484,11 +484,8 @@ for __xml in $(find -type f); do
 # Set cleanup as well
     __set_value "${__xml}" CLEANUP "$(cat "${__dep_list}_cleanup" | sort | uniq)"
 
-# Finish loop and start again, so it is in parallel
-done &
-
-# Wait for all loops to finish
-wait
+# Finish loop
+done
 
 # Go back to the regular directory
 __popd
