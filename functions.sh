@@ -577,10 +577,12 @@ fi
 ###############################################################
 
 __time () {
+__message="$(echo "${1}" | md5sum | sed 's/ .*//')"
+
 if [ "${2}" = 'start' ]; then
-    __function_start_time="$(date +%s.%N)"
+    export "__function_start_time${__message}"="$(date +%s.%N)"
 elif [ "${2}" = 'end' ]; then
-    __function_end_time="$(date +%s.%N)"
+    export "__function_end_time${__message}"="$(date +%s.%N)"
 fi
 
 if [ "${__name_only}" = '0' ] && [ "${__time}" = '1' ]; then
@@ -591,7 +593,7 @@ else
 
 if [ "${2}" = 'end' ]; then
     echo
-    echo "Function \"${1}\" completed in $(echo "${__function_end_time}-${__function_start_time}" | bc) seconds"
+    echo "Function \"${1}\" completed in $(echo "$(eval 'echo '"\$__function_end_time${__message}"'')-$(eval 'echo '"\$__function_start_time${__message}"'')" | bc) seconds"
 elif ! [ "${2}" = 'start' ]; then
     echo "Invalid input to __time, disabling timer."
     __time='0'

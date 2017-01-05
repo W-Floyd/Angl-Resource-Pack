@@ -645,6 +645,7 @@ __popd
 
 # TODO - Make a more efficient method of doing this
 
+__time "Checking hash changes" start
 # For every file in the shared xml list,
 for __shared in $(cat "${__shared_xml_list}"); do
 
@@ -664,6 +665,7 @@ for __shared in $(cat "${__shared_xml_list}"); do
 
 # Done with the hash checking
 done
+__time "Checking hash changes" end
 
 __time "Checking changes in XML files" end
 
