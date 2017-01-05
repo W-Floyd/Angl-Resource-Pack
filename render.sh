@@ -1,7 +1,5 @@
 #!/bin/bash
 
-__start_time="$(date +%s)"
-
 ###############################
 # Defaults
 ###############################
@@ -23,10 +21,10 @@ __time='0'
 # Setting up functions
 ###############################################################
 
-# Gets functions from file
+# get functions from file
 source functions.sh
 
-# Print help
+# print help
 __usage () {
 echo "render.sh <OPTIONS> <SIZE>
 
@@ -34,7 +32,7 @@ Renders the texture pack at the specified size (or default 128)
 Order of options and size are not important.
 
 Options:
-  -h  -?  --help        This help message
+  -h  --help  -?        This help message
   -f  --force           Discard pre-rendered data
   -v  --verbose         Verbose
   -vv --very-verbose    Very verbose
@@ -178,46 +176,68 @@ for __option in $(seq "${#}"); do
 # Make option 2 option 1, so we can loop through nicely
     shift
 
-# Done with out loop and if statement
+# Done with option loop and if statement
 done
 fi
 
 
 __time "Reading options" end
-###############################################################
-# Set variables
-###############################################################
+
 
 __time "Setting variables" start
 
+###############################################################
 # Check software deps
+###############################################################
+
+# print where inkscape is
 which inkscape &> /dev/null
+
+# if that didn't return an error, we know it exists
 if [ "$?" = '0' ]; then
     __has_inkscape='1'
+
+# if that did return an error, we know it doesn't exist
 else
     __has_inkscape='0'
 fi
 
+# print where rsvg-convert is
 which rsvg-convert &> /dev/null
+
+# if that didn't return an error, we know it exists
 if [ "$?" = '0' ]; then
     __has_rsvg_convert='1'
+
+# if that did return an error, we know it doesn't exist
 else
     __has_rsvg_convert='0'
 fi
 
+# if both inkscape and rsvg-convert don't exist, say so and exit
 if [ "${__has_inkscape}" = '0' ] && [ "${__has_rsvg_convert}" = '0' ]; then
     echo "Missing both inkscape and rsvg-convert. Please install either/both to continue."
     echo "Please install 'librsvg-devel' to obtain rsvg-convert, and 'inkscape' for Inkscape"
     exit 1
+
+# if inkscape exists, but rsvg-convert doesn't exist, and we're
+# wanting to use rsvg-convert, say so and force inkscape
 elif [ "${__has_inkscape}" = '1' ] && [ "${__has_rsvg_convert}" = '0' ] && [ "${__quick}" = '1' ]; then
     echo "Missing rsvg-convert. Cannot continue in quick mode."
     echo "Please install 'librsvg-devel'. Defaulting to inkscape."
     export __quick='0'
+
+# if rsvg-convert exists, but inkscape doesn't exist, and we're
+# wanting to use inkscape, say so and force rsvg-convert
 elif [ "${__has_inkscape}" = '0' ] && [ "${__has_rsvg_convert}" = '1' ] && [ "${__quick}" = '0' ]; then
     echo "Missing Inkscape. Must continue in quick mode."
     echo "Please install 'inkscape'. Defaulting to rsvg-convert."
     export __quick='1'
 fi
+
+###############################################################
+# Set variables
+###############################################################
 
 # Master folder
 __working_dir="$PWD"
@@ -234,19 +254,31 @@ __catalogue='catalogue.xml'
 # Rendered folder name
 __pack="${__name}-${__size}px"
 
+# if we're supossed to make a mobile pack,
 if [ "${__mobile}" = '1' ]; then
 
+# set a special end pack folder
     __pack_end="${__pack}_mobile"
 
+# otherwise
 else
 
+# set the end pack name the same as normal
     __pack_end="${__pack}"
 
+# end mobile if statement
 fi
 
+# if we're only supposed to print the pack name
 if [ "${__name_only}" = '1' ]; then
+
+# print the pack end pack folder name
     echo "${__pack_end}"
+
+# and exit
     exit
+
+# exit the name only if statement
 fi
 
 ###############################################################
@@ -337,28 +369,46 @@ __time "Setting up folders" end
 
 __time "Splitting XML" start
 
+# if the xml folder does not exist,
 if ! [ -d ./src/xml/ ]; then
+
+# make the xml folder
     mkdir ./src/xml/
+
+# end the xml folder if statement
 fi
 
+# get into the xml folder
 __pushd ./src/xml
 
+# if the catalogue exists
 if [ -a "${__catalogue}" ]; then
 
+# get the md5sum hash of the catalogue
     __old_catalogue_hash="$(md5sum "${__catalogue}")"
 
+# remove the catalogue
     rm "${__catalogue}"
 
+# end the if statement if the catalogue exists
 fi
 
+# get back into the main directory
 __popd
 
+# md5sum hash the current catalogue
 __new_catalogue_hash="$(md5sum "${__catalogue}")"
 
+# if the new catalogue is the same as the old catalogue, then
 if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ]; then
+
+# say so
     __announce "No changes to xml catalogue."
 
+# tell the script to re-use the xml files
     __re_use_xml='1'
+
+# end if statement whether the catalogues are the same
 fi
 
 # If we're told not to re-use xml, then
@@ -852,8 +902,13 @@ __time "Checking for items to re/process" end
 __announce "Setting up files for processing."
 ###############################################################
 
+# copy src files into new pack folder
 cp -r "./src/"* "${__pack_new}"
+
+# remove old pack
 rm -r "${__pack}"
+
+# rename the new pack to the regular pack
 mv "${__pack_new}" "${__pack}"
 
 ###############################################################
@@ -863,54 +918,82 @@ __announce "Starting to render."
 
 __time "Rendered" start
 
+__start_time="$(date +%s)"
+
+# get into the pack folder, ready to render
 __pushd "${__pack}"
 
+# while the render list has lines to process,
 while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
 
+# set the original name of the config file
     __orig_config="$(head -n 1 "${__render_list}")"
 
+# set the formatted name of the config file
     __config="./xml/${__orig_config//.\//}"
 
+# get the dependancies of the config, and put it in a temporary file
     __check_deps "${__config}" > "${__tmp_dir}/tmpdeps"
 
+# if the dependancies are not yet to be rendered, then
     if [ -z "$(grep -Fxf "${__tmp_dir}/tmpdeps" "${__render_list}")" ]; then
 
+# get the size of the texture
         __tmp_val="$(__get_value "${__config}" SIZE)"
 
+# if the size was set,
         if ! [ -z "${__tmp_val}" ]; then
 
+# use it as the real size
             __tmp_size="${__tmp_val}"
 
+# otherwise,
         else
 
+# use the pack size
             __tmp_size="${__size}"
 
+# end size check
         fi
 
+# get the name of the config script
         __config_script="$(__get_value "${__config}" CONFIG)"
 
+# if there is a config script to use, then
         if ! [ -z "${__config_script}" ]; then
 
+# announce that we are processing the given config
             __announce "Processing \"${__config}\""
 
+# copy the config script out so we can use it
             cp "${__config_script}" ./
 
+# execute the script, given the determined size and options set
+# in the config
             eval '\./'"$(basename "${__config_script}")" "${__tmp_size}" "$(__get_value "${__config}" OPTIONS)"
 
+# remove the script now we're done with it
             rm "$(basename "${__config_script}")"
 
+# end loop for when a config script is present
         fi
 
+# if the config still has dependencies that need to be rendered
     else
 
+# add the config to the end of the render list
         echo "${__orig_config}" >> "${__render_list}"
 
+# end loop to process the top item on the render list
     fi
 
+# remove the top item from the render list
     sed -i '1d' "${__render_list}"
 
+# finish render loop
 done
 
+# get out of the render directory
 __popd
 
 __time "Rendered" end
@@ -919,6 +1002,7 @@ __time "Rendered" end
 # Final stats
 ###############################################################
 
+# set the end time for rendering
 __end_time="$(date +%s)"
 
 __announce "Done rendering!"
@@ -931,48 +1015,69 @@ __announce "Making cleaned folder."
 
 __time "Making cleaned folder" start
 
+# set and create the file for listing cleanup files
 __cleanup_all="${__tmp_dir}/cleanup_all"
 touch "${__cleanup_all}"
 
+# set the directory for the cleaned pack
 __pack_cleaned="${__pack}_cleaned"
 
+# removed the directory for the cleaned pack, if it exists
 if [ -d "${__pack_cleaned}" ]; then
     rm -r "${__pack_cleaned}"
 fi
 
+# get into the xml folder
 __pushd ./src/xml
 
+# for every xml file
 for __xml in $(find -type f); do
 
+# get the cleanup files, and list it to a file
     __get_value "${__xml}" CLEANUP >> "${__cleanup_all}"
 
+# if the file is not to be kept,
     if [ "$(__get_value "${__xml}" KEEP)" = "NO" ]; then
 
+# add it to the cleanup file list
         echo "${__xml}" >> "${__cleanup_all}"
 
+# end the if statement
     fi
 
-done
+# finished with all the cleanup files
+done &
 
+# wait for the loop to finished
+wait
+
+# sort and uniq the cleanup files
 sort "${__cleanup_all}" | uniq > "${__cleanup_all}_"
-
 mv "${__cleanup_all}_" "${__cleanup_all}"
 
+# get back to the main directory
 __popd
 
+# copy the pack to a new folder to be cleaned
 cp -r "${__pack}" "${__pack_cleaned}"
 
+# get into the cleaned folder
 __pushd "${__pack_cleaned}"
 
+# for every file to clean
 for __file in $(cat "${__cleanup_all}"); do
 
+# remove it
     rm "${__file}"
 
+# finish loop
 done
 
+# remove xml and conf from cleaned pack
 rm -r ./xml
 rm -r ./conf
 
+# get back to the right directory
 __popd
 
 __time "Making cleaned folder" end
@@ -981,36 +1086,51 @@ __time "Making cleaned folder" end
 # Make mobile pack if asked to
 ###############################################################
 
+# mobile script to be used to make a mobile pack
 __mobile_script='convert_to_mobile.sh'
 
+# if a mobile pack is supposed to be made
 if [ "${__mobile}" = '1' ]; then
 
     __time "Making mobile pack" start
 
+# if the end pack folder exists,
     if [ -d "${__pack_end}" ]; then
 
+# remove it
         rm -r "${__pack_end}"
 
+# end the if statement
     fi
 
+# copy the cleaned folder to the end pack folder
     cp -r "${__pack_cleaned}" "${__pack_end}"
 
+# if the mobile script doesn't exist,
     if ! [ -a "${__mobile_script}" ]; then
 
+# complain
         echo "Missing mobile script system, aborting."
 
+# and exit
         exit 1
 
+# end if statement whether the mobile script exists
     fi
 
+# copy the script to the end pack folder
     cp "${__mobile_script}" "${__pack_end}/${__mobile_script}"
 
+# get into the end pack folder
     __pushd "${__pack_end}"
 
+# excecute the mobile script folder
     "./${__mobile_script}"
 
+# remove the mobile script folder
     rm "${__mobile_script}"
 
+# get back into the main directory
     __popd
 
     __time "Making mobile pack" end
@@ -1021,13 +1141,15 @@ fi
 # End if only xml splitting
 fi
 
+# copy the catalogue into the src xml folder
 cp "${__catalogue}" "./src/xml/${__catalogue}"
 
 ###############################################################
 # General Cleanup
 ###############################################################
 
-# If we're debugging, don't clean up (it will be done on next run)
+# If we're debugging, don't clean up (it will be done on next
+# run anyway)
 if [ "${__debug}" = '0' ]; then
     __announce "Cleaning up."
     rm -r "${__tmp_dir}"
