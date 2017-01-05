@@ -870,7 +870,7 @@ mv "${__pack_new}" "${__pack}"
 __announce "Starting to render."
 ###############################################################
 
-__time "Starting to render" start
+__time "Rendered" start
 
 __pushd "${__pack}"
 
@@ -878,7 +878,7 @@ while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
 
     __orig_config="$(head -n 1 "${__render_list}")"
 
-    __config="./xml/$(echo "${__orig_config}" | sed 's/^\.\///')"
+    __config="./xml/${__orig_config//.\//}"
 
     __check_deps "${__config}" > "${__tmp_dir}/tmpdeps"
 
@@ -922,7 +922,7 @@ done
 
 __popd
 
-__time "Starting to render" end
+__time "Rendered" end
 
 ###############################################################
 # Final stats

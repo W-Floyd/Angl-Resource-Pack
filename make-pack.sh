@@ -55,6 +55,7 @@ for __option in $(seq "${#}"); do
 
         "-t" | "--time")
             __time='1'
+            __verbose='1'
             ;;
 
         [0-9]*)
