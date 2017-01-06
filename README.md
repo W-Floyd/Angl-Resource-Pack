@@ -10,6 +10,12 @@ The whole render system may be broken at any given time, especially if I have be
 
 ***
 
+Requires:
+* Inkscape and/or rsvg-convert
+* tsort
+
+***
+
 ###Usage
 
 Please use

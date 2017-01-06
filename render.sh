@@ -202,6 +202,14 @@ __time "Setting variables" start
 # Check software deps
 ###############################################################
 
+# check tsort
+which tsort &> /dev/null
+
+if ! [ "$?" = '0' ]; then
+    echo "Please install 'tsort' to continue. It is required for dependency resolution."
+    exit 1
+fi
+
 # print where inkscape is
 which inkscape &> /dev/null
 
@@ -359,10 +367,10 @@ else
     mkdir -p "${__pack}/xml"
 fi
 
+__time "Setting up folders" end
+
 # End conditional if only doing xml processing
 fi
-
-__time "Setting up folders" end
 
 ###############################################################
 # Split XML
@@ -466,35 +474,13 @@ __announce "Inheriting and creating dependencies and cleanup files."
 # End if statement whether to split xml again or not
 fi
 
-###############################
-# __check_deps <DATASET>
-###############################
-__check_deps () {
-__get_value "${1}" DEPENDS
-}
-###############################
-
-###############################
-# __check_deps_loop <DATASET>
-###############################
-__check_deps_loop () {
-__get_value "${1}" CONFIG
-__get_value "${1}" CLEANUP
-for __dep in $(__check_deps "${1}"); do
-    echo "${__dep}"
-    if [ -a "${__dep}" ]; then
-        __get_value "${__dep}" CONFIG
-        __get_value "${__dep}" CLEANUP
-        __check_deps_loop "${__dep}"
-    fi
-done
-}
-###############################
-
 # If we're told not to re-use xml, then
 if [ "${__re_use_xml}" = '0' ]; then
 
 __time "Inheriting and creating dependencies" start
+
+__dep_list_tsort="${__tmp_dir}/tsort"
+touch "${__dep_list_tsort}"
 
 # Make directory for dependency work
 mkdir "${__tmp_dir}/tmp_deps"
@@ -505,31 +491,55 @@ __pushd ./src/xml/
 # For every xml file,
 for __xml in $(find -type f); do
 
+    __tmp_deps="$(__get_value "${__xml}" DEPENDS | sed '/^$/d')"
+
+    echo "${__xml} ${__xml}" >> "${__dep_list_tsort}"
+
+    for __line in ${__tmp_deps}; do
+        echo "${__xml} ${__line}" >> "${__dep_list_tsort}"
+    done
+
+# Finish loop
+done
+
+tsort "${__dep_list_tsort}" | tac > "${__dep_list_tsort}_"
+
+mv "${__dep_list_tsort}_" "${__dep_list_tsort}"
+
+__dep_list_folder="${__tmp_dir}/tmp_deps"
+
+for __xml in $(cat "${__dep_list_tsort}"); do
+
 # Set the location for the dep list
-    __dep_list="${__tmp_dir}/tmp_deps/${__xml}"
+    __dep_list="${__dep_list_folder}/${__xml}"
 
 # Make the directory for the dep list if need be
     mkdir -p "$(__odir "${__dep_list}")"
 
-# Recursively get ALL dependencies for said xml files
-    __check_deps_loop "${__xml}" | sort | uniq > "${__dep_list}"
+    touch "${__dep_list}"
 
-# Set the value of the dependancies according to previous
-# dependency list
-    __set_value "${__xml}" DEPENDS "$(cat "${__dep_list}")"
+    __get_value "${__xml}" CONFIG >> "${__dep_list}"
+    __get_value "${__xml}" CLEANUP >> "${__dep_list}"
+    __get_value "${__xml}" DEPENDS >> "${__dep_list}"
 
-# Recurse cleanup
-    __get_value "${__xml}" CLEANUP >> "${__dep_list}_cleanup"
-    for __dep in $(cat "${__dep_list}"); do
-        if [ -a "${__dep}" ]; then
-            __get_value "${__dep}" CLEANUP >> "${__dep_list}_cleanup"
-        fi
+    for __dep in $(__get_value "${__xml}" DEPENDS); do
+
+        cat "${__dep_list_folder}/${__dep}" >> "${__dep_list}"
+
     done
 
-# Set cleanup as well
-    __set_value "${__xml}" CLEANUP "$(cat "${__dep_list}_cleanup" | sort | uniq)"
+    touch "${__dep_list}_"
 
-# Finish loop
+    sort "${__dep_list}" | uniq | sed '/^$/d' > "${__dep_list}_"
+
+    mv "${__dep_list}_" "${__dep_list}"
+
+done
+
+for __xml in $(find -type f); do
+
+    __set_value "${__xml}" DEPENDS "$(cat "${__dep_list_folder}/${__xml}")"
+
 done
 
 # Go back to the regular directory
@@ -936,7 +946,7 @@ while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
     __config="./xml/${__orig_config//.\//}"
 
 # get the dependancies of the config, and put it in a temporary file
-    __check_deps "${__config}" > "${__tmp_dir}/tmpdeps"
+    __get_value "${__config}" DEPENDS > "${__tmp_dir}/tmpdeps"
 
 # if the dependancies are not yet to be rendered, then
     if [ -z "$(grep -Fxf "${__tmp_dir}/tmpdeps" "${__render_list}")" ]; then

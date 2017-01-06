@@ -527,7 +527,7 @@ else
     pushd "${1}" 1> /dev/null
 fi
 else
-    echo "Directory does not exist!"
+    echo "Directory \"${1}\" does not exist!"
     exit 2
 fi
 }
