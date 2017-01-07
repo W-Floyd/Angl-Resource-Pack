@@ -14,7 +14,7 @@ __debug='0'
 __xml_only='0'
 __name_only='0'
 __mobile='0'
-export __quick='0'
+export __quick='1'
 __time='0'
 
 ###############################################################
@@ -40,7 +40,7 @@ Options:
   -x  --xml-only        Only process xml files
   -n  --name-only       Print output folder name
   -m  --mobile          Make mobile resource pack
-  -q  --quick           Use more efficient render engine
+  -s  --slow            Use slower render engine (Inkscape)
   -t  --time            Time operations (for debugging)\
 "
 }
@@ -150,8 +150,8 @@ for __option in $(seq "${#}"); do
                     ;;
 
 # whether to use quick render engine
-                "-q" | "--quick")
-                    export __quick='1'
+                "-s" | "--slow")
+                    export __quick='0'
                     ;;
 
 # whether to time functions

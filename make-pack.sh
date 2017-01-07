@@ -4,7 +4,7 @@ __sizes=''
 __verbose='0'
 __install='0'
 __mobile='0'
-__quick='0'
+__quick='1'
 __time='0'
 
 # Print help
@@ -49,8 +49,8 @@ for __option in $(seq "${#}"); do
             __mobile='1'
             ;;
 
-        "-q" | "--quick")
-            __quick='1'
+        "-s" | "--slow")
+            __quick='0'
             ;;
 
         "-t" | "--time")
@@ -96,8 +96,8 @@ if [ "${__mobile}" = '1' ]; then
     __options="${__options} -m"
 fi
 
-if [ "${__quick}" = '1' ]; then
-    __options="${__options} -q"
+if [ "${__quick}" = '0' ]; then
+    __options="${__options} -s"
 fi
 
 if [ "${__time}" = '1' ]; then
