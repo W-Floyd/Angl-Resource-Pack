@@ -34,31 +34,37 @@ If no resolution is specified, sizes 32x32, 64x64, 128x128, 256x256 and 512x512 
 
 ***
 
-The use of the flag "-q" will use rsvg-convert, which is significantly faster than inkscape. The script will check if it is installed or not, so it is safe to use.
+The use of the flag "--slow" will use Inkscape, which is significantly slower than rsvg-convert. The script will check if it is installed or not, so it is safe to try, with or without.
 
-	./make-pack.sh -q <resolution>
+	./make-pack.sh -s <resolution>
 	
 	
 	
 In trials on my PC at one point in time, the following results were obtained (Both times, the xml file was pre-computed.) Specs were i7-6500U, 16GB RAM, 256GB SSD.
 
-    time ./make-pack.sh 32 64 128 256 512 -v -q
+    time ./make-pack.sh 32 64 128 256 512
+    Processing size 32
+    Processing size 64
+    Processing size 128
+    Processing size 256
+    Processing size 512
+
+    real    2m25.750s
+    user    2m40.754s
+    sys     0m32.327s
     
-    ...
-    
-    real    2m29.062s
-    user    2m45.957s
-    sys     0m31.516s
     
     
-    
-    time ./make-pack.sh 32 64 128 256 512 -v
-    
-    ...
-    
-    real    4m13.155s
-    user    4m22.178s
-    sys     0m37.521s
+    time ./make-pack.sh --slow 32 64 128 256 512
+    Processing size 32
+    Processing size 64
+    Processing size 128
+    Processing size 256
+    Processing size 512
+
+    real    4m12.914s
+    user    4m21.290s
+    sys     0m37.101s
 
 ***
 
@@ -72,7 +78,7 @@ If no resolution is specified, the pack will be rendered at size 128x128
 
 ***
 
-If things don't render properly after modifying some stuff, just delete the Angle-*px folders and re-render. This shouldn't happen, so if it does, please add an issue and describe the file changed so I can fix it.
+If things don't render properly after modifying some stuff, just delete the Angle-*px folders and re-render. This shouldn't happen, so if it does, please add an issue and describe which files were changed so I can fix it.
 
 ***
 
