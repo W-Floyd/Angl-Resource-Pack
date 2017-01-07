@@ -410,6 +410,28 @@ mv "${1}"_ "${1}"
 #
 ###############################################################
 
+# Slower optionaly piped input version
+#__get_range () {
+#if ! [ "$#" = '1' ] && ! [ "$#" = '2' ]; then
+#    echo "Incorrect number of options"
+#    exit 1
+#fi
+
+#if read -t 0 && [ "$#" = '1' ]; then
+
+#    __value="$(cat)"
+#    __option="${1}"
+
+#elif ! read -t 0 && [ "$#" = '2' ]; then
+
+#    __value="$(cat "${1}")"
+#    __option="${2}"
+
+#fi
+
+#echo "${__value}" | grep -n '[</|<]'"${__option}"'>' | sed 's/\:.*//' |  sed 'N;s/\n/,/'
+#}
+
 __get_range () {
 cat "${1}" | grep -n '[</|<]'"${2}"'>' | sed 's/\:.*//' |  sed 'N;s/\n/,/'
 }
@@ -424,6 +446,28 @@ cat "${1}" | grep -n '[</|<]'"${2}"'>' | sed 's/\:.*//' |  sed 'N;s/\n/,/'
 #
 ###############################################################
 
+# Slower optionaly piped input version
+#__read_range () {
+#if ! [ "$#" = '1' ] && ! [ "$#" = '2' ]; then
+#    echo "Incorrect number of options"
+#    exit 1
+#fi
+
+#if read -t 0 && [ "$#" = '1' ]; then
+
+#    __value="$(cat)"
+#    __option="${1}"
+
+#elif ! read -t 0 && [ "$#" = '2' ]; then
+
+#    __value="$(cat "${1}")"
+#    __option="${2}"
+
+#fi
+
+#echo "${__value}" | sed -e "${__option}"'!d' | sed -e 's/^	*//' -e 's/^ *//'
+#}
+
 __read_range () {
 sed -e "${2}"'!d' "${1}" | sed -e 's/^	*//' -e 's/^ *//'
 }
@@ -437,6 +481,29 @@ sed -e "${2}"'!d' "${1}" | sed -e 's/^	*//' -e 's/^ *//'
 # Meant to be used on separated datasets
 #
 ###############################################################
+
+
+# Slower optionaly piped input version
+#__get_value () {
+#if ! [ "$#" = '1' ] && ! [ "$#" = '2' ]; then
+#    echo "Incorrect number of options"
+#    exit 1
+#fi
+
+#if read -t 0 && [ "$#" = '1' ]; then
+
+#    __value="$(cat)"
+#    __option="${1}"
+
+#elif ! read -t 0 && [ "$#" = '2' ]; then
+
+#    __value="$(cat "${1}")"
+#    __option="${2}"
+
+#fi
+
+#echo "${__value}" | pcregrep -M "<${__option}>(\n|.)*</${__option}>" - | sed -e 's/^<'"${__option}"'>//' -e 's/<\/'"${__option}"'>$//'
+#}
 
 __get_value () {
 pcregrep -M "<${2}>(\n|.)*</${2}>" "${1}" | sed -e 's/^<'"${2}"'>//' -e 's/<\/'"${2}"'>$//'
