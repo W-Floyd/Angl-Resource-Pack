@@ -154,7 +154,15 @@ for __size in $(echo "${__sizes}"); do
 
     __packfile="$(./render.sh --name-only "${__size}")"
 
-    __render_and_pack "${__size}" "${__packfile}"
+    if [ "${__time}" = '1' ]; then
+
+        time __render_and_pack "${__size}" "${__packfile}"
+
+    else
+
+        __render_and_pack "${__size}" "${__packfile}"
+
+    fi
 
     __dest="${HOME}/.minecraft/resourcepacks/${__packfile}.zip"
 

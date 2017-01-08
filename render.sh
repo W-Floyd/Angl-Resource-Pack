@@ -378,6 +378,10 @@ fi
 
 __time "Splitting XML" start
 
+__tsort_file='tsort'
+
+__dep_list_tsort="${__tmp_dir}/${__tsort_file}"
+
 # if the xml folder does not exist,
 if ! [ -d ./src/xml/ ]; then
 
@@ -409,13 +413,16 @@ __popd
 __new_catalogue_hash="$(md5sum "${__catalogue}")"
 
 # if the new catalogue is the same as the old catalogue, then
-if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ]; then
+if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ] && [ -a "./src/xml/${__tsort_file}" ]; then
 
 # say so
     __announce "No changes to xml catalogue."
 
 # tell the script to re-use the xml files
     __re_use_xml='1'
+
+# make sure tsort file exists
+    mv "./src/xml/${__tsort_file}" "${__dep_list_tsort}"
 
 # end if statement whether the catalogues are the same
 fi
@@ -479,7 +486,9 @@ if [ "${__re_use_xml}" = '0' ]; then
 
 __time "Inheriting and creating dependencies" start
 
-__dep_list_tsort="${__tmp_dir}/tsort"
+if [ -a "${__dep_list_tsort}" ]; then
+    rm "${__dep_list_tsort}"
+fi
 touch "${__dep_list_tsort}"
 
 # Make directory for dependency work
@@ -656,6 +665,9 @@ __popd
 # TODO - Make a more efficient method of doing this
 
 __time "Checking hash changes" start
+
+if ! [ "$(cat "${__new_hashes}" | md5sum)" = "$(cat "${__old_hashes}" | md5sum)" ]; then
+
 # For every file in the shared xml list,
 for __shared in $(cat "${__shared_xml_list}"); do
 
@@ -675,6 +687,13 @@ for __shared in $(cat "${__shared_xml_list}"); do
 
 # Done with the hash checking
 done
+
+else
+
+    __announce "No changes to XML."
+
+fi
+
 __time "Checking hash changes" end
 
 __time "Checking changes in XML files" end
@@ -754,6 +773,9 @@ touch "${__changed_source}"
 __unchanged_source="${__tmp_dir}/unchanged_source"
 touch "${__unchanged_source}"
 
+__shared_source_list_hash="${__tmp_dir}/source_list_shared_hashes"
+touch "${__shared_source_list_hash}"
+
 # Get to the source directory
 __pushd ./src
 
@@ -769,8 +791,14 @@ __pushd "./${__pack}"
 # Hash source files into designated file, exluding xml files
 __hash_folder "${__source_hash_old}" xml
 
+for __file in $(cat "${__shared_source_list}"); do
+    md5sum "${__file}" >> "${__shared_source_list_hash}"
+done
+
 # Get back to main directory
 __popd
+
+if ! [ "$(cat "${__shared_source_list_hash}" | sort | md5sum)" = "$(cat "${__source_hash_new}" | sort | md5sum)" ]; then
 
 # For every file in the shared xml list,
 for __shared in $(cat "${__shared_source_list}"); do
@@ -791,6 +819,12 @@ for __shared in $(cat "${__shared_source_list}"); do
 
 # Done with the hash checking
 done
+
+else
+
+    __announce "No changes to source."
+
+fi
 
 __time "Checking changes in source files" end
 
@@ -1156,6 +1190,8 @@ fi
 
 # copy the catalogue into the src xml folder
 cp "${__catalogue}" "./src/xml/${__catalogue}"
+
+cp "${__dep_list_tsort}" "./src/xml/${__tsort_file}"
 
 ###############################################################
 # General Cleanup
