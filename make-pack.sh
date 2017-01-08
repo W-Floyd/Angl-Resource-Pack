@@ -21,6 +21,7 @@ Options:
   -v  --verbose         Be verbose
   -i  --install         Install or update .minecraft folder copy
   -m  --mobile          Make mobile resource pack as well
+  -s  --slow            Use Inkscape instead of rsvg-convert
   -t  --time            Time functions (for debugging)
   -d  --debug           Use debugging mode\
 "
