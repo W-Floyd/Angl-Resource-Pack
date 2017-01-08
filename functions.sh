@@ -555,7 +555,7 @@ exit 1
 ###############################################################
 
 __hash_folder () {
-if [ -z "$2" ]; then
+if [ -z "${2}" ]; then
 __listing="$(find -type f)"
 else
 __listing="$(find -not -path "./${2}/*" -type f)"

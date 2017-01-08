@@ -6,6 +6,7 @@ __install='0'
 __mobile='0'
 __quick='1'
 __time='0'
+__debug='0'
 
 # Print help
 __usage () {
@@ -20,7 +21,8 @@ Options:
   -v  --verbose         Be verbose
   -i  --install         Install or update .minecraft folder copy
   -m  --mobile          Make mobile resource pack as well
-  -t  --time            Time functions (for debugging)\
+  -t  --time            Time functions (for debugging)
+  -d  --debug           Use debugging mode\
 "
 }
 
@@ -56,6 +58,10 @@ for __option in $(seq "${#}"); do
         "-t" | "--time")
             __time='1'
             __verbose='1'
+            ;;
+
+        "-d" | "--debug")
+            __debug='1'
             ;;
 
         [0-9]*)
@@ -104,10 +110,14 @@ if [ "${__time}" = '1' ]; then
     __options="${__options} -t"
 fi
 
+if [ "${__debug}" = '1' ]; then
+    __options="${__options} -d"
+fi
+
 if [ "${__verbose}" = '1' ]; then
-    ./render.sh ${__options} -v
+    ./render.sh ${__options} -v -p "${1}"
 else
-    ./render.sh ${__options} &> /dev/null
+    ./render.sh ${__options} -p "${1}" &> /dev/null
 fi
 
 if [ -a "${2}.zip" ]; then

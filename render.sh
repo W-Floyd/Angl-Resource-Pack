@@ -623,9 +623,17 @@ __time "Checking changes in XML files" start
 __new_hashes="${__tmp_dir}/new_hashes_xml"
 touch "${__new_hashes}"
 
+# Where all split new xml files are hashed to
+__new_hashes_folder="${__tmp_dir}/new_hashes_xml_dir"
+mkdir -p "${__new_hashes_folder}"
+
 # Where all old xml files are hashed to
 __old_hashes="${__tmp_dir}/old_hashes_xml"
 touch "${__old_hashes}"
+
+# Where all split old xml files are hashed to
+__old_hashes_folder="${__tmp_dir}/old_hashes_xml_dir"
+mkdir -p "${__old_hashes_folder}"
 
 # Where shared, but changed xml files are listed to
 __changed_xml="${__tmp_dir}/changed_xml"
@@ -641,6 +649,17 @@ __pushd ./src/xml
 # Hash the folder, and output to the new hashes file
 __hash_folder "${__new_hashes}"
 
+# Split hashes
+while read __line; do
+
+    __tmp_val="${__new_hashes_folder}/$(echo "${__line}" | sed 's/.* //')"
+
+    mkdir -p "$(__odir "${__tmp_val}")"
+
+    echo "${__line}" > "${__tmp_val}"
+
+done < "${__new_hashes}"
+
 # Get back to main directory
 __popd
 
@@ -649,6 +668,17 @@ __pushd "./${__pack}/xml"
 
 # Hash the folder, and output to the old hashes file
 __hash_folder "${__old_hashes}"
+
+# Split hashes
+while read __line; do
+
+    __tmp_val="${__old_hashes_folder}/$(echo "${__line}" | sed 's/.* //')"
+
+    mkdir -p "$(__odir "${__tmp_val}")"
+
+    echo "${__line}" > "${__tmp_val}"
+
+done < "${__old_hashes}"
 
 # Get back to main directory
 __popd
@@ -660,10 +690,10 @@ __time "Checking hash changes" start
 for __shared in $(cat "${__shared_xml_list}"); do
 
 # Get the old hash
-    __old_hash="$(cat "${__old_hashes}" | grep -w "${__shared}")"
+    __old_hash="$(cat "${__old_hashes_folder}/${__shared}")"
 
 # Get the new hash
-    __new_hash="$(cat "${__new_hashes}" | grep -w "${__shared}")"
+    __new_hash="$(cat "${__new_hashes_folder}/${__shared}")"
 
 # If the two hashes do not match, we know the xml file
 # for that file has changed, and so needs to be re-rendered
