@@ -80,6 +80,8 @@ If no resolution is specified, the pack will be rendered at size 128x128
 
 If things don't render properly after modifying some stuff, just delete the Angle-*px folders and re-render. This shouldn't happen, so if it does, please add an issue and describe which files were changed so I can fix it.
 
+It is highly recommended that fresh packs are rendered upon significant script changes. Though the script should handle the changes gracefully, I cannnot be sure.
+
 ***
 
 This is *mostly* to showcase my method and history of development, hopefully to help someone else someday.
