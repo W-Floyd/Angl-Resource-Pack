@@ -395,7 +395,7 @@ fi
 __pushd ./src/xml
 
 # if the catalogue exists
-if [ -a "${__catalogue}" ]; then
+if [ -e "${__catalogue}" ]; then
 
 # get the md5sum hash of the catalogue
     __old_catalogue_hash="$(md5sum "${__catalogue}")"
@@ -413,7 +413,7 @@ __popd
 __new_catalogue_hash="$(md5sum "${__catalogue}")"
 
 # if the new catalogue is the same as the old catalogue, then
-if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ] && [ -a "./src/xml/${__tsort_file}" ]; then
+if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ] && [ -e "./src/xml/${__tsort_file}" ]; then
 
 # say so
     __announce "No changes to xml catalogue."
@@ -486,7 +486,7 @@ if [ "${__re_use_xml}" = '0' ]; then
 
 __time "Inheriting and creating dependencies" start
 
-if [ -a "${__dep_list_tsort}" ]; then
+if [ -e "${__dep_list_tsort}" ]; then
     rm "${__dep_list_tsort}"
 fi
 touch "${__dep_list_tsort}"
@@ -548,6 +548,26 @@ done
 for __xml in $(find -type f); do
 
     __set_value "${__xml}" DEPENDS "$(cat "${__dep_list_folder}/${__xml}")"
+
+    echo '<REVDEPENDS></REVDEPENDS>' >> "${__xml}"
+
+done
+
+for __xml in $(cat "${__dep_list_tsort}" | tac); do
+
+    for __dep in $(__get_value "${__xml}" DEPENDS); do
+
+        if [ -e "${__dep}" ]; then
+
+            __get_value "${__dep}" REVDEPENDS > "${__tmp_dir}/tmp"
+
+            echo "${__xml}" >> "${__tmp_dir}/tmp"
+
+            __set_value "${__dep}" REVDEPENDS "$(cat "${__tmp_dir}/tmp")"
+
+        fi
+
+    done
 
 done
 
@@ -692,6 +712,14 @@ else
 
     __announce "No changes to XML."
 
+    if [ -e "${__unchanged_xml}" ]; then
+
+        rm "${__unchanged_xml}"
+
+    fi
+
+     cp "${__shared_xml_list}" "${__unchanged_xml}"
+
 fi
 
 __time "Checking hash changes" end
@@ -824,6 +852,14 @@ else
 
     __announce "No changes to source."
 
+    if [ -e "${__unchanged_source}" ]; then
+
+        rm "${__unchanged_source}"
+
+    fi
+
+     cp "${__shared_source_list}" "${__unchanged_source}"
+
 fi
 
 __time "Checking changes in source files" end
@@ -870,6 +906,9 @@ __time "Checking for items to re/process" start
 # Where we'll start putting new work in, will eventually be
 # renamed to regular
 __pack_new="${__pack}_new"
+if [ -d "${__pack_new}" ]; then
+    rm -r "${__pack_new}"
+fi
 mkdir "${__pack_new}"
 
 # List of xml files to re/render
@@ -889,6 +928,32 @@ sort "${__changed_source}" "${__changed_xml}" "${__new_split_source_list}" "${__
 __unchanged_both="${__tmp_dir}/unchanged_both"
 touch "${__unchanged_both}"
 sort "${__unchanged_source}" "${__unchanged_xml}" | uniq > "${__unchanged_both}"
+
+__dep_list_tsort_changed="${__dep_list_tsort}_changed"
+cp "${__dep_list_tsort}" "${__dep_list_tsort_changed}"
+
+for __line in $(cat "${__unchanged_both}"); do
+
+    touch "${__dep_list_tsort_changed}_"
+
+    cat "${__dep_list_tsort_changed}" | grep -xv "${__line}" > "${__dep_list_tsort_changed}_"
+
+#    sleep 1s
+
+    mv "${__dep_list_tsort_changed}_" "${__dep_list_tsort_changed}"
+
+done
+
+__dep_list_tsort_relavent="${__dep_list_tsort}_relavent"
+touch "${__dep_list_tsort_relavent}"
+
+if [ -s "${__dep_list_tsort_changed}" ]; then
+
+    __earliest="$(head -n 1 "${__dep_list_tsort_changed}")"
+
+    cat "${__dep_list_tsort}" | sed "$(cat "${__dep_list_tsort}" | grep -n "${__earliest}" | sed 's/:.*//'),"'$!'"d" > "${__dep_list_tsort_relavent}"
+
+fi
 
 # Get into the xml directory
 __pushd ./src/xml/
@@ -910,12 +975,12 @@ for __xml in $(find -type f); do
 
 # ensure the old file does not exist, and make sure to be
 # re/rendered
-        if [ -a "${__working_dir}/${__pack}/${__xml}" ]; then
+        if [ -e "${__working_dir}/${__pack}/${__xml}" ]; then
             rm "${__working_dir}/${__pack}/${__xml}"
         fi
         echo "${__xml}" >> "${__render_list}"
 
-    elif [ -a "${__working_dir}/${__pack}/${__xml_name}" ]; then
+    elif [ -e "${__working_dir}/${__pack}/${__xml_name}" ]; then
 
 # otherwise if file exists, add to a list of properly processed
 # files and copy file across,

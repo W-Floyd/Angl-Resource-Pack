@@ -17,7 +17,7 @@ default list of sizes). Order of options and size(s) are not
 important.
 
 Options:
-  -h  --help            This help message
+  -h  --help  -?        This help message
   -v  --verbose         Be verbose
   -i  --install         Install or update .minecraft folder copy
   -m  --mobile          Make mobile resource pack as well
@@ -35,7 +35,7 @@ for __option in $(seq "${#}"); do
 
     case "${1}" in
 
-        "-h" | "--help")
+        "-h" | "--help" | "-?")
             __usage
             exit
             ;;

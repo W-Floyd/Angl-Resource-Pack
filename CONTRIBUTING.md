@@ -39,7 +39,7 @@ OPTIONS describes any options to pass to the script. Placed after SIZE, as SIZE 
 
 KEEP describes whether the produced file is intended for inclusion in the final resource pack. YES or NO answer. So if you are processing a working only file (an overlay, for instance), this is set to NO. Otherwise, YES.
 
-DEPENDS describes any files this file **directly** relies on. For instance, if your script pulls in a file derived from wool, the colour file, nor wool overlay are required, only the directly used file. The render script extrapolates this information for use, so there is no need to do it ourselves. It shouldn't break things, but it's bad form.
+DEPENDS describes any files this file **directly** relies on. For instance, if your script pulls in a file derived from wool, the colour file, nor wool overlay are required, only the directly used file. The render script extrapolates this information for use, so there is no need to do it ourselves. It **shouldn't** break things, but it's bad form, and not tested.
 
 CLEANUP describes the source files to delete upon completion of the resource pack. Again, formatted relative to the top folder of the resource pack. For images composed entirely from pre-rendered images, this will be blank.
 
