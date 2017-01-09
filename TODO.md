@@ -1,6 +1,6 @@
 # TODO list
 
-Make script evaluate reverse dependencies.
+Make script actually reverse dependencies, or disable revdep generation for now.
 
 Finish leaves
 Complete chests, crafting bench, furnace.
