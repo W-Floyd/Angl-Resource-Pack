@@ -382,6 +382,14 @@ __tsort_file='tsort'
 
 __dep_list_tsort="${__tmp_dir}/${__tsort_file}"
 
+__dep_list_name='tmp_deps'
+__dep_list_folder="${__tmp_dir}/${__dep_list_name}"
+
+__cleanup_file='cleanup'
+
+__cleanup_all="${__tmp_dir}/${__cleanup_file}"
+touch "${__cleanup_all}"
+
 # if the xml folder does not exist,
 if ! [ -d ./src/xml/ ]; then
 
@@ -413,7 +421,7 @@ __popd
 __new_catalogue_hash="$(md5sum "${__catalogue}")"
 
 # if the new catalogue is the same as the old catalogue, then
-if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ] && [ -e "./src/xml/${__tsort_file}" ]; then
+if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ] && [ -e "./src/xml/${__tsort_file}" ] && [ -d "./src/xml/${__dep_list_name}" ] && [ -e "./src/xml/${__cleanup_file}" ]; then
 
 # say so
     __announce "No changes to xml catalogue."
@@ -423,6 +431,10 @@ if [ "${__old_catalogue_hash}" = "${__new_catalogue_hash}" ] && [ -e "./src/xml/
 
 # make sure tsort file exists
     mv "./src/xml/${__tsort_file}" "${__dep_list_tsort}"
+
+    mv "./src/xml/${__dep_list_name}" "${__tmp_dir}"
+
+    mv "./src/xml/${__cleanup_file}" "${__cleanup_all}"
 
 # end if statement whether the catalogues are the same
 fi
@@ -491,8 +503,12 @@ if [ -e "${__dep_list_tsort}" ]; then
 fi
 touch "${__dep_list_tsort}"
 
+if [ -d "${__dep_list_folder}" ]; then
+    rm -r "${__dep_list_folder}"
+fi
+
 # Make directory for dependency work
-mkdir "${__tmp_dir}/tmp_deps"
+mkdir -p "${__dep_list_folder}"
 
 # Get into the xml directory
 __pushd ./src/xml/
@@ -514,8 +530,6 @@ done
 tsort "${__dep_list_tsort}" | tac > "${__dep_list_tsort}_"
 
 mv "${__dep_list_tsort}_" "${__dep_list_tsort}"
-
-__dep_list_folder="${__tmp_dir}/tmp_deps"
 
 for __xml in $(cat "${__dep_list_tsort}"); do
 
@@ -549,27 +563,60 @@ for __xml in $(find -type f); do
 
     __set_value "${__xml}" DEPENDS "$(cat "${__dep_list_folder}/${__xml}")"
 
-    echo '<REVDEPENDS></REVDEPENDS>' >> "${__xml}"
-
 done
+
+__rev_dep_list_folder="${__tmp_dir}/tmp_revdeps"
+
+mkdir -p "${__rev_dep_list_folder}"
 
 for __xml in $(cat "${__dep_list_tsort}" | tac); do
 
-    for __dep in $(__get_value "${__xml}" DEPENDS); do
+    for __dep in $(cat "${__dep_list_folder}/${__xml}"); do
 
         if [ -e "${__dep}" ]; then
 
-            __get_value "${__dep}" REVDEPENDS > "${__tmp_dir}/tmp"
+            __dep_list="${__rev_dep_list_folder}/${__dep}"
 
-            echo "${__xml}" >> "${__tmp_dir}/tmp"
+# Make the directory for the dep list if need be
+            mkdir -p "$(__odir "${__dep_list}")"
 
-            __set_value "${__dep}" REVDEPENDS "$(cat "${__tmp_dir}/tmp")"
+            touch "${__dep_list}"
+
+            echo "${__xml}" >> "${__dep_list}"
+
+            sort "${__dep_list}" | uniq | sed '/^$/d' > "${__dep_list}_"
+
+            mv "${__dep_list}_" "${__dep_list}"
 
         fi
 
     done
 
 done
+
+for __xml in $(find -type f); do
+
+    sed -i -e '1d' -e '$d' "${__xml}"
+
+# get the cleanup files, and list it to a file
+    __get_value "${__xml}" CLEANUP >> "${__cleanup_all}"
+
+# if the file is not to be kept,
+    if [ "$(__get_value "${__xml}" KEEP)" = "NO" ]; then
+
+# add it to the cleanup file list
+        echo "${__xml}" >> "${__cleanup_all}"
+
+# end the if statement
+    fi
+
+    echo "<REVDEPENDS>$(cat "${__dep_list_folder}/${__xml}")</REVDEPENDS>" >> "${__xml}"
+
+done
+
+sort "${__cleanup_all}" | uniq > "${__cleanup_all}_"
+
+mv "${__cleanup_all}_" "${__cleanup_all}"
 
 # Go back to the regular directory
 __popd
@@ -929,42 +976,50 @@ __unchanged_both="${__tmp_dir}/unchanged_both"
 touch "${__unchanged_both}"
 sort "${__unchanged_source}" "${__unchanged_xml}" | uniq > "${__unchanged_both}"
 
-__dep_list_tsort_changed="${__dep_list_tsort}_changed"
-cp "${__dep_list_tsort}" "${__dep_list_tsort_changed}"
-
-for __line in $(cat "${__unchanged_both}"); do
-
-    touch "${__dep_list_tsort_changed}_"
-
-    cat "${__dep_list_tsort_changed}" | grep -xv "${__line}" > "${__dep_list_tsort_changed}_"
-
-#    sleep 1s
-
-    mv "${__dep_list_tsort_changed}_" "${__dep_list_tsort_changed}"
-
-done
-
-__dep_list_tsort_relavent="${__dep_list_tsort}_relavent"
-touch "${__dep_list_tsort_relavent}"
-
-if [ -s "${__dep_list_tsort_changed}" ]; then
-
-    __earliest="$(head -n 1 "${__dep_list_tsort_changed}")"
-
-    cat "${__dep_list_tsort}" | sed "$(cat "${__dep_list_tsort}" | grep -n "${__earliest}" | sed 's/:.*//'),"'$!'"d" > "${__dep_list_tsort_relavent}"
-
-fi
-
 # Get into the xml directory
 __pushd ./src/xml/
 
 # TODO - Make a more efficient method of doing this
 
-# For every xml file,
-for __xml in $(find -type f); do
+################################################################
+#
+# What's happening here is that all files are checked.
+# If it, or a dependency, has been changed, then it is cleaned
+# and aded to the render list.
+#
+# If it has not been changed, and exists, copy across and add
+# to the rendered list
+#
+# If it is not changed, but it not rendered (that is, the
+# rendered file was deleted for whatever reason, it is added to
+# the list to be rendered.
+#
+################################################################
+
+__list_file="${__tmp_dir}/listing_complete"
+touch "${__list_file}"
+
+__list_file_proc="${__tmp_dir}/listing_processing"
+touch "${__list_file_proc}"
+
+__pushd "${__dep_list_folder}"
+
+for __changed in $(cat "${__changed_both}"); do
+    grep -rlx "${__changed}" "./" >> "${__list_file_proc}"
+done
+
+__popd
+
+find -type f > "${__list_file}"
+
+while [ -s "${__list_file_proc}" ]; do
+
+    __xml="$(head -n 1 "${__list_file_proc}")"
+
+    sed -i '1d' "${__list_file_proc}"
 
 # Get dependancies
-    __get_value "${__xml}" DEPENDS > "${__tmp_dir}/tmp_deps2"
+    cat "${__dep_list_folder}/${__xml}"  > "${__tmp_dir}/tmp_deps2"
 
     echo "${__xml}" >> "${__tmp_dir}/tmp_deps2"
 
@@ -990,7 +1045,7 @@ for __xml in $(find -type f); do
         echo "${__xml}" >> "${__rendered_list}"
 
 # if the file does not exist, re-render
-    elif ! [ -a "${__working_dir}/${__pack}/${__xml_name}" ]; then
+    elif ! [ -e "${__working_dir}/${__pack}/${__xml_name}" ]; then
         echo "${__xml}" >> "${__render_list}"
 
 
@@ -999,6 +1054,39 @@ for __xml in $(find -type f); do
 
 # Finish loop
 done
+
+sort "${__render_list}" | uniq > "${__render_list}_"
+
+mv "${__render_list}_" "${__render_list}"
+
+for __xml in $(grep -Fxvf "${__render_list}" "${__list_file}" | sort | uniq); do
+
+    __xml_name="${__xml//.\//}"
+
+    if [ -e "${__working_dir}/${__pack}/${__xml_name}" ]; then
+
+# otherwise if file exists, add to a list of properly processed
+# files and copy file across,
+
+        mkdir -p "$(__odir "$(echo "${__working_dir}/${__pack_new}/${__xml_name}")")"
+        cp "${__working_dir}/${__pack}/${__xml_name}" "${__working_dir}/${__pack_new}/${__xml_name}"
+        echo "${__xml}" >> "${__rendered_list}"
+
+# if the file does not exist, re-render
+    elif ! [ -e "${__working_dir}/${__pack}/${__xml_name}" ]; then
+        echo "${__xml}" >> "${__render_list}"
+
+# Done with if statement
+    fi
+
+# Finish loop
+done
+
+sort "${__render_list}" | uniq > "${__render_list}_"
+
+mv "${__render_list}_" "${__render_list}"
+
+cp "${__render_list}" "${__render_list}_backup"
 
 # Go back to the regular directory
 __popd
@@ -1139,37 +1227,6 @@ if [ -d "${__pack_cleaned}" ]; then
     rm -r "${__pack_cleaned}"
 fi
 
-# get into the xml folder
-__pushd ./src/xml
-
-# for every xml file
-for __xml in $(find -type f); do
-
-# get the cleanup files, and list it to a file
-    __get_value "${__xml}" CLEANUP >> "${__cleanup_all}"
-
-# if the file is not to be kept,
-    if [ "$(__get_value "${__xml}" KEEP)" = "NO" ]; then
-
-# add it to the cleanup file list
-        echo "${__xml}" >> "${__cleanup_all}"
-
-# end the if statement
-    fi
-
-# finished with all the cleanup files
-done &
-
-# wait for the loop to finished
-wait
-
-# sort and uniq the cleanup files
-sort "${__cleanup_all}" | uniq > "${__cleanup_all}_"
-mv "${__cleanup_all}_" "${__cleanup_all}"
-
-# get back to the main directory
-__popd
-
 # copy the pack to a new folder to be cleaned
 cp -r "${__pack}" "${__pack_cleaned}"
 
@@ -1257,6 +1314,10 @@ fi
 cp "${__catalogue}" "./src/xml/${__catalogue}"
 
 cp "${__dep_list_tsort}" "./src/xml/${__tsort_file}"
+
+mv "${__dep_list_folder}" "./src/xml/"
+
+mv "${__cleanup_all}" "./src/xml/${__cleanup_file}"
 
 ###############################################################
 # General Cleanup
