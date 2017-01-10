@@ -24,6 +24,12 @@ __time='0'
 # get functions from file
 source functions.sh
 
+# temporary timer for quick timing
+__time_var='temporary timer'
+__tmp_time () {
+__time "${__time_var}" "${1}"
+}
+
 # print help
 __usage () {
 echo "render.sh <OPTIONS> <SIZE>
@@ -706,8 +712,6 @@ __hash_folder "${__old_hashes}"
 # Get back to main directory
 __popd
 
-# TODO - Make a more efficient method of doing this
-
 __time "Checking hash changes" start
 
 if ! [ "$(md5sum < "${__new_hashes}")" = "$(md5sum < "${__old_hashes}")" ]; then
@@ -962,7 +966,7 @@ __pushd ./src/xml/
 #
 # What's happening here is that all files are checked.
 # If it, or a dependency, has been changed, then it is cleaned
-# and aded to the render list.
+# and added to the render list.
 #
 # If it has not been changed, and exists, copy across and add
 # to the rendered list
@@ -984,6 +988,8 @@ done < "${__changed_both}"
 
 __popd
 
+cp "${__list_file_proc}" "${__list_file_proc}_original"
+
 while [ -s "${__list_file_proc}" ]; do
 
     __xml="$(head -n 1 "${__list_file_proc}")"
@@ -997,32 +1003,12 @@ while [ -s "${__list_file_proc}" ]; do
 
     __xml_name="${__xml//.\//}"
 
-# Compare to list of changed ITEMS, and check if file exists,
-    if grep -qFxf "${__tmp_dir}/tmp_deps2" "${__changed_both}"; then
-
 # ensure the old file does not exist, and make sure to be
 # re/rendered
-        if [ -e "${__working_dir}/${__pack}/${__xml}" ]; then
-            rm "${__working_dir}/${__pack}/${__xml}"
-        fi
-        echo "${__xml}" >> "${__render_list}"
-
-    elif [ -e "${__working_dir}/${__pack}/${__xml_name}" ]; then
-
-# otherwise if file exists, add to a list of properly processed
-# files and copy file across,
-
-        mkdir -p "$(__odir "${__working_dir}/${__pack_new}/${__xml_name}")"
-        cp "${__working_dir}/${__pack}/${__xml_name}" "${__working_dir}/${__pack_new}/${__xml_name}"
-        echo "${__xml}" >> "${__rendered_list}"
-
-# if the file does not exist, re-render
-    elif ! [ -e "${__working_dir}/${__pack}/${__xml_name}" ]; then
-        echo "${__xml}" >> "${__render_list}"
-
-
-# Done with if statement
+    if [ -e "${__working_dir}/${__pack}/${__xml}" ]; then
+        rm "${__working_dir}/${__pack}/${__xml}"
     fi
+    echo "${__xml}" >> "${__render_list}"
 
 # Finish loop
 done
@@ -1031,7 +1017,8 @@ sort "${__render_list}" | uniq > "${__render_list}_"
 
 mv "${__render_list}_" "${__render_list}"
 
-for __xml in $(grep -Fxvf "${__render_list}" "${__list_file}" | sort | uniq); do
+# for every ITEM that is *not* in the render list
+grep -Fxvf "${__render_list}" "${__list_file}" | sort | uniq | while read -r __xml; do
 
     __xml_name="${__xml//.\//}"
 
@@ -1045,7 +1032,8 @@ for __xml in $(grep -Fxvf "${__render_list}" "${__list_file}" | sort | uniq); do
         echo "${__xml}" >> "${__rendered_list}"
 
 # if the file does not exist, re-render
-    elif ! [ -e "${__working_dir}/${__pack}/${__xml_name}" ]; then
+    else
+
         echo "${__xml}" >> "${__render_list}"
 
 # Done with if statement
