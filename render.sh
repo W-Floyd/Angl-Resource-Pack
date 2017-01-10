@@ -535,27 +535,35 @@ mv "${__dep_list_tsort}_" "${__dep_list_tsort}"
 
 while read -r __xml; do
 
+    if [ -e "${__xml}" ]; then
+
 # Set the location for the dep list
-    __dep_list="${__dep_list_folder}/${__xml}"
+        __dep_list="${__dep_list_folder}/${__xml}"
 
 # Make the directory for the dep list if need be
-    mkdir -p "$(__odir "${__dep_list}")"
+        mkdir -p "$(__odir "${__dep_list}")"
 
-    touch "${__dep_list}"
+        touch "${__dep_list}"
 
-    { __get_value "${__xml}" CONFIG; __get_value "${__xml}" CLEANUP; __get_value "${__xml}" DEPENDS; } >> "${__dep_list}"
+        { __get_value "${__xml}" CONFIG; __get_value "${__xml}" CLEANUP; __get_value "${__xml}" DEPENDS; } >> "${__dep_list}"
 
-    for __dep in $(__get_value "${__xml}" DEPENDS); do
+        for __dep in $(__get_value "${__xml}" DEPENDS); do
 
-        cat "${__dep_list_folder}/${__dep}" >> "${__dep_list}"
+            if [ -e "${__dep}" ]; then
 
-    done
+                cat "${__dep_list_folder}/${__dep}" >> "${__dep_list}"
 
-    touch "${__dep_list}_"
+            fi
 
-    sort "${__dep_list}" | uniq | sed '/^$/d' > "${__dep_list}_"
+        done
 
-    mv "${__dep_list}_" "${__dep_list}"
+        touch "${__dep_list}_"
+
+        sort "${__dep_list}" | uniq | sed '/^$/d' > "${__dep_list}_"
+
+        mv "${__dep_list}_" "${__dep_list}"
+
+    fi
 
 done < "${__dep_list_tsort}"
 
@@ -564,35 +572,6 @@ while read -r __xml; do
     __set_value "${__xml}" DEPENDS "$(cat "${__dep_list_folder}/${__xml}")"
 
 done < "${__list_file}"
-
-__rev_dep_list_folder="${__tmp_dir}/tmp_revdeps"
-
-mkdir -p "${__rev_dep_list_folder}"
-
-tac "${__dep_list_tsort}" | while read -r __xml; do
-
-    while read -r __dep; do
-
-        if [ -e "${__dep}" ]; then
-
-            __dep_list="${__rev_dep_list_folder}/${__dep}"
-
-# Make the directory for the dep list if need be
-            mkdir -p "$(__odir "${__dep_list}")"
-
-            touch "${__dep_list}"
-
-            echo "${__xml}" >> "${__dep_list}"
-
-            sort "${__dep_list}" | uniq | sed '/^$/d' > "${__dep_list}_"
-
-            mv "${__dep_list}_" "${__dep_list}"
-
-        fi
-
-    done < "${__dep_list_folder}/${__xml}"
-
-done
 
 while read -r __xml; do
 
@@ -1155,18 +1134,35 @@ while [ "$(wc -l < "${__render_list}")" -gt '0' ]; do
 # if there is a config script to use, then
         if ! [ -z "${__config_script}" ]; then
 
+            __failed='0'
+
+            while read -r __dep; do
+
+                if ! [ -e "${__dep}" ]; then
+                    echo
+                    echo "Missing dependency \"${__dep}\""
+                    echo "Proceeding without \"${__config}\""
+                    __failed='1'
+                fi
+
+            done < "${__tmp_dir}/tmpdeps"
+
+            if [ "${__failed}" = '0' ]; then
+
 # announce that we are processing the given config
-            __announce "Processing \"${__config}\""
+                __announce "Processing \"${__config}\""
 
 # copy the config script out so we can use it
-            cp "${__config_script}" ./
+                cp "${__config_script}" ./
 
 # execute the script, given the determined size and options set
 # in the config
-            eval '\./'"$(basename "${__config_script}")" "${__tmp_size}" "$(__get_value "${__config}" OPTIONS)"
+                eval '\./'"$(basename "${__config_script}")" "${__tmp_size}" "$(__get_value "${__config}" OPTIONS)"
 
 # remove the script now we're done with it
-            rm "$(basename "${__config_script}")"
+                rm "$(basename "${__config_script}")"
+
+            fi
 
 # end loop for when a config script is present
         fi
