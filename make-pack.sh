@@ -31,7 +31,7 @@ Options:
 if ! [ "${#}" = 0 ]; then
 
 # then let's look at them in sequence.
-for __option in $(seq "${#}"); do
+while ! [ "${#}" = '0' ]; do
 
     case "${1}" in
 
@@ -129,16 +129,16 @@ if [ "${__mobile}" = '1' ] && [ -a "${2}_mobile.zip" ]; then
     rm "${2}_mobile.zip"
 fi
 
-cd "${2}_cleaned"
+cd "${2}_cleaned" || { "Somethings has gone wrong!"; exit 1; }
 
 zip -qZ store -r "../${2}" ./
 
-cd ../
+cd ../  || { "Somethings has gone wrong!"; exit 1; }
 
 if [ "${__mobile}" = '1' ]; then
-    cd "${2}_mobile"
+    cd "${2}_mobile"  || { "Somethings has gone wrong!"; exit 1; }
     zip -qZ store -r "../${2}_mobile" ./
-    cd ../
+    cd ../  || { "Somethings has gone wrong!"; exit 1; }
 fi
 
 if [ -d "${2}_cleaned" ]; then
@@ -151,7 +151,7 @@ fi
 
 }
 
-for __size in $(echo "${__sizes}"); do
+for __size in ${__sizes}; do
 
     __packfile="$(./render.sh --name-only "${__size}")"
 
