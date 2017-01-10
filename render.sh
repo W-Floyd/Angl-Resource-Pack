@@ -54,7 +54,7 @@ __time "Reading options" start
 if ! [ "${#}" = 0 ]; then
 
 # then let's look at them in sequence.
-for __option in $(seq "${#}"); do
+while ! [ "${#}" = '0' ]; do
 
 # So, let's say the last given option was
     case "${__last_option}" in
@@ -203,30 +203,21 @@ __time "Setting variables" start
 ###############################################################
 
 # check tsort
-which tsort &> /dev/null
-
-if ! [ "$?" = '0' ]; then
+if ! which tsort &> /dev/null; then
     echo "Please install 'tsort' to continue. It is required for dependency resolution."
     exit 1
 fi
 
-# print where inkscape is
-which inkscape &> /dev/null
-
-# if that didn't return an error, we know it exists
-if [ "$?" = '0' ]; then
+# check inkscape
+if which inkscape &> /dev/null; then
     __has_inkscape='1'
 
-# if that did return an error, we know it doesn't exist
 else
     __has_inkscape='0'
 fi
 
-# print where rsvg-convert is
-which rsvg-convert &> /dev/null
-
-# if that didn't return an error, we know it exists
-if [ "$?" = '0' ]; then
+# ceck rsvg-convert
+if which rsvg-convert &> /dev/null; then
     __has_rsvg_convert='1'
 
 # if that did return an error, we know it doesn't exist
@@ -493,6 +484,17 @@ __announce "Inheriting and creating dependencies and cleanup files."
 # End if statement whether to split xml again or not
 fi
 
+# Get into the xml directory
+__pushd ./src/xml/
+
+__list_file="${__tmp_dir}/listing_complete"
+touch "${__list_file}"
+
+find . -type f > "${__list_file}"
+
+# Go back to the regular directory
+__popd
+
 # If we're told not to re-use xml, then
 if [ "${__re_use_xml}" = '0' ]; then
 
@@ -514,7 +516,7 @@ mkdir -p "${__dep_list_folder}"
 __pushd ./src/xml/
 
 # For every xml file,
-for __xml in $(find -type f); do
+while read -r __xml; do
 
     __tmp_deps="$(__get_value "${__xml}" DEPENDS | sed '/^$/d')"
 
@@ -525,13 +527,13 @@ for __xml in $(find -type f); do
     done
 
 # Finish loop
-done
+done < "${__list_file}"
 
 tsort "${__dep_list_tsort}" | tac > "${__dep_list_tsort}_"
 
 mv "${__dep_list_tsort}_" "${__dep_list_tsort}"
 
-for __xml in $(cat "${__dep_list_tsort}"); do
+while read -r __xml; do
 
 # Set the location for the dep list
     __dep_list="${__dep_list_folder}/${__xml}"
@@ -541,9 +543,7 @@ for __xml in $(cat "${__dep_list_tsort}"); do
 
     touch "${__dep_list}"
 
-    __get_value "${__xml}" CONFIG >> "${__dep_list}"
-    __get_value "${__xml}" CLEANUP >> "${__dep_list}"
-    __get_value "${__xml}" DEPENDS >> "${__dep_list}"
+    { __get_value "${__xml}" CONFIG; __get_value "${__xml}" CLEANUP; __get_value "${__xml}" DEPENDS; } >> "${__dep_list}"
 
     for __dep in $(__get_value "${__xml}" DEPENDS); do
 
@@ -557,21 +557,21 @@ for __xml in $(cat "${__dep_list_tsort}"); do
 
     mv "${__dep_list}_" "${__dep_list}"
 
-done
+done < "${__dep_list_tsort}"
 
-for __xml in $(find -type f); do
+while read -r __xml; do
 
     __set_value "${__xml}" DEPENDS "$(cat "${__dep_list_folder}/${__xml}")"
 
-done
+done < "${__list_file}"
 
 __rev_dep_list_folder="${__tmp_dir}/tmp_revdeps"
 
 mkdir -p "${__rev_dep_list_folder}"
 
-for __xml in $(cat "${__dep_list_tsort}" | tac); do
+tac "${__dep_list_tsort}" | while read -r __xml; do
 
-    for __dep in $(cat "${__dep_list_folder}/${__xml}"); do
+    while read -r __dep; do
 
         if [ -e "${__dep}" ]; then
 
@@ -590,11 +590,11 @@ for __xml in $(cat "${__dep_list_tsort}" | tac); do
 
         fi
 
-    done
+    done < "${__dep_list_folder}/${__xml}"
 
 done
 
-for __xml in $(find -type f); do
+while read -r __xml; do
 
     sed -i -e '1d' -e '$d' "${__xml}"
 
@@ -610,7 +610,7 @@ for __xml in $(find -type f); do
 # end the if statement
     fi
 
-done
+done < "${__list_file}"
 
 sort "${__cleanup_all}" | uniq > "${__cleanup_all}_"
 
@@ -665,7 +665,7 @@ touch "${__old_split_xml_list}"
 __pushd ./src/xml
 
 # List all files into new list
-find -type f > "${__new_xml_list}"
+find . -type f > "${__new_xml_list}"
 
 # Get back to main directory
 __popd
@@ -674,7 +674,7 @@ __popd
 __pushd "./${__pack}/xml"
 
 # List all files into old list
-find -type f > "${__old_xml_list}"
+find . -type f > "${__old_xml_list}"
 
 # Get back to main directory
 __popd
@@ -731,16 +731,16 @@ __popd
 
 __time "Checking hash changes" start
 
-if ! [ "$(cat "${__new_hashes}" | md5sum)" = "$(cat "${__old_hashes}" | md5sum)" ]; then
+if ! [ "$(md5sum < "${__new_hashes}")" = "$(md5sum < "${__old_hashes}")" ]; then
 
 # For every file in the shared xml list,
-for __shared in $(cat "${__shared_xml_list}"); do
+while read -r __shared; do
 
 # Get the old hash
-    __old_hash="$(cat "${__old_hashes}" | grep -w "${__shared}")"
+    __old_hash="$(grep -w "${__shared}" < "${__old_hashes}")"
 
 # Get the new hash
-    __new_hash="$(cat "${__new_hashes}" | grep -w "${__shared}")"
+    __new_hash="$(grep -w "${__shared}" < "${__new_hashes}")"
 
 # If the two hashes do not match, we know the xml file
 # for that file has changed, and so needs to be re-rendered
@@ -751,7 +751,7 @@ for __shared in $(cat "${__shared_xml_list}"); do
     fi
 
 # Done with the hash checking
-done
+done < "${__shared_xml_list}"
 
 else
 
@@ -802,7 +802,7 @@ touch "${__old_split_source_list}"
 __pushd ./src
 
 # List all files into new list
-find -not -path "./xml/*" -type f > "${__new_source_list}"
+find . -not -path "./xml/*" -type f > "${__new_source_list}"
 
 # Get back to main directory
 __popd
@@ -811,7 +811,7 @@ __popd
 __pushd "./${__pack}"
 
 # List all files into old list
-find -not -path "./xml/*" -type f > "${__old_source_list}"
+find . -not -path "./xml/*" -type f > "${__old_source_list}"
 
 # Get back to main directory
 __popd
@@ -864,23 +864,23 @@ __pushd "./${__pack}"
 # Hash source files into designated file, exluding xml files
 __hash_folder "${__source_hash_old}" xml
 
-for __file in $(cat "${__shared_source_list}"); do
+while read -r __file; do
     md5sum "${__file}" >> "${__shared_source_list_hash}"
-done
+done < "${__shared_source_list}"
 
 # Get back to main directory
 __popd
 
-if ! [ "$(cat "${__shared_source_list_hash}" | sort | md5sum)" = "$(cat "${__source_hash_new}" | sort | md5sum)" ]; then
+if ! [ "$(sort "${__shared_source_list_hash}" | md5sum)" = "$(sort "${__source_hash_new}" | md5sum)" ]; then
 
 # For every file in the shared xml list,
-for __shared in $(cat "${__shared_source_list}"); do
+while read -r __shared; do
 
 # Get the old hash
-    __old_hash="$(cat "${__source_hash_old}" | grep -w "${__shared}")"
+    __old_hash="$(grep -w "${__shared}" < "${__source_hash_old}")"
 
 # Get the new hash
-    __new_hash="$(cat "${__source_hash_new}" | grep -w "${__shared}")"
+    __new_hash="$(grep -w "${__shared}" < "${__source_hash_new}")"
 
 # If the two hashes do not match, we know the source file
 # for that file has changed, and so needs to be re-rendered
@@ -891,7 +891,7 @@ for __shared in $(cat "${__shared_source_list}"); do
     fi
 
 # Done with the hash checking
-done
+done < "${__shared_source_list}"
 
 else
 
@@ -994,21 +994,16 @@ __pushd ./src/xml/
 #
 ################################################################
 
-__list_file="${__tmp_dir}/listing_complete"
-touch "${__list_file}"
-
 __list_file_proc="${__tmp_dir}/listing_processing"
 touch "${__list_file_proc}"
 
 __pushd "${__dep_list_folder}"
 
-for __changed in $(cat "${__changed_both}"); do
+while read -r __changed; do
     grep -rlx "${__changed}" "./" >> "${__list_file_proc}"
-done
+done < "${__changed_both}"
 
 __popd
-
-find -type f > "${__list_file}"
 
 while [ -s "${__list_file_proc}" ]; do
 
@@ -1024,7 +1019,7 @@ while [ -s "${__list_file_proc}" ]; do
     __xml_name="${__xml//.\//}"
 
 # Compare to list of changed ITEMS, and check if file exists,
-    if ! [ -z "$(grep -Fxf "${__tmp_dir}/tmp_deps2" "${__changed_both}")" ]; then
+    if grep -qFxf "${__tmp_dir}/tmp_deps2" "${__changed_both}"; then
 
 # ensure the old file does not exist, and make sure to be
 # re/rendered
@@ -1038,7 +1033,7 @@ while [ -s "${__list_file_proc}" ]; do
 # otherwise if file exists, add to a list of properly processed
 # files and copy file across,
 
-        mkdir -p "$(__odir "$(echo "${__working_dir}/${__pack_new}/${__xml_name}")")"
+        mkdir -p "$(__odir "${__working_dir}/${__pack_new}/${__xml_name}")"
         cp "${__working_dir}/${__pack}/${__xml_name}" "${__working_dir}/${__pack_new}/${__xml_name}"
         echo "${__xml}" >> "${__rendered_list}"
 
@@ -1066,7 +1061,7 @@ for __xml in $(grep -Fxvf "${__render_list}" "${__list_file}" | sort | uniq); do
 # otherwise if file exists, add to a list of properly processed
 # files and copy file across,
 
-        mkdir -p "$(__odir "$(echo "${__working_dir}/${__pack_new}/${__xml_name}")")"
+        mkdir -p "$(__odir "${__working_dir}/${__pack_new}/${__xml_name}")"
         cp "${__working_dir}/${__pack}/${__xml_name}" "${__working_dir}/${__pack_new}/${__xml_name}"
         echo "${__xml}" >> "${__rendered_list}"
 
@@ -1122,7 +1117,7 @@ __start_time="$(date +%s)"
 __pushd "${__pack}"
 
 # while the render list has lines to process,
-while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
+while [ "$(wc -l < "${__render_list}")" -gt '0' ]; do
 
 # set the original name of the config file
     __orig_config="$(head -n 1 "${__render_list}")"
@@ -1134,7 +1129,7 @@ while [ "$(cat "${__render_list}" | wc -l)" -gt '0' ]; do
     __get_value "${__config}" DEPENDS > "${__tmp_dir}/tmpdeps"
 
 # if the dependancies are not yet to be rendered, then
-    if [ -z "$(grep -Fxf "${__tmp_dir}/tmpdeps" "${__render_list}")" ]; then
+    if ! grep -qFxf "${__tmp_dir}/tmpdeps" "${__render_list}"; then
 
 # get the size of the texture
         __tmp_val="$(__get_value "${__config}" SIZE)"
@@ -1232,13 +1227,13 @@ cp -r "${__pack}" "${__pack_cleaned}"
 __pushd "${__pack_cleaned}"
 
 # for every file to clean
-for __file in $(cat "${__cleanup_all}"); do
+while read -r __file; do
 
 # remove it
     rm "${__file}"
 
 # finish loop
-done
+done < "${__cleanup_all}"
 
 # remove xml and conf from cleaned pack
 rm -r ./xml
