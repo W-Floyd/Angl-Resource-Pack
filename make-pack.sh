@@ -27,6 +27,9 @@ Options:
 "
 }
 
+# get functions from file
+source functions.sh
+
 # If there are are options,
 if ! [ "${#}" = 0 ]; then
 
@@ -129,16 +132,16 @@ if [ "${__mobile}" = '1' ] && [ -a "${2}_mobile.zip" ]; then
     rm "${2}_mobile.zip"
 fi
 
-cd "${2}_cleaned" || { "Somethings has gone wrong!"; exit 1; }
+__pushd "${2}_cleaned"
 
 zip -qZ store -r "../${2}" ./
 
-cd ../  || { "Somethings has gone wrong!"; exit 1; }
+__popd
 
 if [ "${__mobile}" = '1' ]; then
-    cd "${2}_mobile"  || { "Somethings has gone wrong!"; exit 1; }
+    __pushd "${2}_mobile"
     zip -qZ store -r "../${2}_mobile" ./
-    cd ../  || { "Somethings has gone wrong!"; exit 1; }
+    __popd
 fi
 
 if [ -d "${2}_cleaned" ]; then

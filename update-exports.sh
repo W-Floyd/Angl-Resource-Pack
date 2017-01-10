@@ -16,11 +16,14 @@ Options:
 "
 }
 
+# get functions from file
+source functions.sh
+
 # If there are are options,
 if ! [ "${#}" = 0 ]; then
 
 # then let's look at them in sequence.
-for __option in $(seq "${#}"); do
+while ! [ "${#}" = '0' ]; do
 
     case "${1}" in
 
@@ -75,11 +78,11 @@ for __size in ${__sizes}; do
 
 done
 
-cd ../Angl-Resource-Pack-Export
+__pushd ../Angl-Resource-Pack-Export
 
 sed -i '3s/.*/'"${__date}"' UTC/' README.md
 
-git add *
+git add ./*
 
 git commit -m "${__date}"
 
@@ -89,6 +92,6 @@ git tag -a "${__date}" -m "Exports updated at ${__date} UTC"
 
 git push --tags
 
-cd ../Angl-Resource-Pack
+__popd
 
 exit

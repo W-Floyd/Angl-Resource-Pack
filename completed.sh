@@ -28,11 +28,11 @@ done
 
 echo "Completed features are:
 
-$(cat "/tmp/commontmp" | sort | uniq)
+$(sort "/tmp/commontmp" | uniq)
 
 as well as ${__un_named} un-named items, with raw values:
 
-$(cat "/tmp/nametmp" | sort)"
+$(sort "/tmp/nametmp")"
 
 rm "/tmp/keeptmp" "/tmp/readrangetmp" "/tmp/commontmp" "/tmp/nametmp"
 

@@ -60,7 +60,7 @@ if [ "${__quick}" = '1' ]; then
 # GOD awful hack to catch svg size, TODO
 # FIX THIS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 rsvg-convert \
---width="$(echo "($(cat "${2}" | grep "^   width=\"*\"" | sed -e 's/.*="//' -e 's/"$//')*${1})/128" | bc)" \
+--width="$(echo "($(grep "^   width=\"*\"" < "${2}" | sed -e 's/.*="//' -e 's/"$//')*${1})/128" | bc)" \
 -a \
 "${2}" \
 -o "$(__mext "${2}").png" 1> /dev/null
@@ -433,7 +433,7 @@ mv "${1}"_ "${1}"
 #}
 
 __get_range () {
-cat "${1}" | grep -n '[</|<]'"${2}"'>' | sed 's/\:.*//' |  sed 'N;s/\n/,/'
+grep -n '[</|<]'"${2}"'>' < "${1}" | sed 's/\:.*//' |  sed 'N;s/\n/,/'
 }
 
 ###############################################################
@@ -556,9 +556,9 @@ exit 1
 
 __hash_folder () {
 if [ -z "${2}" ]; then
-__listing="$(find -type f)"
+__listing="$(find . -type f)"
 else
-__listing="$(find -not -path "./${2}/*" -type f)"
+__listing="$(find . -not -path "./${2}/*" -type f)"
 fi
 if ! [ -z "${__listing}" ]; then
     md5sum ${__listing} > "${1}"
