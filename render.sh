@@ -610,8 +610,6 @@ for __xml in $(find -type f); do
 # end the if statement
     fi
 
-    echo "<REVDEPENDS>$(cat "${__dep_list_folder}/${__xml}")</REVDEPENDS>" >> "${__xml}"
-
 done
 
 sort "${__cleanup_all}" | uniq > "${__cleanup_all}_"
