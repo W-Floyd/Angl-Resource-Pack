@@ -1192,9 +1192,7 @@ __announce "Making cleaned folder."
 
 __time "Making cleaned folder" start
 
-# set and create the file for listing cleanup files
-__cleanup_all="${__tmp_dir}/cleanup_all"
-touch "${__cleanup_all}"
+sed -i '/^$/d' "${__cleanup_all}"
 
 # set the directory for the cleaned pack
 __pack_cleaned="${__pack}_cleaned"
@@ -1292,9 +1290,9 @@ cp "${__catalogue}" "./src/xml/${__catalogue}"
 
 cp "${__dep_list_tsort}" "./src/xml/${__tsort_file}"
 
-mv "${__dep_list_folder}" "./src/xml/"
+cp -r "${__dep_list_folder}" "./src/xml/"
 
-mv "${__cleanup_all}" "./src/xml/${__cleanup_file}"
+cp "${__cleanup_all}" "./src/xml/${__cleanup_file}"
 
 ###############################################################
 # General Cleanup
