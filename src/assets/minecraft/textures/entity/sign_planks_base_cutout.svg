@@ -14,8 +14,8 @@
    viewBox="0 0 256 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="sign_planks_base.svg">
+   inkscape:version="0.92.0 r"
+   sodipodi:docname="sign_planks_base_cutout.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568543"
-     inkscape:cx="67.640384"
+     inkscape:cx="11.602172"
      inkscape:cy="62.189463"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,12 +62,12 @@
      transform="translate(0,-924.3622)">
     <path
        style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 8,924.3622 0,8 96,0 0,48 104,0 0,-48 -8,0 0,-8 z"
+       d="m 8,924.3622 v 8 h 96 v 48 h 104 v -48 h -8 v -8 z"
        id="path4135"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 0,932.3622 0,48 8,0 0,-48 -8,0 z"
+       d="m 0,932.3622 v 48 h 8 v -48 z"
        id="path4137"
        inkscape:connector-curvature="0" />
   </g>

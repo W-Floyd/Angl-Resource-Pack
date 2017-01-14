@@ -15,7 +15,7 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
+   inkscape:version="0.92.0 r"
    sodipodi:docname="brick.svg">
   <defs
      id="defs4">
@@ -53,7 +53,7 @@
        y2="1052.3622"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       gradientTransform="translate(-64,0)"
+       gradientTransform="translate(-64)"
        inkscape:collect="always"
        xlink:href="#linearGradient4146"
        id="linearGradient4152-5"
@@ -63,7 +63,7 @@
        y2="1052.3622"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       gradientTransform="translate(64,0)"
+       gradientTransform="translate(64)"
        inkscape:collect="always"
        xlink:href="#linearGradient4146"
        id="linearGradient4152-3"
@@ -171,7 +171,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,72,112)" />
+       gradientTransform="rotate(180,36,56)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -181,7 +181,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,36,140)" />
+       gradientTransform="rotate(180,18,70)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -191,7 +191,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,96,136)" />
+       gradientTransform="rotate(180,48,68)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -201,7 +201,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,136,100)" />
+       gradientTransform="rotate(180,68,50)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -211,7 +211,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,112,112)" />
+       gradientTransform="rotate(180,56,56)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -221,7 +221,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,96,68)" />
+       gradientTransform="rotate(180,48,34)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -231,7 +231,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,56,76)" />
+       gradientTransform="rotate(180,28,38)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -241,7 +241,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,76,168)" />
+       gradientTransform="rotate(180,38,84)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -251,7 +251,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,92,160)" />
+       gradientTransform="rotate(180,46,80)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -261,7 +261,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,120,176)" />
+       gradientTransform="rotate(180,60,88)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -271,7 +271,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,140,164)" />
+       gradientTransform="rotate(180,70,82)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -281,7 +281,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,32,160)" />
+       gradientTransform="rotate(180,16,80)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -291,7 +291,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,56,132)" />
+       gradientTransform="rotate(180,28,66)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -301,7 +301,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,128,80)" />
+       gradientTransform="rotate(180,64,40)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -311,7 +311,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,100,84)" />
+       gradientTransform="rotate(180,50,42)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -321,7 +321,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,92,96)" />
+       gradientTransform="rotate(180,46,48)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -331,7 +331,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,60,100)" />
+       gradientTransform="rotate(180,30,50)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -341,7 +341,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,116,100)" />
+       gradientTransform="rotate(180,58,50)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -351,7 +351,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,140,112)" />
+       gradientTransform="rotate(180,70,56)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -361,7 +361,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,116,128)" />
+       gradientTransform="rotate(180,58,64)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -371,7 +371,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,128,144)" />
+       gradientTransform="rotate(180,64,72)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -381,7 +381,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,80,128)" />
+       gradientTransform="rotate(180,40,64)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -391,7 +391,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,32,128)" />
+       gradientTransform="rotate(180,16,64)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -401,7 +401,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,64,160)" />
+       gradientTransform="rotate(180,32,80)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -411,7 +411,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,88,108)" />
+       gradientTransform="rotate(180,44,54)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -421,7 +421,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,112,72)" />
+       gradientTransform="rotate(180,56,36)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -431,7 +431,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,84,80)" />
+       gradientTransform="rotate(180,42,40)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -441,7 +441,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,156,76)" />
+       gradientTransform="rotate(180,78,38)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -451,7 +451,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,152,108)" />
+       gradientTransform="rotate(180,76,54)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -461,7 +461,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,148,64)" />
+       gradientTransform="rotate(180,74,32)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -471,7 +471,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,124,68)" />
+       gradientTransform="rotate(180,62,34)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -481,7 +481,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,60,68)" />
+       gradientTransform="rotate(180,30,34)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -491,7 +491,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,108,148)" />
+       gradientTransform="rotate(180,54,74)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -501,7 +501,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,56,144)" />
+       gradientTransform="rotate(180,28,72)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -511,7 +511,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,52,172)" />
+       gradientTransform="rotate(180,26,86)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -521,7 +521,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,44,112)" />
+       gradientTransform="rotate(180,22,56)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -531,7 +531,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,160,128)" />
+       gradientTransform="rotate(180,80,64)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -541,7 +541,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,164,140)" />
+       gradientTransform="rotate(180,82,70)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -551,7 +551,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,160,160)" />
+       gradientTransform="rotate(180,80,80)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -561,7 +561,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,144,128)" />
+       gradientTransform="rotate(180,72,64)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -571,7 +571,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,148,140)" />
+       gradientTransform="rotate(180,74,70)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -581,7 +581,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,32,96)" />
+       gradientTransform="rotate(180,16,48)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -591,7 +591,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,28,112)" />
+       gradientTransform="rotate(180,14,56)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -601,7 +601,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,24,172)" />
+       gradientTransform="rotate(180,12,86)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -611,7 +611,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,120,164)" />
+       gradientTransform="rotate(180,60,82)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4165"
@@ -621,7 +621,7 @@
        x2="36"
        y2="52"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,160,96)" />
+       gradientTransform="rotate(180,80,48)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -631,16 +631,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="-2.3584887"
+     inkscape:cx="-115.57277"
      inkscape:cy="50.63488"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
      units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="707"
+     inkscape:window-width="3840"
+     inkscape:window-height="2018"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="86"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -656,7 +656,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -675,62 +675,62 @@
        y="924.36218" />
     <path
        style="fill:url(#linearGradient4152);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 0,1052.3622 8,-32 64,0 -8,32 z"
+       d="m 0,1052.3622 8,-32 h 64 l -8,32 z"
        id="path4136"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-5);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -64,1052.3622 8,-32 64.0000002,0 -7.99999997165947,32 z"
+       d="m -64,1052.3622 8,-32 H 8.0000002 l -7.99999997165947,32 z"
        id="path4136-5"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-3);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 64,1052.3622 8,-32 64,0 -8,32 z"
+       d="m 64,1052.3622 8,-32 h 64 l -8,32 z"
        id="path4136-3"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-5-8);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 40,1020.3622 -8,-32 -64,0 8,32 z"
+       d="m 40,1020.3622 -8,-32 h -64 l 8,32 z"
        id="path4136-5-1"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-5-8-0);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 104,1020.3622 -8,-32 -64,0 8,32 z"
+       d="m 104,1020.3622 -8,-32 H 32 l 8,32 z"
        id="path4136-5-1-5"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-5-8-4);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 168,1020.3622 -8,-32 -64,0 8,32 z"
+       d="m 168,1020.3622 -8,-32 H 96 l 8,32 z"
        id="path4136-5-1-2"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-3-3);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M -1.7165948e-7,988.3622 8,956.3622 l 64,0 -8,32 z"
+       d="M -1.7165948e-7,988.3622 8,956.3622 h 64 l -8,32 z"
        id="path4136-3-6"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-3-6);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -64,988.3622 8,-32 64,0 -7.999999971659478,32 z"
+       d="m -64,988.3622 8,-32 H 8 l -7.999999971659478,32 z"
        id="path4136-3-3"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-3-35);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 64,988.3622 8,-32 64,0 -8,32 z"
+       d="m 64,988.3622 8,-32 h 64 l -8,32 z"
        id="path4136-3-64"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-5-8-4-4);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 104,956.3622 -8,-32 -64,0 8,32 z"
+       d="m 104,956.3622 -8,-32 H 32 l 8,32 z"
        id="path4136-5-1-2-0"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-5-8-4-6);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 40,956.3622 -8,-32 -64,0 8,32 z"
+       d="m 40,956.3622 -8,-32 h -64 l 8,32 z"
        id="path4136-5-1-2-4"
        inkscape:connector-curvature="0" />
     <path
        style="fill:url(#linearGradient4152-5-8-4-43);fill-opacity:1;fill-rule:evenodd;stroke:#8c7474;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 168,956.3622 -8,-32 -64,0 8,32 z"
+       d="m 168,956.3622 -8,-32 H 96 l 8,32 z"
        id="path4136-5-1-2-9"
        inkscape:connector-curvature="0" />
   </g>
@@ -738,7 +738,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     style="opacity:0.48">
+     style="opacity:0.47999998">
     <path
        style="fill:url(#linearGradient4171);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 44,60 -8,-8 -8,8 z"

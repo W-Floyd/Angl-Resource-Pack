@@ -14,8 +14,8 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
-   sodipodi:docname="~ignore~colour_silver.svg">
+   inkscape:version="0.92.0 r"
+   sodipodi:docname="colour_silver_base.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="-40.242582"
+     inkscape:cx="-130.3987"
      inkscape:cy="30.711728"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
-     inkscape:window-width="768"
+     inkscape:window-width="1072"
      inkscape:window-height="705"
      inkscape:window-x="683"
-     inkscape:window-y="7"
+     inkscape:window-y="86"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

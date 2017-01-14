@@ -15,7 +15,7 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.0 r"
    sodipodi:docname="crafting_table_top_overlay.svg">
   <defs
      id="defs4">
@@ -95,7 +95,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,155.37256,2105.033)" />
+       gradientTransform="rotate(180,77.68628,1052.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -105,7 +105,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,155.37256,2105.033)" />
+       gradientTransform="rotate(180,77.68628,1052.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -121,7 +121,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4323"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,155.37256,2105.033)"
+       gradientTransform="rotate(180,77.68628,1052.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -145,7 +145,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1098.2028)" />
+       gradientTransform="rotate(-90,17.6863,1080.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -155,7 +155,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1066.2028)" />
+       gradientTransform="rotate(-90,1.6863,1064.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -165,7 +165,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,1,-1,0,1162.2028,918.8302)" />
+       gradientTransform="rotate(90,121.6863,1040.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -175,7 +175,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1066.2028)" />
+       gradientTransform="rotate(-90,1.6863,1064.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -185,7 +185,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,1,-1,0,1162.2028,918.8302)" />
+       gradientTransform="rotate(90,121.6863,1040.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -201,7 +201,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4468"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1066.2028)"
+       gradientTransform="rotate(-90,1.6863,1064.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -211,7 +211,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4470"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,1,-1,0,1162.2028,918.8302)"
+       gradientTransform="rotate(90,121.6863,1040.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -225,7 +225,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1098.2028)" />
+       gradientTransform="rotate(-90,17.6863,1080.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -241,7 +241,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4520"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1098.2028)"
+       gradientTransform="rotate(-90,17.6863,1080.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -255,7 +255,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1066.2028)" />
+       gradientTransform="rotate(-90,1.6863,1064.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -265,7 +265,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,1,-1,0,1162.2028,918.8302)" />
+       gradientTransform="rotate(90,121.6863,1040.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -281,7 +281,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4582"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1066.2028)"
+       gradientTransform="rotate(-90,1.6863,1064.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -291,7 +291,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4584"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,1,-1,0,1162.2028,918.8302)"
+       gradientTransform="rotate(90,121.6863,1040.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -305,7 +305,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1098.2028)" />
+       gradientTransform="rotate(-90,17.6863,1080.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -321,7 +321,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4710"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1098.2028)"
+       gradientTransform="rotate(-90,17.6863,1080.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -341,7 +341,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4714"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1066.2028)"
+       gradientTransform="rotate(-90,1.6863,1064.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -351,7 +351,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4716"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,1,-1,0,1162.2028,918.8302)"
+       gradientTransform="rotate(90,121.6863,1040.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -371,7 +371,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4731"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1098.2028)"
+       gradientTransform="rotate(-90,17.6863,1080.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -391,7 +391,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4735"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1098.2028)"
+       gradientTransform="rotate(-90,17.6863,1080.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -411,7 +411,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4739"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,-1,1,0,-1062.8302,1066.2028)"
+       gradientTransform="rotate(-90,1.6863,1064.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -421,7 +421,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4741"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,1,-1,0,1162.2028,918.8302)"
+       gradientTransform="rotate(90,121.6863,1040.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -435,7 +435,7 @@
        x2="89.686279"
        y2="1112.5165"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,155.37256,2105.033)" />
+       gradientTransform="rotate(180,77.68628,1052.5165)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4213"
@@ -451,7 +451,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4900"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,155.37256,2105.033)"
+       gradientTransform="rotate(180,77.68628,1052.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -471,7 +471,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4911"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,155.37256,2105.033)"
+       gradientTransform="rotate(180,77.68628,1052.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -491,7 +491,7 @@
        xlink:href="#linearGradient4213"
        id="linearGradient4915"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,155.37256,2105.033)"
+       gradientTransform="rotate(180,77.68628,1052.5165)"
        x1="73.686279"
        y1="1112.5165"
        x2="89.686279"
@@ -506,7 +506,7 @@
        y2="940.36218"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       gradientTransform="matrix(-1,0,0,-1,128,1880.7244)"
+       gradientTransform="rotate(180,64,940.3622)"
        inkscape:collect="always"
        xlink:href="#linearGradient4972"
        id="linearGradient4982-1"
@@ -516,7 +516,7 @@
        y2="940.36218"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       gradientTransform="matrix(-1,0,0,-1,128,1880.7244)"
+       gradientTransform="rotate(180,64,940.3622)"
        inkscape:collect="always"
        xlink:href="#linearGradient4972"
        id="linearGradient5076"
@@ -539,7 +539,7 @@
        xlink:href="#linearGradient4972"
        id="linearGradient5084"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,128,1880.7244)"
+       gradientTransform="rotate(180,64,940.3622)"
        x1="80"
        y1="940.36218"
        x2="96"
@@ -549,7 +549,7 @@
        xlink:href="#linearGradient4972"
        id="linearGradient5125"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,128,1880.7244)"
+       gradientTransform="rotate(180,64,940.3622)"
        x1="80"
        y1="940.36218"
        x2="96"
@@ -568,7 +568,7 @@
        xlink:href="#linearGradient4972"
        id="linearGradient5133"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,128,1880.7244)"
+       gradientTransform="rotate(180,64,940.3622)"
        x1="80"
        y1="940.36218"
        x2="96"
@@ -578,7 +578,7 @@
        xlink:href="#linearGradient4972"
        id="linearGradient5174"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,128,1880.7244)"
+       gradientTransform="rotate(180,64,940.3622)"
        x1="80"
        y1="940.36218"
        x2="96"
@@ -597,7 +597,7 @@
        xlink:href="#linearGradient4972"
        id="linearGradient5182"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,-1,128,1880.7244)"
+       gradientTransform="rotate(180,64,940.3622)"
        x1="80"
        y1="940.36218"
        x2="96"
@@ -611,7 +611,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568543"
-     inkscape:cx="35.478824"
+     inkscape:cx="-20.559388"
      inkscape:cy="18.819397"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -641,7 +641,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -651,8 +651,8 @@
      id="layer1"
      transform="translate(0,-924.3622)">
     <path
-       style="fill:url(#radialGradient4142);fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:0.236;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 8,948.3622 0,80 16,16 80,0 16,-16 0,-80 -16,-16 -80,0 z"
+       style="opacity:0.23600003;fill:url(#radialGradient4142);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 8,948.3622 v 80 l 16,16 h 80 l 16,-16 v -80 l -16,-16 H 24 Z"
        id="path4134"
        inkscape:connector-curvature="0" />
     <g
@@ -728,7 +728,7 @@
     <g
        transform="matrix(0,1,1,0,-928.51652,906.67592)"
        id="g4233-1"
-       style="opacity:0.204">
+       style="opacity:0.20400002">
       <path
          inkscape:connector-curvature="0"
          id="path4144-8"
@@ -786,197 +786,190 @@
          style="fill:#000000;fill-opacity:0.15136479;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 144.68628,929.51649 -126.000001,0 0,126.00001 126.000001,0 z"
+         d="M 144.68628,929.51649 H 18.686279 V 1055.5165 H 144.68628 Z"
          id="path4306"
          inkscape:connector-curvature="0" />
       <g
          id="g4195"
-         style="opacity:0.43">
+         style="opacity:0.43000004">
         <g
-           id="g4170"
-           style="" />
+           id="g4170" />
         <g
            id="g4170-3"
            style="opacity:1"
-           transform="matrix(0,-1,1,0,-910.83024,1074.2028)" />
+           transform="rotate(-90,81.68628,992.51652)" />
       </g>
       <g
          id="g4325"
-         transform="translate(-9.9999999e-6,-152)"
-         style="">
+         transform="translate(-9.9999999e-6,-152)">
         <g
            transform="translate(0,152.00001)"
-           id="g4275"
-           style="">
+           id="g4275">
           <path
              style="opacity:1;fill:url(#linearGradient4211-5);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 81.68628,976.51652 16,0 0,31.99998 -16,0 z"
+             d="m 81.68628,976.51652 h 16 v 31.99998 h -16 z"
              id="path4203-6"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4211-2);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 81.68628,1008.5165 -16,0 0,-31.99998 16,0 z"
+             d="m 81.68628,1008.5165 h -16 v -31.99998 h 16 z"
              id="path4203-2"
              inkscape:connector-curvature="0" />
         </g>
         <g
            id="g4275-9"
            style="opacity:0.27099998"
-           transform="matrix(0,-1,1,0,-910.83023,1226.2028)">
+           transform="rotate(-90,157.68628,1068.5165)">
           <path
              style="opacity:1;fill:url(#linearGradient4321);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 81.68628,976.51652 16,0 0,31.99998 -16,0 z"
+             d="m 81.68628,976.51652 h 16 v 31.99998 h -16 z"
              id="path4203-6-3"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4323);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 81.68628,1008.5165 -16,0 0,-31.99998 16,0 z"
+             d="m 81.68628,1008.5165 h -16 v -31.99998 h 16 z"
              id="path4203-2-6"
              inkscape:connector-curvature="0" />
         </g>
       </g>
       <g
-         id="g4403"
-         style="">
+         id="g4403">
         <path
            inkscape:connector-curvature="0"
            id="path4203"
-           d="m 49.68628,976.51652 16,0 0,31.99998 -16,0 z"
+           d="m 49.68628,976.51652 h 16 v 31.99998 h -16 z"
            style="opacity:1;fill:url(#linearGradient4211);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         <path
            inkscape:connector-curvature="0"
            id="path4203-20-5"
-           d="m 33.68628,992.5165 0,-16 32,0 0,16 z"
+           d="m 33.68628,992.5165 v -16 h 32 v 16 z"
            style="opacity:1;fill:url(#linearGradient4211-8-2);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         <path
            inkscape:connector-curvature="0"
            id="path4203-20-8"
-           d="m 65.68628,992.5165 0,16 -32,0 0,-16 z"
+           d="m 65.68628,992.5165 v 16 h -32 v -16 z"
            style="opacity:1;fill:url(#linearGradient4211-8-9);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       </g>
       <g
-         transform="matrix(-1,0,0,-1,163.37256,1985.033)"
+         transform="rotate(180,81.68628,992.5165)"
          style="opacity:1"
          id="g4403-3">
         <path
            inkscape:connector-curvature="0"
            id="path4203-612"
-           d="m 49.68628,976.51652 16,0 0,31.99998 -16,0 z"
+           d="m 49.68628,976.51652 h 16 v 31.99998 h -16 z"
            style="opacity:1;fill:url(#linearGradient4466);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         <path
            inkscape:connector-curvature="0"
            id="path4203-20-5-9"
-           d="m 33.68628,992.5165 0,-16 32,0 0,16 z"
+           d="m 33.68628,992.5165 v -16 h 32 v 16 z"
            style="opacity:1;fill:url(#linearGradient4468);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         <path
            inkscape:connector-curvature="0"
            id="path4203-20-8-3"
-           d="m 65.68628,992.5165 0,16 -32,0 0,-16 z"
+           d="m 65.68628,992.5165 v 16 h -32 v -16 z"
            style="opacity:1;fill:url(#linearGradient4470);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       </g>
       <g
-         id="g4586"
-         style="">
+         id="g4586">
         <g
-           id="g4472"
-           style="">
+           id="g4472">
           <path
              style="opacity:1;fill:url(#linearGradient4211-0);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 49.68628,1008.5165 16,0 0,32 -16,0 z"
+             d="m 49.68628,1008.5165 h 16 v 32 h -16 z"
              id="path4203-61"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4211-8);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 33.68628,1024.5165 0,-16 32,0 0,16 z"
+             d="m 33.68628,1024.5165 v -16 h 32 v 16 z"
              id="path4203-20"
              inkscape:connector-curvature="0" />
         </g>
         <g
            id="g4472-4"
            style="opacity:1"
-           transform="matrix(0,-1,1,0,-910.83022,1074.2028)">
+           transform="rotate(-90,81.68629,992.51651)">
           <path
              style="opacity:1;fill:url(#linearGradient4518);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 49.68628,1008.5165 16,0 0,32 -16,0 z"
+             d="m 49.68628,1008.5165 h 16 v 32 h -16 z"
              id="path4203-61-7"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4520);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 33.68628,1024.5165 0,-16 32,0 0,16 z"
+             d="m 33.68628,1024.5165 v -16 h 32 v 16 z"
              id="path4203-20-84"
              inkscape:connector-curvature="0" />
         </g>
         <g
            id="g4403-36"
            style="opacity:1"
-           transform="matrix(0,-1,1,0,-910.83024,1074.2028)">
+           transform="rotate(-90,81.68628,992.51652)">
           <path
              style="opacity:1;fill:url(#linearGradient4580);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 49.68628,976.51652 16,0 0,31.99998 -16,0 z"
+             d="m 49.68628,976.51652 h 16 v 31.99998 h -16 z"
              id="path4203-1"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4582);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 33.68628,992.5165 0,-16 32,0 0,16 z"
+             d="m 33.68628,992.5165 v -16 h 32 v 16 z"
              id="path4203-20-5-0"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4584);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 65.68628,992.5165 0,16 -32,0 0,-16 z"
+             d="m 65.68628,992.5165 v 16 h -32 v -16 z"
              id="path4203-20-8-6"
              inkscape:connector-curvature="0" />
         </g>
       </g>
       <g
-         transform="matrix(-1,0,0,-1,163.37256,1985.033)"
+         transform="rotate(180,81.68628,992.5165)"
          style="opacity:1"
          id="g4586-0">
         <g
-           id="g4472-6"
-           style="">
+           id="g4472-6">
           <path
              style="opacity:1;fill:url(#linearGradient4729);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 49.68628,1008.5165 16,0 0,32 -16,0 z"
+             d="m 49.68628,1008.5165 h 16 v 32 h -16 z"
              id="path4203-61-1"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4731);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 33.68628,1024.5165 0,-16 32,0 0,16 z"
+             d="m 33.68628,1024.5165 v -16 h 32 v 16 z"
              id="path4203-20-55"
              inkscape:connector-curvature="0" />
         </g>
         <g
            id="g4472-4-4"
            style="opacity:1"
-           transform="matrix(0,-1,1,0,-910.83022,1074.2028)">
+           transform="rotate(-90,81.68629,992.51651)">
           <path
              style="opacity:1;fill:url(#linearGradient4733);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 49.68628,1008.5165 16,0 0,32 -16,0 z"
+             d="m 49.68628,1008.5165 h 16 v 32 h -16 z"
              id="path4203-61-7-7"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4735);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 33.68628,1024.5165 0,-16 32,0 0,16 z"
+             d="m 33.68628,1024.5165 v -16 h 32 v 16 z"
              id="path4203-20-84-6"
              inkscape:connector-curvature="0" />
         </g>
         <g
            id="g4403-36-5"
            style="opacity:1"
-           transform="matrix(0,-1,1,0,-910.83024,1074.2028)">
+           transform="rotate(-90,81.68628,992.51652)">
           <path
              style="opacity:1;fill:url(#linearGradient4737);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 49.68628,976.51652 16,0 0,31.99998 -16,0 z"
+             d="m 49.68628,976.51652 h 16 v 31.99998 h -16 z"
              id="path4203-1-6"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4739);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 33.68628,992.5165 0,-16 32,0 0,16 z"
+             d="m 33.68628,992.5165 v -16 h 32 v 16 z"
              id="path4203-20-5-0-9"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4741);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 65.68628,992.5165 0,16 -32,0 0,-16 z"
+             d="m 65.68628,992.5165 v 16 h -32 v -16 z"
              id="path4203-20-8-6-3"
              inkscape:connector-curvature="0" />
         </g>
@@ -984,34 +977,33 @@
       <g
          style="opacity:1"
          id="g4325-5"
-         transform="matrix(0,-1,1,0,-1062.8302,1074.2028)">
+         transform="rotate(-90,5.6863,1068.5165)">
         <g
            transform="translate(0,152.00001)"
-           id="g4275-2"
-           style="">
+           id="g4275-2">
           <path
              style="opacity:1;fill:url(#linearGradient4909);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 81.68628,976.51652 16,0 0,31.99998 -16,0 z"
+             d="m 81.68628,976.51652 h 16 v 31.99998 h -16 z"
              id="path4203-6-5"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4911);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 81.68628,1008.5165 -16,0 0,-31.99998 16,0 z"
+             d="m 81.68628,1008.5165 h -16 v -31.99998 h 16 z"
              id="path4203-2-4"
              inkscape:connector-curvature="0" />
         </g>
         <g
            id="g4275-9-7"
            style="opacity:0.27099998"
-           transform="matrix(0,-1,1,0,-910.83023,1226.2028)">
+           transform="rotate(-90,157.68628,1068.5165)">
           <path
              style="opacity:1;fill:url(#linearGradient4913);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 81.68628,976.51652 16,0 0,31.99998 -16,0 z"
+             d="m 81.68628,976.51652 h 16 v 31.99998 h -16 z"
              id="path4203-6-3-4"
              inkscape:connector-curvature="0" />
           <path
              style="opacity:1;fill:url(#linearGradient4915);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="m 81.68628,1008.5165 -16,0 0,-31.99998 16,0 z"
+             d="m 81.68628,1008.5165 h -16 v -31.99998 h 16 z"
              id="path4203-2-6-4"
              inkscape:connector-curvature="0" />
         </g>
@@ -1019,125 +1011,120 @@
     </g>
     <g
        id="g4932"
-       style="opacity:0.065">
+       style="opacity:0.06499999">
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path4168"
-         d="m 80,940.3622 0,96"
+         d="m 80,940.3622 v 96"
          style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path4168-3"
-         d="m 48,940.3622 0,96"
+         d="m 48,940.3622 v 96"
          style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <g
-         id="g5032"
-         style="">
+         id="g5032">
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:url(#linearGradient4982);stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 96,940.3622 -16,0"
+           d="M 96,940.3622 H 80"
            id="path4168-6"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 80,940.3622 -32,0"
+           d="M 80,940.3622 H 48"
            id="path4168-6-3"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:url(#linearGradient4982-1);stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 32,940.3622 16,0"
+           d="M 32,940.3622 H 48"
            id="path4168-6-2"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
       </g>
       <g
-         transform="matrix(0,1,-1,0,1052.3622,924.3622)"
-         id="g5032-8"
-         style="">
+         transform="rotate(90,64,988.3622)"
+         id="g5032-8">
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:url(#linearGradient5082);stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 96,940.3622 -16,0"
+           d="M 96,940.3622 H 80"
            id="path4168-6-9"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 80,940.3622 -32,0"
+           d="M 80,940.3622 H 48"
            id="path4168-6-3-2"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:url(#linearGradient5084);stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 32,940.3622 16,0"
+           d="M 32,940.3622 H 48"
            id="path4168-6-2-6"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
       </g>
       <g
-         transform="matrix(-1,0,0,-1,128,1976.7244)"
-         id="g5032-8-5"
-         style="">
+         transform="rotate(180,64,988.3622)"
+         id="g5032-8-5">
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:url(#linearGradient5131);stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 96,940.3622 -16,0"
+           d="M 96,940.3622 H 80"
            id="path4168-6-9-0"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 80,940.3622 -32,0"
+           d="M 80,940.3622 H 48"
            id="path4168-6-3-2-4"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:url(#linearGradient5133);stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 32,940.3622 16,0"
+           d="M 32,940.3622 H 48"
            id="path4168-6-2-6-8"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
       </g>
       <g
-         transform="matrix(0,-1,1,0,-924.3622,1052.3622)"
-         id="g5032-8-5-2"
-         style="">
+         transform="rotate(-90,64,988.3622)"
+         id="g5032-8-5-2">
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:url(#linearGradient5180);stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 96,940.3622 -16,0"
+           d="M 96,940.3622 H 80"
            id="path4168-6-9-0-7"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 80,940.3622 -32,0"
+           d="M 80,940.3622 H 48"
            id="path4168-6-3-2-4-2"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
         <path
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:url(#linearGradient5182);stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 32,940.3622 16,0"
+           d="M 32,940.3622 H 48"
            id="path4168-6-2-6-8-2"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />
       </g>
       <g
-         transform="matrix(0,1,-1,0,1052.3622,924.3622)"
-         id="g4932-0"
-         style="">
+         transform="rotate(90,64,988.3622)"
+         id="g4932-0">
         <path
            sodipodi:nodetypes="cc"
            inkscape:connector-curvature="0"
            id="path4168-7"
-           d="m 80,940.3622 0,96"
+           d="m 80,940.3622 v 96"
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <path
            sodipodi:nodetypes="cc"
            inkscape:connector-curvature="0"
            id="path4168-3-8"
-           d="m 48,940.3622 0,96"
+           d="m 48,940.3622 v 96"
            style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </g>
     </g>

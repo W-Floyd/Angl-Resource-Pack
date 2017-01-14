@@ -15,7 +15,7 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.0 r"
    sodipodi:docname="ladder_overlay.svg">
   <defs
      id="defs4">
@@ -53,7 +53,7 @@
        y2="948.36218"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       gradientTransform="matrix(-1,0,0,-1,128,1912.7244)"
+       gradientTransform="rotate(180,64,956.3622)"
        inkscape:collect="always"
        xlink:href="#linearGradient4185"
        id="linearGradient4191-5"
@@ -101,7 +101,7 @@
        y2="948.36218"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       gradientTransform="matrix(-1,0,0,-1,128,1976.7244)"
+       gradientTransform="rotate(180,64,988.3622)"
        inkscape:collect="always"
        xlink:href="#linearGradient4185"
        id="linearGradient4191-5-6"
@@ -129,7 +129,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568543"
-     inkscape:cx="32.85937"
+     inkscape:cx="-23.178842"
      inkscape:cy="86.991401"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -159,7 +159,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -170,35 +170,35 @@
      transform="translate(0,-924.3622)">
     <path
        style="fill:#b3b3b3;fill-rule:evenodd;stroke:#999999;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 17,1059.3622 0,-141.99998 14,0 0,141.99998 z"
+       d="M 17,1059.3622 V 917.36222 h 14 v 141.99998 z"
        id="path4134"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#b3b3b3;fill-rule:evenodd;stroke:#999999;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 97,1059.3622 0,-142 14,0 0,142 z"
+       d="m 97,1059.3622 v -142 h 14 v 142 z"
        id="path4134-3"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:url(#linearGradient4191);fill-rule:evenodd;stroke:url(#linearGradient4153);stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
-       d="m 16,932.3622 96,0 8,8 0,8 -112,0 0,-8 z"
+       style="fill:url(#linearGradient4191);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient4153);stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 16,932.3622 h 96 l 8,8 v 8 H 8 v -8 z"
        id="path4134-6-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:url(#linearGradient4191-5);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient4167);stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 112,980.3622 -96,0 -8,-8 0,-8 112,0 0,8 z"
+       d="M 112,980.3622 H 16 l -8,-8 v -8 h 112 v 8 z"
        id="path4134-6-3-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:url(#linearGradient4191-3);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient4153-5);stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 16,996.3622 96,0 8,8 0,8 -112,0 0,-8 z"
+       d="m 16,996.3622 h 96 l 8,8 v 8 H 8 v -8 z"
        id="path4134-6-3-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:url(#linearGradient4191-5-6);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient4167-2);stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 112,1044.3622 -96,0 -8,-8 0,-8 112,0 0,8 z"
+       d="M 112,1044.3622 H 16 l -8,-8 v -8 h 112 v 8 z"
        id="path4134-6-3-6-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />

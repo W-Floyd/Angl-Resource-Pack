@@ -15,9 +15,9 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
-   sodipodi:docname="log_generic_top_2~ignore~.svg"
-   enable-background="new">
+   inkscape:version="0.92.0 r"
+   sodipodi:docname="log_generic_top_2.svg"
+   style="enable-background:new">
   <defs
      id="defs4">
     <linearGradient
@@ -62,7 +62,7 @@
        y2="128"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       gradientTransform="matrix(0,-1,1,0,0,128)"
+       gradientTransform="rotate(-90,64,64)"
        inkscape:collect="always"
        xlink:href="#linearGradient4160"
        id="linearGradient4323-8-9-9"
@@ -80,16 +80,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4390728"
-     inkscape:cx="-50.548771"
+     inkscape:cx="-270.8295"
      inkscape:cy="124.17073"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
      units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="707"
+     inkscape:window-width="3840"
+     inkscape:window-height="2018"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="86"
      inkscape:window-maximized="1"
      showguides="false">
     <inkscape:grid
@@ -106,7 +106,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -117,27 +117,27 @@
      style="display:inline">
     <path
        style="display:inline;fill:url(#linearGradient4323-8-6);fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M -7.9999999,136 8,120 l 112,0 16,16 z"
+       d="M -7.9999999,136 8,120 h 112 l 16,16 z"
        id="path4307-1-0"
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;fill:url(#linearGradient4323-8-9);fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -7.9999985,136 16,-16 0,-112.000003 -16,-15.9999999 z"
+       d="m -7.9999985,136 16,-16 V 7.999997 l -16,-15.9999999 z"
        id="path4307-1-6"
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;fill:url(#linearGradient4323-8-9-9);fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 136,136 120,120 120,7.999997 136,-8.0000029 Z"
+       d="M 136,136 120,120 V 7.999997 l 16,-15.9999999 z"
        id="path4307-1-6-0"
        inkscape:connector-curvature="0" />
     <path
        style="display:inline;fill:url(#linearGradient4323-8);fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M -7.9999999,-8 8,8 120,8 136,-8 Z"
+       d="M -7.9999999,-8 8,8 h 112 l 16,-16 z"
        id="path4307-1"
        inkscape:connector-curvature="0" />
     <g
        id="g4980"
-       style="opacity:0.40200004;stroke:#666666;fill:#cccccc">
+       style="opacity:0.40200004;fill:#cccccc;stroke:#666666">
       <path
          inkscape:connector-curvature="0"
          id="path4565"

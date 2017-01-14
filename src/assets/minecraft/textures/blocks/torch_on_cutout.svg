@@ -14,8 +14,8 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="torch_on.svg">
+   inkscape:version="0.92.0 r"
+   sodipodi:docname="torch_on_cutout.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568543"
-     inkscape:cx="37.718775"
+     inkscape:cx="-18.319437"
      inkscape:cy="62.965381"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,7 +62,7 @@
      transform="translate(0,-924.3622)">
     <path
        style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 56,1052.3622 0,-64 16,0 0,64 z"
+       d="m 56,1052.3622 v -64 h 16 v 64 z"
        id="path4145"
        inkscape:connector-curvature="0" />
   </g>

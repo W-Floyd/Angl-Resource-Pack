@@ -14,8 +14,8 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
-   sodipodi:docname="log_acacia.svg">
+   inkscape:version="0.92.0 r"
+   sodipodi:docname="colour_log_acacia_base.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="43.931542"
+     inkscape:cx="-46.224572"
      inkscape:cy="40.813258"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
-     inkscape:window-width="768"
+     inkscape:window-width="1074"
      inkscape:window-height="705"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="86"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

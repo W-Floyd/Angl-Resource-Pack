@@ -15,7 +15,7 @@
    viewBox="0 0 512 256"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.0 r"
    sodipodi:docname="bed_wood_overlay.svg">
   <defs
      id="defs4">
@@ -69,7 +69,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568542"
-     inkscape:cx="219.01615"
+     inkscape:cx="162.97794"
      inkscape:cy="128.35999"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -98,7 +98,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -122,7 +122,7 @@
        id="rect4166"
        style="opacity:1;fill:#b71c1c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       transform="matrix(0,1,-1,0,0,0)"
+       transform="rotate(90)"
        y="-128"
        x="796.36218"
        height="32.000019"
@@ -136,54 +136,54 @@
        height="32.000019"
        x="-924.36218"
        y="383.99997"
-       transform="matrix(0,-1,1,0,0,0)" />
+       transform="rotate(-90)" />
     <path
        style="fill:url(#linearGradient4169);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 128,996.3622 0,-40 256,0 0,40 -32,0 0,-32 -192,0 0,32 z"
+       d="m 128,996.3622 v -40 h 256 v 40 h -32 v -32 H 160 v 32 z"
        id="path4157"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccc" />
     <path
-       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 160,972.3622 8,-8 -8,0 z"
+       style="fill:#afafaf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 160,972.3622 8,-8 h -8 z"
        id="path4159"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path4161"
-       d="m 344,964.3622 8,8 0,-8 z"
-       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+       d="m 344,964.3622 8,8 v -8 z"
+       style="fill:#afafaf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path4171"
-       d="m 56,796.3622 40,0 0,128 -40,0 0,-32 32,0 0,-64 -32,0 z"
+       d="m 56,796.3622 h 40 v 128 H 56 v -32 h 32 v -64 H 56 Z"
        style="fill:url(#linearGradient4177);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        sodipodi:nodetypes="ccccccccc" />
     <path
        inkscape:connector-curvature="0"
        id="path4173"
-       d="m 80,828.3622 8,8 0,-8 z"
-       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+       d="m 80,828.3622 8,8 v -8 z"
+       style="fill:#afafaf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 88,884.3622 -8,8 8,0 z"
+       style="fill:#afafaf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 88,884.3622 -8,8 h 8 z"
        id="path4175"
        inkscape:connector-curvature="0" />
     <path
        sodipodi:nodetypes="ccccccccc"
        style="fill:url(#linearGradient4185);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 456,924.3622 -40,0 0,-128 40,0 0,32 -32,0 0,64 32,0 z"
+       d="m 456,924.3622 h -40 v -128 h 40 v 32 h -32 v 64 h 32 z"
        id="path4179"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 432,892.3622 -8,-8 0,8 z"
+       style="fill:#afafaf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 432,892.3622 -8,-8 v 8 z"
        id="path4181"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path4183"
-       d="m 424,836.3622 8,-8 -8,0 z"
-       style="fill:#afafaf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+       d="m 424,836.3622 8,-8 h -8 z"
+       style="fill:#afafaf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>

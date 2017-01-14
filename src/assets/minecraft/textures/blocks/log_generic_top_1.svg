@@ -14,9 +14,9 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
-   sodipodi:docname="~ignore~log_top.svg"
-   enable-background="new">
+   inkscape:version="0.92.0 r"
+   sodipodi:docname="log_generic_top_1.svg"
+   style="enable-background:new">
   <defs
      id="defs4">
     <filter
@@ -38,16 +38,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="8.4644729"
+     inkscape:cx="-151.6447"
      inkscape:cy="53.519918"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="707"
+     inkscape:window-width="3840"
+     inkscape:window-height="2018"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="86"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -63,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -77,7 +77,7 @@
        style="display:inline;stroke:#cccccc"
        id="g4974">
       <rect
-         transform="matrix(0.70710677,0.70710679,-0.70710677,0.70710679,0,0)"
+         transform="rotate(45.000001)"
          y="-27.192154"
          x="63.31752"
          height="54.384266"
@@ -85,7 +85,7 @@
          id="rect4429-1"
          style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         transform="matrix(0.70710677,0.70710679,-0.70710677,0.70710679,0,0)"
+         transform="rotate(45.000001)"
          y="-49.435852"
          x="40.608509"
          height="99.802307"
@@ -93,7 +93,7 @@
          id="rect4429"
          style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         transform="matrix(0.70710677,0.70710679,-0.70710677,0.70710679,0,0)"
+         transform="rotate(45.000001)"
          y="-4.4831367"
          x="86.026527"
          height="8.9662342"
@@ -107,7 +107,7 @@
          height="145.22035"
          x="17.899488"
          y="-72.610184"
-         transform="matrix(0.70710677,0.70710679,-0.70710677,0.70710679,0,0)" />
+         transform="rotate(45.000001)" />
     </g>
     <g
        transform="translate(4.6491419e-7,924.36216)"
@@ -259,5 +259,5 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     style="filter:url(#filter4182);opacity:0.469" />
+     style="opacity:0.469;filter:url(#filter4182)" />
 </svg>
