@@ -9,7 +9,7 @@
 		<CLEANUP>./pack.svg</CLEANUP>
 		<COMMON>Pack logo</COMMON>
 	</ITEM>
-	<ITEM>
+	<ITE>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
 		<CONFIG>./conf/basic_block.sh</CONFIG>
 		<SIZE></SIZE>
@@ -18,7 +18,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
 		<COMMON>Dirt</COMMON>
-	</ITEM>
+	</ITE>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side.png</NAME>
 		<CONFIG>./conf/grass_side.sh</CONFIG>

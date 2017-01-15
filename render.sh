@@ -957,6 +957,18 @@ __unchanged_both="${__tmp_dir}/unchanged_both"
 touch "${__unchanged_both}"
 sort "${__unchanged_source}" "${__unchanged_xml}" | uniq > "${__unchanged_both}"
 
+# Where files to be processed are listed
+__list_file_proc="${__tmp_dir}/listing_processing"
+touch "${__list_file_proc}"
+
+# Where all dependencies are listed
+__all_deps="${__tmp_dir}/all_deps"
+touch "${__all_deps}"
+
+# List of files to check
+__check_list="${__tmp_dir}/check_list"
+touch "${__check_list}"
+
 # TODO - Make a more efficient method of doing this
 
 ################################################################
@@ -974,67 +986,71 @@ sort "${__unchanged_source}" "${__unchanged_xml}" | uniq > "${__unchanged_both}"
 #
 ################################################################
 
-__list_file_proc="${__tmp_dir}/listing_processing"
-touch "${__list_file_proc}"
-
-__all_deps="${__tmp_dir}/all_deps"
-touch "${__all_deps}"
-
-__check_list="${__tmp_dir}/check_list"
-touch "${__check_list}"
-
+# Get into the dependency folder
 __pushd "${__dep_list_folder}"
 
+# List files that depend on changed files
 while read -r __changed; do
     grep -rlx "${__changed}" >> "${__list_file_proc}"
 done < "${__changed_both}"
 
+# List all deps
 find . -type f -exec cat {} + | sort | uniq > "${__all_deps}"
 
+# Get back to main directory
 __popd
 
+# List any files in the dep list that are not on the file list
 grep -Fxvf "${__list_file}" "${__all_deps}" > "${__check_list}"
-touch "${__check_list}_"
 
+# Get into the source directory
 __pushd ./src
 
+# Slim check list to only files which do not exist
 while read __file; do
     if ! [ -e "${__file}" ]; then
         echo "${__file}" >> "${__check_list}_"
     fi
 done < "${__check_list}"
 
+touch "${__check_list}_"
 mv "${__check_list}_" "${__check_list}"
 touch "${__check_list}_"
 
+# Get into dep list folder
 __pushd "${__dep_list_folder}"
 
+# List any files that depend on the check list
 while read __file; do
-    grep -rlx "${__file}" >> "${__check_list}_"
+    echo "./$(grep -rlx "${__file}")" >> "${__check_list}_"
 done < "${__check_list}"
 
+# Get back to source directory
 __popd
 
+# Make sure check list sorted and uniq
 sort "${__check_list}_" | uniq > "${__check_list}"
 rm "${__check_list}_"
 
+# Get back to main directory
 __popd
 
+# Add check list to process list
 cat "${__check_list}" >> "${__list_file_proc}"
 
+# Make a backup of the process list for debugging
 cp "${__list_file_proc}" "${__list_file_proc}_original"
 
+# As long as the process list is not empty,
 while [ -s "${__list_file_proc}" ]; do
 
+# get the name of the file we're working with,
     __xml="$(head -n 1 "${__list_file_proc}")"
 
+# remove said file from list,
     sed -i '1d' "${__list_file_proc}"
 
-# Get dependancies
-    cat "${__dep_list_folder}/${__xml}"  > "${__tmp_dir}/tmp_deps2"
-
-    echo "${__xml}" >> "${__tmp_dir}/tmp_deps2"
-
+# set trimmed xml name
     __xml_name="${__xml//.\//}"
 
 # ensure the old file does not exist, and make sure to be
@@ -1044,12 +1060,14 @@ while [ -s "${__list_file_proc}" ]; do
     fi
     echo "${__xml}" >> "${__render_list}"
 
-# Finish loop
+# Finish checks
 done
 
+# Make sure render list is sorted and uniq
 sort "${__render_list}" | uniq > "${__render_list}_"
-
 mv "${__render_list}_" "${__render_list}"
+
+__tmp_time start
 
 # for every ITEM that is *not* in the render list
 grep -Fxvf "${__render_list}" "${__list_file}" | sort | uniq | while read -r __xml; do
@@ -1075,6 +1093,8 @@ grep -Fxvf "${__render_list}" "${__list_file}" | sort | uniq | while read -r __x
 
 # Finish loop
 done
+
+__tmp_time end
 
 sort "${__render_list}" | uniq > "${__render_list}_"
 
@@ -1111,19 +1131,18 @@ __start_time="$(date +%s)"
 __pushd "${__pack}"
 
 # while the render list has lines to process,
-while [ "$(wc -l < "${__render_list}")" -gt '0' ]; do
+while [ -s "${__render_list}" ]; do
 
 # set the original name of the config file
     __orig_config="$(head -n 1 "${__render_list}")"
 
+    __orig_config_name="${__orig_config//.\//}"
+
 # set the formatted name of the config file
     __config="./xml/${__orig_config//.\//}"
 
-# get the dependancies of the config, and put it in a temporary file
-    __get_value "${__config}" DEPENDS > "${__tmp_dir}/tmpdeps"
-
-# if the dependancies are not yet to be rendered, then
-    if ! grep -qFxf "${__tmp_dir}/tmpdeps" "${__render_list}"; then
+# if the dependencies are not yet to be rendered, then
+    if ! grep -qFxf "${__dep_list_folder}/${__orig_config_name}" "${__render_list}"; then
 
 # get the size of the texture
         __tmp_val="$(__get_value "${__config}" SIZE)"
@@ -1160,7 +1179,7 @@ while [ "$(wc -l < "${__render_list}")" -gt '0' ]; do
                     __failed='1'
                 fi
 
-            done < "${__tmp_dir}/tmpdeps"
+            done < "${__dep_list_folder}/${__orig_config_name}"
 
             if [ "${__failed}" = '0' ]; then
 
