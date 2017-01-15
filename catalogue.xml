@@ -1888,7 +1888,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_base.png
 		./assets/minecraft/textures/blocks/torch_on_shaft.png</DEPENDS>
 		<CLEANUP></CLEANUP>
-		<COMMON></COMMON>
+		<COMMON>Torch</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</NAME>

@@ -27,23 +27,23 @@ Copy an entry from an existing texture similar to your own. I *HIGHLY* recommend
 
 First, an explaination of the syntax in use here:
 
-ITEM describes where to start and stop looking for each individual file to process.
+**ITEM** describes where to start and stop looking for each individual file to process.
 
-NAME describes the output file name achieved. Formatted relative to the top folder of the resource pack.
+**NAME** describes the output file name achieved. Formatted relative to the top folder of the resource pack.
 
-CONFIG describes what file is used to process the file. More on this later. Also formatted relative to the top folder of the resource pack.
+**CONFIG** describes what file is used to process the file. More on this later. Also formatted relative to the top folder of the resource pack.
 
-SIZE describes what size to process the file with. Rarely used. If blank, uses pack size. Mainly included for pack logo. Any positive integer will work.
+**SIZE** describes what size to process the file with. Rarely used. If blank, uses pack size. Mainly included for pack logo. Any positive integer will work.
 
-OPTIONS describes any options to pass to the script. Placed after SIZE, as SIZE is passed as an option to all CONFIG scripts.
+**OPTIONS** describes any options to pass to the script. Placed after SIZE, as SIZE is passed as an option to all CONFIG scripts.
 
-KEEP describes whether the produced file is intended for inclusion in the final resource pack. YES or NO answer. So if you are processing a working only file (an overlay, for instance), this is set to NO. Otherwise, YES.
+**KEEP** describes whether the produced file is intended for inclusion in the final resource pack. YES or NO answer. So if you are processing a working only file (an overlay, for instance), this is set to NO. Otherwise, YES.
 
-DEPENDS describes any files this file **directly** relies on. For instance, if your script pulls in a file derived from wool, the colour file, nor wool overlay are required, only the directly used file. The render script extrapolates this information for use, so there is no need to do it ourselves. It **shouldn't** break things, but it's bad form, and not tested.
+**DEPENDS** describes any files this file **directly** relies on. For instance, if your script pulls in a file derived from wool, the colour file, nor wool overlay are required, only the directly used file. The render script extrapolates this information for use, so there is no need to do it ourselves. It **shouldn't** break things, but it's bad form, and not tested.
 
-CLEANUP describes the source files to delete upon completion of the resource pack. Again, formatted relative to the top folder of the resource pack. For images composed entirely from pre-rendered images, this will be blank.
+**CLEANUP** describes the source files to delete upon completion of the resource pack. Again, formatted relative to the top folder of the resource pack. For images composed entirely from pre-rendered images, this will be blank.
 
-COMMON describes the common name of the texture. This is optional, and might be hard to fill in at times. Only useful on KEEP files.
+**COMMON** describes the common name of the texture. This is optional, and might be hard to fill in at times. Only useful on KEEP files.
 
 ***
 
@@ -70,6 +70,6 @@ So, run './make-pack.sh 32', and the new texture should be found, rendered and p
 
 ***
 
-Note that if you have unsatisfied dependancies, the script currently does not know that, nor give any useful output to you, so keep an eye out for that. Overall, errors are unforgiving - things must be **perfect** to function correctly.
+Note that if you have unsatisfied dependancies, the script will proceed without that file and any dependant files. Overall, errors are unforgiving - things must be **perfect** to function correctly.
 
-Also, to elaborate on the COMMON field, it is subjective. For example, 'Andesite' could just as easily have been 'Stone (Andesite)'. Up to you, just keep it consistant.
+Also, to elaborate on the **COMMON** field, it is subjective. For example, 'Andesite' could just as easily have been 'Stone (Andesite)'. Up to you, just keep it consistant.

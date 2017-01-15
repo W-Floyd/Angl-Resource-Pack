@@ -957,9 +957,6 @@ __unchanged_both="${__tmp_dir}/unchanged_both"
 touch "${__unchanged_both}"
 sort "${__unchanged_source}" "${__unchanged_xml}" | uniq > "${__unchanged_both}"
 
-# Get into the xml directory
-__pushd ./src/xml/
-
 # TODO - Make a more efficient method of doing this
 
 ################################################################
@@ -980,13 +977,50 @@ __pushd ./src/xml/
 __list_file_proc="${__tmp_dir}/listing_processing"
 touch "${__list_file_proc}"
 
+__all_deps="${__tmp_dir}/all_deps"
+touch "${__all_deps}"
+
+__check_list="${__tmp_dir}/check_list"
+touch "${__check_list}"
+
 __pushd "${__dep_list_folder}"
 
 while read -r __changed; do
-    grep -rlx "${__changed}" "./" >> "${__list_file_proc}"
+    grep -rlx "${__changed}" >> "${__list_file_proc}"
 done < "${__changed_both}"
 
+find . -type f -exec cat {} + | sort | uniq > "${__all_deps}"
+
 __popd
+
+grep -Fxvf "${__list_file}" "${__all_deps}" > "${__check_list}"
+touch "${__check_list}_"
+
+__pushd ./src
+
+while read __file; do
+    if ! [ -e "${__file}" ]; then
+        echo "${__file}" >> "${__check_list}_"
+    fi
+done < "${__check_list}"
+
+mv "${__check_list}_" "${__check_list}"
+touch "${__check_list}_"
+
+__pushd "${__dep_list_folder}"
+
+while read __file; do
+    grep -rlx "${__file}" >> "${__check_list}_"
+done < "${__check_list}"
+
+__popd
+
+sort "${__check_list}_" | uniq > "${__check_list}"
+rm "${__check_list}_"
+
+__popd
+
+cat "${__check_list}" >> "${__list_file_proc}"
 
 cp "${__list_file_proc}" "${__list_file_proc}_original"
 
@@ -1047,13 +1081,6 @@ sort "${__render_list}" | uniq > "${__render_list}_"
 mv "${__render_list}_" "${__render_list}"
 
 cp "${__render_list}" "${__render_list}_backup"
-
-# Go back to the regular directory
-__popd
-
-# sort and uniq render list
-sort "${__render_list}" | uniq > "${__render_list}_"
-mv "${__render_list}_" "${__render_list}"
 
 __time "Checking for items to re/process" end
 

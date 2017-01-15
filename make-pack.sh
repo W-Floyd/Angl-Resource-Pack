@@ -2,6 +2,7 @@
 
 __sizes=''
 __verbose='0'
+__very_verbose_pack='0'
 __install='0'
 __mobile='0'
 __quick='1'
@@ -19,6 +20,7 @@ important.
 Options:
   -h  --help  -?        This help message
   -v  --verbose         Be verbose
+  -vv --very-verbose    Be very verbose
   -i  --install         Install or update .minecraft folder copy
   -m  --mobile          Make mobile resource pack as well
   -s  --slow            Use Inkscape instead of rsvg-convert
@@ -47,6 +49,11 @@ while ! [ "${#}" = '0' ]; do
             __verbose='1'
             ;;
 
+        "-vv" | "--very-verbose")
+            __verbose='1'
+            __very_verbose_pack='1'
+            ;;
+
         "-i" | "--install")
             __install='1'
             ;;
@@ -61,7 +68,6 @@ while ! [ "${#}" = '0' ]; do
 
         "-t" | "--time")
             __time='1'
-            __verbose='1'
             ;;
 
         "-d" | "--debug")
@@ -118,7 +124,7 @@ if [ "${__debug}" = '1' ]; then
     __options="${__options} -d"
 fi
 
-if [ "${__verbose}" = '1' ]; then
+if [ "${__very_verbose_pack}" = '1' ]; then
     ./render.sh ${__options} -v -p "${1}"
 else
     ./render.sh ${__options} -p "${1}" &> /dev/null
@@ -154,12 +160,15 @@ fi
 
 }
 
+__loop () {
 for __size in ${__sizes}; do
 
     __packfile="$(./render.sh --name-only "${__size}")"
 
     if [ "${__time}" = '1' ]; then
 
+        echo
+        echo
         time __render_and_pack "${__size}" "${__packfile}"
 
     else
@@ -181,5 +190,20 @@ for __size in ${__sizes}; do
     fi
 
 done
+}
+
+__time "Rendered" start
+
+if [ "${__verbose}" = '1' ]; then
+
+    __loop
+
+else
+
+    __loop &> /dev/null
+
+fi
+
+__time "Rendered" end
 
 exit

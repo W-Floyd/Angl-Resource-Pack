@@ -588,11 +588,11 @@ md5sum -c "${1}" > "${2}"
 
 __pushd () {
 if [ -d "${1}" ]; then
-if [ "${__very_verbose}" = 1 ]; then
-    pushd "${1}"
-else
-    pushd "${1}" 1> /dev/null
-fi
+    if [ "${__very_verbose}" = 1 ]; then
+        pushd "${1}"
+    else
+        pushd "${1}" 1> /dev/null
+    fi
 else
     echo "Directory \"${1}\" does not exist!"
     exit 2
@@ -652,21 +652,21 @@ elif [ "${2}" = 'end' ]; then
     export "__function_end_time${__message}"="$(date +%s.%N)"
 fi
 
-if [ "${__name_only}" = '0' ] && [ "${__time}" = '1' ]; then
-if [ -z "${2}" ]; then
-    echo "No input to __time function, disabling timer."
-    __time='0'
-else
+if ! [ "${__name_only}" = '1' ] && [ "${__time}" = '1' ]; then
+    if [ -z "${2}" ]; then
+        echo "No input to __time function, disabling timer."
+        __time='0'
+    else
 
-if [ "${2}" = 'end' ]; then
-    echo
-    echo "Function \"${1}\" completed in $(echo "$(eval 'echo '"\$__function_end_time${__message}"'')-$(eval 'echo '"\$__function_start_time${__message}"'')" | bc) seconds"
-elif ! [ "${2}" = 'start' ]; then
-    echo "Invalid input to __time, disabling timer."
-    __time='0'
-fi
+        if [ "${2}" = 'end' ]; then
+            echo
+            echo "${1} in $(echo "$(eval 'echo '"\$__function_end_time${__message}"'')-$(eval 'echo '"\$__function_start_time${__message}"'')" | bc) seconds"
+        elif ! [ "${2}" = 'start' ]; then
+            echo "Invalid input to __time, disabling timer."
+            __time='0'
+        fi
 
-fi
+    fi
 fi
 }
 
