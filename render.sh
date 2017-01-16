@@ -51,6 +51,11 @@ Options:
 "
 }
 
+__start_debugging () {
+    PS4='Line ${LINENO}: '
+    set -x
+}
+
 ###############################################################
 # Read options
 __time "Reading options" start
@@ -116,7 +121,7 @@ while ! [ "${#}" = '0' ]; do
 # If we're supposed to be in debugging mode and be very verbose
                     if [ "${__debug}" = '1' ]; then
                         if [ "${__very_verbose}" = '1' ]; then
-                            set -x
+                            __start_debugging
                         fi
                     fi
                     ;;
@@ -134,7 +139,7 @@ while ! [ "${#}" = '0' ]; do
 # If we're supposed to be in debugging mode and be very verbose
                     if [ "${__debug}" = '1' ]; then
                         if [ "${__very_verbose}" = '1' ]; then
-                            set -x
+                            __start_debugging
                         fi
                     fi
                     ;;
@@ -198,9 +203,7 @@ while ! [ "${#}" = '0' ]; do
 done
 fi
 
-
 __time "Reading options" end
-
 
 __time "Setting variables" start
 
