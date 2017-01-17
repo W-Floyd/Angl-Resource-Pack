@@ -1200,11 +1200,11 @@ while [ -s "${__render_list}" ]; do
 
                 __config_isolated_dir="${__isolated_dir}/${__render_num}"
 
-                mkdir -p "${__config_isolated_dir}"
+#                mkdir -p "${__config_isolated_dir}"
 
-                cp -r ./ "${__config_isolated_dir}"
+#                cp -r ./ "${__config_isolated_dir}"
 
-                __pushd "${__config_isolated_dir}"
+#                __pushd "${__config_isolated_dir}"
 
 # copy the config script out so we can use it
                 cp "${__config_script}" ./
@@ -1216,9 +1216,9 @@ while [ -s "${__render_list}" ]; do
 # remove the script now we're done with it
                 rm "$(basename "${__config_script}")"
 
-                __popd
+#                __popd
 
-                cp "${__config_isolated_dir}/${__orig_config_name}" "${__orig_config}"
+#                cp "${__config_isolated_dir}/${__orig_config_name}" "${__orig_config}"
 
             fi
 
