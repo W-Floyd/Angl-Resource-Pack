@@ -7,6 +7,7 @@ __install='0'
 __mobile='0'
 __quick='1'
 __time='0'
+__force='0'
 __debug='0'
 
 # Print help
@@ -74,6 +75,10 @@ while ! [ "${#}" = '0' ]; do
             __debug='1'
             ;;
 
+        "-f" | "--force")
+            __force='1'
+            ;;
+
         [0-9]*)
             __sizes="${__sizes}
 ${1}"
@@ -122,6 +127,10 @@ fi
 
 if [ "${__debug}" = '1' ]; then
     __options="${__options} -d"
+fi
+
+if [ "${__force}" = '1' ]; then
+    __options="${__options} -f"
 fi
 
 if [ "${__very_verbose_pack}" = '1' ]; then

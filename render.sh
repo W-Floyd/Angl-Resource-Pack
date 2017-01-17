@@ -58,7 +58,7 @@ __start_debugging () {
 
 ###############################################################
 # Read options
-__time "Reading options" start
+__time "Read options" start
 ###############################################################
 
 # If there are are options,
@@ -203,9 +203,9 @@ while ! [ "${#}" = '0' ]; do
 done
 fi
 
-__time "Reading options" end
+__time "Read options" end
 
-__time "Setting variables" start
+__time "Set variables" start
 
 ###############################################################
 # Check software deps
@@ -301,13 +301,13 @@ if [ "${__name_only}" = '1' ]; then
 # exit the name only if statement
 fi
 
-__time "Setting variables" end
+__time "Set variables" end
 
 ###############################################################
 # If not only doing xml
 if [ "${__xml_only}" = '0' ]; then
 
-__time "Setting up folders" start
+__time "Set up folders" start
 
 ###############################################################
 # Announce size
@@ -367,7 +367,7 @@ else
     mkdir -p "${__pack}/xml"
 fi
 
-__time "Setting up folders" end
+__time "Set up folders" end
 
 # End conditional if only doing xml processing
 fi
@@ -376,7 +376,7 @@ fi
 # Split XML
 ###############################################################
 
-__time "Splitting XML" start
+__time "Split XML" start
 
 __tsort_file='tsort'
 
@@ -483,7 +483,7 @@ fi
 # Move xml into src now, so it can be used later
 mv "${__xml_current}" './src/xml/'
 
-__time "Splitting XML" end
+__time "Split XML" end
 
 ###############################################################
 # Inherit deps and cleanup
@@ -507,7 +507,7 @@ __popd
 # If we're told not to re-use xml, then
 if [ "${__re_use_xml}" = '0' ]; then
 
-__time "Inheriting and creating dependencies" start
+__time "Inherited and created dependencies" start
 
 if [ -e "${__dep_list_tsort}" ]; then
     rm "${__dep_list_tsort}"
@@ -607,7 +607,7 @@ mv "${__cleanup_all}_" "${__cleanup_all}"
 # Go back to the regular directory
 __popd
 
-__time "Inheriting and creating dependencies" end
+__time "Inherited and created dependencies" end
 
 # Else, if we're supposed to re-use xml files
 else
@@ -627,7 +627,7 @@ if [ "${__xml_only}" = '0' ]; then
 __announce "Listing new and matching XML entries."
 ###############################################################
 
-__time "Listing new and matching XML entries" start
+__time "Listed new and matching XML entries" start
 
 # This is where all new xml files are listed
 __new_xml_list="${__tmp_dir}/xml_list_new"
@@ -672,14 +672,14 @@ grep -Fxvf "${__old_xml_list}" "${__new_xml_list}" > "${__new_split_xml_list}"
 grep -Fxvf "${__new_xml_list}" "${__old_xml_list}" > "${__old_split_xml_list}"
 grep -Fxf "${__old_xml_list}" "${__new_xml_list}" > "${__shared_xml_list}"
 
-__time "Listing new and matching XML entries" end
+__time "Listed new and matching XML entries" end
 
 ###############################################################
 # Check changes in XML files
 __announce "Checking changes in XML files."
 ###############################################################
 
-__time "Checking changes in XML files" start
+__time "Checked changes in XML files" start
 
 # Where all new xml files are hashed to
 __new_hashes="${__tmp_dir}/new_hashes_xml"
@@ -715,7 +715,7 @@ __hash_folder "${__old_hashes}"
 # Get back to main directory
 __popd
 
-__time "Checking hash changes" start
+__time "Checked hash changes" start
 
 if ! [ "$(md5sum < "${__new_hashes}")" = "$(md5sum < "${__old_hashes}")" ]; then
 
@@ -753,16 +753,16 @@ else
 
 fi
 
-__time "Checking hash changes" end
+__time "Checked hash changes" end
 
-__time "Checking changes in XML files" end
+__time "Checked changes in XML files" end
 
 ###############################################################
 # List new and matching source files
 __announce "Listing new and matching source files."
 ###############################################################
 
-__time "Listing new and matching source files" start
+__time "Listed new and matching source files" start
 
 # This is where all new source files are listed
 __new_source_list="${__tmp_dir}/source_list_new"
@@ -807,14 +807,14 @@ grep -Fxvf "${__old_source_list}" "${__new_source_list}" > "${__new_split_source
 grep -Fxvf "${__new_source_list}" "${__old_source_list}" > "${__old_split_source_list}"
 grep -Fxf "${__old_source_list}" "${__new_source_list}" > "${__shared_source_list}"
 
-__time "Listing new and matching source files" end
+__time "Listed new and matching source files" end
 
 ###############################################################
 # Check changes in source files
 __announce "Checking changes in source files."
 ###############################################################
 
-__time "Checking changes in source files" start
+__time "Checked for changes in source files" start
 
 # Where new source files are hashed to
 __source_hash_new="${__tmp_dir}/new_hashes_source"
@@ -893,7 +893,7 @@ else
 
 fi
 
-__time "Checking changes in source files" end
+__time "Checked for changes in source files" end
 
 ###############################################################
 # Before we go on, let's recap. These are the files we want
@@ -932,7 +932,7 @@ __time "Checking changes in source files" end
 __announce "Checking for items to re/process."
 ###############################################################
 
-__time "Checking for items to re/process" start
+__time "Checked for items to re/process" start
 
 # Where we'll start putting new work in, will eventually be
 # renamed to regular
@@ -1109,7 +1109,7 @@ mv "${__render_list}_" "${__render_list}"
 
 cp "${__render_list}" "${__render_list}_backup"
 
-__time "Checking for items to re/process" end
+__time "Checked for items to re/process" end
 
 ###############################################################
 # Copy all source, xml and conf scripts
@@ -1261,7 +1261,7 @@ __announce "Rendered ${__size}px in $((__end_time-__start_time)) seconds"
 __announce "Making cleaned folder."
 ###############################################################
 
-__time "Making cleaned folder" start
+__time "Made cleaned folder" start
 
 sed -i '/^$/d' "${__cleanup_all}"
 
@@ -1295,7 +1295,7 @@ rm -r ./conf
 # get back to the right directory
 __popd
 
-__time "Making cleaned folder" end
+__time "Made cleaned folder" end
 
 ###############################################################
 # Make mobile pack if asked to
