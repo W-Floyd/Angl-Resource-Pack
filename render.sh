@@ -1126,6 +1126,10 @@ mv "${__pack_new}" "${__pack}"
 __announce "Starting to render."
 ###############################################################
 
+__isolated_dir="${__tmp_dir}/isolated"
+
+__render_num='0'
+
 __time "Rendered" start
 
 __start_time="$(date +%s)"
@@ -1138,6 +1142,9 @@ while [ -s "${__render_list}" ]; do
 
 # set the original name of the config file
     __orig_config="$(head -n 1 "${__render_list}")"
+
+# remove the item from the render list
+    sed "\|^${__orig_config}$|d" "${__render_list}" -i
 
     __orig_config_name="${__orig_config//.\//}"
 
@@ -1189,6 +1196,16 @@ while [ -s "${__render_list}" ]; do
 # announce that we are processing the given config
                 __announce "Processing \"${__config}\""
 
+                __render_num="$(echo "${__render_num}+1" | bc)"
+
+                __config_isolated_dir="${__isolated_dir}/${__render_num}"
+
+                mkdir -p "${__config_isolated_dir}"
+
+                cp -r ./ "${__config_isolated_dir}"
+
+                __pushd "${__config_isolated_dir}"
+
 # copy the config script out so we can use it
                 cp "${__config_script}" ./
 
@@ -1198,6 +1215,10 @@ while [ -s "${__render_list}" ]; do
 
 # remove the script now we're done with it
                 rm "$(basename "${__config_script}")"
+
+                __popd
+
+                cp "${__config_isolated_dir}/${__orig_config_name}" "${__orig_config}"
 
             fi
 
@@ -1212,9 +1233,6 @@ while [ -s "${__render_list}" ]; do
 
 # end loop to process the top item on the render list
     fi
-
-# remove the top item from the render list
-    sed -i '1d' "${__render_list}"
 
 # finish render loop
 done
