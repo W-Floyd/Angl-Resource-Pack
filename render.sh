@@ -994,7 +994,9 @@ __pushd "${__dep_list_folder}"
 
 # List files that depend on changed files
 while read -r __changed; do
-    grep -rlx "${__changed}" >> "${__list_file_proc}"
+    grep -rlx "${__changed}" | while read __file; do
+        echo "./${__file}" >> "${__list_file_proc}"
+    done
 done < "${__changed_both}"
 
 # List all deps
@@ -1025,7 +1027,9 @@ __pushd "${__dep_list_folder}"
 
 # List any files that depend on the check list
 while read __file; do
-    echo "./$(grep -rlx "${__file}")" >> "${__check_list}_"
+    grep -rlx "${__file}" | while read __dep; do
+        echo "./${__dep}" >> "${__check_list}_"
+    done
 done < "${__check_list}"
 
 # Get back to source directory
@@ -1058,8 +1062,8 @@ while [ -s "${__list_file_proc}" ]; do
 
 # ensure the old file does not exist, and make sure to be
 # re/rendered
-    if [ -e "${__working_dir}/${__pack}/${__xml}" ]; then
-        rm "${__working_dir}/${__pack}/${__xml}"
+    if [ -e "${__working_dir}/${__pack}/${__xml_name}" ]; then
+        rm "${__working_dir}/${__pack}/${__xml_name}"
     fi
     echo "${__xml}" >> "${__render_list}"
 
