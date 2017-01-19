@@ -271,6 +271,11 @@ __tmp_dir="/tmp/texpack${__pid}"
 # Location of catalogue file, just to be pedantic
 __catalogue='catalogue.xml'
 
+if ! [ -e "${__catalogue}" ]; then
+    echo "Missing catalogue, aborting."
+    exit 1
+fi
+
 # Rendered folder name
 __pack="${__name}-${__size}px"
 
