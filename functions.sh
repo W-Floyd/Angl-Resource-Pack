@@ -55,7 +55,7 @@ if [ -z "${__quick}" ]; then
     __quick='1'
     echo "__quick has not been set correctly. Defaulting to rsvg-convert."
 fi
-__dpi="$(echo "(90*${1})/128" | bc -l | rev | sed 's/0*//' | rev)"
+__dpi="$(echo "(96*${1})/128" | bc -l | rev | sed 's/0*//' | rev)"
 if [ "${__quick}" = '1' ]; then
 # GOD awful hack to catch svg size, TODO
 # FIX THIS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
