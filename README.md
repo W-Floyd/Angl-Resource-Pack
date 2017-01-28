@@ -2,6 +2,9 @@
 ##An open-source vector based Minecraft resource pack.
 ### This is a WIP, *many* textures have yet to be added, but the script system is (mostly?) done
 ***
+
+Currently on hold - I need to learn (and am attempting to learn) a real programming language (C++), then I shall transition to a separate build tool, so others can effectively use it.
+***
 If you just want to download the resource pack, look here: https://github.com/W-Floyd/Angl-Resource-Pack-Export
 
 ***
