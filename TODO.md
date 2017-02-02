@@ -4,6 +4,7 @@
 
 ## Render script
 Change appropriate functions over to comm, instead of grep  
+Rename CONFIG field to SCRIPT field.
 
 ***
 
