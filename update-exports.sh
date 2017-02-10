@@ -3,6 +3,9 @@
 __sizes='32 64 128 256 512'
 __verbose='0'
 
+__smelt_functions_bin='/usr/share/smelt/smelt_functions.sh'
+__smelt_render_bin='/usr/share/smelt/smelt_render.sh'
+
 # Print help
 __usage () {
 echo "update-exports.sh <OPTIONS>
@@ -15,9 +18,6 @@ Options:
   -v  --verbose         Be verbose\
 "
 }
-
-# get functions from file
-source functions.sh
 
 # If there are are options,
 if ! [ "${#}" = 0 ]; then
@@ -51,22 +51,36 @@ done
 
 fi
 
+# get functions from file
+source "${__smelt_functions_bin}" &> /dev/null || { echo "Failed to load functions '${__smelt_functions_bin}'"; exit 1; }
+
+if ! [ -e 'config.sh' ]; then
+    __warn "No config file was found, using default values"
+else
+    source 'config.sh' || __error "Config file has an error."
+fi
+
 if ! [ -d '../Angl-Resource-Pack-Export' ]; then
-    echo "Export dir does not exist."
-    exit 1
+    __error "Export dir does not exist"
 fi
 
 __date="$(date -u +%Y-%m-%d_%H-%M-%S)"
 
 if [ "${__verbose}" = '1' ]; then
-    ./make-pack.sh -m -v ${__sizes}
+    smelt -m -v ${__sizes}
 else
-    ./make-pack.sh -m ${__sizes}
+    smelt -m ${__sizes}
 fi
+
+__pushd ../Angl-Resource-Pack-Export
+
+git pull
+
+__popd
 
 for __size in ${__sizes}; do
 
-    __name="$(./render.sh -n "${__size}")"
+    __name="$("${__smelt_render_bin}" -n "${__size}")"
 
     __file="${__name}.zip"
 
