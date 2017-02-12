@@ -6,8 +6,12 @@ compgen -A variable > /tmp/tmpvars
 
 __name='Angl'
 __tmp_dir="$(pwd)/tmp/${__pid}"
-__catalogue='catalogue.xml'
+#__catalogue='catalogue.xml'
 __smelt_make_mobile_bin='./convert_to_mobile.sh'
+
+if [ -z "${__quick}" ]; then
+    __quick='1'
+fi
 
 ################################################################
 # Stop customizing from here
