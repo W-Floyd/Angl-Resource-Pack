@@ -47,7 +47,7 @@ First, an explaination of the syntax in use here:
 
 ***
 
-So, we've added an antry that looks like:
+So, we've added an entry that looks like:
 
 ```
 	<ITEM>
@@ -66,10 +66,10 @@ The script basic_block.sh saves us re-writing a script for each file. There are 
 
 All being well in the world, this should be ready for rendering.
 
-So, run './make-pack.sh 32', and the new texture should be found, rendered and packaged with the others.
+So, run `smelt`, and the new texture should be found, rendered and packaged with the others.
 
 ***
 
 Note that if you have unsatisfied dependancies, the script will proceed without that file and any dependant files. Overall, errors are unforgiving - things must be **perfect** to function correctly.
 
-Also, to elaborate on the **COMMON** field, it is subjective. For example, 'Andesite' could just as easily have been 'Stone (Andesite)'. Up to you, just keep it consistant.
+Also, to elaborate on the **COMMON** field, it is subjective. For example, 'Andesite' could just as easily have been 'Stone (Andesite)'. Up to you, just keep it consistant so grouping works.
