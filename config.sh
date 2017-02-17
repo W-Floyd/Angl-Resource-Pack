@@ -5,9 +5,7 @@ compgen -A variable > /tmp/tmpvars
 ################################################################
 
 __name='Angl'
-__tmp_dir="$(pwd)/tmp/${__pid}"
 __smelt_make_mobile_bin='./convert_to_mobile.sh'
-
 __quick='1'
 
 ################################################################
