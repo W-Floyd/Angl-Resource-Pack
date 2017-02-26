@@ -15,10 +15,11 @@ Copy an entry from an existing texture similar to your own. I *HIGHLY* recommend
 ```
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>dirt</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES>/IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
 		<COMMON>Dirt</COMMON>
@@ -39,6 +40,8 @@ First, an explaination of the syntax in use here:
 
 **KEEP** describes whether the produced file is intended for inclusion in the final resource pack. YES or NO answer. So if you are processing a working only file (an overlay, for instance), this is set to NO. Otherwise, YES.
 
+**IMAGE** describes whether the produced file is an image or not, for use in rescaling from a large size.
+
 **DEPENDS** describes any files this file **directly** relies on. For instance, if your script pulls in a file derived from wool, the colour file, nor wool overlay are required, only the directly used file. The render script extrapolates this information for use, so there is no need to do it ourselves. It **shouldn't** break things, but it's bad form, and not tested.
 
 **CLEANUP** describes the source files to delete upon completion of the resource pack. Again, formatted relative to the top folder of the resource pack. For images composed entirely from pre-rendered images, this will be blank.
@@ -52,7 +55,7 @@ So, we've added an entry that looks like:
 ```
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stone_andesite.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stone_andesite</OPTIONS>
 		<KEEP>YES</KEEP>
