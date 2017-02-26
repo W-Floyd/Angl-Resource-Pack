@@ -34,7 +34,7 @@ __quick='1'
 #
 # This option may be either on or off if all images are vector,
 # but must be on if any raster images are present.
-__vector_source='0'
+__vector_source='1'
 
 # The native size of any raster source files (GIMP, etc.)
 # Only useful when __vector_source is off. This value is ignored
