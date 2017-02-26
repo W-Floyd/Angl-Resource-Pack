@@ -5,16 +5,18 @@
 		<SIZE>128</SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./pack.svg</CLEANUP>
 		<COMMON>Pack logo</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>dirt</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
 		<COMMON>Dirt</COMMON>
@@ -25,6 +27,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/dirt.png
 		./assets/minecraft/textures/blocks/grass_side_overlay.png
 		./assets/minecraft/textures/blocks/grass_side_overlay_other.png</DEPENDS>
@@ -33,300 +36,330 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay_other.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>grass_side_overlay_other</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/grass_side_overlay_other.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>grass_side_overlay</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/grass_side_overlay.svg</CLEANUP>
 		<COMMON>Grass</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_black_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_black_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_blue_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_blue_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_brown_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_brown_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_cyan_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_cyan_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_gray_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_gray_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_green_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_green_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_light_blue_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_light_blue_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_lime_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_lime_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_magenta_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_magenta_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_orange_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_orange_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_pink_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_pink_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_purple_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_purple_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_red_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_red_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_silver_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_silver_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_white_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_white_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_yellow_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_yellow_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_acacia_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_acacia_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_big_oak_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_big_oak_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_birch_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_birch</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_birch_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_jungle_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_jungle_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_oak_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_oak</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_oak_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_spruce_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_spruce_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_acacia_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_acacia_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_big_oak_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_big_oak_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_birch_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_birch</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_birch_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_jungle_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_jungle_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_oak_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_oak</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_oak_base.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_spruce_base.png</NAME>
-		<CONFIG>./conf/base_colour.sh</CONFIG>
+		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_spruce_base.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -337,6 +370,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_black_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -348,6 +382,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_blue_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -359,6 +394,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_brown_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -370,6 +406,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_cyan_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -381,6 +418,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_gray_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -392,6 +430,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_green_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -403,6 +442,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_light_blue_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -414,6 +454,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_lime_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -425,6 +466,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_magenta_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -436,6 +478,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_orange_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -447,6 +490,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_pink_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -458,6 +502,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_purple_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -469,6 +514,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_red_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -480,6 +526,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_silver_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -491,6 +538,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_white_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -502,6 +550,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_yellow_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -513,6 +562,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>log_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_acacia_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -524,6 +574,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>log_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_big_oak_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -535,6 +586,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>log_birch</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_birch_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -546,6 +598,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>log_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_jungle_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -557,6 +610,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>log_oak</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_oak_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -568,6 +622,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>log_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_spruce_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -579,6 +634,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>planks_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_acacia_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -590,6 +646,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>planks_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_big_oak_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -601,6 +658,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>planks_birch</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_birch_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -612,6 +670,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>planks_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_jungle_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -623,6 +682,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>planks_oak</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_oak_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -634,6 +694,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>planks_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_spruce_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -641,100 +702,110 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/brick.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>brick</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/brick.svg</CLEANUP>
 		<COMMON>Brick</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stone.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stone</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stone.svg</CLEANUP>
 		<COMMON>Stone</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_1.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_top_1</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_generic_top_1.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_2.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_top_2</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_generic_top_2.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_jungle_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_jungle_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_jungle_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_generic_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_birch_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_birch_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_birch_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_generic_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/planks_generic_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_generic_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>wool_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/cobblestone_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>cobblestone_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/cobblestone_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -745,6 +816,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone_overlay.png
 		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -756,6 +828,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>acacia</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
 		./colour_planks_acacia.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -767,6 +840,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>big_oak</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
 		./colour_planks_big_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -778,6 +852,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>birch</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
 		./colour_planks_birch.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -789,6 +864,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>jungle</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
 		./colour_planks_jungle.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -800,6 +876,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>oak</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
 		./colour_planks_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -811,6 +888,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>spruce</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
 		./colour_planks_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -822,6 +900,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>acacia</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png
 		./colour_log_acacia.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -833,6 +912,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>big_oak</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png
 		./colour_log_big_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -844,6 +924,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>oak</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png
 		./colour_log_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -855,6 +936,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>spruce</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png
 		./colour_log_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -866,6 +948,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_birch_overlay.png
 		./colour_log_birch.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -877,6 +960,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_jungle_overlay.png
 		./colour_log_jungle.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -884,10 +968,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bookshelf_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bookshelf_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bookshelf_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -898,6 +983,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bookshelf_overlay.png
 		./assets/minecraft/textures/blocks/planks_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -909,6 +995,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -920,6 +1007,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -931,6 +1019,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_brown.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -942,6 +1031,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_cyan.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -953,6 +1043,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_gray.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -964,6 +1055,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_green.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -975,6 +1067,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_light_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -986,6 +1079,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_lime.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -997,6 +1091,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_magenta.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1008,6 +1103,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_orange.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1019,6 +1115,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_pink.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1030,6 +1127,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_purple.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1041,6 +1139,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_red.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1052,6 +1151,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_silver.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1063,6 +1163,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_white.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1074,6 +1175,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
 		./colour_yellow.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1081,10 +1183,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>glass</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 		<COMMON>Glass</COMMON>
@@ -1095,6 +1198,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1106,6 +1210,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1117,6 +1222,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_brown.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1128,6 +1234,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_cyan.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1139,6 +1246,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_gray.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1150,6 +1258,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_green.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1161,6 +1270,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_light_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1172,6 +1282,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_lime.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1183,6 +1294,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_magenta.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1194,6 +1306,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_orange.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1205,6 +1318,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_pink.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1216,6 +1330,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_purple.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1227,6 +1342,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_red.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1238,6 +1354,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_silver.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1249,6 +1366,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_white.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1260,6 +1378,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_yellow.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1271,6 +1390,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>acacia</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_top_1.png
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_acacia.png
@@ -1284,6 +1404,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>big_oak</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_top_1.png
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_big_oak.png
@@ -1297,6 +1418,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>birch</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_top_1.png
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_birch.png
@@ -1310,6 +1432,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>jungle</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_top_1.png
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_jungle.png
@@ -1323,6 +1446,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>oak</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_top_1.png
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_oak.png
@@ -1336,6 +1460,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>spruce</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_top_1.png
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_spruce.png
@@ -1345,10 +1470,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>glass_pane_top</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/glass_pane_top.svg</CLEANUP>
 		<COMMON>Glass</COMMON>
@@ -1359,6 +1485,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1370,6 +1497,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1381,6 +1509,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_brown.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1392,6 +1521,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_cyan.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1403,6 +1533,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_gray.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1414,6 +1545,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_green.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1425,6 +1557,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_light_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1436,6 +1569,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_lime.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1447,6 +1581,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_magenta.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1458,6 +1593,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_orange.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1469,6 +1605,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_pink.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1480,6 +1617,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_purple.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1491,6 +1629,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_red.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1502,6 +1641,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_silver.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1513,6 +1653,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_white.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1524,6 +1665,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_yellow.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1535,6 +1677,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_overlay.png
 		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1542,10 +1685,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1556,6 +1700,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png
 		./assets/minecraft/textures/blocks/stonebrick.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1563,10 +1708,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_mossy_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1577,6 +1723,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png
 		./assets/minecraft/textures/blocks/stonebrick.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1584,30 +1731,33 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_cracked_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_top.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>grass_top</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/grass_top.svg</CLEANUP>
 		<COMMON>Grass</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/ladder_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>ladder_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/ladder_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1618,6 +1768,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_oak.png
 		./assets/minecraft/textures/blocks/ladder_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1625,30 +1776,33 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/tallgrass.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>tallgrass</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/tallgrass.svg</CLEANUP>
 		<COMMON>Tallgrass</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sand_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/sand_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand_colour.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sand_colour</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/sand_colour.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1659,6 +1813,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/sand_colour.png
 		./assets/minecraft/textures/blocks/sand_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1666,10 +1821,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/red_sand_colour.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>red_sand_colour</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/red_sand_colour.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1680,6 +1836,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/red_sand_colour.png
 		./assets/minecraft/textures/blocks/sand_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1687,10 +1844,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/coal_ore_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>coal_ore_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/coal_ore_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1701,6 +1859,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
 		./assets/minecraft/textures/blocks/coal_ore_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1708,20 +1867,22 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_covers</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_wood_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_wood_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_wood_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1732,6 +1893,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/bed_wood_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1743,6 +1905,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_wood.png
 		./assets/minecraft/textures/blocks/bed_covers.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1754,6 +1917,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_end</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
@@ -1764,6 +1928,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_side</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
@@ -1774,6 +1939,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_top</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
@@ -1784,6 +1950,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_side</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
@@ -1794,6 +1961,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_top</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
@@ -1804,36 +1972,40 @@
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_end</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_oak.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>leaves_oak</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/leaves_oak.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_acacia.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>leaves_acacia</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/leaves_acacia.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./noise.png</NAME>
-		<CONFIG>./conf/any_texture.sh</CONFIG>
+		<CONFIG>./conf/vector_any_texture.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>noise</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./noise.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1844,26 +2016,29 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_cutout.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>torch_on_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/torch_on_cutout.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_base.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>torch_on_base</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/torch_on_base.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1874,6 +2049,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_cutout.png
 		./assets/minecraft/textures/blocks/log_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1885,6 +2061,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_base.png
 		./assets/minecraft/textures/blocks/torch_on_shaft.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -1892,20 +2069,22 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_top_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_top_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_decal.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_top_decal</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_top_decal.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1916,6 +2095,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_oak.png
 		./assets/minecraft/textures/blocks/crafting_table_top_decal.png
 		./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</DEPENDS>
@@ -1924,20 +2104,22 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_front_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_front_overlay.svg</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_decal.png</NAME>
-		<CONFIG>./conf/basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_front_decal</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_front_decal.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1948,6 +2130,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/crafting_table_front_decal.png
 		./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</DEPENDS>
@@ -1959,10 +2142,11 @@
 <ENTITY>
     <ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_front_cutout.png</NAME>
-		<CONFIG>./conf/basic_entity.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sign_planks_front_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/entity/sign_planks_front_cutout.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1973,6 +2157,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>planks_front</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/entity/sign_planks_front_cutout.png
 		./assets/minecraft/textures/blocks/planks_oak.png
 		./colour_planks_oak.png</DEPENDS>
@@ -1981,10 +2166,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_base_cutout.png</NAME>
-		<CONFIG>./conf/basic_entity.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sign_planks_base_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/entity/sign_planks_base_cutout.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -1995,6 +2181,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>planks_base</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/entity/sign_planks_base_cutout.png
 		./assets/minecraft/textures/blocks/planks_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
@@ -2002,10 +2189,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_log_cutout.png</NAME>
-		<CONFIG>./conf/basic_entity.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sign_log_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/entity/sign_log_cutout.svg</CLEANUP>
 		<COMMON></COMMON>
@@ -2016,6 +2204,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>log</OPTIONS>
 		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/entity/sign_log_cutout.png
 		./assets/minecraft/textures/blocks/log_oak.png
 		./colour_log_oak.png</DEPENDS>
@@ -2028,6 +2217,7 @@
 		<SIZE></SIZE>
 		<OPTIONS>all</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/entity/sign_log.png
 		./assets/minecraft/textures/entity/sign_planks_base.png
 		./assets/minecraft/textures/entity/sign_planks_front.png</DEPENDS>
@@ -2043,6 +2233,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>NO</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./pack_template.mcmeta</CLEANUP>
 		<COMMON>Pack file</COMMON>
@@ -2053,6 +2244,7 @@
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>NO</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./README_template.md</CLEANUP>
 		<COMMON>Readme</COMMON>

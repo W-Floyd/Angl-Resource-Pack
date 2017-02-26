@@ -1,6 +1,6 @@
 #!/bin/bash
 
-__render $1 pack.svg
+__vector_render $1 pack.svg
 
 convert -size ${1}x${1} canvas:white pack_.png
 
