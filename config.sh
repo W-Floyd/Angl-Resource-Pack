@@ -1,3 +1,4 @@
+#smeltconfig#
 echo 'something to use a pipe' | rev > /dev/null
 compgen -A variable > /tmp/tmpvars
 ################################################################
@@ -13,9 +14,6 @@ __sizes='32 64 128 256 512 1024'
 # Temporary directory to use. Defaults to /tmp/texpack${__pid}
 # if missing
 #__tmp_dir="$(pwd)/tmp/${__pid}"
-
-# Catalogue file to use. Defaults to catalogue.xml if missing
-__catalogue='./catalogue.xml'
 
 # Script to use for mobile conversion. No default currently,
 # will disable mobile conversion if missing
