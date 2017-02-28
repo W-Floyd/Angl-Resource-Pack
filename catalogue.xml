@@ -1787,13 +1787,13 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>./conf/sand_overlay.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>sand_overlay</OPTIONS>
+		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
-		<CLEANUP>./assets/minecraft/textures/blocks/sand_overlay.svg</CLEANUP>
+		<DEPENDS>./noise.png</DEPENDS>
+		<CLEANUP></CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
