@@ -2091,9 +2091,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top.png</NAME>
-		<CONFIG>./conf/crafting_table.sh</CONFIG>
+		<CONFIG>./conf/crafting_table_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>top</OPTIONS>
+		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_oak.png
