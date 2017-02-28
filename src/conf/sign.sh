@@ -2,7 +2,7 @@
 
 __pushd ./assets/minecraft/textures/entity/
 
-__fudge_value='0.85'
+__fudge_value='0.8'
 
 case "$2" in
     "planks_front")
@@ -30,7 +30,7 @@ esac
 
 cp "${__overlay_texture}" "./base.png"
 
-__shift "base.png" "0.1"
+__shift "base.png" "0.05"
 
 __rotate "base.png" "1"
 
