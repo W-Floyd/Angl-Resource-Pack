@@ -12,7 +12,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>dirt</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -36,7 +36,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay_other.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>grass_side_overlay_other</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -47,7 +47,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>grass_side_overlay</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -702,7 +702,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/brick.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>brick</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -713,7 +713,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stone.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stone</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -724,7 +724,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_1.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_top_1</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -735,7 +735,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_2.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_top_2</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -746,7 +746,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_jungle_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_jungle_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -757,7 +757,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -768,7 +768,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_birch_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>log_birch_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -779,7 +779,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_generic_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>planks_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -790,7 +790,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_generic_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>wool_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -801,7 +801,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/cobblestone_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>cobblestone_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -968,7 +968,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bookshelf_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bookshelf_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1183,7 +1183,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>glass</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -1470,7 +1470,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>glass_pane_top</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -1685,7 +1685,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1708,7 +1708,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_mossy_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1731,7 +1731,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_cracked_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1742,7 +1742,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_top.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>grass_top</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -1753,7 +1753,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/ladder_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>ladder_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1776,7 +1776,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/tallgrass.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>tallgrass</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -1798,7 +1798,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand_colour.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sand_colour</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1821,7 +1821,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/red_sand_colour.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>red_sand_colour</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1844,7 +1844,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/coal_ore_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>coal_ore_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1867,7 +1867,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_covers</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1878,7 +1878,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_wood_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_wood_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -1979,7 +1979,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_oak.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>leaves_oak</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -1990,7 +1990,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_acacia.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>leaves_acacia</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -2001,7 +2001,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./noise.png</NAME>
-		<CONFIG>./conf/vector_any_texture.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_any_texture.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>noise</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2023,7 +2023,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_cutout.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>torch_on_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2034,7 +2034,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_base.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>torch_on_base</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2069,7 +2069,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_top_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2080,7 +2080,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_decal.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_top_decal</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2104,7 +2104,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_front_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2115,7 +2115,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_decal.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_front_decal</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2139,7 +2139,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_side_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2150,7 +2150,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_decal.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_side_decal</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2185,7 +2185,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/clay_colour.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>clay_colour</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2208,7 +2208,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/redstone_ore_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>redstone_ore_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2234,7 +2234,7 @@
 <ENTITY>
     <ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_front_cutout.png</NAME>
-		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sign_planks_front_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2258,7 +2258,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_base_cutout.png</NAME>
-		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sign_planks_base_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
@@ -2281,7 +2281,7 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_log_cutout.png</NAME>
-		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>sign_log_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
