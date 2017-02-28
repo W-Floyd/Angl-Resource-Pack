@@ -2171,6 +2171,29 @@
 		<CLEANUP></CLEANUP>
 		<COMMON>Clay</COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/redstone_ore_overlay.png</NAME>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>redstone_ore_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/redstone_ore_overlay.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/redstone_ore.png</NAME>
+		<CONFIG>./conf/redstone_ore.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
+		./assets/minecraft/textures/blocks/redstone_ore_overlay.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
 </BLOCK>
 
 <ENTITY>
