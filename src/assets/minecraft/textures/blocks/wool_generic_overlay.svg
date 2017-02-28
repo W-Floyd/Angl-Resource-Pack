@@ -15,7 +15,7 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.0 r"
+   inkscape:version="0.92.1 r"
    sodipodi:docname="wool_generic_overlay.svg">
   <defs
      id="defs4">
@@ -4281,8 +4281,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.919596"
-     inkscape:cx="-84.941869"
-     inkscape:cy="45.593229"
+     inkscape:cx="79.904794"
+     inkscape:cy="42.827608"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -4311,7 +4311,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -4712,7 +4712,7 @@
     </g>
     <g
        id="g5004"
-       style="opacity:0.653"
+       style="opacity:0.5"
        transform="translate(154)">
       <g
          transform="translate(-154)"
@@ -4720,10 +4720,12 @@
          id="g9089">
         <g
            id="g8246"
-           transform="matrix(0.5,0,0,1,44,0)">
+           transform="matrix(0.5,0,0,1,44,0)"
+           style="">
           <g
              transform="translate(-88)"
-             id="g8242">
+             id="g8242"
+             style="">
             <path
                style="opacity:0.18900003;fill:url(#linearGradient8216);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 0,988.36216 v -32 h 64 v 32 z"
@@ -4740,7 +4742,8 @@
              style="opacity:0.20800003"
              id="g8194">
             <g
-               id="g8096">
+               id="g8096"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011"
@@ -4754,7 +4757,8 @@
             </g>
             <g
                id="g8096-0"
-               transform="translate(16)">
+               transform="translate(16)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-1"
@@ -4768,7 +4772,8 @@
             </g>
             <g
                id="g8096-2"
-               transform="translate(32)">
+               transform="translate(32)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-6"
@@ -4782,7 +4787,8 @@
             </g>
             <g
                id="g8096-02"
-               transform="translate(48)">
+               transform="translate(48)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-9"
@@ -4798,10 +4804,12 @@
         </g>
         <g
            id="g8246-7"
-           transform="matrix(0.5,0,0,1,76,0)">
+           transform="matrix(0.5,0,0,1,76,0)"
+           style="">
           <g
              transform="translate(-88)"
-             id="g8242-0">
+             id="g8242-0"
+             style="">
             <path
                style="opacity:0.18900003;fill:url(#linearGradient9069);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 0,988.36216 v -32 h 64 v 32 z"
@@ -4818,7 +4826,8 @@
              style="opacity:0.20800003"
              id="g8194-3">
             <g
-               id="g8096-6">
+               id="g8096-6"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-3"
@@ -4832,7 +4841,8 @@
             </g>
             <g
                id="g8096-0-4"
-               transform="translate(16)">
+               transform="translate(16)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-1-3"
@@ -4846,7 +4856,8 @@
             </g>
             <g
                id="g8096-2-2"
-               transform="translate(32)">
+               transform="translate(32)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-6-5"
@@ -4860,7 +4871,8 @@
             </g>
             <g
                id="g8096-02-9"
-               transform="translate(48)">
+               transform="translate(48)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-9-0"
@@ -4881,10 +4893,12 @@
          id="g9089-6">
         <g
            id="g8246-5"
-           transform="matrix(0.5,0,0,1,44,0)">
+           transform="matrix(0.5,0,0,1,44,0)"
+           style="">
           <g
              transform="translate(-88)"
-             id="g8242-7">
+             id="g8242-7"
+             style="">
             <path
                style="opacity:0.18900003;fill:url(#linearGradient9497);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 0,988.36216 v -32 h 64 v 32 z"
@@ -4901,7 +4915,8 @@
              style="opacity:0.20800003"
              id="g8194-33">
             <g
-               id="g8096-8">
+               id="g8096-8"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-5"
@@ -4915,7 +4930,8 @@
             </g>
             <g
                id="g8096-0-8"
-               transform="translate(16)">
+               transform="translate(16)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-1-7"
@@ -4929,7 +4945,8 @@
             </g>
             <g
                id="g8096-2-3"
-               transform="translate(32)">
+               transform="translate(32)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-6-50"
@@ -4943,7 +4960,8 @@
             </g>
             <g
                id="g8096-02-4"
-               transform="translate(48)">
+               transform="translate(48)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-9-1"
@@ -4959,10 +4977,12 @@
         </g>
         <g
            id="g8246-7-3"
-           transform="matrix(0.5,0,0,1,76,0)">
+           transform="matrix(0.5,0,0,1,76,0)"
+           style="">
           <g
              transform="translate(-88)"
-             id="g8242-0-5">
+             id="g8242-0-5"
+             style="">
             <path
                style="opacity:0.18900003;fill:url(#linearGradient9517);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 0,988.36216 v -32 h 64 v 32 z"
@@ -4979,7 +4999,8 @@
              style="opacity:0.20800003"
              id="g8194-3-4">
             <g
-               id="g8096-6-1">
+               id="g8096-6-1"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-3-5"
@@ -4993,7 +5014,8 @@
             </g>
             <g
                id="g8096-0-4-8"
-               transform="translate(16)">
+               transform="translate(16)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-1-3-3"
@@ -5007,7 +5029,8 @@
             </g>
             <g
                id="g8096-2-2-6"
-               transform="translate(32)">
+               transform="translate(32)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-6-5-5"
@@ -5021,7 +5044,8 @@
             </g>
             <g
                id="g8096-02-9-9"
-               transform="translate(48)">
+               transform="translate(48)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-9-0-0"
@@ -5042,10 +5066,12 @@
          id="g9089-2">
         <g
            id="g8246-2"
-           transform="matrix(0.5,0,0,1,44,0)">
+           transform="matrix(0.5,0,0,1,44,0)"
+           style="">
           <g
              transform="translate(-88)"
-             id="g8242-8">
+             id="g8242-8"
+             style="">
             <path
                style="opacity:0.18900003;fill:url(#linearGradient5423);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 0,988.36216 v -32 h 64 v 32 z"
@@ -5062,7 +5088,8 @@
              style="opacity:0.20800003"
              id="g8194-36">
             <g
-               id="g8096-1">
+               id="g8096-1"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-2"
@@ -5076,7 +5103,8 @@
             </g>
             <g
                id="g8096-0-3"
-               transform="translate(16)">
+               transform="translate(16)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-1-1"
@@ -5090,7 +5118,8 @@
             </g>
             <g
                id="g8096-2-4"
-               transform="translate(32)">
+               transform="translate(32)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-6-7"
@@ -5104,7 +5133,8 @@
             </g>
             <g
                id="g8096-02-5"
-               transform="translate(48)">
+               transform="translate(48)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-9-03"
@@ -5120,10 +5150,12 @@
         </g>
         <g
            id="g8246-7-1"
-           transform="matrix(0.5,0,0,1,76,0)">
+           transform="matrix(0.5,0,0,1,76,0)"
+           style="">
           <g
              transform="translate(-88)"
-             id="g8242-0-0">
+             id="g8242-0-0"
+             style="">
             <path
                style="opacity:0.18900003;fill:url(#linearGradient5443);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 0,988.36216 v -32 h 64 v 32 z"
@@ -5140,7 +5172,8 @@
              style="opacity:0.20800003"
              id="g8194-3-0">
             <g
-               id="g8096-6-6">
+               id="g8096-6-6"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-3-1"
@@ -5154,7 +5187,8 @@
             </g>
             <g
                id="g8096-0-4-5"
-               transform="translate(16)">
+               transform="translate(16)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-1-3-4"
@@ -5168,7 +5202,8 @@
             </g>
             <g
                id="g8096-2-2-65"
-               transform="translate(32)">
+               transform="translate(32)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-6-5-6"
@@ -5182,7 +5217,8 @@
             </g>
             <g
                id="g8096-02-9-7"
-               transform="translate(48)">
+               transform="translate(48)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-9-0-4"
@@ -5203,10 +5239,12 @@
          id="g9089-6-2">
         <g
            id="g8246-5-5"
-           transform="matrix(0.5,0,0,1,44,0)">
+           transform="matrix(0.5,0,0,1,44,0)"
+           style="">
           <g
              transform="translate(-88)"
-             id="g8242-7-4">
+             id="g8242-7-4"
+             style="">
             <path
                style="opacity:0.18900003;fill:url(#linearGradient5463);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 0,988.36216 v -32 h 64 v 32 z"
@@ -5223,7 +5261,8 @@
              style="opacity:0.20800003"
              id="g8194-33-4">
             <g
-               id="g8096-8-3">
+               id="g8096-8-3"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-5-0"
@@ -5237,7 +5276,8 @@
             </g>
             <g
                id="g8096-0-8-8"
-               transform="translate(16)">
+               transform="translate(16)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-1-7-6"
@@ -5251,7 +5291,8 @@
             </g>
             <g
                id="g8096-2-3-8"
-               transform="translate(32)">
+               transform="translate(32)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-6-50-4"
@@ -5265,7 +5306,8 @@
             </g>
             <g
                id="g8096-02-4-1"
-               transform="translate(48)">
+               transform="translate(48)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-9-1-4"
@@ -5281,10 +5323,12 @@
         </g>
         <g
            id="g8246-7-3-2"
-           transform="matrix(0.5,0,0,1,76,0)">
+           transform="matrix(0.5,0,0,1,76,0)"
+           style="">
           <g
              transform="translate(-88)"
-             id="g8242-0-5-0">
+             id="g8242-0-5-0"
+             style="">
             <path
                style="opacity:0.18900003;fill:url(#linearGradient5483);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 0,988.36216 v -32 h 64 v 32 z"
@@ -5301,7 +5345,8 @@
              style="opacity:0.20800003"
              id="g8194-3-4-9">
             <g
-               id="g8096-6-1-2">
+               id="g8096-6-1-2"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-3-5-6"
@@ -5315,7 +5360,8 @@
             </g>
             <g
                id="g8096-0-4-8-4"
-               transform="translate(16)">
+               transform="translate(16)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-1-3-3-9"
@@ -5329,7 +5375,8 @@
             </g>
             <g
                id="g8096-2-2-6-0"
-               transform="translate(32)">
+               transform="translate(32)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-6-5-5-4"
@@ -5343,7 +5390,8 @@
             </g>
             <g
                id="g8096-02-9-9-7"
-               transform="translate(48)">
+               transform="translate(48)"
+               style="">
               <path
                  inkscape:connector-curvature="0"
                  id="path8011-9-0-0-1"
@@ -5361,9 +5409,10 @@
     </g>
     <g
        id="g4992"
-       style="opacity:0.09800002">
+       style="opacity:0.05">
       <g
-         id="g4855">
+         id="g4855"
+         style="">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 0,988.36216 v -64"
@@ -5412,7 +5461,8 @@
       </g>
       <g
          id="g4855-9"
-         transform="translate(64,64)">
+         transform="translate(64,64)"
+         style="">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 0,988.36216 v -64"
@@ -5461,7 +5511,8 @@
       </g>
       <g
          id="g4855-9-4"
-         transform="rotate(90,64.00002,988.36218)">
+         transform="rotate(90,64.00002,988.36218)"
+         style="">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 0,988.36216 v -64"
@@ -5510,7 +5561,8 @@
       </g>
       <g
          id="g4855-9-4-6"
-         transform="rotate(90,0,988.36216)">
+         transform="rotate(90,0,988.36216)"
+         style="">
         <path
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 0,988.36216 v -64"
