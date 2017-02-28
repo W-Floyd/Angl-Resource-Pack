@@ -8,7 +8,7 @@ compgen -A variable > /tmp/tmpvars
 __name='Angl'
 
 # Default render sizes
-__sizes='1 2 4 8 16 32 64 128 256 512 1024 2048 4096'
+__sizes='32 64 128 256 512 1024'
 
 # Temporary directory to use. Defaults to /tmp/texpack${__pid}
 # if missing
