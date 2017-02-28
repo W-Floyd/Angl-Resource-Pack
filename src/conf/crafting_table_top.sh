@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./assets/minecraft/textures/blocks/
+__pushd ./assets/minecraft/textures/blocks/
 
 cp ../../../../colour_planks_oak.png colour_planks_oak.png
 
@@ -10,6 +10,6 @@ __overlay crafting_table_top_.png crafting_table_top_decal.png crafting_table_to
 
 rm crafting_table_top_.png colour_planks_oak.png
 
-cd ../../../../
+__popd
 
 exit

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./assets/minecraft/textures/blocks/
+__pushd ./assets/minecraft/textures/blocks/
 
 __fade stonebrick_overlay.png stonebrick_overlay_.png 0.25
 
@@ -12,6 +12,6 @@ rm stonebrick_overlay_.png
 
 rm stonebrick_.png
 
-cd ../../../../
+__popd
 
 exit

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./assets/minecraft/textures/blocks/
+__pushd ./assets/minecraft/textures/blocks/
 
 cp ../../../../colour_planks_oak.png colour_planks_oak.png
 
@@ -12,6 +12,6 @@ rm colour_planks_oak.png
 
 rm ladder_.png
 
-cd ../../../../
+__popd
 
 exit

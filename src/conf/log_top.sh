@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./assets/minecraft/textures/blocks/
+__pushd ./assets/minecraft/textures/blocks/
 
 cp ../../../../colour_log_"$2".png colour_log_"$2".png
 cp ../../../../colour_planks_"$2".png colour_planks_"$2".png
@@ -29,6 +29,6 @@ rm __log3.png
 
 mv __log4.png log_"$2"_top.png
 
-cd ../../../../
+__popd
 
 exit
