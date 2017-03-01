@@ -8,7 +8,7 @@ Filler for date
 Filler for resolution
 ***
 
-To download the resource pack, look here: https://github.com/W-Floyd/Angl-Resource-Pack-Export
+Download: https://github.com/W-Floyd/Angl-Resource-Pack-Export
 
 ***
 
