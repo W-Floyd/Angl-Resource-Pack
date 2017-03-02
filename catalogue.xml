@@ -2666,6 +2666,19 @@
 		<CLEANUP></CLEANUP>
 		<COMMON>Ore (Redstone)</COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/iron_bars.png</NAME>
+		<CONFIG>./conf/vector_any_texture_noisify.sh</CONFIG>
+		<SIZE></SIZE>
+		<NATIVESIZE></NATIVESIZE>
+		<VARIENTS></VARIENTS>
+		<OPTIONS>./assets/minecraft/textures/blocks/iron_bars 0.125</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/iron_bars.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
 </BLOCK>
 
 <ENTITY>
@@ -2797,3 +2810,19 @@
 		<COMMON>Readme</COMMON>
 	</ITEM>
 </OTHER>
+
+<RESOURCES>
+    <ITEM>
+		<NAME>./conf/vector_any_texture_noisify.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<NATIVESIZE></NATIVESIZE>
+		<VARIENTS></VARIENTS>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./noise.png</DEPENDS>
+		<CLEANUP>./conf/vector_any_texture_noisify.sh</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+</RESOURCES>
