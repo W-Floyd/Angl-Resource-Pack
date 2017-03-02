@@ -2672,7 +2672,8 @@
 		<SIZE></SIZE>
 		<NATIVESIZE></NATIVESIZE>
 		<VARIENTS></VARIENTS>
-		<OPTIONS>./assets/minecraft/textures/blocks/iron_bars 0.125</OPTIONS>
+		<OPTIONS>./assets/minecraft/textures/blocks/iron_bars
+		0.125</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
