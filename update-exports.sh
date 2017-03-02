@@ -1,6 +1,5 @@
 #!/bin/bash
 
-__sizes='32 64 128 256 512'
 __verbose='0'
 
 __smelt_functions_bin='/usr/share/smelt/smelt_functions.sh'
@@ -59,6 +58,8 @@ if ! [ -e 'config.sh' ]; then
 else
     source 'config.sh' || __error "Config file has an error."
 fi
+
+__sizes='32 64 128 256 512'
 
 if ! [ -d '../Angl-Resource-Pack-Export' ]; then
     __error "Export dir does not exist"
