@@ -26,6 +26,20 @@
 		<COMMON>Dirt</COMMON>
 	</ITEM>
 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/grass_side_base.png</NAME>
+		<CONFIG>./conf/grass_side_base.sh</CONFIG>
+		<SIZE></SIZE>
+		<NATIVESIZE></NATIVESIZE>
+		<VARIENTS></VARIENTS>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/dirt.png
+		./assets/minecraft/textures/blocks/grass_side_overlay_other.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side.png</NAME>
 		<CONFIG>./conf/grass_side.sh</CONFIG>
 		<SIZE></SIZE>
@@ -34,9 +48,22 @@
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/dirt.png
-		./assets/minecraft/textures/blocks/grass_side_overlay.png
-		./assets/minecraft/textures/blocks/grass_side_overlay_other.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_base.png
+		./assets/minecraft/textures/blocks/grass_side_overlay.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON>Grass</COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed.png</NAME>
+		<CONFIG>./conf/grass_side_snowed.sh</CONFIG>
+		<SIZE></SIZE>
+		<NATIVESIZE></NATIVESIZE>
+		<VARIENTS></VARIENTS>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_base.png
+		./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Grass</COMMON>
 	</ITEM>
@@ -65,6 +92,34 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/grass_side_overlay.svg</CLEANUP>
 		<COMMON>Grass</COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</NAME>
+		<CONFIG>./conf/grass_side_snowed_overlay.sh</CONFIG>
+		<SIZE></SIZE>
+		<NATIVESIZE></NATIVESIZE>
+		<VARIENTS></VARIENTS>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_base.png
+		./assets/minecraft/textures/blocks/grass_side_overlay.png
+		./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</NAME>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<NATIVESIZE></NATIVESIZE>
+		<VARIENTS></VARIENTS>
+		<OPTIONS>grass_side_snowed_colour</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/grass_side_snowed_colour.svg</CLEANUP>
+		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_black_base.png</NAME>
@@ -2181,7 +2236,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
 		./assets/minecraft/textures/blocks/coal_ore_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
-		<COMMON></COMMON>
+		<COMMON>Ore (Coal)</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
@@ -2609,7 +2664,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
 		./assets/minecraft/textures/blocks/redstone_ore_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
-		<COMMON></COMMON>
+		<COMMON>Ore (Redstone)</COMMON>
 	</ITEM>
 </BLOCK>
 
