@@ -876,8 +876,7 @@
 		<OPTIONS>acacia</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./colour_planks_acacia.png</DEPENDS>
+		<DEPENDS>./colour_planks_acacia.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Planks</COMMON>
 	</ITEM>
@@ -888,8 +887,7 @@
 		<OPTIONS>big_oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./colour_planks_big_oak.png</DEPENDS>
+		<DEPENDS>./colour_planks_big_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Planks</COMMON>
 	</ITEM>
@@ -900,8 +898,7 @@
 		<OPTIONS>birch</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./colour_planks_birch.png</DEPENDS>
+		<DEPENDS>./colour_planks_birch.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Planks</COMMON>
 	</ITEM>
@@ -912,8 +909,7 @@
 		<OPTIONS>jungle</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./colour_planks_jungle.png</DEPENDS>
+		<DEPENDS>./colour_planks_jungle.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Planks</COMMON>
 	</ITEM>
@@ -924,8 +920,7 @@
 		<OPTIONS>oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./colour_planks_oak.png</DEPENDS>
+		<DEPENDS>./colour_planks_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Planks</COMMON>
 	</ITEM>
@@ -936,8 +931,7 @@
 		<OPTIONS>spruce</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./colour_planks_spruce.png</DEPENDS>
+		<DEPENDS>./colour_planks_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Planks</COMMON>
 	</ITEM>
@@ -2412,6 +2406,17 @@
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./noise.png</DEPENDS>
 		<CLEANUP>./conf/vector_any_texture_noisify.sh</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+    <ITEM>
+		<NAME>./conf/planks.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
+		<CLEANUP>./conf/planks.sh</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 </RESOURCES>
