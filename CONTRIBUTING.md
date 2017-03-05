@@ -15,11 +15,11 @@ Copy an entry from an existing texture similar to your own. I *HIGHLY* recommend
 ```
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>dirt</OPTIONS>
 		<KEEP>YES</KEEP>
-		<IMAGE>YES>/IMAGE>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
 		<COMMON>Dirt</COMMON>
@@ -32,7 +32,7 @@ First, an explaination of the syntax in use here:
 
 **NAME** describes the output file name achieved. Formatted relative to the top folder of the resource pack.
 
-**CONFIG** describes what file is used to process the file. More on this later. Also formatted relative to the top folder of the resource pack.
+**CONFIG** describes what file is used to process the file. More on this later. Also formatted relative to the top folder of the resource pack. The use of the macro %stdconf% indicates the common folder for scripts which are included with smelt. Custom scripts usually go in './conf/'.
 
 **SIZE** describes what size to process the file with. Rarely used. If blank, uses pack size. Mainly included for pack logo. Any positive integer will work.
 
@@ -55,17 +55,18 @@ So, we've added an entry that looks like:
 ```
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stone_andesite.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>stone_andesite</OPTIONS>
 		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stone_andesite.svg</CLEANUP>
 		<COMMON>Andesite</COMMON>
 	</ITEM>
 ```
 
-The script basic_block.sh saves us re-writing a script for each file. There are a lot of blocks that need no special processing, this saves us a lot of redundant work. The option given is specific to this script, and our knowlege of the use.
+The script vector\_basic\_block.sh saves us re-writing a script for each file. There are a lot of blocks that need no special processing, this saves us a lot of redundant work. The option given is specific to this script, and our knowlege of the use.
 
 All being well in the world, this should be ready for rendering.
 

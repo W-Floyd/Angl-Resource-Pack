@@ -3,7 +3,6 @@
 		<NAME>./pack.png</NAME>
 		<CONFIG>./conf/pack.sh</CONFIG>
 		<SIZE>128</SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -15,7 +14,6 @@
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>dirt</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -27,7 +25,6 @@
 		<NAME>./assets/minecraft/textures/blocks/grass_side_base.png</NAME>
 		<CONFIG>./conf/grass_side_base.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -40,7 +37,6 @@
 		<NAME>./assets/minecraft/textures/blocks/grass_side.png</NAME>
 		<CONFIG>./conf/grass_side.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -53,7 +49,6 @@
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed.png</NAME>
 		<CONFIG>./conf/grass_side_snowed.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -66,7 +61,6 @@
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay_other.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>grass_side_overlay_other</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -78,7 +72,6 @@
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>grass_side_overlay</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -90,7 +83,6 @@
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</NAME>
 		<CONFIG>./conf/grass_side_snowed_overlay.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -104,7 +96,6 @@
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>grass_side_snowed_colour</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -116,7 +107,6 @@
 		<NAME>./colour_black_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -128,7 +118,6 @@
 		<NAME>./colour_blue_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -140,7 +129,6 @@
 		<NAME>./colour_brown_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -152,7 +140,6 @@
 		<NAME>./colour_cyan_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -164,7 +151,6 @@
 		<NAME>./colour_gray_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -176,7 +162,6 @@
 		<NAME>./colour_green_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -188,7 +173,6 @@
 		<NAME>./colour_light_blue_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -200,7 +184,6 @@
 		<NAME>./colour_lime_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -212,7 +195,6 @@
 		<NAME>./colour_magenta_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -224,7 +206,6 @@
 		<NAME>./colour_orange_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -236,7 +217,6 @@
 		<NAME>./colour_pink_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -248,7 +228,6 @@
 		<NAME>./colour_purple_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -260,7 +239,6 @@
 		<NAME>./colour_red_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -272,7 +250,6 @@
 		<NAME>./colour_silver_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -284,7 +261,6 @@
 		<NAME>./colour_white_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -296,7 +272,6 @@
 		<NAME>./colour_yellow_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -308,7 +283,6 @@
 		<NAME>./colour_log_acacia_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -320,7 +294,6 @@
 		<NAME>./colour_log_big_oak_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -332,7 +305,6 @@
 		<NAME>./colour_log_birch_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_birch</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -344,7 +316,6 @@
 		<NAME>./colour_log_jungle_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -356,7 +327,6 @@
 		<NAME>./colour_log_oak_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -368,7 +338,6 @@
 		<NAME>./colour_log_spruce_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -380,7 +349,6 @@
 		<NAME>./colour_planks_acacia_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -392,7 +360,6 @@
 		<NAME>./colour_planks_big_oak_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -404,7 +371,6 @@
 		<NAME>./colour_planks_birch_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_birch</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -416,7 +382,6 @@
 		<NAME>./colour_planks_jungle_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -428,7 +393,6 @@
 		<NAME>./colour_planks_oak_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -440,7 +404,6 @@
 		<NAME>./colour_planks_spruce_base.png</NAME>
 		<CONFIG>./conf/vector_base_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -452,7 +415,6 @@
 		<NAME>./colour_black.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -465,7 +427,6 @@
 		<NAME>./colour_blue.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -478,7 +439,6 @@
 		<NAME>./colour_brown.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -491,7 +451,6 @@
 		<NAME>./colour_cyan.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -504,7 +463,6 @@
 		<NAME>./colour_gray.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -517,7 +475,6 @@
 		<NAME>./colour_green.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -530,7 +487,6 @@
 		<NAME>./colour_light_blue.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -543,7 +499,6 @@
 		<NAME>./colour_lime.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -556,7 +511,6 @@
 		<NAME>./colour_magenta.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -569,7 +523,6 @@
 		<NAME>./colour_orange.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -582,7 +535,6 @@
 		<NAME>./colour_pink.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -595,7 +547,6 @@
 		<NAME>./colour_purple.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -608,7 +559,6 @@
 		<NAME>./colour_red.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -621,7 +571,6 @@
 		<NAME>./colour_silver.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -634,7 +583,6 @@
 		<NAME>./colour_white.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -647,7 +595,6 @@
 		<NAME>./colour_yellow.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -660,7 +607,6 @@
 		<NAME>./colour_log_acacia.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -673,7 +619,6 @@
 		<NAME>./colour_log_big_oak.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -686,7 +631,6 @@
 		<NAME>./colour_log_birch.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_birch</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -699,7 +643,6 @@
 		<NAME>./colour_log_jungle.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -712,7 +655,6 @@
 		<NAME>./colour_log_oak.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -725,7 +667,6 @@
 		<NAME>./colour_log_spruce.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -738,7 +679,6 @@
 		<NAME>./colour_planks_acacia.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -751,7 +691,6 @@
 		<NAME>./colour_planks_big_oak.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -764,7 +703,6 @@
 		<NAME>./colour_planks_birch.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_birch</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -777,7 +715,6 @@
 		<NAME>./colour_planks_jungle.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -790,7 +727,6 @@
 		<NAME>./colour_planks_oak.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -803,7 +739,6 @@
 		<NAME>./colour_planks_spruce.png</NAME>
 		<CONFIG>./conf/noise_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -816,7 +751,6 @@
 		<NAME>./assets/minecraft/textures/blocks/brick.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>brick</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -828,7 +762,6 @@
 		<NAME>./assets/minecraft/textures/blocks/stone.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>stone</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -840,7 +773,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_1.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_generic_top_1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -852,7 +784,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_2.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_generic_top_2</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -864,7 +795,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_jungle_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_jungle_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -876,7 +806,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_generic_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -888,7 +817,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_birch_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log_birch_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -900,7 +828,6 @@
 		<NAME>./assets/minecraft/textures/blocks/planks_generic_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -912,7 +839,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_generic_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>wool_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -924,7 +850,6 @@
 		<NAME>./assets/minecraft/textures/blocks/cobblestone_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>cobblestone_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -936,7 +861,6 @@
 		<NAME>./assets/minecraft/textures/blocks/cobblestone.png</NAME>
 		<CONFIG>./conf/cobblestone.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -949,7 +873,6 @@
 		<NAME>./assets/minecraft/textures/blocks/planks_acacia.png</NAME>
 		<CONFIG>./conf/planks.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>acacia</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -962,7 +885,6 @@
 		<NAME>./assets/minecraft/textures/blocks/planks_big_oak.png</NAME>
 		<CONFIG>./conf/planks.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>big_oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -975,7 +897,6 @@
 		<NAME>./assets/minecraft/textures/blocks/planks_birch.png</NAME>
 		<CONFIG>./conf/planks.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>birch</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -988,7 +909,6 @@
 		<NAME>./assets/minecraft/textures/blocks/planks_jungle.png</NAME>
 		<CONFIG>./conf/planks.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>jungle</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1001,7 +921,6 @@
 		<NAME>./assets/minecraft/textures/blocks/planks_oak.png</NAME>
 		<CONFIG>./conf/planks.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1014,7 +933,6 @@
 		<NAME>./assets/minecraft/textures/blocks/planks_spruce.png</NAME>
 		<CONFIG>./conf/planks.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>spruce</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1027,7 +945,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_acacia.png</NAME>
 		<CONFIG>./conf/logs.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>acacia</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1040,7 +957,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_big_oak.png</NAME>
 		<CONFIG>./conf/logs.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>big_oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1053,7 +969,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_oak.png</NAME>
 		<CONFIG>./conf/logs.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1066,7 +981,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_spruce.png</NAME>
 		<CONFIG>./conf/logs.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>spruce</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1079,7 +993,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_birch.png</NAME>
 		<CONFIG>./conf/logs_birch.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1092,7 +1005,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_jungle.png</NAME>
 		<CONFIG>./conf/logs_jungle.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1105,7 +1017,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bookshelf_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bookshelf_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1117,7 +1028,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bookshelf.png</NAME>
 		<CONFIG>./conf/bookshelf.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1130,7 +1040,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_black.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1143,7 +1052,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_blue.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1156,7 +1064,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_brown.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1169,7 +1076,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_cyan.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1182,7 +1088,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_gray.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1195,7 +1100,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_green.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1208,7 +1112,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_light_blue.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1221,7 +1124,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_lime.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1234,7 +1136,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_magenta.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1247,7 +1148,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_orange.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1260,7 +1160,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_pink.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1273,7 +1172,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_purple.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1286,7 +1184,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_red.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1299,7 +1196,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_silver.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1312,7 +1208,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_white.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1325,7 +1220,6 @@
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_yellow.png</NAME>
 		<CONFIG>./conf/wool.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1338,7 +1232,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>glass</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1350,7 +1243,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_black.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1363,7 +1255,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_blue.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1376,7 +1267,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_brown.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1389,7 +1279,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_cyan.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1402,7 +1291,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_gray.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1415,7 +1303,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_green.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1428,7 +1315,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_light_blue.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1441,7 +1327,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_lime.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1454,7 +1339,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_magenta.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1467,7 +1351,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_orange.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1480,7 +1363,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pink.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1493,7 +1375,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_purple.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1506,7 +1387,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_red.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1519,7 +1399,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_silver.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1532,7 +1411,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_white.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1545,7 +1423,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_yellow.png</NAME>
 		<CONFIG>./conf/glass.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1558,7 +1435,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_acacia_top.png</NAME>
 		<CONFIG>./conf/log_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>acacia</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1573,7 +1449,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_big_oak_top.png</NAME>
 		<CONFIG>./conf/log_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>big_oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1588,7 +1463,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_birch_top.png</NAME>
 		<CONFIG>./conf/log_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>birch</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1603,7 +1477,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_jungle_top.png</NAME>
 		<CONFIG>./conf/log_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>jungle</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1618,7 +1491,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_oak_top.png</NAME>
 		<CONFIG>./conf/log_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1633,7 +1505,6 @@
 		<NAME>./assets/minecraft/textures/blocks/log_spruce_top.png</NAME>
 		<CONFIG>./conf/log_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>spruce</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1648,7 +1519,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>glass_pane_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1660,7 +1530,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_black.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1673,7 +1542,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_blue.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1686,7 +1554,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_brown.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1699,7 +1566,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_cyan.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1712,7 +1578,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_gray.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1725,7 +1590,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_green.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1738,7 +1602,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_light_blue.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1751,7 +1614,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_lime.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1764,7 +1626,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_magenta.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1777,7 +1638,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_orange.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1790,7 +1650,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_pink.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1803,7 +1662,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_purple.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1816,7 +1674,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_red.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1829,7 +1686,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_silver.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1842,7 +1698,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_white.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1855,7 +1710,6 @@
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_yellow.png</NAME>
 		<CONFIG>./conf/glass_pane_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1868,7 +1722,6 @@
 		<NAME>./assets/minecraft/textures/blocks/stonebrick.png</NAME>
 		<CONFIG>./conf/stonebrick.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1881,7 +1734,6 @@
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>stonebrick_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1893,7 +1745,6 @@
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy.png</NAME>
 		<CONFIG>./conf/stonebrick_mossy.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1906,7 +1757,6 @@
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>stonebrick_mossy_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1918,7 +1768,6 @@
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked.png</NAME>
 		<CONFIG>./conf/stonebrick_cracked.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1931,7 +1780,6 @@
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>stonebrick_cracked_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1943,7 +1791,6 @@
 		<NAME>./assets/minecraft/textures/blocks/grass_top.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>grass_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1955,7 +1802,6 @@
 		<NAME>./assets/minecraft/textures/blocks/ladder_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>ladder_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1967,7 +1813,6 @@
 		<NAME>./assets/minecraft/textures/blocks/ladder.png</NAME>
 		<CONFIG>./conf/ladder.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1980,7 +1825,6 @@
 		<NAME>./assets/minecraft/textures/blocks/tallgrass.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>tallgrass</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -1992,7 +1836,6 @@
 		<NAME>./assets/minecraft/textures/blocks/sand_overlay.png</NAME>
 		<CONFIG>./conf/sand_overlay.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2004,7 +1847,6 @@
 		<NAME>./assets/minecraft/textures/blocks/sand_colour.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>sand_colour</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2016,7 +1858,6 @@
 		<NAME>./assets/minecraft/textures/blocks/sand.png</NAME>
 		<CONFIG>./conf/sand.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2029,7 +1870,6 @@
 		<NAME>./assets/minecraft/textures/blocks/red_sand_colour.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>red_sand_colour</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2041,7 +1881,6 @@
 		<NAME>./assets/minecraft/textures/blocks/red_sand.png</NAME>
 		<CONFIG>./conf/red_sand.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2054,7 +1893,6 @@
 		<NAME>./assets/minecraft/textures/blocks/coal_ore_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>coal_ore_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2066,7 +1904,6 @@
 		<NAME>./assets/minecraft/textures/blocks/coal_ore.png</NAME>
 		<CONFIG>./conf/coal_ore.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2079,7 +1916,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed_covers</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2091,7 +1927,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_wood_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed_wood_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2103,7 +1938,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_wood.png</NAME>
 		<CONFIG>./conf/bed_wood.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2116,7 +1950,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2129,7 +1962,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_end.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed_feet_end</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2141,7 +1973,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_side.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed_feet_side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2153,7 +1984,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_top.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed_feet_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2165,7 +1995,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_head_side.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed_head_side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2177,7 +2006,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_head_top.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed_head_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2189,7 +2017,6 @@
 		<NAME>./assets/minecraft/textures/blocks/bed_head_end.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>bed_head_end</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2201,7 +2028,6 @@
 		<NAME>./assets/minecraft/textures/blocks/leaves_oak.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>leaves_oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2213,7 +2039,6 @@
 		<NAME>./assets/minecraft/textures/blocks/leaves_acacia.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>leaves_acacia</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2225,7 +2050,6 @@
 		<NAME>./noise.png</NAME>
 		<CONFIG>%stdconf%/vector_any_texture.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>noise</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2237,7 +2061,6 @@
 		<NAME>./noise_colour.png</NAME>
 		<CONFIG>./conf/noise_faded_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2249,7 +2072,6 @@
 		<NAME>./assets/minecraft/textures/blocks/torch_on_cutout.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>torch_on_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2261,7 +2083,6 @@
 		<NAME>./assets/minecraft/textures/blocks/torch_on_base.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>torch_on_base</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2273,7 +2094,6 @@
 		<NAME>./assets/minecraft/textures/blocks/torch_on_shaft.png</NAME>
 		<CONFIG>./conf/torch_shaft.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2286,7 +2106,6 @@
 		<NAME>./assets/minecraft/textures/blocks/torch_on.png</NAME>
 		<CONFIG>./conf/torch.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2299,7 +2118,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>crafting_table_top_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2311,7 +2129,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_decal.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>crafting_table_top_decal</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2323,7 +2140,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top.png</NAME>
 		<CONFIG>./conf/crafting_table_top.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2337,7 +2153,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>crafting_table_front_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2349,7 +2164,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_decal.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>crafting_table_front_decal</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2361,7 +2175,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front.png</NAME>
 		<CONFIG>./conf/crafting_table.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>front</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2375,7 +2188,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>crafting_table_side_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2387,7 +2199,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_decal.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>crafting_table_side_decal</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2399,7 +2210,6 @@
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side.png</NAME>
 		<CONFIG>./conf/crafting_table.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2413,7 +2223,6 @@
 		<NAME>./assets/minecraft/textures/blocks/clay_overlay.png</NAME>
 		<CONFIG>./conf/clay_overlay.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2425,7 +2234,6 @@
 		<NAME>./assets/minecraft/textures/blocks/clay_colour.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>clay_colour</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2437,7 +2245,6 @@
 		<NAME>./assets/minecraft/textures/blocks/clay.png</NAME>
 		<CONFIG>./conf/clay.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2450,7 +2257,6 @@
 		<NAME>./assets/minecraft/textures/blocks/redstone_ore_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>redstone_ore_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2462,7 +2268,6 @@
 		<NAME>./assets/minecraft/textures/blocks/redstone_ore.png</NAME>
 		<CONFIG>./conf/redstone_ore.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2475,7 +2280,6 @@
 		<NAME>./assets/minecraft/textures/blocks/iron_bars.png</NAME>
 		<CONFIG>./conf/vector_any_texture_noisify.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>./assets/minecraft/textures/blocks/iron_bars
 		0.125</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -2491,7 +2295,6 @@
 		<NAME>./assets/minecraft/textures/entity/sign_planks_front_cutout.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>sign_planks_front_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2503,7 +2306,6 @@
 		<NAME>./assets/minecraft/textures/entity/sign_planks_front.png</NAME>
 		<CONFIG>./conf/sign.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_front</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2517,7 +2319,6 @@
 		<NAME>./assets/minecraft/textures/entity/sign_planks_base_cutout.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>sign_planks_base_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2529,7 +2330,6 @@
 		<NAME>./assets/minecraft/textures/entity/sign_planks_base.png</NAME>
 		<CONFIG>./conf/sign.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>planks_base</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2542,7 +2342,6 @@
 		<NAME>./assets/minecraft/textures/entity/sign_log_cutout.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>sign_log_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2554,7 +2353,6 @@
 		<NAME>./assets/minecraft/textures/entity/sign_log.png</NAME>
 		<CONFIG>./conf/sign.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>log</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2568,7 +2366,6 @@
 		<NAME>./assets/minecraft/textures/entity/sign.png</NAME>
 		<CONFIG>./conf/sign.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS>all</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
@@ -2585,7 +2382,6 @@
 		<NAME>./pack.mcmeta</NAME>
 		<CONFIG>./conf/pack_meta.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>NO</IMAGE>
@@ -2597,7 +2393,6 @@
 		<NAME>./README.md</NAME>
 		<CONFIG>./conf/readme.sh</CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>NO</IMAGE>
@@ -2612,7 +2407,6 @@
 		<NAME>./conf/vector_any_texture_noisify.sh</NAME>
 		<CONFIG></CONFIG>
 		<SIZE></SIZE>
-		<VARIENTS></VARIENTS>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>NO</IMAGE>
