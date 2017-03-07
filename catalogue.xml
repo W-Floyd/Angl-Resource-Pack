@@ -2284,9 +2284,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_0.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>0</OPTIONS>
+		<OPTIONS>destroy_stage_0</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2295,9 +2295,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_1.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>1</OPTIONS>
+		<OPTIONS>destroy_stage_1</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2306,9 +2306,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_2.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>2</OPTIONS>
+		<OPTIONS>destroy_stage_2</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2317,9 +2317,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_3.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>3</OPTIONS>
+		<OPTIONS>destroy_stage_3</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2328,9 +2328,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_4.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>4</OPTIONS>
+		<OPTIONS>destroy_stage_4</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2339,9 +2339,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_5.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>5</OPTIONS>
+		<OPTIONS>destroy_stage_5</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2350,9 +2350,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_6.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>6</OPTIONS>
+		<OPTIONS>destroy_stage_6</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2361,9 +2361,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_7.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>7</OPTIONS>
+		<OPTIONS>destroy_stage_7</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2372,9 +2372,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_8.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>8</OPTIONS>
+		<OPTIONS>destroy_stage_8</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2383,9 +2383,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_9.png</NAME>
-		<CONFIG>./conf/destroy.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>9</OPTIONS>
+		<OPTIONS>destroy_stage_9</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
