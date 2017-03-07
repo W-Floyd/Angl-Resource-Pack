@@ -41,7 +41,7 @@ __ignore_max_optimize='1'
 # function names __optimize_<OPTIMIZER> exists, and replaces the
 # given file. Defaults to an existing optimizer, selected from a
 # list and by availability
-__optimizer='optipng'
+__optimizer='zopflipng'
 
 ################################################################
 # Stop customizing from here
