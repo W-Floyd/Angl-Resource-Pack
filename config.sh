@@ -32,13 +32,13 @@ __quick='1'
 __should_optimize='1'
 
 # Largest size to optimize
-__max_optimize='512'
+__max_optimize='1024'
 
 # Whether or not to ignore the max optimize size
-__ignore_max_optimize='1'
+__ignore_max_optimize='0'
 
 # What optimizer to use. May be a custom optimizer, so long as a
-# function names __optimize_<OPTIMIZER> exists, and replaces the
+# function named __optimize_<OPTIMIZER> exists, and replaces the
 # given file. Defaults to an existing optimizer, selected from a
 # list and by availability
 __optimizer='zopflipng'
