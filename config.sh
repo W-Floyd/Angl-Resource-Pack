@@ -29,7 +29,7 @@ __smelt_make_mobile_bin='./convert_to_mobile.sh'
 __quick='1'
 
 # Whether or not the final images should be optimized
-__should_optimize='1'
+__should_optimize='0'
 
 # Largest size to optimize
 __max_optimize='1024'
@@ -41,7 +41,7 @@ __ignore_max_optimize='0'
 # function named __optimize_<OPTIMIZER> exists, and replaces the
 # given file. Defaults to an existing optimizer, selected from a
 # list and by availability
-__optimizer='zopflipng'
+__optimizer='optipng'
 
 ################################################################
 # Stop customizing from here
