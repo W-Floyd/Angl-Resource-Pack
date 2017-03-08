@@ -1907,14 +1907,26 @@
 		<COMMON>Ore (Coal)</COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
+		<NAME>./assets/minecraft/textures/blocks/bed_covers_underlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_covers</OPTIONS>
+		<OPTIONS>bed_covers_underlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers.svg</CLEANUP>
+		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers_underlay.svg</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
+		<CONFIG>./conf/bed_covers.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./noise_colour.png
+		./assets/minecraft/textures/blocks/bed_covers_underlay.png</DEPENDS>
+		<CLEANUP></CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
@@ -1944,7 +1956,7 @@
 		<NAME>./assets/minecraft/textures/blocks/bed.png</NAME>
 		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed</OPTIONS>
+		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_wood.png
@@ -1954,67 +1966,67 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_end.png</NAME>
-		<CONFIG>./conf/bed.sh</CONFIG>
+		<CONFIG>./conf/bed_parts.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_end</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_side.png</NAME>
-		<CONFIG>./conf/bed.sh</CONFIG>
+		<CONFIG>./conf/bed_parts.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_top.png</NAME>
-		<CONFIG>./conf/bed.sh</CONFIG>
+		<CONFIG>./conf/bed_parts.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_side.png</NAME>
-		<CONFIG>./conf/bed.sh</CONFIG>
+		<CONFIG>./conf/bed_parts.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_top.png</NAME>
-		<CONFIG>./conf/bed.sh</CONFIG>
+		<CONFIG>./conf/bed_parts.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_end.png</NAME>
-		<CONFIG>./conf/bed.sh</CONFIG>
+		<CONFIG>./conf/bed_parts.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_end</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<COMMON>Bed</COMMON>
 	</ITEM>
@@ -2527,6 +2539,17 @@
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
 		<CLEANUP>./conf/planks.sh</CLEANUP>
+		<COMMON></COMMON>
+	</ITEM>
+	    <ITEM>
+		<NAME>./conf/bed_parts.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
+		<CLEANUP>./conf/bed.sh</CLEANUP>
 		<COMMON></COMMON>
 	</ITEM>
 </RESOURCES>
