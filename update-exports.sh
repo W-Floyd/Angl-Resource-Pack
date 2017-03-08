@@ -68,9 +68,9 @@ fi
 __date="$(date -u +%Y-%m-%d_%H-%M-%S)"
 
 if [ "${__verbose}" = '1' ]; then
-    smelt -m -v ${__sizes}
+    smelt --mobile --force-optimize --compress ${__sizes}
 else
-    smelt -m ${__sizes}
+    smelt --mobile --force-optimize --compress --quiet ${__sizes}
 fi
 
 __pushd ../Angl-Resource-Pack-Export
