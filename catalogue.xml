@@ -2879,6 +2879,60 @@
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
+    <ITEM>
+		<NAME>./demos/glass_0.png</NAME>
+		<CONFIG>./conf/demos/glass.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/glass_black.png
+		./assets/minecraft/textures/blocks/glass_blue.png
+		./assets/minecraft/textures/blocks/glass_brown.png
+		./assets/minecraft/textures/blocks/glass_cyan.png
+		./assets/minecraft/textures/blocks/glass_gray.png
+		./assets/minecraft/textures/blocks/glass_green.png
+		./assets/minecraft/textures/blocks/glass_light_blue.png
+		./assets/minecraft/textures/blocks/glass_lime.png
+		./assets/minecraft/textures/blocks/glass_magenta.png
+		./assets/minecraft/textures/blocks/glass_orange.png
+		./assets/minecraft/textures/blocks/glass_pink.png
+		./assets/minecraft/textures/blocks/glass_purple.png
+		./assets/minecraft/textures/blocks/glass_red.png
+		./assets/minecraft/textures/blocks/glass_silver.png
+		./assets/minecraft/textures/blocks/glass_white.png
+		./assets/minecraft/textures/blocks/glass_yellow.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+    <ITEM>
+		<NAME>./demos/glass_1.png</NAME>
+		<CONFIG>./conf/demos/glass.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/glass_black.png
+		./assets/minecraft/textures/blocks/glass_blue.png
+		./assets/minecraft/textures/blocks/glass_brown.png
+		./assets/minecraft/textures/blocks/glass_cyan.png
+		./assets/minecraft/textures/blocks/glass_gray.png
+		./assets/minecraft/textures/blocks/glass_green.png
+		./assets/minecraft/textures/blocks/glass_light_blue.png
+		./assets/minecraft/textures/blocks/glass_lime.png
+		./assets/minecraft/textures/blocks/glass_magenta.png
+		./assets/minecraft/textures/blocks/glass_orange.png
+		./assets/minecraft/textures/blocks/glass_pink.png
+		./assets/minecraft/textures/blocks/glass_purple.png
+		./assets/minecraft/textures/blocks/glass_red.png
+		./assets/minecraft/textures/blocks/glass_silver.png
+		./assets/minecraft/textures/blocks/glass_white.png
+		./assets/minecraft/textures/blocks/glass_yellow.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
 </DEMO>
 
 <RESOURCES>
