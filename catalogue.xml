@@ -2804,25 +2804,27 @@
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/dirt_0.png</NAME>
-		<CONFIG>./conf/demos/dirt.sh</CONFIG>
+		<NAME>./demos/grass_dirt_0.png</NAME>
+		<CONFIG>./conf/demos/grass_dirt.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/dirt.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/grass_side.png
+		./assets/minecraft/textures/blocks/dirt.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/dirt_1.png</NAME>
-		<CONFIG>./conf/demos/dirt.sh</CONFIG>
+		<NAME>./demos/grass_dirt_1.png</NAME>
+		<CONFIG>./conf/demos/grass_dirt.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS>1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/dirt.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/blocks/grass_side.png
+		./assets/minecraft/textures/blocks/dirt.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
