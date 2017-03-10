@@ -1127,8 +1127,7 @@
 		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_black.png</DEPENDS>
+		<DEPENDS>./colour_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1140,8 +1139,7 @@
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_blue.png</DEPENDS>
+		<DEPENDS>./colour_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1153,8 +1151,7 @@
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_brown.png</DEPENDS>
+		<DEPENDS>./colour_brown.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1166,8 +1163,7 @@
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_cyan.png</DEPENDS>
+		<DEPENDS>./colour_cyan.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1179,8 +1175,7 @@
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_gray.png</DEPENDS>
+		<DEPENDS>./colour_gray.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1192,8 +1187,7 @@
 		<OPTIONS>green</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_green.png</DEPENDS>
+		<DEPENDS>./colour_green.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1205,8 +1199,7 @@
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_light_blue.png</DEPENDS>
+		<DEPENDS>./colour_light_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1218,8 +1211,7 @@
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_lime.png</DEPENDS>
+		<DEPENDS>./colour_lime.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1231,8 +1223,7 @@
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_magenta.png</DEPENDS>
+		<DEPENDS>./colour_magenta.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1244,8 +1235,7 @@
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_orange.png</DEPENDS>
+		<DEPENDS>./colour_orange.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1257,8 +1247,7 @@
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_pink.png</DEPENDS>
+		<DEPENDS>./colour_pink.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1270,8 +1259,7 @@
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_purple.png</DEPENDS>
+		<DEPENDS>./colour_purple.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1283,8 +1271,7 @@
 		<OPTIONS>red</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_red.png</DEPENDS>
+		<DEPENDS>./colour_red.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1296,8 +1283,7 @@
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_silver.png</DEPENDS>
+		<DEPENDS>./colour_silver.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1309,8 +1295,7 @@
 		<OPTIONS>white</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_white.png</DEPENDS>
+		<DEPENDS>./colour_white.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -1322,8 +1307,7 @@
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./colour_yellow.png</DEPENDS>
+		<DEPENDS>./colour_yellow.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Wool</COMMON>
@@ -2829,6 +2813,60 @@
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
+    <ITEM>
+		<NAME>./demos/wool_0.png</NAME>
+		<CONFIG>./conf/demos/wool.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/wool_colored_black.png
+		./assets/minecraft/textures/blocks/wool_colored_blue.png
+		./assets/minecraft/textures/blocks/wool_colored_brown.png
+		./assets/minecraft/textures/blocks/wool_colored_cyan.png
+		./assets/minecraft/textures/blocks/wool_colored_gray.png
+		./assets/minecraft/textures/blocks/wool_colored_green.png
+		./assets/minecraft/textures/blocks/wool_colored_light_blue.png
+		./assets/minecraft/textures/blocks/wool_colored_lime.png
+		./assets/minecraft/textures/blocks/wool_colored_magenta.png
+		./assets/minecraft/textures/blocks/wool_colored_orange.png
+		./assets/minecraft/textures/blocks/wool_colored_pink.png
+		./assets/minecraft/textures/blocks/wool_colored_purple.png
+		./assets/minecraft/textures/blocks/wool_colored_red.png
+		./assets/minecraft/textures/blocks/wool_colored_silver.png
+		./assets/minecraft/textures/blocks/wool_colored_white.png
+		./assets/minecraft/textures/blocks/wool_colored_yellow.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+    <ITEM>
+		<NAME>./demos/wool_1.png</NAME>
+		<CONFIG>./conf/demos/wool.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/wool_colored_black.png
+		./assets/minecraft/textures/blocks/wool_colored_blue.png
+		./assets/minecraft/textures/blocks/wool_colored_brown.png
+		./assets/minecraft/textures/blocks/wool_colored_cyan.png
+		./assets/minecraft/textures/blocks/wool_colored_gray.png
+		./assets/minecraft/textures/blocks/wool_colored_green.png
+		./assets/minecraft/textures/blocks/wool_colored_light_blue.png
+		./assets/minecraft/textures/blocks/wool_colored_lime.png
+		./assets/minecraft/textures/blocks/wool_colored_magenta.png
+		./assets/minecraft/textures/blocks/wool_colored_orange.png
+		./assets/minecraft/textures/blocks/wool_colored_pink.png
+		./assets/minecraft/textures/blocks/wool_colored_purple.png
+		./assets/minecraft/textures/blocks/wool_colored_red.png
+		./assets/minecraft/textures/blocks/wool_colored_silver.png
+		./assets/minecraft/textures/blocks/wool_colored_white.png
+		./assets/minecraft/textures/blocks/wool_colored_yellow.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
 </DEMO>
 
 <RESOURCES>
@@ -2856,7 +2894,7 @@
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
-	    <ITEM>
+	<ITEM>
 		<NAME>./conf/bed_parts.sh</NAME>
 		<CONFIG></CONFIG>
 		<SIZE></SIZE>
@@ -2865,6 +2903,18 @@
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP>./conf/bed_parts.sh</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./conf/wool.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png</DEPENDS>
+		<CLEANUP>./conf/wool.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
