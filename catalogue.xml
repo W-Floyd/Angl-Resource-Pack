@@ -2213,6 +2213,18 @@
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/leaves_birch.png</NAME>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>leaves_birch</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/leaves_birch.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
 		<NAME>./noise.png</NAME>
 		<CONFIG>%stdconf%/vector_any_texture.sh</CONFIG>
 		<SIZE></SIZE>
