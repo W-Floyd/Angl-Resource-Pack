@@ -2832,22 +2832,7 @@
 		<OPTIONS>0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_colored_black.png
-		./assets/minecraft/textures/blocks/wool_colored_blue.png
-		./assets/minecraft/textures/blocks/wool_colored_brown.png
-		./assets/minecraft/textures/blocks/wool_colored_cyan.png
-		./assets/minecraft/textures/blocks/wool_colored_gray.png
-		./assets/minecraft/textures/blocks/wool_colored_green.png
-		./assets/minecraft/textures/blocks/wool_colored_light_blue.png
-		./assets/minecraft/textures/blocks/wool_colored_lime.png
-		./assets/minecraft/textures/blocks/wool_colored_magenta.png
-		./assets/minecraft/textures/blocks/wool_colored_orange.png
-		./assets/minecraft/textures/blocks/wool_colored_pink.png
-		./assets/minecraft/textures/blocks/wool_colored_purple.png
-		./assets/minecraft/textures/blocks/wool_colored_red.png
-		./assets/minecraft/textures/blocks/wool_colored_silver.png
-		./assets/minecraft/textures/blocks/wool_colored_white.png
-		./assets/minecraft/textures/blocks/wool_colored_yellow.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
@@ -2859,22 +2844,7 @@
 		<OPTIONS>1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_colored_black.png
-		./assets/minecraft/textures/blocks/wool_colored_blue.png
-		./assets/minecraft/textures/blocks/wool_colored_brown.png
-		./assets/minecraft/textures/blocks/wool_colored_cyan.png
-		./assets/minecraft/textures/blocks/wool_colored_gray.png
-		./assets/minecraft/textures/blocks/wool_colored_green.png
-		./assets/minecraft/textures/blocks/wool_colored_light_blue.png
-		./assets/minecraft/textures/blocks/wool_colored_lime.png
-		./assets/minecraft/textures/blocks/wool_colored_magenta.png
-		./assets/minecraft/textures/blocks/wool_colored_orange.png
-		./assets/minecraft/textures/blocks/wool_colored_pink.png
-		./assets/minecraft/textures/blocks/wool_colored_purple.png
-		./assets/minecraft/textures/blocks/wool_colored_red.png
-		./assets/minecraft/textures/blocks/wool_colored_silver.png
-		./assets/minecraft/textures/blocks/wool_colored_white.png
-		./assets/minecraft/textures/blocks/wool_colored_yellow.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
@@ -2886,22 +2856,7 @@
 		<OPTIONS>0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/glass_black.png
-		./assets/minecraft/textures/blocks/glass_blue.png
-		./assets/minecraft/textures/blocks/glass_brown.png
-		./assets/minecraft/textures/blocks/glass_cyan.png
-		./assets/minecraft/textures/blocks/glass_gray.png
-		./assets/minecraft/textures/blocks/glass_green.png
-		./assets/minecraft/textures/blocks/glass_light_blue.png
-		./assets/minecraft/textures/blocks/glass_lime.png
-		./assets/minecraft/textures/blocks/glass_magenta.png
-		./assets/minecraft/textures/blocks/glass_orange.png
-		./assets/minecraft/textures/blocks/glass_pink.png
-		./assets/minecraft/textures/blocks/glass_purple.png
-		./assets/minecraft/textures/blocks/glass_red.png
-		./assets/minecraft/textures/blocks/glass_silver.png
-		./assets/minecraft/textures/blocks/glass_white.png
-		./assets/minecraft/textures/blocks/glass_yellow.png</DEPENDS>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
@@ -2913,22 +2868,31 @@
 		<OPTIONS>1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/glass_black.png
-		./assets/minecraft/textures/blocks/glass_blue.png
-		./assets/minecraft/textures/blocks/glass_brown.png
-		./assets/minecraft/textures/blocks/glass_cyan.png
-		./assets/minecraft/textures/blocks/glass_gray.png
-		./assets/minecraft/textures/blocks/glass_green.png
-		./assets/minecraft/textures/blocks/glass_light_blue.png
-		./assets/minecraft/textures/blocks/glass_lime.png
-		./assets/minecraft/textures/blocks/glass_magenta.png
-		./assets/minecraft/textures/blocks/glass_orange.png
-		./assets/minecraft/textures/blocks/glass_pink.png
-		./assets/minecraft/textures/blocks/glass_purple.png
-		./assets/minecraft/textures/blocks/glass_red.png
-		./assets/minecraft/textures/blocks/glass_silver.png
-		./assets/minecraft/textures/blocks/glass_white.png
-		./assets/minecraft/textures/blocks/glass_yellow.png</DEPENDS>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+    <ITEM>
+		<NAME>./demos/stone_0.png</NAME>
+		<CONFIG>./conf/demos/any_texture.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/blocks/stone.png stone 0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/stone.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/stone_1.png</NAME>
+		<CONFIG>./conf/demos/any_texture.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/blocks/stone.png stone 1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/stone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
@@ -2982,6 +2946,60 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png</DEPENDS>
 		<CLEANUP>./conf/wool.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./conf/demos/wool.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/wool_colored_black.png
+		./assets/minecraft/textures/blocks/wool_colored_blue.png
+		./assets/minecraft/textures/blocks/wool_colored_brown.png
+		./assets/minecraft/textures/blocks/wool_colored_cyan.png
+		./assets/minecraft/textures/blocks/wool_colored_gray.png
+		./assets/minecraft/textures/blocks/wool_colored_green.png
+		./assets/minecraft/textures/blocks/wool_colored_light_blue.png
+		./assets/minecraft/textures/blocks/wool_colored_lime.png
+		./assets/minecraft/textures/blocks/wool_colored_magenta.png
+		./assets/minecraft/textures/blocks/wool_colored_orange.png
+		./assets/minecraft/textures/blocks/wool_colored_pink.png
+		./assets/minecraft/textures/blocks/wool_colored_purple.png
+		./assets/minecraft/textures/blocks/wool_colored_red.png
+		./assets/minecraft/textures/blocks/wool_colored_silver.png
+		./assets/minecraft/textures/blocks/wool_colored_white.png
+		./assets/minecraft/textures/blocks/wool_colored_yellow.png</DEPENDS>
+		<CLEANUP>./conf/demos/wool.sh</CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./conf/demos/glass.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/glass_black.png
+		./assets/minecraft/textures/blocks/glass_blue.png
+		./assets/minecraft/textures/blocks/glass_brown.png
+		./assets/minecraft/textures/blocks/glass_cyan.png
+		./assets/minecraft/textures/blocks/glass_gray.png
+		./assets/minecraft/textures/blocks/glass_green.png
+		./assets/minecraft/textures/blocks/glass_light_blue.png
+		./assets/minecraft/textures/blocks/glass_lime.png
+		./assets/minecraft/textures/blocks/glass_magenta.png
+		./assets/minecraft/textures/blocks/glass_orange.png
+		./assets/minecraft/textures/blocks/glass_pink.png
+		./assets/minecraft/textures/blocks/glass_purple.png
+		./assets/minecraft/textures/blocks/glass_red.png
+		./assets/minecraft/textures/blocks/glass_silver.png
+		./assets/minecraft/textures/blocks/glass_white.png
+		./assets/minecraft/textures/blocks/glass_yellow.png</DEPENDS>
+		<CLEANUP>./conf/demos/glass.sh</CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
 </RESOURCES>
