@@ -22,6 +22,7 @@ Copy an entry from an existing texture similar to your own. I *HIGHLY* recommend
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Dirt</COMMON>
 	</ITEM>
 ```
@@ -46,6 +47,8 @@ First, an explaination of the syntax in use here:
 
 **CLEANUP** describes the source files to delete upon completion of the resource pack. Again, formatted relative to the top folder of the resource pack. For images composed entirely from pre-rendered images, this will be blank.
 
+**OPTIONAL** describes if the file is an optional render, useful for demo images.
+
 **COMMON** describes the common name of the texture. This is optional, and might be hard to fill in at times. Only useful on KEEP files.
 
 ***
@@ -62,6 +65,7 @@ So, we've added an entry that looks like:
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stone_andesite.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Andesite</COMMON>
 	</ITEM>
 ```
