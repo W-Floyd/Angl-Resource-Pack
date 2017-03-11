@@ -2485,7 +2485,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/iron_bars.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Iron Bars</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_0.png</NAME>
