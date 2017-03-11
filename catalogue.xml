@@ -1,9 +1,9 @@
 <BLOCK>
 	<ITEM>
 		<NAME>./pack.png</NAME>
-		<CONFIG>./conf/pack.sh</CONFIG>
+		<CONFIG>%stdconf%/vector_any_texture.sh</CONFIG>
 		<SIZE>128</SIZE>
-		<OPTIONS></OPTIONS>
+		<OPTIONS>./pack white</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
