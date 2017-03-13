@@ -2661,7 +2661,7 @@
 		./assets/minecraft/textures/blocks/trapdoor_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Trapdoor (Wood)</COMMON>
+		<COMMON>Trapdoor</COMMON>
 	</ITEM>
 </BLOCK>
 
