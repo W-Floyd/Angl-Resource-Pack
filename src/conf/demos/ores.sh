@@ -1,7 +1,8 @@
 #!/bin/bash
 
 __ores='coal_ore
-redstone_ore'
+redstone_ore
+diamond_ore'
 
 __num_ores="$(echo "${__ores}" | wc -l )"
 

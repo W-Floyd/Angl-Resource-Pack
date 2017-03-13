@@ -2042,9 +2042,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/coal_ore.png</NAME>
-		<CONFIG>./conf/coal_ore.sh</CONFIG>
+		<CONFIG>%stdconf%/overlay.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS></OPTIONS>
+		<OPTIONS>./assets/minecraft/textures/blocks/stone
+		./assets/minecraft/textures/blocks/coal_ore_overlay
+		./assets/minecraft/textures/blocks/coal_ore</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
@@ -2463,9 +2465,11 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/redstone_ore.png</NAME>
-		<CONFIG>./conf/redstone_ore.sh</CONFIG>
+		<CONFIG>%stdconf%/overlay.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS></OPTIONS>
+		<OPTIONS>./assets/minecraft/textures/blocks/stone
+		./assets/minecraft/textures/blocks/redstone_ore_overlay
+		./assets/minecraft/textures/blocks/redstone_ore</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
@@ -2606,6 +2610,33 @@
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_9.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Destroy Stages</COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/diamond_ore_overlay.png</NAME>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>diamond_ore_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/diamond_ore_overlay.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/diamond_ore.png</NAME>
+		<CONFIG>%stdconf%/overlay.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/blocks/stone
+		./assets/minecraft/textures/blocks/diamond_ore_overlay
+		./assets/minecraft/textures/blocks/diamond_ore</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
+		./assets/minecraft/textures/blocks/diamond_ore_overlay.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Ore (Diamond)</COMMON>
 	</ITEM>
 </BLOCK>
 
@@ -3147,7 +3178,8 @@
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
 		./assets/minecraft/textures/blocks/coal_ore.png
-		./assets/minecraft/textures/blocks/redstone_ore.png</DEPENDS>
+		./assets/minecraft/textures/blocks/redstone_ore.png
+		./assets/minecraft/textures/blocks/diamond_ore.png</DEPENDS>
 		<CLEANUP>./conf/demos/ores.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
