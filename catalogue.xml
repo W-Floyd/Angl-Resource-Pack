@@ -1931,9 +1931,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/ladder_overlay.png</NAME>
-		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_basic_block_noisify.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>ladder_overlay</OPTIONS>
+		<OPTIONS>ladder_overlay 0.075</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2638,6 +2638,31 @@
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Ore (Diamond)</COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/trapdoor_overlay.png</NAME>
+		<CONFIG>./conf/vector_basic_block_noisify.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>trapdoor_overlay 0.075</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/trapdoor_overlay.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/trapdoor.png</NAME>
+		<CONFIG>./conf/trapdoor.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_planks_oak.png
+		./assets/minecraft/textures/blocks/trapdoor_overlay.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Trapdoor (Wood)</COMMON>
+	</ITEM>
 </BLOCK>
 
 <ENTITY>
@@ -3062,6 +3087,18 @@
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./noise.png</DEPENDS>
 		<CLEANUP>./conf/vector_any_texture_noisify.sh</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+    <ITEM>
+		<NAME>./conf/vector_basic_block_noisify.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./noise.png</DEPENDS>
+		<CLEANUP>./conf/vector_basic_block_noisify.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
