@@ -2921,6 +2921,30 @@
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
+    <ITEM>
+		<NAME>./demos/cobblestone_0.png</NAME>
+		<CONFIG>./conf/demos/any_texture.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/blocks/cobblestone.png cobblestone 0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/cobblestone_1.png</NAME>
+		<CONFIG>./conf/demos/any_texture.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/blocks/cobblestone.png cobblestone 1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
 	<ITEM>
 		<NAME>./demos/stonebrick_0.png</NAME>
 		<CONFIG>./conf/demos/stonebrick.sh</CONFIG>
@@ -2967,6 +2991,30 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/bookshelf.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/ores_0.png</NAME>
+		<CONFIG>./conf/demos/ores.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/ores_1.png</NAME>
+		<CONFIG>./conf/demos/ores.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
@@ -3087,6 +3135,20 @@
 		./assets/minecraft/textures/blocks/stonebrick_mossy.png
 		./assets/minecraft/textures/blocks/stonebrick_cracked.png</DEPENDS>
 		<CLEANUP>./conf/demos/stonebrick.sh</CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./conf/demos/ores.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
+		./assets/minecraft/textures/blocks/coal_ore.png
+		./assets/minecraft/textures/blocks/redstone_ore.png</DEPENDS>
+		<CLEANUP>./conf/demos/ores.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
