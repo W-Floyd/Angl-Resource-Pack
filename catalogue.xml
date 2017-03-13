@@ -1097,9 +1097,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bookshelf_overlay.png</NAME>
-		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_any_texture_noisify.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bookshelf_overlay</OPTIONS>
+		<OPTIONS>./assets/minecraft/textures/blocks/bookshelf_overlay 0.075</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
@@ -2897,6 +2897,30 @@
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
+    <ITEM>
+		<NAME>./demos/brick_0.png</NAME>
+		<CONFIG>./conf/demos/any_texture.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/blocks/brick.png brick 0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/brick.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/brick_1.png</NAME>
+		<CONFIG>./conf/demos/any_texture.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/blocks/brick.png brick 1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/brick.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
 	<ITEM>
 		<NAME>./demos/stonebrick_0.png</NAME>
 		<CONFIG>./conf/demos/stonebrick.sh</CONFIG>
@@ -2917,6 +2941,32 @@
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/bookshelf_0.png</NAME>
+		<CONFIG>./conf/demos/bookshelf.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
+		./assets/minecraft/textures/blocks/bookshelf.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/bookshelf_1.png</NAME>
+		<CONFIG>./conf/demos/bookshelf.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
+		./assets/minecraft/textures/blocks/bookshelf.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
