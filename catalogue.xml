@@ -2897,6 +2897,30 @@
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./demos/stonebrick_0.png</NAME>
+		<CONFIG>./conf/demos/stonebrick.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/stonebrick_1.png</NAME>
+		<CONFIG>./conf/demos/stonebrick.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
 </DEMO>
 
 <RESOURCES>
@@ -2999,6 +3023,20 @@
 		./assets/minecraft/textures/blocks/glass_white.png
 		./assets/minecraft/textures/blocks/glass_yellow.png</DEPENDS>
 		<CLEANUP>./conf/demos/glass.sh</CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./conf/demos/stonebrick.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick.png
+		./assets/minecraft/textures/blocks/stonebrick_mossy.png
+		./assets/minecraft/textures/blocks/stonebrick_cracked.png</DEPENDS>
+		<CLEANUP>./conf/demos/stonebrick.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
