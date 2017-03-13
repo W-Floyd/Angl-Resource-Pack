@@ -13,6 +13,8 @@ __smelt_make_mobile_bin='./convert_to_mobile.sh'
 
 __optimizer='optipng'
 
+__max_optional='2048'
+
 ################################################################
 # Stop customizing from here
 ################################################################
