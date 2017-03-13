@@ -1,9 +1,13 @@
 #!/bin/bash
 
 __verbose='0'
+__no_push='0'
 
-__smelt_functions_bin='/usr/share/smelt/smelt_functions.sh'
-__smelt_render_bin='/usr/share/smelt/smelt_render.sh'
+export __run_dir="$(dirname "$(readlink -f "$(which 'smelt')")")"
+export __smelt_setup_bin="${__run_dir}/smelt_setup.sh"
+
+# get set up
+source "${__smelt_setup_bin}" &> /dev/null || { echo "Failed to load setup \"${__smelt_setup_bin}\""; exit 1; }
 
 # Print help
 __usage () {
@@ -14,7 +18,8 @@ are not important.
 
 Options:
   -h  --help            This help message
-  -v  --verbose         Be verbose\
+  -v  --verbose         Be verbose
+  -n  --no-connection   Do not attempt to push or pull\
 "
 }
 
@@ -35,9 +40,14 @@ while ! [ "${#}" = '0' ]; do
             __verbose='1'
             ;;
 
+        "-n" | "--no-push")
+            __force_warn "Not pushing or pulling to Github, you'll need to run
+\`git push && git push --tags\` yourself."
+            __no_push='1'
+            ;;
+
         *)
-            echo "Unknown option \"${1}\""
-            echo
+            __custom_error "Unknown option \"${1}\""
             __usage
             exit 1
             ;;
@@ -50,16 +60,11 @@ done
 
 fi
 
-# get functions from file
-source "${__smelt_functions_bin}" &> /dev/null || { echo "Failed to load functions '${__smelt_functions_bin}'"; exit 1; }
-
-if ! [ -e 'config.sh' ]; then
-    __warn "No config file was found, using default values"
-else
-    source 'config.sh' || __error "Config file has an error."
-fi
-
-__sizes='32 64 128 256 512'
+__sizes='32
+64
+128
+256
+512'
 
 if ! [ -d '../Angl-Resource-Pack-Export' ]; then
     __error "Export dir does not exist"
@@ -73,21 +78,27 @@ else
     smelt --mobile --force-optimize --compress --quiet ${__sizes}
 fi
 
-__pushd ../Angl-Resource-Pack-Export
+if [ "${__no_push}" = '0' ]; then
 
-git pull
+    __pushd ../Angl-Resource-Pack-Export
 
-__popd
+    git pull
+
+    __popd
+
+fi
 
 for __size in ${__sizes}; do
 
-    __name="$("${__smelt_render_bin}" -n "${__size}")"
+    __pack_name="$("${__smelt_render_bin}" -n "${__size}")"
 
-    __file="${__name}.zip"
+    __file="${__pack_name}.zip"
 
 	cp "${__file}" "../Angl-Resource-Pack-Export/${__file}"
 
-	__file="${__name}_mobile.zip"
+	__pack_name="$("${__smelt_render_bin}" -m -n "${__size}")"
+
+	__file="${__pack_name}.zip"
 
 	cp "${__file}" "../Angl-Resource-Pack-Export/${__file}"
 
@@ -101,11 +112,19 @@ git add ./*
 
 git commit -m "${__date}"
 
-git push
+if [ "${__no_push}" = '0' ]; then
+
+    git push
+
+fi
 
 git tag -a "${__date}" -m "Exports updated at ${__date} UTC"
 
-git push --tags
+if [ "${__no_push}" = '0' ]; then
+
+    git push --tags
+
+fi
 
 __popd
 
