@@ -35,11 +35,11 @@ case "$2" in
 		;;
 esac
 
-__crop "bed.png" "$1" ${__start} "${2}.png"
+__crop "bed.png" "${1}" ${__start} "${2}.png"
 
-__rotate "${2}.png" "$__rotate"
+__rotate "${2}.png" "${__rotate}"
 
-__shift "${2}.png" "$__shift"
+__shift "${2}.png" "${__shift}"
 
 __popd
 
