@@ -45,11 +45,12 @@ case "${2}" in
         __decal=''
         ;;
     "dark_oak")
-        __base='./colour_planks_dard_oak.png'
-        __overlay1=''
-        __overlay2='./assets/minecraft/textures/blocks/door_overlay_plank.png'
+        __base='./colour_log_big_oak.png'
+        __overlay1='./assets/minecraft/textures/blocks/door_dark_oak_overlay.png'
+        __overlay2='./assets/minecraft/textures/blocks/door_overlay_log.png'
         __fade_level='1'
-        __decal=''
+        __decal='./assets/minecraft/textures/blocks/door_dark_oak_decal.png'
+        __output='./assets/minecraft/textures/blocks/door_dark_oak.png'
         ;;
     "iron")
         __base='./colour_silver.png'

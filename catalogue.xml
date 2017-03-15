@@ -2663,6 +2663,7 @@
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Trapdoor</COMMON>
 	</ITEM>
+
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood_overlay.png</NAME>
 		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
@@ -2749,6 +2750,70 @@
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Door (Oak)</COMMON>
+	</ITEM>
+
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_overlay.png</NAME>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>door_dark_oak_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/door_dark_oak_overlay.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_decal.png</NAME>
+		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>door_dark_oak_decal</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/door_dark_oak_decal.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/door_dark_oak.png</NAME>
+		<CONFIG>./conf/door.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>dark_oak</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_log_big_oak.png
+		./assets/minecraft/textures/blocks/door_dark_oak_overlay.png
+		./assets/minecraft/textures/blocks/door_overlay_log.png
+		./assets/minecraft/textures/blocks/door_dark_oak_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_upper.png</NAME>
+		<CONFIG>./conf/door_parts.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>dark_oak upper</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/door_dark_oak.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Door (Big Oak)</COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_lower.png</NAME>
+		<CONFIG>./conf/door_parts.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>dark_oak lower</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/door_dark_oak.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Door (Big Oak)</COMMON>
 	</ITEM>
 </BLOCK>
 
