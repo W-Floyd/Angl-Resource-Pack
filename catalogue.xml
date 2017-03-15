@@ -2700,6 +2700,18 @@
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/door_overlay_log.png</NAME>
+		<CONFIG>./conf/door_overlay_log.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood.png</NAME>
 		<CONFIG>./conf/door.sh</CONFIG>
 		<SIZE></SIZE>

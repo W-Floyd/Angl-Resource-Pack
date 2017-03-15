@@ -12,7 +12,7 @@ case "${2}" in
         __base='./colour_planks_oak.png'
         __overlay1='./assets/minecraft/textures/blocks/door_wood_overlay.png'
         __overlay2='./assets/minecraft/textures/blocks/door_overlay_plank.png'
-        __fade_level='0.5'
+        __fade_level='1'
         __decal='./assets/minecraft/textures/blocks/door_wood_decal.png'
         __output='./assets/minecraft/textures/blocks/door_wood.png'
         ;;
@@ -20,42 +20,42 @@ case "${2}" in
         __base='./colour_planks_birch.png'
         __overlay1=''
         __overlay2='./assets/minecraft/textures/blocks/door_overlay_plank.png'
-        __fade_level='0.5'
+        __fade_level='1'
         __decal=''
         ;;
     "acacia")
         __base='./colour_planks_acacia.png'
         __overlay1=''
         __overlay2='./assets/minecraft/textures/blocks/door_overlay_plank.png'
-        __fade_level='0.5'
+        __fade_level='1'
         __decal=''
         ;;
     "jungle")
         __base='./colour_planks_jungle.png'
         __overlay1=''
         __overlay2='./assets/minecraft/textures/blocks/door_overlay_plank.png'
-        __fade_level='0.5'
+        __fade_level='1'
         __decal=''
         ;;
     "spruce")
         __base='./colour_planks_spruce.png'
         __overlay1=''
         __overlay2='./assets/minecraft/textures/blocks/door_overlay_plank.png'
-        __fade_level='0.5'
+        __fade_level='1'
         __decal=''
         ;;
     "dark_oak")
         __base='./colour_planks_dard_oak.png'
         __overlay1=''
         __overlay2='./assets/minecraft/textures/blocks/door_overlay_plank.png'
-        __fade_level='0.5'
+        __fade_level='1'
         __decal=''
         ;;
     "iron")
         __base='./colour_silver.png'
         __overlay1=''
         __overlay2=''
-        __fade_level='0.5'
+        __fade_level='1'
         __decal=''
         ;;
 esac
@@ -70,19 +70,7 @@ __multiply 'door_cutout.png' "${__overlay1}" 'door_multiplied.png'
 
 rm 'door_cutout.png'
 
-if ! [ "${__fade_level}" = '0' ]; then
-
-    __fade "${__overlay2}" './overlay2.png' "${__fade_level}"
-
-else
-
-    cp "${__overlay2}" './overlay2.png'
-
-fi
-
-__tile './overlay2.png' 1x2 'overlay2_.png'
-
-mv 'overlay2_.png' 'overlay2.png'
+__fade "${__overlay2}" './overlay2.png' "${__fade_level}"
 
 __clip_src_in "${__overlay1}" 'overlay2.png' 'door_overlay.png'
 
