@@ -2718,7 +2718,8 @@
 		<OPTIONS>wood</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/door_wood_overlay.png
+		<DEPENDS>./colour_planks_oak.png
+		./assets/minecraft/textures/blocks/door_wood_overlay.png
 		./assets/minecraft/textures/blocks/door_overlay_plank.png
 		./assets/minecraft/textures/blocks/door_wood_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
