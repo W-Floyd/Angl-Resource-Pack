@@ -814,9 +814,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/brick.png</NAME>
-		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<CONFIG>./conf/vector_any_texture_noisify.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>brick</OPTIONS>
+		<OPTIONS>./assets/minecraft/textures/blocks/brick 0.05</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
