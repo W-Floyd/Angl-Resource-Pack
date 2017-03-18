@@ -1,0 +1,1979 @@
+catalogue:
+  - name: "./pack.png"
+    script: "%stdconf%/vector_any_texture.sh"
+    size: 128
+    options: "./pack white"
+    keep: yes
+    cleanup:
+    - "./pack.svg"
+    common: "Pack logo"
+
+  - name: "./assets/minecraft/textures/blocks/dirt.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "dirt"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/dirt.svg"
+    common: "Dirt"
+
+  - name: "./assets/minecraft/textures/blocks/grass_side_base.png"
+    script: "./conf/grass_side_base.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/dirt.png"
+    - "./assets/minecraft/textures/blocks/grass_side_overlay_other.png"
+
+  - name: "./assets/minecraft/textures/blocks/grass_side.png"
+    script: "./conf/grass_side.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/grass_side_base.png"
+    - "./assets/minecraft/textures/blocks/grass_side_overlay.png"
+    common: "Grass"
+
+  - name: "./assets/minecraft/textures/blocks/grass_side_snowed.png"
+    script: "./conf/grass_side_snowed.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/grass_side_base.png"
+    - "./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png"
+    common: "Grass"
+
+  - name: "./assets/minecraft/textures/blocks/grass_side_overlay_other.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "grass_side_overlay_other"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/grass_side_overlay_other.svg"
+
+  - name: "./assets/minecraft/textures/blocks/grass_side_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "grass_side_overlay"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/grass_side_overlay.svg"
+    common: "Grass"
+
+  - name: "./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png"
+    script: "./conf/grass_side_snowed_overlay.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/grass_side_base.png"
+    - "./assets/minecraft/textures/blocks/grass_side_overlay.png"
+    - "./assets/minecraft/textures/blocks/grass_side_snowed_colour.png"
+
+  - name: "./assets/minecraft/textures/blocks/grass_side_snowed_colour.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "grass_side_snowed_colour"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/grass_side_snowed_colour.svg"
+
+  - name: "./colour_black_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "black"
+    cleanup:
+    - "./colour_black_base.svg"
+
+  - name: "./colour_blue_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "blue"
+    cleanup:
+    - "./colour_blue_base.svg"
+
+  - name: "./colour_brown_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "brown"
+    cleanup:
+    - "./colour_brown_base.svg"
+
+  - name: "./colour_cyan_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "cyan"
+    cleanup:
+    - "./colour_cyan_base.svg"
+
+  - name: "./colour_gray_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "gray"
+    cleanup:
+    - "./colour_gray_base.svg"
+
+  - name: "./colour_green_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "green"
+    cleanup:
+    - "./colour_green_base.svg"
+
+  - name: "./colour_light_blue_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "light_blue"
+    cleanup:
+    - "./colour_light_blue_base.svg"
+
+  - name: "./colour_lime_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "lime"
+    cleanup:
+    - "./colour_lime_base.svg"
+
+  - name: "./colour_magenta_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "magenta"
+    cleanup:
+    - "./colour_magenta_base.svg"
+
+  - name: "./colour_orange_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "orange"
+    cleanup:
+    - "./colour_orange_base.svg"
+
+  - name: "./colour_pink_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "pink"
+    cleanup:
+    - "./colour_pink_base.svg"
+
+  - name: "./colour_purple_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "purple"
+    cleanup:
+    - "./colour_purple_base.svg"
+
+  - name: "./colour_red_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "red"
+    cleanup:
+    - "./colour_red_base.svg"
+
+  - name: "./colour_silver_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "silver"
+    cleanup:
+    - "./colour_silver_base.svg"
+
+  - name: "./colour_white_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "white"
+    cleanup:
+    - "./colour_white_base.svg"
+
+  - name: "./colour_yellow_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "yellow"
+    cleanup:
+    - "./colour_yellow_base.svg"
+
+  - name: "./colour_log_acacia_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "log_acacia"
+    cleanup:
+    - "./colour_log_acacia_base.svg"
+
+  - name: "./colour_log_big_oak_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "log_big_oak"
+    cleanup:
+    - "./colour_log_big_oak_base.svg"
+
+  - name: "./colour_log_birch_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "log_birch"
+    cleanup:
+    - "./colour_log_birch_base.svg"
+
+  - name: "./colour_log_jungle_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "log_jungle"
+    cleanup:
+    - "./colour_log_jungle_base.svg"
+
+  - name: "./colour_log_oak_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "log_oak"
+    cleanup:
+    - "./colour_log_oak_base.svg"
+
+  - name: "./colour_log_spruce_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "log_spruce"
+    cleanup:
+    - "./colour_log_spruce_base.svg"
+
+  - name: "./colour_planks_acacia_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "planks_acacia"
+    cleanup:
+    - "./colour_planks_acacia_base.svg"
+
+  - name: "./colour_planks_big_oak_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "planks_big_oak"
+    cleanup:
+    - "./colour_planks_big_oak_base.svg"
+
+  - name: "./colour_planks_birch_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "planks_birch"
+    cleanup:
+    - "./colour_planks_birch_base.svg"
+
+  - name: "./colour_planks_jungle_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "planks_jungle"
+    cleanup:
+    - "./colour_planks_jungle_base.svg"
+
+  - name: "./colour_planks_oak_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "planks_oak"
+    cleanup:
+    - "./colour_planks_oak_base.svg"
+
+  - name: "./colour_planks_spruce_base.png"
+    script: "./conf/vector_base_colour.sh"
+    options: "planks_spruce"
+    cleanup:
+    - "./colour_planks_spruce_base.svg"
+
+  - name: "./colour_black.png"
+    script: "./conf/noise_colour.sh"
+    options: "black"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_black_base.png"
+
+  - name: "./colour_blue.png"
+    script: "./conf/noise_colour.sh"
+    options: "blue"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_blue_base.png"
+
+  - name: "./colour_brown.png"
+    script: "./conf/noise_colour.sh"
+    options: "brown"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_brown_base.png"
+
+  - name: "./colour_cyan.png"
+    script: "./conf/noise_colour.sh"
+    options: "cyan"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_cyan_base.png"
+
+  - name: "./colour_gray.png"
+    script: "./conf/noise_colour.sh"
+    options: "gray"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_gray_base.png"
+
+  - name: "./colour_green.png"
+    script: "./conf/noise_colour.sh"
+    options: "green"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_green_base.png"
+
+  - name: "./colour_light_blue.png"
+    script: "./conf/noise_colour.sh"
+    options: "light_blue"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_light_blue_base.png"
+
+  - name: "./colour_lime.png"
+    script: "./conf/noise_colour.sh"
+    options: "lime"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_lime_base.png"
+
+  - name: "./colour_magenta.png"
+    script: "./conf/noise_colour.sh"
+    options: "magenta"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_magenta_base.png"
+
+  - name: "./colour_orange.png"
+    script: "./conf/noise_colour.sh"
+    options: "orange"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_orange_base.png"
+
+  - name: "./colour_pink.png"
+    script: "./conf/noise_colour.sh"
+    options: "pink"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_pink_base.png"
+
+  - name: "./colour_purple.png"
+    script: "./conf/noise_colour.sh"
+    options: "purple"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_purple_base.png"
+
+  - name: "./colour_red.png"
+    script: "./conf/noise_colour.sh"
+    options: "red"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_red_base.png"
+
+  - name: "./colour_silver.png"
+    script: "./conf/noise_colour.sh"
+    options: "silver"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_silver_base.png"
+
+  - name: "./colour_white.png"
+    script: "./conf/noise_colour.sh"
+    options: "white"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_white_base.png"
+
+  - name: "./colour_yellow.png"
+    script: "./conf/noise_colour.sh"
+    options: "yellow"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_yellow_base.png"
+
+  - name: "./colour_log_acacia.png"
+    script: "./conf/noise_colour.sh"
+    options: "log_acacia"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_log_acacia_base.png"
+
+  - name: "./colour_log_big_oak.png"
+    script: "./conf/noise_colour.sh"
+    options: "log_big_oak"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_log_big_oak_base.png"
+
+  - name: "./colour_log_birch.png"
+    script: "./conf/noise_colour.sh"
+    options: "log_birch"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_log_birch_base.png"
+
+  - name: "./colour_log_jungle.png"
+    script: "./conf/noise_colour.sh"
+    options: "log_jungle"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_log_jungle_base.png"
+
+  - name: "./colour_log_oak.png"
+    script: "./conf/noise_colour.sh"
+    options: "log_oak"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_log_oak_base.png"
+
+  - name: "./colour_log_spruce.png"
+    script: "./conf/noise_colour.sh"
+    options: "log_spruce"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_log_spruce_base.png"
+
+  - name: "./colour_planks_acacia.png"
+    script: "./conf/noise_colour.sh"
+    options: "planks_acacia"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_planks_acacia_base.png"
+
+  - name: "./colour_planks_big_oak.png"
+    script: "./conf/noise_colour.sh"
+    options: "planks_big_oak"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_planks_big_oak_base.png"
+
+  - name: "./colour_planks_birch.png"
+    script: "./conf/noise_colour.sh"
+    options: "planks_birch"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_planks_birch_base.png"
+
+  - name: "./colour_planks_jungle.png"
+    script: "./conf/noise_colour.sh"
+    options: "planks_jungle"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_planks_jungle_base.png"
+
+  - name: "./colour_planks_oak.png"
+    script: "./conf/noise_colour.sh"
+    options: "planks_oak"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_planks_oak_base.png"
+
+  - name: "./colour_planks_spruce.png"
+    script: "./conf/noise_colour.sh"
+    options: "planks_spruce"
+    depends:
+    - "./noise_colour.png"
+    - "./colour_planks_spruce_base.png"
+
+  - name: "./assets/minecraft/textures/blocks/brick.png"
+    script: "./conf/vector_any_texture_noisify.sh"
+    options: "./assets/minecraft/textures/blocks/brick 0.05"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/brick.svg"
+    common: "Brick"
+
+  - name: "./assets/minecraft/textures/blocks/stone.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "stone"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/stone.svg"
+    common: "Stone"
+
+  - name: "./assets/minecraft/textures/blocks/log_generic_top_1.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "log_generic_top_1"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/log_generic_top_1.svg"
+
+  - name: "./assets/minecraft/textures/blocks/log_generic_top_2.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "log_generic_top_2"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/log_generic_top_2.svg"
+
+  - name: "./assets/minecraft/textures/blocks/log_jungle_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "log_jungle_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/log_jungle_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/log_generic_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "log_generic_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/log_generic_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/log_birch_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "log_birch_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/log_birch_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/planks_generic_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "planks_generic_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/planks_generic_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/wool_generic_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "wool_generic_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/wool_generic_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/cobblestone_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "cobblestone_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/cobblestone_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/cobblestone.png"
+    script: "./conf/cobblestone.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/cobblestone_overlay.png"
+    - "./assets/minecraft/textures/blocks/stone.png"
+    common: "Cobblestone"
+
+  - name: "./assets/minecraft/textures/blocks/planks_acacia.png"
+    script: "./conf/planks.sh"
+    options: "acacia"
+    keep: yes
+    depends:
+    - "./colour_planks_acacia.png"
+    common: "Planks"
+
+  - name: "./assets/minecraft/textures/blocks/planks_big_oak.png"
+    script: "./conf/planks.sh"
+    options: "big_oak"
+    keep: yes
+    depends:
+    - "./colour_planks_big_oak.png"
+    common: "Planks"
+
+  - name: "./assets/minecraft/textures/blocks/planks_birch.png"
+    script: "./conf/planks.sh"
+    options: "birch"
+    keep: yes
+    depends:
+    - "./colour_planks_birch.png"
+    common: "Planks"
+
+  - name: "./assets/minecraft/textures/blocks/planks_jungle.png"
+    script: "./conf/planks.sh"
+    options: "jungle"
+    keep: yes
+    depends:
+    - "./colour_planks_jungle.png"
+    common: "Planks"
+
+  - name: "./assets/minecraft/textures/blocks/planks_oak.png"
+    script: "./conf/planks.sh"
+    options: "oak"
+    keep: yes
+    depends:
+    - "./colour_planks_oak.png"
+    common: "Planks"
+
+  - name: "./assets/minecraft/textures/blocks/planks_spruce.png"
+    script: "./conf/planks.sh"
+    options: "spruce"
+    keep: yes
+    depends:
+    - "./colour_planks_spruce.png"
+    common: "Planks"
+
+  - name: "./assets/minecraft/textures/blocks/log_acacia.png"
+    script: "./conf/logs.sh"
+    options: "acacia"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
+    - "./colour_log_acacia.png"
+    common: "Planks"
+
+  - name: "./assets/minecraft/textures/blocks/log_big_oak.png"
+    script: "./conf/logs.sh"
+    options: "big_oak"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
+    - "./colour_log_big_oak.png"
+    common: "Planks"
+
+  - name: "./assets/minecraft/textures/blocks/log_oak.png"
+    script: "./conf/logs.sh"
+    options: "oak"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
+    - "./colour_log_oak.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/log_spruce.png"
+    script: "./conf/logs.sh"
+    options: "spruce"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
+    - "./colour_log_spruce.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/log_birch.png"
+    script: "./conf/logs_birch.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_birch_overlay.png"
+    - "./colour_log_birch.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/log_jungle.png"
+    script: "./conf/logs_jungle.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_jungle_overlay.png"
+    - "./colour_log_jungle.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/bookshelf_overlay.png"
+    script: "./conf/vector_any_texture_noisify.sh"
+    options: "./assets/minecraft/textures/blocks/bookshelf_overlay 0.075"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/bookshelf_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/bookshelf.png"
+    script: "./conf/bookshelf.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/bookshelf_overlay.png"
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    common: "Bookshelf"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_black.png"
+    script: "./conf/wool.sh"
+    options: "black"
+    keep: yes
+    depends:
+    - "./colour_black.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_blue.png"
+    script: "./conf/wool.sh"
+    options: "blue"
+    keep: yes
+    depends:
+    - "./colour_blue.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_brown.png"
+    script: "./conf/wool.sh"
+    options: "brown"
+    keep: yes
+    depends:
+    - "./colour_brown.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_cyan.png"
+    script: "./conf/wool.sh"
+    options: "cyan"
+    keep: yes
+    depends:
+    - "./colour_cyan.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_gray.png"
+    script: "./conf/wool.sh"
+    options: "gray"
+    keep: yes
+    depends:
+    - "./colour_gray.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_green.png"
+    script: "./conf/wool.sh"
+    options: "green"
+    keep: yes
+    depends:
+    - "./colour_green.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_light_blue.png"
+    script: "./conf/wool.sh"
+    options: "light_blue"
+    keep: yes
+    depends:
+    - "./colour_light_blue.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_lime.png"
+    script: "./conf/wool.sh"
+    options: "lime"
+    keep: yes
+    depends:
+    - "./colour_lime.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_magenta.png"
+    script: "./conf/wool.sh"
+    options: "magenta"
+    keep: yes
+    depends:
+    - "./colour_magenta.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_orange.png"
+    script: "./conf/wool.sh"
+    options: "orange"
+    keep: yes
+    depends:
+    - "./colour_orange.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_pink.png"
+    script: "./conf/wool.sh"
+    options: "pink"
+    keep: yes
+    depends:
+    - "./colour_pink.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_purple.png"
+    script: "./conf/wool.sh"
+    options: "purple"
+    keep: yes
+    depends:
+    - "./colour_purple.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_red.png"
+    script: "./conf/wool.sh"
+    options: "red"
+    keep: yes
+    depends:
+    - "./colour_red.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_silver.png"
+    script: "./conf/wool.sh"
+    options: "silver"
+    keep: yes
+    depends:
+    - "./colour_silver.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_white.png"
+    script: "./conf/wool.sh"
+    options: "white"
+    keep: yes
+    depends:
+    - "./colour_white.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/wool_colored_yellow.png"
+    script: "./conf/wool.sh"
+    options: "yellow"
+    keep: yes
+    depends:
+    - "./colour_yellow.png"
+    common: "Wool"
+
+  - name: "./assets/minecraft/textures/blocks/glass.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "glass"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/glass.svg"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_black.png"
+    script: "./conf/glass.sh"
+    options: "black"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_black.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_blue.png"
+    script: "./conf/glass.sh"
+    options: "blue"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_blue.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_brown.png"
+    script: "./conf/glass.sh"
+    options: "brown"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_brown.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_cyan.png"
+    script: "./conf/glass.sh"
+    options: "cyan"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_cyan.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_gray.png"
+    script: "./conf/glass.sh"
+    options: "gray"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_gray.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_green.png"
+    script: "./conf/glass.sh"
+    options: "green"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_green.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_light_blue.png"
+    script: "./conf/glass.sh"
+    options: "light_blue"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_light_blue.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_lime.png"
+    script: "./conf/glass.sh"
+    options: "lime"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_lime.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_magenta.png"
+    script: "./conf/glass.sh"
+    options: "magenta"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_magenta.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_orange.png"
+    script: "./conf/glass.sh"
+    options: "orange"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_orange.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pink.png"
+    script: "./conf/glass.sh"
+    options: "pink"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_pink.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_purple.png"
+    script: "./conf/glass.sh"
+    options: "purple"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_purple.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_red.png"
+    script: "./conf/glass.sh"
+    options: "red"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_red.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_silver.png"
+    script: "./conf/glass.sh"
+    options: "silver"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_silver.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_white.png"
+    script: "./conf/glass.sh"
+    options: "white"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_white.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_yellow.png"
+    script: "./conf/glass.sh"
+    options: "yellow"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass.png"
+    - "./colour_yellow.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/log_acacia_top.png"
+    script: "./conf/log_top.sh"
+    options: "acacia"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_top_1.png"
+    - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
+    - "./colour_planks_acacia.png"
+    - "./colour_log_acacia.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/log_big_oak_top.png"
+    script: "./conf/log_top.sh"
+    options: "big_oak"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_top_1.png"
+    - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
+    - "./colour_planks_big_oak.png"
+    - "./colour_log_big_oak.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/log_birch_top.png"
+    script: "./conf/log_top.sh"
+    options: "birch"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_top_1.png"
+    - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
+    - "./colour_planks_birch.png"
+    - "./colour_log_birch.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/log_jungle_top.png"
+    script: "./conf/log_top.sh"
+    options: "jungle"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_top_1.png"
+    - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
+    - "./colour_planks_jungle.png"
+    - "./colour_log_jungle.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/log_oak_top.png"
+    script: "./conf/log_top.sh"
+    options: "oak"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_top_1.png"
+    - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
+    - "./colour_planks_oak.png"
+    - "./colour_log_oak.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/log_spruce_top.png"
+    script: "./conf/log_top.sh"
+    options: "spruce"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_top_1.png"
+    - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
+    - "./colour_planks_spruce.png"
+    - "./colour_log_spruce.png"
+    common: "Logs"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "glass_pane_top"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.svg"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_black.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "black"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_black.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_blue.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "blue"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_blue.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_brown.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "brown"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_brown.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_cyan.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "cyan"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_cyan.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_gray.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "gray"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_gray.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_green.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "green"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_green.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_light_blue.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "light_blue"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_light_blue.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_lime.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "lime"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_lime.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_magenta.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "magenta"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_magenta.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_orange.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "orange"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_orange.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_pink.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "pink"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_pink.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_purple.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "purple"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_purple.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_red.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "red"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_red.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_silver.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "silver"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_silver.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_white.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "white"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_white.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/glass_pane_top_yellow.png"
+    script: "./conf/glass_pane_top.sh"
+    options: "yellow"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_pane_top.png"
+    - "./colour_yellow.png"
+    common: "Glass"
+
+  - name: "./assets/minecraft/textures/blocks/stonebrick.png"
+    script: "./conf/stonebrick.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/stonebrick_overlay.png"
+    - "./assets/minecraft/textures/blocks/stone.png"
+    common: "Stone brick"
+
+  - name: "./assets/minecraft/textures/blocks/stonebrick_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "stonebrick_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/stonebrick_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/stonebrick_mossy.png"
+    script: "./conf/stonebrick_mossy.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png"
+    - "./assets/minecraft/textures/blocks/stonebrick.png"
+    common: "Stone brick (mossy)"
+
+  - name: "./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "stonebrick_mossy_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/stonebrick_cracked.png"
+    script: "./conf/stonebrick_cracked.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png"
+    - "./assets/minecraft/textures/blocks/stonebrick.png"
+    common: "Stone brick (cracked)"
+
+  - name: "./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "stonebrick_cracked_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/grass_top.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "grass_top"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/grass_top.svg"
+    common: "Grass"
+
+  - name: "./assets/minecraft/textures/blocks/ladder_overlay.png"
+    script: "./conf/vector_basic_block_noisify.sh"
+    options: "ladder_overlay 0.075"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/ladder_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/ladder.png"
+    script: "./conf/ladder.sh"
+    keep: yes
+    depends:
+    - "./colour_planks_oak.png"
+    - "./assets/minecraft/textures/blocks/ladder_overlay.png"
+    common: "Ladder"
+
+  - name: "./assets/minecraft/textures/blocks/tallgrass.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "tallgrass"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/tallgrass.svg"
+    common: "Tallgrass"
+
+  - name: "./assets/minecraft/textures/blocks/sand_overlay.png"
+    script: "./conf/sand_overlay.sh"
+    depends:
+    - "./noise.png"
+
+  - name: "./assets/minecraft/textures/blocks/sand_colour.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "sand_colour"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/sand_colour.svg"
+
+  - name: "./assets/minecraft/textures/blocks/sand.png"
+    script: "./conf/sand.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/sand_colour.png"
+    - "./assets/minecraft/textures/blocks/sand_overlay.png"
+    common: "Sand"
+
+  - name: "./assets/minecraft/textures/blocks/red_sand_colour.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "red_sand_colour"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/red_sand_colour.svg"
+
+  - name: "./assets/minecraft/textures/blocks/red_sand.png"
+    script: "./conf/red_sand.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/red_sand_colour.png"
+    - "./assets/minecraft/textures/blocks/sand_overlay.png"
+    common: "Sand (red)"
+
+  - name: "./assets/minecraft/textures/blocks/coal_ore_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "coal_ore_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/coal_ore_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/coal_ore.png"
+    script: "%stdconf%/overlay.sh"
+    options: "./assets/minecraft/textures/blocks/stone ./assets/minecraft/textures/blocks/coal_ore_overlay ./assets/minecraft/textures/blocks/coal_ore"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/stone.png"
+    - "./assets/minecraft/textures/blocks/coal_ore_overlay.png"
+    common: "Ore (Coal)"
+
+  - name: "./assets/minecraft/textures/blocks/bed_covers_underlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "bed_covers_underlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/bed_covers_underlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/bed_covers.png"
+    script: "./conf/bed_covers.sh"
+    depends:
+    - "./noise_colour.png"
+    - "./assets/minecraft/textures/blocks/bed_covers_underlay.png"
+
+  - name: "./assets/minecraft/textures/blocks/bed_wood_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "bed_wood_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/bed_wood_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/bed_wood.png"
+    script: "./conf/bed_wood.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    - "./assets/minecraft/textures/blocks/bed_wood_overlay.png"
+
+  - name: "./assets/minecraft/textures/blocks/bed.png"
+    script: "./conf/bed.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/bed_wood.png"
+    - "./assets/minecraft/textures/blocks/bed_covers.png"
+
+  - name: "./assets/minecraft/textures/blocks/bed_feet_end.png"
+    script: "./conf/bed_parts.sh"
+    options: "bed_feet_end"
+    keep: yes
+    common: "Bed"
+
+  - name: "./assets/minecraft/textures/blocks/bed_feet_side.png"
+    script: "./conf/bed_parts.sh"
+    options: "bed_feet_side"
+    keep: yes
+    common: "Bed"
+
+  - name: "./assets/minecraft/textures/blocks/bed_feet_top.png"
+    script: "./conf/bed_parts.sh"
+    options: "bed_feet_top"
+    keep: yes
+    common: "Bed"
+
+  - name: "./assets/minecraft/textures/blocks/bed_head_side.png"
+    script: "./conf/bed_parts.sh"
+    options: "bed_head_side"
+    keep: yes
+    common: "Bed"
+
+  - name: "./assets/minecraft/textures/blocks/bed_head_top.png"
+    script: "./conf/bed_parts.sh"
+    options: "bed_head_top"
+    keep: yes
+    common: "Bed"
+
+  - name: "./assets/minecraft/textures/blocks/bed_head_end.png"
+    script: "./conf/bed_parts.sh"
+    options: "bed_head_end"
+    keep: yes
+    common: "Bed"
+
+  - name: "./assets/minecraft/textures/blocks/leaves_oak.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "leaves_oak"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/leaves_oak.svg"
+
+  - name: "./assets/minecraft/textures/blocks/leaves_acacia.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "leaves_acacia"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/leaves_acacia.svg"
+
+  - name: "./assets/minecraft/textures/blocks/leaves_birch.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "leaves_birch"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/leaves_birch.svg"
+
+  - name: "./noise.png"
+    script: "%stdconf%/vector_any_texture.sh"
+    options: "noise"
+    cleanup:
+    - "./noise.svg"
+
+  - name: "./noise_colour.png"
+    script: "./conf/noise_faded_colour.sh"
+    depends:
+    - "./noise.png"
+
+  - name: "./assets/minecraft/textures/blocks/torch_on_cutout.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "torch_on_cutout"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/torch_on_cutout.svg"
+
+  - name: "./assets/minecraft/textures/blocks/torch_on_base.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "torch_on_base"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/torch_on_base.svg"
+
+  - name: "./assets/minecraft/textures/blocks/torch_on_shaft.png"
+    script: "./conf/torch_shaft.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/torch_on_cutout.png"
+    - "./assets/minecraft/textures/blocks/log_oak.png"
+
+  - name: "./assets/minecraft/textures/blocks/torch_on.png"
+    script: "./conf/torch.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/torch_on_base.png"
+    - "./assets/minecraft/textures/blocks/torch_on_shaft.png"
+    common: "Torch"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_top_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "crafting_table_top_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/crafting_table_top_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_top_decal.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "crafting_table_top_decal"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/crafting_table_top_decal.svg"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_top.png"
+    script: "./conf/crafting_table_top.sh"
+    keep: yes
+    depends:
+    - "./colour_planks_oak.png"
+    - "./assets/minecraft/textures/blocks/crafting_table_top_decal.png"
+    - "./assets/minecraft/textures/blocks/crafting_table_top_overlay.png"
+    common: "Crafting Table"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_front_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "crafting_table_front_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/crafting_table_front_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_front_decal.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "crafting_table_front_decal"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/crafting_table_front_decal.svg"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_front.png"
+    script: "./conf/crafting_table.sh"
+    options: "front"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    - "./assets/minecraft/textures/blocks/crafting_table_front_decal.png"
+    - "./assets/minecraft/textures/blocks/crafting_table_front_overlay.png"
+    common: "Crafting Table"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_side_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "crafting_table_side_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/crafting_table_side_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_side_decal.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "crafting_table_side_decal"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/crafting_table_side_decal.svg"
+
+  - name: "./assets/minecraft/textures/blocks/crafting_table_side.png"
+    script: "./conf/crafting_table.sh"
+    options: "side"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    - "./assets/minecraft/textures/blocks/crafting_table_side_decal.png"
+    - "./assets/minecraft/textures/blocks/crafting_table_side_overlay.png"
+    common: "Crafting Table"
+
+  - name: "./assets/minecraft/textures/blocks/clay_overlay.png"
+    script: "./conf/clay_overlay.sh"
+    depends:
+    - "./noise.png"
+
+  - name: "./assets/minecraft/textures/blocks/clay_colour.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "clay_colour"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/clay_colour.svg"
+
+  - name: "./assets/minecraft/textures/blocks/clay.png"
+    script: "./conf/clay.sh"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/clay_colour.png"
+    - "./assets/minecraft/textures/blocks/clay_overlay.png"
+    common: "Clay"
+
+  - name: "./assets/minecraft/textures/blocks/redstone_ore_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "redstone_ore_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/redstone_ore_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/redstone_ore.png"
+    script: "%stdconf%/overlay.sh"
+    options: "./assets/minecraft/textures/blocks/stone ./assets/minecraft/textures/blocks/redstone_ore_overlay ./assets/minecraft/textures/blocks/redstone_ore"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/stone.png"
+    - "./assets/minecraft/textures/blocks/redstone_ore_overlay.png"
+    common: "Ore (Redstone)"
+
+  - name: "./assets/minecraft/textures/blocks/iron_bars.png"
+    script: "./conf/vector_any_texture_noisify.sh"
+    options: "./assets/minecraft/textures/blocks/iron_bars 0.125"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/iron_bars.svg"
+    common: "Iron Bars"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_0.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_0"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_0.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_1.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_1"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_1.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_2.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_2"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_2.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_3.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_3"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_3.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_4.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_4"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_4.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_5.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_5"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_5.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_6.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_6"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_6.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_7.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_7"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_7.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_8.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_8"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_8.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/destroy_stage_9.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "destroy_stage_9"
+    keep: yes
+    cleanup:
+    - "./assets/minecraft/textures/blocks/destroy_stage_9.svg"
+    common: "Destroy Stages"
+
+  - name: "./assets/minecraft/textures/blocks/diamond_ore_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "diamond_ore_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/diamond_ore_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/diamond_ore.png"
+    script: "%stdconf%/overlay.sh"
+    options: "./assets/minecraft/textures/blocks/stone ./assets/minecraft/textures/blocks/diamond_ore_overlay ./assets/minecraft/textures/blocks/diamond_ore"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/stone.png"
+    - "./assets/minecraft/textures/blocks/diamond_ore_overlay.png"
+    common: "Ore (Diamond)"
+
+  - name: "./assets/minecraft/textures/blocks/trapdoor_overlay.png"
+    script: "./conf/vector_basic_block_noisify.sh"
+    options: "trapdoor_overlay 0.075"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/trapdoor_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/trapdoor.png"
+    script: "./conf/trapdoor.sh"
+    keep: yes
+    depends:
+    - "./colour_planks_oak.png"
+    - "./assets/minecraft/textures/blocks/trapdoor_overlay.png"
+    common: "Trapdoor"
+
+  - name: "./assets/minecraft/textures/blocks/door_wood_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "door_wood_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/door_wood_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/door_wood_decal.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "door_wood_decal"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/door_wood_decal.svg"
+
+  - name: "./assets/minecraft/textures/blocks/door_overlay_plank.png"
+    script: "./conf/door_overlay_plank.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_generic_overlay.png"
+
+  - name: "./assets/minecraft/textures/blocks/door_overlay_log.png"
+    script: "./conf/door_overlay_log.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
+
+  - name: "./assets/minecraft/textures/blocks/door_wood.png"
+    script: "./conf/door.sh"
+    options: "wood"
+    depends:
+    - "./colour_planks_oak.png"
+    - "./assets/minecraft/textures/blocks/door_wood_overlay.png"
+    - "./assets/minecraft/textures/blocks/door_overlay_plank.png"
+    - "./assets/minecraft/textures/blocks/door_wood_decal.png"
+
+  - name: "./assets/minecraft/textures/blocks/door_wood_upper.png"
+    script: "./conf/door_parts.sh"
+    options: "wood upper"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/door_wood.png"
+    common: "Door (Oak)"
+
+  - name: "./assets/minecraft/textures/blocks/door_wood_lower.png"
+    script: "./conf/door_parts.sh"
+    options: "wood lower"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/door_wood.png"
+    common: "Door (Oak)"
+
+  - name: "./assets/minecraft/textures/blocks/door_dark_oak_overlay.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "door_dark_oak_overlay"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/door_dark_oak_overlay.svg"
+
+  - name: "./assets/minecraft/textures/blocks/door_dark_oak_decal.png"
+    script: "%stdconf%/vector_basic_block.sh"
+    options: "door_dark_oak_decal"
+    cleanup:
+    - "./assets/minecraft/textures/blocks/door_dark_oak_decal.svg"
+
+  - name: "./assets/minecraft/textures/blocks/door_dark_oak.png"
+    script: "./conf/door.sh"
+    options: "dark_oak"
+    depends:
+    - "./colour_log_big_oak.png"
+    - "./assets/minecraft/textures/blocks/door_dark_oak_overlay.png"
+    - "./assets/minecraft/textures/blocks/door_overlay_log.png"
+    - "./assets/minecraft/textures/blocks/door_dark_oak_decal.png"
+
+  - name: "./assets/minecraft/textures/blocks/door_dark_oak_upper.png"
+    script: "./conf/door_parts.sh"
+    options: "dark_oak upper"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/door_dark_oak.png"
+    common: "Door (Big Oak)"
+
+  - name: "./assets/minecraft/textures/blocks/door_dark_oak_lower.png"
+    script: "./conf/door_parts.sh"
+    options: "dark_oak lower"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/blocks/door_dark_oak.png"
+    common: "Door (Big Oak)"
+
+  - name: "./assets/minecraft/textures/entity/sign_planks_front_cutout.png"
+    script: "%stdconf%/vector_basic_entity.sh"
+    options: "sign_planks_front_cutout"
+    cleanup:
+    - "./assets/minecraft/textures/entity/sign_planks_front_cutout.svg"
+
+  - name: "./assets/minecraft/textures/entity/sign_planks_front.png"
+    script: "./conf/sign.sh"
+    options: "planks_front"
+    depends:
+    - "./assets/minecraft/textures/entity/sign_planks_front_cutout.png"
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    - "./colour_planks_oak.png"
+
+  - name: "./assets/minecraft/textures/entity/sign_planks_base_cutout.png"
+    script: "%stdconf%/vector_basic_entity.sh"
+    options: "sign_planks_base_cutout"
+    cleanup:
+    - "./assets/minecraft/textures/entity/sign_planks_base_cutout.svg"
+
+  - name: "./assets/minecraft/textures/entity/sign_planks_base.png"
+    script: "./conf/sign.sh"
+    options: "planks_base"
+    depends:
+    - "./assets/minecraft/textures/entity/sign_planks_base_cutout.png"
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+
+  - name: "./assets/minecraft/textures/entity/sign_log_cutout.png"
+    script: "%stdconf%/vector_basic_entity.sh"
+    options: "sign_log_cutout"
+    cleanup:
+    - "./assets/minecraft/textures/entity/sign_log_cutout.svg"
+
+  - name: "./assets/minecraft/textures/entity/sign_log.png"
+    script: "./conf/sign.sh"
+    options: "log"
+    depends:
+    - "./assets/minecraft/textures/entity/sign_log_cutout.png"
+    - "./assets/minecraft/textures/blocks/log_oak.png"
+    - "./colour_log_oak.png"
+
+  - name: "./assets/minecraft/textures/entity/sign.png"
+    script: "./conf/sign.sh"
+    options: "all"
+    keep: yes
+    depends:
+    - "./assets/minecraft/textures/entity/sign_log.png"
+    - "./assets/minecraft/textures/entity/sign_planks_base.png"
+    - "./assets/minecraft/textures/entity/sign_planks_front.png"
+    common: "Sign"
+
+  - name: "./pack.mcmeta"
+    script: "./conf/pack_meta.sh"
+    keep: yes
+    cleanup:
+    - "./pack_template.mcmeta"
+    common: "Pack file"
+
+  - name: "./README.md"
+    script: "./conf/readme.sh"
+    keep: yes
+    cleanup:
+    - "./README_template.md"
+    common: "Readme"
+
+  - name: "./demos/planks_0.png"
+    script: "./conf/demos/wood.sh"
+    options: "planks 0"
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_acacia.png"
+    - "./assets/minecraft/textures/blocks/planks_big_oak.png"
+    - "./assets/minecraft/textures/blocks/planks_birch.png"
+    - "./assets/minecraft/textures/blocks/planks_jungle.png"
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    - "./assets/minecraft/textures/blocks/planks_spruce.png"
+    optional: yes
+
+  - name: "./demos/planks_1.png"
+    script: "./conf/demos/wood.sh"
+    options: "planks 1"
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_acacia.png"
+    - "./assets/minecraft/textures/blocks/planks_big_oak.png"
+    - "./assets/minecraft/textures/blocks/planks_birch.png"
+    - "./assets/minecraft/textures/blocks/planks_jungle.png"
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    - "./assets/minecraft/textures/blocks/planks_spruce.png"
+    optional: yes
+
+  - name: "./demos/log_0.png"
+    script: "./conf/demos/wood.sh"
+    options: "log 0"
+    depends:
+    - "./assets/minecraft/textures/blocks/log_acacia.png"
+    - "./assets/minecraft/textures/blocks/log_big_oak.png"
+    - "./assets/minecraft/textures/blocks/log_birch.png"
+    - "./assets/minecraft/textures/blocks/log_jungle.png"
+    - "./assets/minecraft/textures/blocks/log_oak.png"
+    - "./assets/minecraft/textures/blocks/log_spruce.png"
+    optional: yes
+
+  - name: "./demos/log_1.png"
+    script: "./conf/demos/wood.sh"
+    options: "log 1"
+    depends:
+    - "./assets/minecraft/textures/blocks/log_acacia.png"
+    - "./assets/minecraft/textures/blocks/log_big_oak.png"
+    - "./assets/minecraft/textures/blocks/log_birch.png"
+    - "./assets/minecraft/textures/blocks/log_jungle.png"
+    - "./assets/minecraft/textures/blocks/log_oak.png"
+    - "./assets/minecraft/textures/blocks/log_spruce.png"
+    optional: yes
+
+  - name: "./demos/grass_dirt_0.png"
+    script: "./conf/demos/grass_dirt.sh"
+    options: "0"
+    depends:
+    - "./assets/minecraft/textures/blocks/grass_side.png"
+    - "./assets/minecraft/textures/blocks/dirt.png"
+    optional: yes
+
+  - name: "./demos/grass_dirt_1.png"
+    script: "./conf/demos/grass_dirt.sh"
+    options: "1"
+    depends:
+    - "./assets/minecraft/textures/blocks/grass_side.png"
+    - "./assets/minecraft/textures/blocks/dirt.png"
+    optional: yes
+
+  - name: "./demos/wool_0.png"
+    script: "./conf/demos/wool.sh"
+    options: "0"
+    optional: yes
+
+  - name: "./demos/wool_1.png"
+    script: "./conf/demos/wool.sh"
+    options: "1"
+    optional: yes
+
+  - name: "./demos/glass_0.png"
+    script: "./conf/demos/glass.sh"
+    options: "0"
+    optional: yes
+
+  - name: "./demos/glass_1.png"
+    script: "./conf/demos/glass.sh"
+    options: "1"
+    optional: yes
+
+  - name: "./demos/stone_0.png"
+    script: "./conf/demos/any_texture.sh"
+    options: "./assets/minecraft/textures/blocks/stone.png stone 0"
+    depends:
+    - "./assets/minecraft/textures/blocks/stone.png"
+    optional: yes
+
+  - name: "./demos/stone_1.png"
+    script: "./conf/demos/any_texture.sh"
+    options: "./assets/minecraft/textures/blocks/stone.png stone 1"
+    depends:
+    - "./assets/minecraft/textures/blocks/stone.png"
+    optional: yes
+
+  - name: "./demos/brick_0.png"
+    script: "./conf/demos/any_texture.sh"
+    options: "./assets/minecraft/textures/blocks/brick.png brick 0"
+    depends:
+    - "./assets/minecraft/textures/blocks/brick.png"
+    optional: yes
+
+  - name: "./demos/brick_1.png"
+    script: "./conf/demos/any_texture.sh"
+    options: "./assets/minecraft/textures/blocks/brick.png brick 1"
+    depends:
+    - "./assets/minecraft/textures/blocks/brick.png"
+    optional: yes
+
+  - name: "./demos/cobblestone_0.png"
+    script: "./conf/demos/any_texture.sh"
+    options: "./assets/minecraft/textures/blocks/cobblestone.png cobblestone 0"
+    depends:
+    - "./assets/minecraft/textures/blocks/cobblestone.png"
+    optional: yes
+
+  - name: "./demos/cobblestone_1.png"
+    script: "./conf/demos/any_texture.sh"
+    options: "./assets/minecraft/textures/blocks/cobblestone.png cobblestone 1"
+    depends:
+    - "./assets/minecraft/textures/blocks/cobblestone.png"
+    optional: yes
+
+  - name: "./demos/stonebrick_0.png"
+    script: "./conf/demos/stonebrick.sh"
+    options: "0"
+    optional: yes
+
+  - name: "./demos/stonebrick_1.png"
+    script: "./conf/demos/stonebrick.sh"
+    options: "1"
+    optional: yes
+
+  - name: "./demos/bookshelf_0.png"
+    script: "./conf/demos/bookshelf.sh"
+    options: "0"
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    - "./assets/minecraft/textures/blocks/bookshelf.png"
+    optional: yes
+
+  - name: "./demos/bookshelf_1.png"
+    script: "./conf/demos/bookshelf.sh"
+    options: "1"
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_oak.png"
+    - "./assets/minecraft/textures/blocks/bookshelf.png"
+    optional: yes
+
+  - name: "./demos/ores_0.png"
+    script: "./conf/demos/ores.sh"
+    options: "0"
+    optional: yes
+
+  - name: "./demos/ores_1.png"
+    script: "./conf/demos/ores.sh"
+    options: "1"
+    optional: yes
+
+  - name: "./conf/vector_any_texture_noisify.sh"
+    depends:
+    - "./noise.png"
+    cleanup:
+    - "./conf/vector_any_texture_noisify.sh"
+
+  - name: "./conf/vector_basic_block_noisify.sh"
+    depends:
+    - "./noise.png"
+    cleanup:
+    - "./conf/vector_basic_block_noisify.sh"
+
+  - name: "./conf/planks.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/planks_generic_overlay.png"
+    cleanup:
+    - "./conf/planks.sh"
+
+  - name: "./conf/bed_parts.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/bed.png"
+    cleanup:
+    - "./conf/bed_parts.sh"
+
+  - name: "./conf/wool.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/wool_generic_overlay.png"
+    cleanup:
+    - "./conf/wool.sh"
+
+  - name: "./conf/demos/wool.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/wool_colored_black.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_blue.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_brown.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_cyan.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_gray.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_green.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_light_blue.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_lime.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_magenta.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_orange.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_pink.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_purple.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_red.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_silver.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_white.png"
+    - "./assets/minecraft/textures/blocks/wool_colored_yellow.png"
+    cleanup:
+    - "./conf/demos/wool.sh"
+    optional: yes
+
+  - name: "./conf/demos/glass.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/glass_black.png"
+    - "./assets/minecraft/textures/blocks/glass_blue.png"
+    - "./assets/minecraft/textures/blocks/glass_brown.png"
+    - "./assets/minecraft/textures/blocks/glass_cyan.png"
+    - "./assets/minecraft/textures/blocks/glass_gray.png"
+    - "./assets/minecraft/textures/blocks/glass_green.png"
+    - "./assets/minecraft/textures/blocks/glass_light_blue.png"
+    - "./assets/minecraft/textures/blocks/glass_lime.png"
+    - "./assets/minecraft/textures/blocks/glass_magenta.png"
+    - "./assets/minecraft/textures/blocks/glass_orange.png"
+    - "./assets/minecraft/textures/blocks/glass_pink.png"
+    - "./assets/minecraft/textures/blocks/glass_purple.png"
+    - "./assets/minecraft/textures/blocks/glass_red.png"
+    - "./assets/minecraft/textures/blocks/glass_silver.png"
+    - "./assets/minecraft/textures/blocks/glass_white.png"
+    - "./assets/minecraft/textures/blocks/glass_yellow.png"
+    cleanup:
+    - "./conf/demos/glass.sh"
+    optional: yes
+
+  - name: "./conf/demos/stonebrick.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/stonebrick.png"
+    - "./assets/minecraft/textures/blocks/stonebrick_mossy.png"
+    - "./assets/minecraft/textures/blocks/stonebrick_cracked.png"
+    cleanup:
+    - "./conf/demos/stonebrick.sh"
+    optional: yes
+
+  - name: "./conf/demos/ores.sh"
+    depends:
+    - "./assets/minecraft/textures/blocks/stone.png"
+    - "./assets/minecraft/textures/blocks/coal_ore.png"
+    - "./assets/minecraft/textures/blocks/redstone_ore.png"
+    - "./assets/minecraft/textures/blocks/diamond_ore.png"
+    cleanup:
+    - "./conf/demos/ores.sh"
+    optional: yes
+
