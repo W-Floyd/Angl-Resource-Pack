@@ -1,6 +1,7 @@
 # Angl-Resource-Pack
 ##An open-source vector based Minecraft resource pack.
 ### This is a WIP, *many* textures have yet to be added
+### Currently undergoing some changes, avoid attempting to build from source for now.
 
 ***
 
