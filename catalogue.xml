@@ -9,7 +9,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./pack.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Pack logo</COMMON>
+		<DESCRIPTION>Pack logo</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
@@ -21,7 +21,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/dirt.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Dirt</COMMON>
+		<DESCRIPTION>Dirt</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_base.png</NAME>
@@ -34,7 +34,7 @@
 		./assets/minecraft/textures/blocks/grass_side_overlay_other.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side.png</NAME>
@@ -47,7 +47,7 @@
 		./assets/minecraft/textures/blocks/grass_side_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Grass</COMMON>
+		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed.png</NAME>
@@ -60,7 +60,7 @@
 		./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Grass</COMMON>
+		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay_other.png</NAME>
@@ -72,7 +72,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/grass_side_overlay_other.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
@@ -84,7 +84,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/grass_side_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Grass</COMMON>
+		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</NAME>
@@ -98,7 +98,7 @@
 		./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</NAME>
@@ -110,7 +110,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/grass_side_snowed_colour.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_black_base.png</NAME>
@@ -122,7 +122,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_black_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_blue_base.png</NAME>
@@ -134,7 +134,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_blue_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_brown_base.png</NAME>
@@ -146,7 +146,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_brown_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_cyan_base.png</NAME>
@@ -158,7 +158,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_cyan_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_gray_base.png</NAME>
@@ -170,7 +170,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_gray_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_green_base.png</NAME>
@@ -182,7 +182,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_green_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_light_blue_base.png</NAME>
@@ -194,7 +194,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_light_blue_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_lime_base.png</NAME>
@@ -206,7 +206,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_lime_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_magenta_base.png</NAME>
@@ -218,7 +218,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_magenta_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_orange_base.png</NAME>
@@ -230,7 +230,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_orange_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_pink_base.png</NAME>
@@ -242,7 +242,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_pink_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_purple_base.png</NAME>
@@ -254,7 +254,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_purple_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_red_base.png</NAME>
@@ -266,7 +266,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_red_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_silver_base.png</NAME>
@@ -278,7 +278,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_silver_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_white_base.png</NAME>
@@ -290,7 +290,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_white_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_yellow_base.png</NAME>
@@ -302,7 +302,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_yellow_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_acacia_base.png</NAME>
@@ -314,7 +314,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_acacia_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_big_oak_base.png</NAME>
@@ -326,7 +326,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_big_oak_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_birch_base.png</NAME>
@@ -338,7 +338,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_birch_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_jungle_base.png</NAME>
@@ -350,7 +350,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_jungle_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_oak_base.png</NAME>
@@ -362,7 +362,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_oak_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_spruce_base.png</NAME>
@@ -374,7 +374,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_log_spruce_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_acacia_base.png</NAME>
@@ -386,7 +386,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_acacia_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_big_oak_base.png</NAME>
@@ -398,7 +398,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_big_oak_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_birch_base.png</NAME>
@@ -410,7 +410,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_birch_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_jungle_base.png</NAME>
@@ -422,7 +422,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_jungle_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_oak_base.png</NAME>
@@ -434,7 +434,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_oak_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_spruce_base.png</NAME>
@@ -446,7 +446,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./colour_planks_spruce_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_black.png</NAME>
@@ -459,7 +459,7 @@
 		./colour_black_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_blue.png</NAME>
@@ -472,7 +472,7 @@
 		./colour_blue_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_brown.png</NAME>
@@ -485,7 +485,7 @@
 		./colour_brown_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_cyan.png</NAME>
@@ -498,7 +498,7 @@
 		./colour_cyan_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_gray.png</NAME>
@@ -511,7 +511,7 @@
 		./colour_gray_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_green.png</NAME>
@@ -524,7 +524,7 @@
 		./colour_green_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_light_blue.png</NAME>
@@ -537,7 +537,7 @@
 		./colour_light_blue_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_lime.png</NAME>
@@ -550,7 +550,7 @@
 		./colour_lime_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_magenta.png</NAME>
@@ -563,7 +563,7 @@
 		./colour_magenta_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_orange.png</NAME>
@@ -576,7 +576,7 @@
 		./colour_orange_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_pink.png</NAME>
@@ -589,7 +589,7 @@
 		./colour_pink_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_purple.png</NAME>
@@ -602,7 +602,7 @@
 		./colour_purple_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_red.png</NAME>
@@ -615,7 +615,7 @@
 		./colour_red_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_silver.png</NAME>
@@ -628,7 +628,7 @@
 		./colour_silver_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_white.png</NAME>
@@ -641,7 +641,7 @@
 		./colour_white_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_yellow.png</NAME>
@@ -654,7 +654,7 @@
 		./colour_yellow_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_acacia.png</NAME>
@@ -667,7 +667,7 @@
 		./colour_log_acacia_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_big_oak.png</NAME>
@@ -680,7 +680,7 @@
 		./colour_log_big_oak_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_birch.png</NAME>
@@ -693,7 +693,7 @@
 		./colour_log_birch_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_jungle.png</NAME>
@@ -706,7 +706,7 @@
 		./colour_log_jungle_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_oak.png</NAME>
@@ -719,7 +719,7 @@
 		./colour_log_oak_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_spruce.png</NAME>
@@ -732,7 +732,7 @@
 		./colour_log_spruce_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_acacia.png</NAME>
@@ -745,7 +745,7 @@
 		./colour_planks_acacia_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_big_oak.png</NAME>
@@ -758,7 +758,7 @@
 		./colour_planks_big_oak_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_birch.png</NAME>
@@ -771,7 +771,7 @@
 		./colour_planks_birch_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_jungle.png</NAME>
@@ -784,7 +784,7 @@
 		./colour_planks_jungle_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_oak.png</NAME>
@@ -797,7 +797,7 @@
 		./colour_planks_oak_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_spruce.png</NAME>
@@ -810,7 +810,7 @@
 		./colour_planks_spruce_base.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/brick.png</NAME>
@@ -822,7 +822,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/brick.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Brick</COMMON>
+		<DESCRIPTION>Brick</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stone.png</NAME>
@@ -834,7 +834,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stone.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Stone</COMMON>
+		<DESCRIPTION>Stone</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_1.png</NAME>
@@ -846,7 +846,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_generic_top_1.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_2.png</NAME>
@@ -858,7 +858,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_generic_top_2.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_jungle_overlay.png</NAME>
@@ -870,7 +870,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_jungle_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_overlay.png</NAME>
@@ -882,7 +882,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_generic_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_birch_overlay.png</NAME>
@@ -894,7 +894,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/log_birch_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_generic_overlay.png</NAME>
@@ -906,7 +906,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/planks_generic_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_generic_overlay.png</NAME>
@@ -918,7 +918,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/wool_generic_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/cobblestone_overlay.png</NAME>
@@ -930,7 +930,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/cobblestone_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/cobblestone.png</NAME>
@@ -943,7 +943,7 @@
 		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Cobblestone</COMMON>
+		<DESCRIPTION>Cobblestone</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_acacia.png</NAME>
@@ -955,7 +955,7 @@
 		<DEPENDS>./colour_planks_acacia.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Planks</COMMON>
+		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_big_oak.png</NAME>
@@ -967,7 +967,7 @@
 		<DEPENDS>./colour_planks_big_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Planks</COMMON>
+		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_birch.png</NAME>
@@ -979,7 +979,7 @@
 		<DEPENDS>./colour_planks_birch.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Planks</COMMON>
+		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_jungle.png</NAME>
@@ -991,7 +991,7 @@
 		<DEPENDS>./colour_planks_jungle.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Planks</COMMON>
+		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_oak.png</NAME>
@@ -1003,7 +1003,7 @@
 		<DEPENDS>./colour_planks_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Planks</COMMON>
+		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_spruce.png</NAME>
@@ -1015,7 +1015,7 @@
 		<DEPENDS>./colour_planks_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Planks</COMMON>
+		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_acacia.png</NAME>
@@ -1028,7 +1028,7 @@
 		./colour_log_acacia.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Planks</COMMON>
+		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_big_oak.png</NAME>
@@ -1041,7 +1041,7 @@
 		./colour_log_big_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Planks</COMMON>
+		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_oak.png</NAME>
@@ -1054,7 +1054,7 @@
 		./colour_log_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_spruce.png</NAME>
@@ -1067,7 +1067,7 @@
 		./colour_log_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_birch.png</NAME>
@@ -1080,7 +1080,7 @@
 		./colour_log_birch.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_jungle.png</NAME>
@@ -1093,7 +1093,7 @@
 		./colour_log_jungle.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bookshelf_overlay.png</NAME>
@@ -1105,7 +1105,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bookshelf_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bookshelf.png</NAME>
@@ -1118,7 +1118,7 @@
 		./assets/minecraft/textures/blocks/planks_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bookshelf</COMMON>
+		<DESCRIPTION>Bookshelf</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_black.png</NAME>
@@ -1130,7 +1130,7 @@
 		<DEPENDS>./colour_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_blue.png</NAME>
@@ -1142,7 +1142,7 @@
 		<DEPENDS>./colour_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_brown.png</NAME>
@@ -1154,7 +1154,7 @@
 		<DEPENDS>./colour_brown.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_cyan.png</NAME>
@@ -1166,7 +1166,7 @@
 		<DEPENDS>./colour_cyan.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_gray.png</NAME>
@@ -1178,7 +1178,7 @@
 		<DEPENDS>./colour_gray.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_green.png</NAME>
@@ -1190,7 +1190,7 @@
 		<DEPENDS>./colour_green.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_light_blue.png</NAME>
@@ -1202,7 +1202,7 @@
 		<DEPENDS>./colour_light_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_lime.png</NAME>
@@ -1214,7 +1214,7 @@
 		<DEPENDS>./colour_lime.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_magenta.png</NAME>
@@ -1226,7 +1226,7 @@
 		<DEPENDS>./colour_magenta.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_orange.png</NAME>
@@ -1238,7 +1238,7 @@
 		<DEPENDS>./colour_orange.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_pink.png</NAME>
@@ -1250,7 +1250,7 @@
 		<DEPENDS>./colour_pink.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_purple.png</NAME>
@@ -1262,7 +1262,7 @@
 		<DEPENDS>./colour_purple.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_red.png</NAME>
@@ -1274,7 +1274,7 @@
 		<DEPENDS>./colour_red.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_silver.png</NAME>
@@ -1286,7 +1286,7 @@
 		<DEPENDS>./colour_silver.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_white.png</NAME>
@@ -1298,7 +1298,7 @@
 		<DEPENDS>./colour_white.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_yellow.png</NAME>
@@ -1310,7 +1310,7 @@
 		<DEPENDS>./colour_yellow.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Wool</COMMON>
+		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass.png</NAME>
@@ -1322,7 +1322,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/glass.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_black.png</NAME>
@@ -1335,7 +1335,7 @@
 		./colour_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_blue.png</NAME>
@@ -1348,7 +1348,7 @@
 		./colour_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_brown.png</NAME>
@@ -1361,7 +1361,7 @@
 		./colour_brown.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_cyan.png</NAME>
@@ -1374,7 +1374,7 @@
 		./colour_cyan.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_gray.png</NAME>
@@ -1387,7 +1387,7 @@
 		./colour_gray.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_green.png</NAME>
@@ -1400,7 +1400,7 @@
 		./colour_green.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_light_blue.png</NAME>
@@ -1413,7 +1413,7 @@
 		./colour_light_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_lime.png</NAME>
@@ -1426,7 +1426,7 @@
 		./colour_lime.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_magenta.png</NAME>
@@ -1439,7 +1439,7 @@
 		./colour_magenta.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_orange.png</NAME>
@@ -1452,7 +1452,7 @@
 		./colour_orange.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pink.png</NAME>
@@ -1465,7 +1465,7 @@
 		./colour_pink.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_purple.png</NAME>
@@ -1478,7 +1478,7 @@
 		./colour_purple.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_red.png</NAME>
@@ -1491,7 +1491,7 @@
 		./colour_red.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_silver.png</NAME>
@@ -1504,7 +1504,7 @@
 		./colour_silver.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_white.png</NAME>
@@ -1517,7 +1517,7 @@
 		./colour_white.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_yellow.png</NAME>
@@ -1530,7 +1530,7 @@
 		./colour_yellow.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_acacia_top.png</NAME>
@@ -1545,7 +1545,7 @@
 		./colour_log_acacia.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_big_oak_top.png</NAME>
@@ -1560,7 +1560,7 @@
 		./colour_log_big_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_birch_top.png</NAME>
@@ -1575,7 +1575,7 @@
 		./colour_log_birch.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_jungle_top.png</NAME>
@@ -1590,7 +1590,7 @@
 		./colour_log_jungle.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_oak_top.png</NAME>
@@ -1605,7 +1605,7 @@
 		./colour_log_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_spruce_top.png</NAME>
@@ -1620,7 +1620,7 @@
 		./colour_log_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Logs</COMMON>
+		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top.png</NAME>
@@ -1632,7 +1632,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/glass_pane_top.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_black.png</NAME>
@@ -1645,7 +1645,7 @@
 		./colour_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_blue.png</NAME>
@@ -1658,7 +1658,7 @@
 		./colour_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_brown.png</NAME>
@@ -1671,7 +1671,7 @@
 		./colour_brown.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_cyan.png</NAME>
@@ -1684,7 +1684,7 @@
 		./colour_cyan.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_gray.png</NAME>
@@ -1697,7 +1697,7 @@
 		./colour_gray.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_green.png</NAME>
@@ -1710,7 +1710,7 @@
 		./colour_green.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_light_blue.png</NAME>
@@ -1723,7 +1723,7 @@
 		./colour_light_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_lime.png</NAME>
@@ -1736,7 +1736,7 @@
 		./colour_lime.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_magenta.png</NAME>
@@ -1749,7 +1749,7 @@
 		./colour_magenta.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_orange.png</NAME>
@@ -1762,7 +1762,7 @@
 		./colour_orange.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_pink.png</NAME>
@@ -1775,7 +1775,7 @@
 		./colour_pink.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_purple.png</NAME>
@@ -1788,7 +1788,7 @@
 		./colour_purple.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_red.png</NAME>
@@ -1801,7 +1801,7 @@
 		./colour_red.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_silver.png</NAME>
@@ -1814,7 +1814,7 @@
 		./colour_silver.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_white.png</NAME>
@@ -1827,7 +1827,7 @@
 		./colour_white.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_yellow.png</NAME>
@@ -1840,7 +1840,7 @@
 		./colour_yellow.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Glass</COMMON>
+		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick.png</NAME>
@@ -1853,7 +1853,7 @@
 		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Stone brick</COMMON>
+		<DESCRIPTION>Stone brick</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_overlay.png</NAME>
@@ -1865,7 +1865,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy.png</NAME>
@@ -1878,7 +1878,7 @@
 		./assets/minecraft/textures/blocks/stonebrick.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Stone brick (mossy)</COMMON>
+		<DESCRIPTION>Stone brick (mossy)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png</NAME>
@@ -1890,7 +1890,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked.png</NAME>
@@ -1903,7 +1903,7 @@
 		./assets/minecraft/textures/blocks/stonebrick.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Stone brick (cracked)</COMMON>
+		<DESCRIPTION>Stone brick (cracked)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png</NAME>
@@ -1915,7 +1915,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_top.png</NAME>
@@ -1927,7 +1927,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/grass_top.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Grass</COMMON>
+		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/ladder_overlay.png</NAME>
@@ -1939,7 +1939,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/ladder_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/ladder.png</NAME>
@@ -1952,7 +1952,7 @@
 		./assets/minecraft/textures/blocks/ladder_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Ladder</COMMON>
+		<DESCRIPTION>Ladder</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/tallgrass.png</NAME>
@@ -1964,7 +1964,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/tallgrass.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Tallgrass</COMMON>
+		<DESCRIPTION>Tallgrass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand_overlay.png</NAME>
@@ -1976,7 +1976,7 @@
 		<DEPENDS>./noise.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand_colour.png</NAME>
@@ -1988,7 +1988,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/sand_colour.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand.png</NAME>
@@ -2001,7 +2001,7 @@
 		./assets/minecraft/textures/blocks/sand_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Sand</COMMON>
+		<DESCRIPTION>Sand</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/red_sand_colour.png</NAME>
@@ -2013,7 +2013,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/red_sand_colour.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/red_sand.png</NAME>
@@ -2026,7 +2026,7 @@
 		./assets/minecraft/textures/blocks/sand_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Sand (red)</COMMON>
+		<DESCRIPTION>Sand (red)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/coal_ore_overlay.png</NAME>
@@ -2038,7 +2038,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/coal_ore_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/coal_ore.png</NAME>
@@ -2051,7 +2051,7 @@
 		./assets/minecraft/textures/blocks/coal_ore_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Ore (Coal)</COMMON>
+		<DESCRIPTION>Ore (Coal)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_covers_underlay.png</NAME>
@@ -2063,7 +2063,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers_underlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
@@ -2076,7 +2076,7 @@
 		./assets/minecraft/textures/blocks/bed_covers_underlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_wood_overlay.png</NAME>
@@ -2088,7 +2088,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/bed_wood_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_wood.png</NAME>
@@ -2101,7 +2101,7 @@
 		./assets/minecraft/textures/blocks/bed_wood_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed.png</NAME>
@@ -2114,7 +2114,7 @@
 		./assets/minecraft/textures/blocks/bed_covers.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_end.png</NAME>
@@ -2126,7 +2126,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_side.png</NAME>
@@ -2138,7 +2138,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_top.png</NAME>
@@ -2150,7 +2150,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_side.png</NAME>
@@ -2162,7 +2162,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_top.png</NAME>
@@ -2174,7 +2174,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_end.png</NAME>
@@ -2186,7 +2186,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_oak.png</NAME>
@@ -2198,7 +2198,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/leaves_oak.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_acacia.png</NAME>
@@ -2210,7 +2210,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/leaves_acacia.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_birch.png</NAME>
@@ -2222,7 +2222,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/leaves_birch.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./noise.png</NAME>
@@ -2234,7 +2234,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./noise.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./noise_colour.png</NAME>
@@ -2246,7 +2246,7 @@
 		<DEPENDS>./noise.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_cutout.png</NAME>
@@ -2258,7 +2258,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/torch_on_cutout.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_base.png</NAME>
@@ -2270,7 +2270,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/torch_on_base.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_shaft.png</NAME>
@@ -2283,7 +2283,7 @@
 		./assets/minecraft/textures/blocks/log_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on.png</NAME>
@@ -2296,7 +2296,7 @@
 		./assets/minecraft/textures/blocks/torch_on_shaft.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Torch</COMMON>
+		<DESCRIPTION>Torch</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</NAME>
@@ -2308,7 +2308,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_top_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_decal.png</NAME>
@@ -2320,7 +2320,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_top_decal.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top.png</NAME>
@@ -2334,7 +2334,7 @@
 		./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Crafting Table</COMMON>
+		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</NAME>
@@ -2346,7 +2346,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_front_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_decal.png</NAME>
@@ -2358,7 +2358,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_front_decal.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front.png</NAME>
@@ -2372,7 +2372,7 @@
 		./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Crafting Table</COMMON>
+		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_overlay.png</NAME>
@@ -2384,7 +2384,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_side_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_decal.png</NAME>
@@ -2396,7 +2396,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/crafting_table_side_decal.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side.png</NAME>
@@ -2410,7 +2410,7 @@
 		./assets/minecraft/textures/blocks/crafting_table_side_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Crafting Table</COMMON>
+		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/clay_overlay.png</NAME>
@@ -2422,7 +2422,7 @@
 		<DEPENDS>./noise.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/clay_colour.png</NAME>
@@ -2434,7 +2434,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/clay_colour.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/clay.png</NAME>
@@ -2447,7 +2447,7 @@
 		./assets/minecraft/textures/blocks/clay_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Clay</COMMON>
+		<DESCRIPTION>Clay</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/redstone_ore_overlay.png</NAME>
@@ -2459,7 +2459,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/redstone_ore_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/redstone_ore.png</NAME>
@@ -2472,7 +2472,7 @@
 		./assets/minecraft/textures/blocks/redstone_ore_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Ore (Redstone)</COMMON>
+		<DESCRIPTION>Ore (Redstone)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/iron_bars.png</NAME>
@@ -2484,7 +2484,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/iron_bars.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Iron Bars</COMMON>
+		<DESCRIPTION>Iron Bars</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_0.png</NAME>
@@ -2496,7 +2496,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_0.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_1.png</NAME>
@@ -2508,7 +2508,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_1.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_2.png</NAME>
@@ -2520,7 +2520,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_2.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_3.png</NAME>
@@ -2532,7 +2532,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_3.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_4.png</NAME>
@@ -2544,7 +2544,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_4.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_5.png</NAME>
@@ -2556,7 +2556,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_5.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_6.png</NAME>
@@ -2568,7 +2568,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_6.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_7.png</NAME>
@@ -2580,7 +2580,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_7.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_8.png</NAME>
@@ -2592,7 +2592,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_8.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_9.png</NAME>
@@ -2604,7 +2604,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/destroy_stage_9.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Destroy Stages</COMMON>
+		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/diamond_ore_overlay.png</NAME>
@@ -2616,7 +2616,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/diamond_ore_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/diamond_ore.png</NAME>
@@ -2629,7 +2629,7 @@
 		./assets/minecraft/textures/blocks/diamond_ore_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Ore (Diamond)</COMMON>
+		<DESCRIPTION>Ore (Diamond)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/trapdoor_overlay.png</NAME>
@@ -2641,7 +2641,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/trapdoor_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/trapdoor.png</NAME>
@@ -2654,7 +2654,7 @@
 		./assets/minecraft/textures/blocks/trapdoor_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Trapdoor</COMMON>
+		<DESCRIPTION>Trapdoor</DESCRIPTION>
 	</ITEM>
 
 	<ITEM>
@@ -2667,7 +2667,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/door_wood_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood_decal.png</NAME>
@@ -2679,7 +2679,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/door_wood_decal.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_overlay_plank.png</NAME>
@@ -2691,7 +2691,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_overlay_log.png</NAME>
@@ -2703,7 +2703,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood.png</NAME>
@@ -2718,7 +2718,7 @@
 		./assets/minecraft/textures/blocks/door_wood_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood_upper.png</NAME>
@@ -2730,7 +2730,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/door_wood.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Door (Oak)</COMMON>
+		<DESCRIPTION>Door (Oak)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood_lower.png</NAME>
@@ -2742,7 +2742,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/door_wood.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Door (Oak)</COMMON>
+		<DESCRIPTION>Door (Oak)</DESCRIPTION>
 	</ITEM>
 
 	<ITEM>
@@ -2755,7 +2755,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/door_dark_oak_overlay.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_decal.png</NAME>
@@ -2767,7 +2767,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/blocks/door_dark_oak_decal.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak.png</NAME>
@@ -2782,7 +2782,7 @@
 		./assets/minecraft/textures/blocks/door_dark_oak_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_upper.png</NAME>
@@ -2794,7 +2794,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/door_dark_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Door (Big Oak)</COMMON>
+		<DESCRIPTION>Door (Big Oak)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_lower.png</NAME>
@@ -2806,7 +2806,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/door_dark_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Door (Big Oak)</COMMON>
+		<DESCRIPTION>Door (Big Oak)</DESCRIPTION>
 	</ITEM>
 </BLOCK>
 
@@ -2821,7 +2821,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/entity/sign_planks_front_cutout.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_front.png</NAME>
@@ -2835,7 +2835,7 @@
 		./colour_planks_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_base_cutout.png</NAME>
@@ -2847,7 +2847,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/entity/sign_planks_base_cutout.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_base.png</NAME>
@@ -2860,7 +2860,7 @@
 		./assets/minecraft/textures/blocks/planks_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_log_cutout.png</NAME>
@@ -2872,7 +2872,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./assets/minecraft/textures/entity/sign_log_cutout.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_log.png</NAME>
@@ -2886,7 +2886,7 @@
 		./colour_log_oak.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign.png</NAME>
@@ -2900,7 +2900,7 @@
 		./assets/minecraft/textures/entity/sign_planks_front.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Sign</COMMON>
+		<DESCRIPTION>Sign</DESCRIPTION>
 	</ITEM>
 </ENTITY>
 
@@ -2915,7 +2915,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./pack_template.mcmeta</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Pack file</COMMON>
+		<DESCRIPTION>Pack file</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./README.md</NAME>
@@ -2927,7 +2927,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP>./README_template.md</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Readme</COMMON>
+		<DESCRIPTION>Readme</DESCRIPTION>
 	</ITEM>
 </OTHER>
 
@@ -2947,7 +2947,7 @@
 		./assets/minecraft/textures/blocks/planks_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/planks_1.png</NAME>
@@ -2964,7 +2964,7 @@
 		./assets/minecraft/textures/blocks/planks_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/log_0.png</NAME>
@@ -2981,7 +2981,7 @@
 		./assets/minecraft/textures/blocks/log_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/log_1.png</NAME>
@@ -2998,7 +2998,7 @@
 		./assets/minecraft/textures/blocks/log_spruce.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/grass_dirt_0.png</NAME>
@@ -3011,7 +3011,7 @@
 		./assets/minecraft/textures/blocks/dirt.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/grass_dirt_1.png</NAME>
@@ -3024,7 +3024,7 @@
 		./assets/minecraft/textures/blocks/dirt.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/wool_0.png</NAME>
@@ -3036,7 +3036,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/wool_1.png</NAME>
@@ -3048,7 +3048,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/glass_0.png</NAME>
@@ -3060,7 +3060,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/glass_1.png</NAME>
@@ -3072,7 +3072,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/stone_0.png</NAME>
@@ -3084,7 +3084,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/stone_1.png</NAME>
@@ -3096,7 +3096,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/brick_0.png</NAME>
@@ -3108,7 +3108,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/brick.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/brick_1.png</NAME>
@@ -3120,7 +3120,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/brick.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/cobblestone_0.png</NAME>
@@ -3132,7 +3132,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/cobblestone_1.png</NAME>
@@ -3144,7 +3144,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/stonebrick_0.png</NAME>
@@ -3156,7 +3156,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/stonebrick_1.png</NAME>
@@ -3168,7 +3168,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/bookshelf_0.png</NAME>
@@ -3181,7 +3181,7 @@
 		./assets/minecraft/textures/blocks/bookshelf.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/bookshelf_1.png</NAME>
@@ -3194,7 +3194,7 @@
 		./assets/minecraft/textures/blocks/bookshelf.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/ores_0.png</NAME>
@@ -3206,7 +3206,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/ores_1.png</NAME>
@@ -3218,7 +3218,7 @@
 		<DEPENDS></DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 </DEMO>
 
@@ -3233,7 +3233,7 @@
 		<DEPENDS>./noise.png</DEPENDS>
 		<CLEANUP>./conf/vector_any_texture_noisify.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/vector_basic_block_noisify.sh</NAME>
@@ -3245,7 +3245,7 @@
 		<DEPENDS>./noise.png</DEPENDS>
 		<CLEANUP>./conf/vector_basic_block_noisify.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/planks.sh</NAME>
@@ -3257,7 +3257,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
 		<CLEANUP>./conf/planks.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/bed_parts.sh</NAME>
@@ -3269,7 +3269,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<CLEANUP>./conf/bed_parts.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/wool.sh</NAME>
@@ -3281,7 +3281,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png</DEPENDS>
 		<CLEANUP>./conf/wool.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/demos/wool.sh</NAME>
@@ -3308,7 +3308,7 @@
 		./assets/minecraft/textures/blocks/wool_colored_yellow.png</DEPENDS>
 		<CLEANUP>./conf/demos/wool.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/demos/glass.sh</NAME>
@@ -3335,7 +3335,7 @@
 		./assets/minecraft/textures/blocks/glass_yellow.png</DEPENDS>
 		<CLEANUP>./conf/demos/glass.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/demos/stonebrick.sh</NAME>
@@ -3349,7 +3349,7 @@
 		./assets/minecraft/textures/blocks/stonebrick_cracked.png</DEPENDS>
 		<CLEANUP>./conf/demos/stonebrick.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/demos/ores.sh</NAME>
@@ -3364,6 +3364,6 @@
 		./assets/minecraft/textures/blocks/diamond_ore.png</DEPENDS>
 		<CLEANUP>./conf/demos/ores.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
-		<COMMON></COMMON>
+		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 </RESOURCES>

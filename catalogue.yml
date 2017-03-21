@@ -6,7 +6,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./pack.svg"
-    common: "Pack logo"
+    description: "Pack logo"
 
   - name: "./assets/minecraft/textures/blocks/dirt.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -14,7 +14,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/dirt.svg"
-    common: "Dirt"
+    description: "Dirt"
 
   - name: "./assets/minecraft/textures/blocks/grass_side_base.png"
     script: "./conf/grass_side_base.sh"
@@ -28,7 +28,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/grass_side_base.png"
     - "./assets/minecraft/textures/blocks/grass_side_overlay.png"
-    common: "Grass"
+    description: "Grass"
 
   - name: "./assets/minecraft/textures/blocks/grass_side_snowed.png"
     script: "./conf/grass_side_snowed.sh"
@@ -36,7 +36,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/grass_side_base.png"
     - "./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png"
-    common: "Grass"
+    description: "Grass"
 
   - name: "./assets/minecraft/textures/blocks/grass_side_overlay_other.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -50,7 +50,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/grass_side_overlay.svg"
-    common: "Grass"
+    description: "Grass"
 
   - name: "./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png"
     script: "./conf/grass_side_snowed_overlay.sh"
@@ -435,7 +435,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/brick.svg"
-    common: "Brick"
+    description: "Brick"
 
   - name: "./assets/minecraft/textures/blocks/stone.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -443,7 +443,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/stone.svg"
-    common: "Stone"
+    description: "Stone"
 
   - name: "./assets/minecraft/textures/blocks/log_generic_top_1.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -499,7 +499,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/cobblestone_overlay.png"
     - "./assets/minecraft/textures/blocks/stone.png"
-    common: "Cobblestone"
+    description: "Cobblestone"
 
   - name: "./assets/minecraft/textures/blocks/planks_acacia.png"
     script: "./conf/planks.sh"
@@ -507,7 +507,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_planks_acacia.png"
-    common: "Planks"
+    description: "Planks"
 
   - name: "./assets/minecraft/textures/blocks/planks_big_oak.png"
     script: "./conf/planks.sh"
@@ -515,7 +515,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_planks_big_oak.png"
-    common: "Planks"
+    description: "Planks"
 
   - name: "./assets/minecraft/textures/blocks/planks_birch.png"
     script: "./conf/planks.sh"
@@ -523,7 +523,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_planks_birch.png"
-    common: "Planks"
+    description: "Planks"
 
   - name: "./assets/minecraft/textures/blocks/planks_jungle.png"
     script: "./conf/planks.sh"
@@ -531,7 +531,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_planks_jungle.png"
-    common: "Planks"
+    description: "Planks"
 
   - name: "./assets/minecraft/textures/blocks/planks_oak.png"
     script: "./conf/planks.sh"
@@ -539,7 +539,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_planks_oak.png"
-    common: "Planks"
+    description: "Planks"
 
   - name: "./assets/minecraft/textures/blocks/planks_spruce.png"
     script: "./conf/planks.sh"
@@ -547,7 +547,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_planks_spruce.png"
-    common: "Planks"
+    description: "Planks"
 
   - name: "./assets/minecraft/textures/blocks/log_acacia.png"
     script: "./conf/logs.sh"
@@ -556,7 +556,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
     - "./colour_log_acacia.png"
-    common: "Planks"
+    description: "Planks"
 
   - name: "./assets/minecraft/textures/blocks/log_big_oak.png"
     script: "./conf/logs.sh"
@@ -565,7 +565,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
     - "./colour_log_big_oak.png"
-    common: "Planks"
+    description: "Planks"
 
   - name: "./assets/minecraft/textures/blocks/log_oak.png"
     script: "./conf/logs.sh"
@@ -574,7 +574,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
     - "./colour_log_oak.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/log_spruce.png"
     script: "./conf/logs.sh"
@@ -583,7 +583,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/log_generic_overlay.png"
     - "./colour_log_spruce.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/log_birch.png"
     script: "./conf/logs_birch.sh"
@@ -591,7 +591,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/log_birch_overlay.png"
     - "./colour_log_birch.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/log_jungle.png"
     script: "./conf/logs_jungle.sh"
@@ -599,7 +599,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/log_jungle_overlay.png"
     - "./colour_log_jungle.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/bookshelf_overlay.png"
     script: "./conf/vector_any_texture_noisify.sh"
@@ -613,7 +613,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/bookshelf_overlay.png"
     - "./assets/minecraft/textures/blocks/planks_oak.png"
-    common: "Bookshelf"
+    description: "Bookshelf"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_black.png"
     script: "./conf/wool.sh"
@@ -621,7 +621,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_black.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_blue.png"
     script: "./conf/wool.sh"
@@ -629,7 +629,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_blue.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_brown.png"
     script: "./conf/wool.sh"
@@ -637,7 +637,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_brown.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_cyan.png"
     script: "./conf/wool.sh"
@@ -645,7 +645,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_cyan.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_gray.png"
     script: "./conf/wool.sh"
@@ -653,7 +653,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_gray.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_green.png"
     script: "./conf/wool.sh"
@@ -661,7 +661,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_green.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_light_blue.png"
     script: "./conf/wool.sh"
@@ -669,7 +669,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_light_blue.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_lime.png"
     script: "./conf/wool.sh"
@@ -677,7 +677,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_lime.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_magenta.png"
     script: "./conf/wool.sh"
@@ -685,7 +685,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_magenta.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_orange.png"
     script: "./conf/wool.sh"
@@ -693,7 +693,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_orange.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_pink.png"
     script: "./conf/wool.sh"
@@ -701,7 +701,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_pink.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_purple.png"
     script: "./conf/wool.sh"
@@ -709,7 +709,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_purple.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_red.png"
     script: "./conf/wool.sh"
@@ -717,7 +717,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_red.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_silver.png"
     script: "./conf/wool.sh"
@@ -725,7 +725,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_silver.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_white.png"
     script: "./conf/wool.sh"
@@ -733,7 +733,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_white.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/wool_colored_yellow.png"
     script: "./conf/wool.sh"
@@ -741,7 +741,7 @@ catalogue:
     keep: yes
     depends:
     - "./colour_yellow.png"
-    common: "Wool"
+    description: "Wool"
 
   - name: "./assets/minecraft/textures/blocks/glass.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -749,7 +749,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/glass.svg"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_black.png"
     script: "./conf/glass.sh"
@@ -758,7 +758,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_black.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_blue.png"
     script: "./conf/glass.sh"
@@ -767,7 +767,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_blue.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_brown.png"
     script: "./conf/glass.sh"
@@ -776,7 +776,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_brown.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_cyan.png"
     script: "./conf/glass.sh"
@@ -785,7 +785,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_cyan.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_gray.png"
     script: "./conf/glass.sh"
@@ -794,7 +794,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_gray.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_green.png"
     script: "./conf/glass.sh"
@@ -803,7 +803,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_green.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_light_blue.png"
     script: "./conf/glass.sh"
@@ -812,7 +812,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_light_blue.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_lime.png"
     script: "./conf/glass.sh"
@@ -821,7 +821,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_lime.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_magenta.png"
     script: "./conf/glass.sh"
@@ -830,7 +830,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_magenta.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_orange.png"
     script: "./conf/glass.sh"
@@ -839,7 +839,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_orange.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pink.png"
     script: "./conf/glass.sh"
@@ -848,7 +848,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_pink.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_purple.png"
     script: "./conf/glass.sh"
@@ -857,7 +857,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_purple.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_red.png"
     script: "./conf/glass.sh"
@@ -866,7 +866,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_red.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_silver.png"
     script: "./conf/glass.sh"
@@ -875,7 +875,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_silver.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_white.png"
     script: "./conf/glass.sh"
@@ -884,7 +884,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_white.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_yellow.png"
     script: "./conf/glass.sh"
@@ -893,7 +893,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass.png"
     - "./colour_yellow.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/log_acacia_top.png"
     script: "./conf/log_top.sh"
@@ -904,7 +904,7 @@ catalogue:
     - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
     - "./colour_planks_acacia.png"
     - "./colour_log_acacia.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/log_big_oak_top.png"
     script: "./conf/log_top.sh"
@@ -915,7 +915,7 @@ catalogue:
     - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
     - "./colour_planks_big_oak.png"
     - "./colour_log_big_oak.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/log_birch_top.png"
     script: "./conf/log_top.sh"
@@ -926,7 +926,7 @@ catalogue:
     - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
     - "./colour_planks_birch.png"
     - "./colour_log_birch.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/log_jungle_top.png"
     script: "./conf/log_top.sh"
@@ -937,7 +937,7 @@ catalogue:
     - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
     - "./colour_planks_jungle.png"
     - "./colour_log_jungle.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/log_oak_top.png"
     script: "./conf/log_top.sh"
@@ -948,7 +948,7 @@ catalogue:
     - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
     - "./colour_planks_oak.png"
     - "./colour_log_oak.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/log_spruce_top.png"
     script: "./conf/log_top.sh"
@@ -959,7 +959,7 @@ catalogue:
     - "./assets/minecraft/textures/blocks/log_generic_top_2.png"
     - "./colour_planks_spruce.png"
     - "./colour_log_spruce.png"
-    common: "Logs"
+    description: "Logs"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -967,7 +967,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/glass_pane_top.svg"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_black.png"
     script: "./conf/glass_pane_top.sh"
@@ -976,7 +976,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_black.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_blue.png"
     script: "./conf/glass_pane_top.sh"
@@ -985,7 +985,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_blue.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_brown.png"
     script: "./conf/glass_pane_top.sh"
@@ -994,7 +994,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_brown.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_cyan.png"
     script: "./conf/glass_pane_top.sh"
@@ -1003,7 +1003,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_cyan.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_gray.png"
     script: "./conf/glass_pane_top.sh"
@@ -1012,7 +1012,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_gray.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_green.png"
     script: "./conf/glass_pane_top.sh"
@@ -1021,7 +1021,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_green.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_light_blue.png"
     script: "./conf/glass_pane_top.sh"
@@ -1030,7 +1030,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_light_blue.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_lime.png"
     script: "./conf/glass_pane_top.sh"
@@ -1039,7 +1039,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_lime.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_magenta.png"
     script: "./conf/glass_pane_top.sh"
@@ -1048,7 +1048,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_magenta.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_orange.png"
     script: "./conf/glass_pane_top.sh"
@@ -1057,7 +1057,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_orange.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_pink.png"
     script: "./conf/glass_pane_top.sh"
@@ -1066,7 +1066,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_pink.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_purple.png"
     script: "./conf/glass_pane_top.sh"
@@ -1075,7 +1075,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_purple.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_red.png"
     script: "./conf/glass_pane_top.sh"
@@ -1084,7 +1084,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_red.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_silver.png"
     script: "./conf/glass_pane_top.sh"
@@ -1093,7 +1093,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_silver.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_white.png"
     script: "./conf/glass_pane_top.sh"
@@ -1102,7 +1102,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_white.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/glass_pane_top_yellow.png"
     script: "./conf/glass_pane_top.sh"
@@ -1111,7 +1111,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.png"
     - "./colour_yellow.png"
-    common: "Glass"
+    description: "Glass"
 
   - name: "./assets/minecraft/textures/blocks/stonebrick.png"
     script: "./conf/stonebrick.sh"
@@ -1119,7 +1119,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/stonebrick_overlay.png"
     - "./assets/minecraft/textures/blocks/stone.png"
-    common: "Stone brick"
+    description: "Stone brick"
 
   - name: "./assets/minecraft/textures/blocks/stonebrick_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1133,7 +1133,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png"
     - "./assets/minecraft/textures/blocks/stonebrick.png"
-    common: "Stone brick (mossy)"
+    description: "Stone brick (mossy)"
 
   - name: "./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1147,7 +1147,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png"
     - "./assets/minecraft/textures/blocks/stonebrick.png"
-    common: "Stone brick (cracked)"
+    description: "Stone brick (cracked)"
 
   - name: "./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1161,7 +1161,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/grass_top.svg"
-    common: "Grass"
+    description: "Grass"
 
   - name: "./assets/minecraft/textures/blocks/ladder_overlay.png"
     script: "./conf/vector_basic_block_noisify.sh"
@@ -1175,7 +1175,7 @@ catalogue:
     depends:
     - "./colour_planks_oak.png"
     - "./assets/minecraft/textures/blocks/ladder_overlay.png"
-    common: "Ladder"
+    description: "Ladder"
 
   - name: "./assets/minecraft/textures/blocks/tallgrass.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1183,7 +1183,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/tallgrass.svg"
-    common: "Tallgrass"
+    description: "Tallgrass"
 
   - name: "./assets/minecraft/textures/blocks/sand_overlay.png"
     script: "./conf/sand_overlay.sh"
@@ -1202,7 +1202,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/sand_colour.png"
     - "./assets/minecraft/textures/blocks/sand_overlay.png"
-    common: "Sand"
+    description: "Sand"
 
   - name: "./assets/minecraft/textures/blocks/red_sand_colour.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1216,7 +1216,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/red_sand_colour.png"
     - "./assets/minecraft/textures/blocks/sand_overlay.png"
-    common: "Sand (red)"
+    description: "Sand (red)"
 
   - name: "./assets/minecraft/textures/blocks/coal_ore_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1231,7 +1231,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/stone.png"
     - "./assets/minecraft/textures/blocks/coal_ore_overlay.png"
-    common: "Ore (Coal)"
+    description: "Ore (Coal)"
 
   - name: "./assets/minecraft/textures/blocks/bed_covers_underlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1267,37 +1267,37 @@ catalogue:
     script: "./conf/bed_parts.sh"
     options: "bed_feet_end"
     keep: yes
-    common: "Bed"
+    description: "Bed"
 
   - name: "./assets/minecraft/textures/blocks/bed_feet_side.png"
     script: "./conf/bed_parts.sh"
     options: "bed_feet_side"
     keep: yes
-    common: "Bed"
+    description: "Bed"
 
   - name: "./assets/minecraft/textures/blocks/bed_feet_top.png"
     script: "./conf/bed_parts.sh"
     options: "bed_feet_top"
     keep: yes
-    common: "Bed"
+    description: "Bed"
 
   - name: "./assets/minecraft/textures/blocks/bed_head_side.png"
     script: "./conf/bed_parts.sh"
     options: "bed_head_side"
     keep: yes
-    common: "Bed"
+    description: "Bed"
 
   - name: "./assets/minecraft/textures/blocks/bed_head_top.png"
     script: "./conf/bed_parts.sh"
     options: "bed_head_top"
     keep: yes
-    common: "Bed"
+    description: "Bed"
 
   - name: "./assets/minecraft/textures/blocks/bed_head_end.png"
     script: "./conf/bed_parts.sh"
     options: "bed_head_end"
     keep: yes
-    common: "Bed"
+    description: "Bed"
 
   - name: "./assets/minecraft/textures/blocks/leaves_oak.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1355,7 +1355,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/torch_on_base.png"
     - "./assets/minecraft/textures/blocks/torch_on_shaft.png"
-    common: "Torch"
+    description: "Torch"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_top_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1376,7 +1376,7 @@ catalogue:
     - "./colour_planks_oak.png"
     - "./assets/minecraft/textures/blocks/crafting_table_top_decal.png"
     - "./assets/minecraft/textures/blocks/crafting_table_top_overlay.png"
-    common: "Crafting Table"
+    description: "Crafting Table"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_front_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1398,7 +1398,7 @@ catalogue:
     - "./assets/minecraft/textures/blocks/planks_oak.png"
     - "./assets/minecraft/textures/blocks/crafting_table_front_decal.png"
     - "./assets/minecraft/textures/blocks/crafting_table_front_overlay.png"
-    common: "Crafting Table"
+    description: "Crafting Table"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_side_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1420,7 +1420,7 @@ catalogue:
     - "./assets/minecraft/textures/blocks/planks_oak.png"
     - "./assets/minecraft/textures/blocks/crafting_table_side_decal.png"
     - "./assets/minecraft/textures/blocks/crafting_table_side_overlay.png"
-    common: "Crafting Table"
+    description: "Crafting Table"
 
   - name: "./assets/minecraft/textures/blocks/clay_overlay.png"
     script: "./conf/clay_overlay.sh"
@@ -1439,7 +1439,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/clay_colour.png"
     - "./assets/minecraft/textures/blocks/clay_overlay.png"
-    common: "Clay"
+    description: "Clay"
 
   - name: "./assets/minecraft/textures/blocks/redstone_ore_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1454,7 +1454,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/stone.png"
     - "./assets/minecraft/textures/blocks/redstone_ore_overlay.png"
-    common: "Ore (Redstone)"
+    description: "Ore (Redstone)"
 
   - name: "./assets/minecraft/textures/blocks/iron_bars.png"
     script: "./conf/vector_any_texture_noisify.sh"
@@ -1462,7 +1462,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/iron_bars.svg"
-    common: "Iron Bars"
+    description: "Iron Bars"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_0.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1470,7 +1470,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_0.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_1.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1478,7 +1478,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_1.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_2.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1486,7 +1486,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_2.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_3.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1494,7 +1494,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_3.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_4.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1502,7 +1502,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_4.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_5.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1510,7 +1510,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_5.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_6.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1518,7 +1518,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_6.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_7.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1526,7 +1526,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_7.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_8.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1534,7 +1534,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_8.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/destroy_stage_9.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1542,7 +1542,7 @@ catalogue:
     keep: yes
     cleanup:
     - "./assets/minecraft/textures/blocks/destroy_stage_9.svg"
-    common: "Destroy Stages"
+    description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/diamond_ore_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1557,7 +1557,7 @@ catalogue:
     depends:
     - "./assets/minecraft/textures/blocks/stone.png"
     - "./assets/minecraft/textures/blocks/diamond_ore_overlay.png"
-    common: "Ore (Diamond)"
+    description: "Ore (Diamond)"
 
   - name: "./assets/minecraft/textures/blocks/trapdoor_overlay.png"
     script: "./conf/vector_basic_block_noisify.sh"
@@ -1571,7 +1571,7 @@ catalogue:
     depends:
     - "./colour_planks_oak.png"
     - "./assets/minecraft/textures/blocks/trapdoor_overlay.png"
-    common: "Trapdoor"
+    description: "Trapdoor"
 
   - name: "./assets/minecraft/textures/blocks/door_wood_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1610,7 +1610,7 @@ catalogue:
     keep: yes
     depends:
     - "./assets/minecraft/textures/blocks/door_wood.png"
-    common: "Door (Oak)"
+    description: "Door (Oak)"
 
   - name: "./assets/minecraft/textures/blocks/door_wood_lower.png"
     script: "./conf/door_parts.sh"
@@ -1618,7 +1618,7 @@ catalogue:
     keep: yes
     depends:
     - "./assets/minecraft/textures/blocks/door_wood.png"
-    common: "Door (Oak)"
+    description: "Door (Oak)"
 
   - name: "./assets/minecraft/textures/blocks/door_dark_oak_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
@@ -1647,7 +1647,7 @@ catalogue:
     keep: yes
     depends:
     - "./assets/minecraft/textures/blocks/door_dark_oak.png"
-    common: "Door (Big Oak)"
+    description: "Door (Big Oak)"
 
   - name: "./assets/minecraft/textures/blocks/door_dark_oak_lower.png"
     script: "./conf/door_parts.sh"
@@ -1655,7 +1655,7 @@ catalogue:
     keep: yes
     depends:
     - "./assets/minecraft/textures/blocks/door_dark_oak.png"
-    common: "Door (Big Oak)"
+    description: "Door (Big Oak)"
 
   - name: "./assets/minecraft/textures/entity/sign_planks_front_cutout.png"
     script: "%stdconf%/vector_basic_entity.sh"
@@ -1706,21 +1706,21 @@ catalogue:
     - "./assets/minecraft/textures/entity/sign_log.png"
     - "./assets/minecraft/textures/entity/sign_planks_base.png"
     - "./assets/minecraft/textures/entity/sign_planks_front.png"
-    common: "Sign"
+    description: "Sign"
 
   - name: "./pack.mcmeta"
     script: "./conf/pack_meta.sh"
     keep: yes
     cleanup:
     - "./pack_template.mcmeta"
-    common: "Pack file"
+    description: "Pack file"
 
   - name: "./README.md"
     script: "./conf/readme.sh"
     keep: yes
     cleanup:
     - "./README_template.md"
-    common: "Readme"
+    description: "Readme"
 
   - name: "./demos/planks_0.png"
     script: "./conf/demos/wood.sh"

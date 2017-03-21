@@ -6,8 +6,22 @@ export __smelt_setup_bin="${__run_dir}/smelt_setup.sh"
 # get set up
 source "${__smelt_setup_bin}" &> /dev/null || { echo "Failed to load setup \"${__smelt_setup_bin}\""; exit 1; }
 
+__get_range () {
+grep -n '[</|<]'"${2}"'>' < "${1}" | sed 's/\:.*//' |  sed 'N;s/\n/,/'
+}
+
+__read_range () {
+sed -e "${2}"'!d' -e 's/^[\t| ]*//' "${1}"
+}
+
 __get_field_piped () {
 printf "%q" "$(cat)" | pcregrep -M -o1 "<(.*)>(\n|.)*</(.*)>"
+}
+
+__get_value_piped () {
+local __pipe="$(cat)"
+local __after="${__pipe/*<${1}>}"
+echo "${__after/<\/${1}>*}"
 }
 
 __function () {
@@ -22,7 +36,7 @@ if ! [ "${__value}" = 'NO' ] && ! [ "${__field}" = 'NAME' ]; then
 fi
 
 case "${__field}" in
-    "SCRIPT" | "COMMON" | "OPTIONS" | "NAME")
+    "SCRIPT" | "DESCRIPTION" | "OPTIONS" | "NAME")
         echo "$(tr '[A-Z]' '[a-z]' <<< ${__field}): \"${__value}\""
         ;;
     "SIZE")
@@ -53,7 +67,7 @@ KEEP
 DEPENDS
 CLEANUP
 OPTIONAL
-COMMON'
+DESCRIPTION'
 
 echo "catalogue:"
 
