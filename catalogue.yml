@@ -4,7 +4,7 @@ catalogue:
     size: 128
     options: "./pack white"
     keep: yes
-    cleanup:
+    depends:
     - "./pack.svg"
     description: "Pack logo"
 
@@ -12,7 +12,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "dirt"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/dirt.svg"
     description: "Dirt"
 
@@ -41,14 +41,14 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/grass_side_overlay_other.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "grass_side_overlay_other"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/grass_side_overlay_other.svg"
 
   - name: "./assets/minecraft/textures/blocks/grass_side_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "grass_side_overlay"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/grass_side_overlay.svg"
     description: "Grass"
 
@@ -62,175 +62,175 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/grass_side_snowed_colour.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "grass_side_snowed_colour"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/grass_side_snowed_colour.svg"
 
   - name: "./colour_black_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "black"
-    cleanup:
+    depends:
     - "./colour_black_base.svg"
 
   - name: "./colour_blue_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "blue"
-    cleanup:
+    depends:
     - "./colour_blue_base.svg"
 
   - name: "./colour_brown_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "brown"
-    cleanup:
+    depends:
     - "./colour_brown_base.svg"
 
   - name: "./colour_cyan_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "cyan"
-    cleanup:
+    depends:
     - "./colour_cyan_base.svg"
 
   - name: "./colour_gray_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "gray"
-    cleanup:
+    depends:
     - "./colour_gray_base.svg"
 
   - name: "./colour_green_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "green"
-    cleanup:
+    depends:
     - "./colour_green_base.svg"
 
   - name: "./colour_light_blue_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "light_blue"
-    cleanup:
+    depends:
     - "./colour_light_blue_base.svg"
 
   - name: "./colour_lime_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "lime"
-    cleanup:
+    depends:
     - "./colour_lime_base.svg"
 
   - name: "./colour_magenta_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "magenta"
-    cleanup:
+    depends:
     - "./colour_magenta_base.svg"
 
   - name: "./colour_orange_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "orange"
-    cleanup:
+    depends:
     - "./colour_orange_base.svg"
 
   - name: "./colour_pink_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "pink"
-    cleanup:
+    depends:
     - "./colour_pink_base.svg"
 
   - name: "./colour_purple_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "purple"
-    cleanup:
+    depends:
     - "./colour_purple_base.svg"
 
   - name: "./colour_red_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "red"
-    cleanup:
+    depends:
     - "./colour_red_base.svg"
 
   - name: "./colour_silver_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "silver"
-    cleanup:
+    depends:
     - "./colour_silver_base.svg"
 
   - name: "./colour_white_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "white"
-    cleanup:
+    depends:
     - "./colour_white_base.svg"
 
   - name: "./colour_yellow_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "yellow"
-    cleanup:
+    depends:
     - "./colour_yellow_base.svg"
 
   - name: "./colour_log_acacia_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "log_acacia"
-    cleanup:
+    depends:
     - "./colour_log_acacia_base.svg"
 
   - name: "./colour_log_big_oak_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "log_big_oak"
-    cleanup:
+    depends:
     - "./colour_log_big_oak_base.svg"
 
   - name: "./colour_log_birch_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "log_birch"
-    cleanup:
+    depends:
     - "./colour_log_birch_base.svg"
 
   - name: "./colour_log_jungle_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "log_jungle"
-    cleanup:
+    depends:
     - "./colour_log_jungle_base.svg"
 
   - name: "./colour_log_oak_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "log_oak"
-    cleanup:
+    depends:
     - "./colour_log_oak_base.svg"
 
   - name: "./colour_log_spruce_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "log_spruce"
-    cleanup:
+    depends:
     - "./colour_log_spruce_base.svg"
 
   - name: "./colour_planks_acacia_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "planks_acacia"
-    cleanup:
+    depends:
     - "./colour_planks_acacia_base.svg"
 
   - name: "./colour_planks_big_oak_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "planks_big_oak"
-    cleanup:
+    depends:
     - "./colour_planks_big_oak_base.svg"
 
   - name: "./colour_planks_birch_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "planks_birch"
-    cleanup:
+    depends:
     - "./colour_planks_birch_base.svg"
 
   - name: "./colour_planks_jungle_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "planks_jungle"
-    cleanup:
+    depends:
     - "./colour_planks_jungle_base.svg"
 
   - name: "./colour_planks_oak_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "planks_oak"
-    cleanup:
+    depends:
     - "./colour_planks_oak_base.svg"
 
   - name: "./colour_planks_spruce_base.png"
     script: "./conf/vector_base_colour.sh"
     options: "planks_spruce"
-    cleanup:
+    depends:
     - "./colour_planks_spruce_base.svg"
 
   - name: "./colour_black.png"
@@ -433,7 +433,7 @@ catalogue:
     script: "./conf/vector_any_texture_noisify.sh"
     options: "./assets/minecraft/textures/blocks/brick 0.05"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/brick.svg"
     description: "Brick"
 
@@ -441,56 +441,56 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "stone"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/stone.svg"
     description: "Stone"
 
   - name: "./assets/minecraft/textures/blocks/log_generic_top_1.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "log_generic_top_1"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/log_generic_top_1.svg"
 
   - name: "./assets/minecraft/textures/blocks/log_generic_top_2.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "log_generic_top_2"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/log_generic_top_2.svg"
 
   - name: "./assets/minecraft/textures/blocks/log_jungle_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "log_jungle_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/log_jungle_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/log_generic_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "log_generic_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/log_generic_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/log_birch_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "log_birch_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/log_birch_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/planks_generic_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "planks_generic_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/planks_generic_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/wool_generic_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "wool_generic_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/wool_generic_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/cobblestone_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "cobblestone_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/cobblestone_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/cobblestone.png"
@@ -604,7 +604,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/bookshelf_overlay.png"
     script: "./conf/vector_any_texture_noisify.sh"
     options: "./assets/minecraft/textures/blocks/bookshelf_overlay 0.075"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/bookshelf_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/bookshelf.png"
@@ -747,7 +747,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "glass"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/glass.svg"
     description: "Glass"
 
@@ -965,7 +965,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "glass_pane_top"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/glass_pane_top.svg"
     description: "Glass"
 
@@ -1124,7 +1124,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/stonebrick_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "stonebrick_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/stonebrick_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/stonebrick_mossy.png"
@@ -1138,7 +1138,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "stonebrick_mossy_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/stonebrick_cracked.png"
@@ -1152,21 +1152,21 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "stonebrick_cracked_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/grass_top.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "grass_top"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/grass_top.svg"
     description: "Grass"
 
   - name: "./assets/minecraft/textures/blocks/ladder_overlay.png"
     script: "./conf/vector_basic_block_noisify.sh"
     options: "ladder_overlay 0.075"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/ladder_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/ladder.png"
@@ -1181,7 +1181,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "tallgrass"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/tallgrass.svg"
     description: "Tallgrass"
 
@@ -1193,7 +1193,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/sand_colour.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "sand_colour"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/sand_colour.svg"
 
   - name: "./assets/minecraft/textures/blocks/sand.png"
@@ -1207,7 +1207,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/red_sand_colour.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "red_sand_colour"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/red_sand_colour.svg"
 
   - name: "./assets/minecraft/textures/blocks/red_sand.png"
@@ -1221,7 +1221,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/coal_ore_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "coal_ore_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/coal_ore_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/coal_ore.png"
@@ -1236,7 +1236,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/bed_covers_underlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "bed_covers_underlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/bed_covers_underlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/bed_covers.png"
@@ -1248,7 +1248,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/bed_wood_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "bed_wood_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/bed_wood_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/bed_wood.png"
@@ -1303,27 +1303,27 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "leaves_oak"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/leaves_oak.svg"
 
   - name: "./assets/minecraft/textures/blocks/leaves_acacia.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "leaves_acacia"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/leaves_acacia.svg"
 
   - name: "./assets/minecraft/textures/blocks/leaves_birch.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "leaves_birch"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/leaves_birch.svg"
 
   - name: "./noise.png"
     script: "%stdconf%/vector_any_texture.sh"
     options: "noise"
-    cleanup:
+    depends:
     - "./noise.svg"
 
   - name: "./noise_colour.png"
@@ -1334,13 +1334,13 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/torch_on_cutout.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "torch_on_cutout"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/torch_on_cutout.svg"
 
   - name: "./assets/minecraft/textures/blocks/torch_on_base.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "torch_on_base"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/torch_on_base.svg"
 
   - name: "./assets/minecraft/textures/blocks/torch_on_shaft.png"
@@ -1360,13 +1360,13 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/crafting_table_top_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "crafting_table_top_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/crafting_table_top_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_top_decal.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "crafting_table_top_decal"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/crafting_table_top_decal.svg"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_top.png"
@@ -1381,13 +1381,13 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/crafting_table_front_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "crafting_table_front_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/crafting_table_front_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_front_decal.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "crafting_table_front_decal"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/crafting_table_front_decal.svg"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_front.png"
@@ -1403,13 +1403,13 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/crafting_table_side_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "crafting_table_side_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/crafting_table_side_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_side_decal.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "crafting_table_side_decal"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/crafting_table_side_decal.svg"
 
   - name: "./assets/minecraft/textures/blocks/crafting_table_side.png"
@@ -1430,7 +1430,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/clay_colour.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "clay_colour"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/clay_colour.svg"
 
   - name: "./assets/minecraft/textures/blocks/clay.png"
@@ -1444,7 +1444,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/redstone_ore_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "redstone_ore_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/redstone_ore_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/redstone_ore.png"
@@ -1460,7 +1460,7 @@ catalogue:
     script: "./conf/vector_any_texture_noisify.sh"
     options: "./assets/minecraft/textures/blocks/iron_bars 0.125"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/iron_bars.svg"
     description: "Iron Bars"
 
@@ -1468,7 +1468,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_0"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_0.svg"
     description: "Destroy Stages"
 
@@ -1476,7 +1476,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_1"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_1.svg"
     description: "Destroy Stages"
 
@@ -1484,7 +1484,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_2"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_2.svg"
     description: "Destroy Stages"
 
@@ -1492,7 +1492,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_3"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_3.svg"
     description: "Destroy Stages"
 
@@ -1500,7 +1500,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_4"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_4.svg"
     description: "Destroy Stages"
 
@@ -1508,7 +1508,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_5"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_5.svg"
     description: "Destroy Stages"
 
@@ -1516,7 +1516,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_6"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_6.svg"
     description: "Destroy Stages"
 
@@ -1524,7 +1524,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_7"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_7.svg"
     description: "Destroy Stages"
 
@@ -1532,7 +1532,7 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_8"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_8.svg"
     description: "Destroy Stages"
 
@@ -1540,14 +1540,14 @@ catalogue:
     script: "%stdconf%/vector_basic_block.sh"
     options: "destroy_stage_9"
     keep: yes
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/destroy_stage_9.svg"
     description: "Destroy Stages"
 
   - name: "./assets/minecraft/textures/blocks/diamond_ore_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "diamond_ore_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/diamond_ore_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/diamond_ore.png"
@@ -1562,7 +1562,7 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/trapdoor_overlay.png"
     script: "./conf/vector_basic_block_noisify.sh"
     options: "trapdoor_overlay 0.075"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/trapdoor_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/trapdoor.png"
@@ -1576,13 +1576,13 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/door_wood_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "door_wood_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/door_wood_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/door_wood_decal.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "door_wood_decal"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/door_wood_decal.svg"
 
   - name: "./assets/minecraft/textures/blocks/door_overlay_plank.png"
@@ -1623,13 +1623,13 @@ catalogue:
   - name: "./assets/minecraft/textures/blocks/door_dark_oak_overlay.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "door_dark_oak_overlay"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/door_dark_oak_overlay.svg"
 
   - name: "./assets/minecraft/textures/blocks/door_dark_oak_decal.png"
     script: "%stdconf%/vector_basic_block.sh"
     options: "door_dark_oak_decal"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/blocks/door_dark_oak_decal.svg"
 
   - name: "./assets/minecraft/textures/blocks/door_dark_oak.png"
@@ -1660,7 +1660,7 @@ catalogue:
   - name: "./assets/minecraft/textures/entity/sign_planks_front_cutout.png"
     script: "%stdconf%/vector_basic_entity.sh"
     options: "sign_planks_front_cutout"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/entity/sign_planks_front_cutout.svg"
 
   - name: "./assets/minecraft/textures/entity/sign_planks_front.png"
@@ -1674,7 +1674,7 @@ catalogue:
   - name: "./assets/minecraft/textures/entity/sign_planks_base_cutout.png"
     script: "%stdconf%/vector_basic_entity.sh"
     options: "sign_planks_base_cutout"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/entity/sign_planks_base_cutout.svg"
 
   - name: "./assets/minecraft/textures/entity/sign_planks_base.png"
@@ -1687,7 +1687,7 @@ catalogue:
   - name: "./assets/minecraft/textures/entity/sign_log_cutout.png"
     script: "%stdconf%/vector_basic_entity.sh"
     options: "sign_log_cutout"
-    cleanup:
+    depends:
     - "./assets/minecraft/textures/entity/sign_log_cutout.svg"
 
   - name: "./assets/minecraft/textures/entity/sign_log.png"
@@ -1711,14 +1711,14 @@ catalogue:
   - name: "./pack.mcmeta"
     script: "./conf/pack_meta.sh"
     keep: yes
-    cleanup:
+    depends:
     - "./pack_template.mcmeta"
     description: "Pack file"
 
   - name: "./README.md"
     script: "./conf/readme.sh"
     keep: yes
-    cleanup:
+    depends:
     - "./README_template.md"
     description: "Readme"
 
@@ -1887,31 +1887,26 @@ catalogue:
   - name: "./conf/vector_any_texture_noisify.sh"
     depends:
     - "./noise.png"
-    cleanup:
     - "./conf/vector_any_texture_noisify.sh"
 
   - name: "./conf/vector_basic_block_noisify.sh"
     depends:
     - "./noise.png"
-    cleanup:
     - "./conf/vector_basic_block_noisify.sh"
 
   - name: "./conf/planks.sh"
     depends:
     - "./assets/minecraft/textures/blocks/planks_generic_overlay.png"
-    cleanup:
     - "./conf/planks.sh"
 
   - name: "./conf/bed_parts.sh"
     depends:
     - "./assets/minecraft/textures/blocks/bed.png"
-    cleanup:
     - "./conf/bed_parts.sh"
 
   - name: "./conf/wool.sh"
     depends:
     - "./assets/minecraft/textures/blocks/wool_generic_overlay.png"
-    cleanup:
     - "./conf/wool.sh"
 
   - name: "./conf/demos/wool.sh"
@@ -1932,7 +1927,6 @@ catalogue:
     - "./assets/minecraft/textures/blocks/wool_colored_silver.png"
     - "./assets/minecraft/textures/blocks/wool_colored_white.png"
     - "./assets/minecraft/textures/blocks/wool_colored_yellow.png"
-    cleanup:
     - "./conf/demos/wool.sh"
     optional: yes
 
@@ -1954,7 +1948,6 @@ catalogue:
     - "./assets/minecraft/textures/blocks/glass_silver.png"
     - "./assets/minecraft/textures/blocks/glass_white.png"
     - "./assets/minecraft/textures/blocks/glass_yellow.png"
-    cleanup:
     - "./conf/demos/glass.sh"
     optional: yes
 
@@ -1963,7 +1956,6 @@ catalogue:
     - "./assets/minecraft/textures/blocks/stonebrick.png"
     - "./assets/minecraft/textures/blocks/stonebrick_mossy.png"
     - "./assets/minecraft/textures/blocks/stonebrick_cracked.png"
-    cleanup:
     - "./conf/demos/stonebrick.sh"
     optional: yes
 
@@ -1973,7 +1965,6 @@ catalogue:
     - "./assets/minecraft/textures/blocks/coal_ore.png"
     - "./assets/minecraft/textures/blocks/redstone_ore.png"
     - "./assets/minecraft/textures/blocks/diamond_ore.png"
-    cleanup:
     - "./conf/demos/ores.sh"
     optional: yes
 

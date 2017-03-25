@@ -47,7 +47,7 @@ case "${__field}" in
             echo "$(tr '[A-Z]' '[a-z]' <<< ${__field}): $(tr '[A-Z]' '[a-z]' <<< ${__value})"
         fi
         ;;
-    "DEPENDS" | "CLEANUP")
+    "DEPENDS")
         echo "$(tr '[A-Z]' '[a-z]' <<< ${__field}):"
         while read -r __entry; do
             echo "  - \"${__entry}\""
@@ -65,7 +65,6 @@ SIZE
 OPTIONS
 KEEP
 DEPENDS
-CLEANUP
 OPTIONAL
 DESCRIPTION'
 
