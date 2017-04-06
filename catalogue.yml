@@ -1723,6 +1723,7 @@ catalogue:
     description: "Readme"
 
   - name: "./demos/planks_0.png"
+    variant: "+optional"
     script: "./conf/demos/wood.sh"
     options: "planks 0"
     depends:
@@ -1732,9 +1733,9 @@ catalogue:
     - "./assets/minecraft/textures/blocks/planks_jungle.png"
     - "./assets/minecraft/textures/blocks/planks_oak.png"
     - "./assets/minecraft/textures/blocks/planks_spruce.png"
-    optional: yes
 
   - name: "./demos/planks_1.png"
+    variant: "+optional"
     script: "./conf/demos/wood.sh"
     options: "planks 1"
     depends:
@@ -1744,9 +1745,9 @@ catalogue:
     - "./assets/minecraft/textures/blocks/planks_jungle.png"
     - "./assets/minecraft/textures/blocks/planks_oak.png"
     - "./assets/minecraft/textures/blocks/planks_spruce.png"
-    optional: yes
 
   - name: "./demos/log_0.png"
+    variant: "+optional"
     script: "./conf/demos/wood.sh"
     options: "log 0"
     depends:
@@ -1756,9 +1757,9 @@ catalogue:
     - "./assets/minecraft/textures/blocks/log_jungle.png"
     - "./assets/minecraft/textures/blocks/log_oak.png"
     - "./assets/minecraft/textures/blocks/log_spruce.png"
-    optional: yes
 
   - name: "./demos/log_1.png"
+    variant: "+optional"
     script: "./conf/demos/wood.sh"
     options: "log 1"
     depends:
@@ -1768,146 +1769,140 @@ catalogue:
     - "./assets/minecraft/textures/blocks/log_jungle.png"
     - "./assets/minecraft/textures/blocks/log_oak.png"
     - "./assets/minecraft/textures/blocks/log_spruce.png"
-    optional: yes
 
   - name: "./demos/grass_dirt_0.png"
+    variant: "+optional"
     script: "./conf/demos/grass_dirt.sh"
     options: "0"
     depends:
     - "./assets/minecraft/textures/blocks/grass_side.png"
     - "./assets/minecraft/textures/blocks/dirt.png"
-    optional: yes
 
   - name: "./demos/grass_dirt_1.png"
+    variant: "+optional"
     script: "./conf/demos/grass_dirt.sh"
     options: "1"
     depends:
     - "./assets/minecraft/textures/blocks/grass_side.png"
     - "./assets/minecraft/textures/blocks/dirt.png"
-    optional: yes
 
   - name: "./demos/wool_0.png"
+    variant: "+optional"
     script: "./conf/demos/wool.sh"
     options: "0"
-    optional: yes
 
   - name: "./demos/wool_1.png"
+    variant: "+optional"
     script: "./conf/demos/wool.sh"
     options: "1"
-    optional: yes
 
   - name: "./demos/glass_0.png"
+    variant: "+optional"
     script: "./conf/demos/glass.sh"
     options: "0"
-    optional: yes
 
   - name: "./demos/glass_1.png"
+    variant: "+optional"
     script: "./conf/demos/glass.sh"
     options: "1"
-    optional: yes
 
   - name: "./demos/stone_0.png"
+    variant: "+optional"
     script: "./conf/demos/any_texture.sh"
     options: "./assets/minecraft/textures/blocks/stone.png stone 0"
     depends:
     - "./assets/minecraft/textures/blocks/stone.png"
-    optional: yes
 
   - name: "./demos/stone_1.png"
+    variant: "+optional"
     script: "./conf/demos/any_texture.sh"
     options: "./assets/minecraft/textures/blocks/stone.png stone 1"
     depends:
     - "./assets/minecraft/textures/blocks/stone.png"
-    optional: yes
 
   - name: "./demos/brick_0.png"
+    variant: "+optional"
     script: "./conf/demos/any_texture.sh"
     options: "./assets/minecraft/textures/blocks/brick.png brick 0"
     depends:
     - "./assets/minecraft/textures/blocks/brick.png"
-    optional: yes
 
   - name: "./demos/brick_1.png"
+    variant: "+optional"
     script: "./conf/demos/any_texture.sh"
     options: "./assets/minecraft/textures/blocks/brick.png brick 1"
     depends:
     - "./assets/minecraft/textures/blocks/brick.png"
-    optional: yes
 
   - name: "./demos/cobblestone_0.png"
+    variant: "+optional"
     script: "./conf/demos/any_texture.sh"
     options: "./assets/minecraft/textures/blocks/cobblestone.png cobblestone 0"
     depends:
     - "./assets/minecraft/textures/blocks/cobblestone.png"
-    optional: yes
 
   - name: "./demos/cobblestone_1.png"
+    variant: "+optional"
     script: "./conf/demos/any_texture.sh"
     options: "./assets/minecraft/textures/blocks/cobblestone.png cobblestone 1"
     depends:
     - "./assets/minecraft/textures/blocks/cobblestone.png"
-    optional: yes
 
   - name: "./demos/stonebrick_0.png"
+    variant: "+optional"
     script: "./conf/demos/stonebrick.sh"
     options: "0"
-    optional: yes
 
   - name: "./demos/stonebrick_1.png"
+    variant: "+optional"
     script: "./conf/demos/stonebrick.sh"
     options: "1"
-    optional: yes
 
   - name: "./demos/bookshelf_0.png"
+    variant: "+optional"
     script: "./conf/demos/bookshelf.sh"
     options: "0"
     depends:
     - "./assets/minecraft/textures/blocks/planks_oak.png"
     - "./assets/minecraft/textures/blocks/bookshelf.png"
-    optional: yes
 
   - name: "./demos/bookshelf_1.png"
+    variant: "+optional"
     script: "./conf/demos/bookshelf.sh"
     options: "1"
     depends:
     - "./assets/minecraft/textures/blocks/planks_oak.png"
     - "./assets/minecraft/textures/blocks/bookshelf.png"
-    optional: yes
 
   - name: "./demos/ores_0.png"
+    variant: "+optional"
     script: "./conf/demos/ores.sh"
     options: "0"
-    optional: yes
 
   - name: "./demos/ores_1.png"
+    variant: "+optional"
     script: "./conf/demos/ores.sh"
     options: "1"
-    optional: yes
 
   - name: "./conf/vector_any_texture_noisify.sh"
     depends:
     - "./noise.png"
-    - "./conf/vector_any_texture_noisify.sh"
 
   - name: "./conf/vector_basic_block_noisify.sh"
     depends:
     - "./noise.png"
-    - "./conf/vector_basic_block_noisify.sh"
 
   - name: "./conf/planks.sh"
     depends:
     - "./assets/minecraft/textures/blocks/planks_generic_overlay.png"
-    - "./conf/planks.sh"
 
   - name: "./conf/bed_parts.sh"
     depends:
     - "./assets/minecraft/textures/blocks/bed.png"
-    - "./conf/bed_parts.sh"
 
   - name: "./conf/wool.sh"
     depends:
     - "./assets/minecraft/textures/blocks/wool_generic_overlay.png"
-    - "./conf/wool.sh"
 
   - name: "./conf/demos/wool.sh"
     depends:
@@ -1927,8 +1922,6 @@ catalogue:
     - "./assets/minecraft/textures/blocks/wool_colored_silver.png"
     - "./assets/minecraft/textures/blocks/wool_colored_white.png"
     - "./assets/minecraft/textures/blocks/wool_colored_yellow.png"
-    - "./conf/demos/wool.sh"
-    optional: yes
 
   - name: "./conf/demos/glass.sh"
     depends:
@@ -1948,16 +1941,12 @@ catalogue:
     - "./assets/minecraft/textures/blocks/glass_silver.png"
     - "./assets/minecraft/textures/blocks/glass_white.png"
     - "./assets/minecraft/textures/blocks/glass_yellow.png"
-    - "./conf/demos/glass.sh"
-    optional: yes
 
   - name: "./conf/demos/stonebrick.sh"
     depends:
     - "./assets/minecraft/textures/blocks/stonebrick.png"
     - "./assets/minecraft/textures/blocks/stonebrick_mossy.png"
     - "./assets/minecraft/textures/blocks/stonebrick_cracked.png"
-    - "./conf/demos/stonebrick.sh"
-    optional: yes
 
   - name: "./conf/demos/ores.sh"
     depends:
@@ -1965,6 +1954,4 @@ catalogue:
     - "./assets/minecraft/textures/blocks/coal_ore.png"
     - "./assets/minecraft/textures/blocks/redstone_ore.png"
     - "./assets/minecraft/textures/blocks/diamond_ore.png"
-    - "./conf/demos/ores.sh"
-    optional: yes
 

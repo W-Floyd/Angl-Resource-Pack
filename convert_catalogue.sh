@@ -36,7 +36,7 @@ if ! [ "${__value}" = 'NO' ] && ! [ "${__field}" = 'NAME' ]; then
 fi
 
 case "${__field}" in
-    "SCRIPT" | "DESCRIPTION" | "OPTIONS" | "NAME")
+    "SCRIPT" | "DESCRIPTION" | "OPTIONS" | "NAME" | "VARIANT")
         echo "$(tr '[A-Z]' '[a-z]' <<< ${__field}): \"${__value}\""
         ;;
     "SIZE")
@@ -60,12 +60,12 @@ fi
 }
 
 __fields='NAME
+VARIANT
 SCRIPT
 SIZE
 OPTIONS
 KEEP
 DEPENDS
-OPTIONAL
 DESCRIPTION'
 
 echo "catalogue:"

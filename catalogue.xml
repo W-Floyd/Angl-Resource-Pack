@@ -1,28 +1,29 @@
 <BLOCK>
 	<ITEM>
 		<NAME>./pack.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_any_texture.sh</SCRIPT>
 		<SIZE>128</SIZE>
 		<OPTIONS>./pack white</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./pack.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Pack logo</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>dirt</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/dirt.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Dirt</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/grass_side_base.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -30,11 +31,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/dirt.png
 		./assets/minecraft/textures/blocks/grass_side_overlay_other.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/grass_side.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -42,11 +43,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_base.png
 		./assets/minecraft/textures/blocks/grass_side_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/grass_side_snowed.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -54,33 +55,33 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_base.png
 		./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay_other.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>grass_side_overlay_other</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_overlay_other.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>grass_side_overlay</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/grass_side_snowed_overlay.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -89,330 +90,330 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_base.png
 		./assets/minecraft/textures/blocks/grass_side_overlay.png
 		./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>grass_side_snowed_colour</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_side_snowed_colour.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_black_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_black_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_blue_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_blue_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_brown_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_brown_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_cyan_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_cyan_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_gray_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_gray_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_green_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_green_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_light_blue_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_light_blue_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_lime_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_lime_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_magenta_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_magenta_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_orange_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_orange_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_pink_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_pink_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_purple_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_purple_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_red_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_red_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_silver_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_silver_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_white_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_white_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_yellow_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_yellow_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_acacia_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_log_acacia_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_big_oak_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_log_big_oak_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_birch_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_birch</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_log_birch_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_jungle_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_log_jungle_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_oak_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_log_oak_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_spruce_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_log_spruce_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_acacia_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_acacia</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_acacia_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_big_oak_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_big_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_big_oak_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_birch_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_birch</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_birch_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_jungle_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_jungle</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_jungle_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_oak_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_oak</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_oak_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_spruce_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_spruce</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_spruce_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_black.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
@@ -420,11 +421,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_black_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_blue.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
@@ -432,11 +433,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_blue_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_brown.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
@@ -444,11 +445,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_brown_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_cyan.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
@@ -456,11 +457,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_cyan_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_gray.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
@@ -468,11 +469,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_gray_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_green.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
@@ -480,11 +481,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_green_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_light_blue.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
@@ -492,11 +493,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_light_blue_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_lime.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
@@ -504,11 +505,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_lime_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_magenta.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
@@ -516,11 +517,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_magenta_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_orange.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
@@ -528,11 +529,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_orange_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_pink.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
@@ -540,11 +541,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_pink_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_purple.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
@@ -552,11 +553,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_purple_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_red.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
@@ -564,11 +565,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_red_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_silver.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
@@ -576,11 +577,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_silver_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_white.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
@@ -588,11 +589,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_white_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_yellow.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
@@ -600,11 +601,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_yellow_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_acacia.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_acacia</OPTIONS>
@@ -612,11 +613,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_acacia_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_big_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_big_oak</OPTIONS>
@@ -624,11 +625,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_big_oak_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_birch.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_birch</OPTIONS>
@@ -636,11 +637,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_birch_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_jungle.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_jungle</OPTIONS>
@@ -648,11 +649,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_jungle_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_oak</OPTIONS>
@@ -660,11 +661,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_oak_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_log_spruce.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_spruce</OPTIONS>
@@ -672,11 +673,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_log_spruce_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_acacia.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_acacia</OPTIONS>
@@ -684,11 +685,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_acacia_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_big_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_big_oak</OPTIONS>
@@ -696,11 +697,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_big_oak_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_birch.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_birch</OPTIONS>
@@ -708,11 +709,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_birch_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_jungle.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_jungle</OPTIONS>
@@ -720,11 +721,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_jungle_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_oak</OPTIONS>
@@ -732,11 +733,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_oak_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./colour_planks_spruce.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_spruce</OPTIONS>
@@ -744,121 +745,121 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./colour_planks_spruce_base.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/brick.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_any_texture_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/brick 0.05</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/brick.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Brick</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stone.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>stone</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Stone</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_1.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_top_1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_top_1.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_top_2.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_top_2</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_top_2.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_jungle_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_jungle_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_jungle_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_generic_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_birch_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log_birch_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_birch_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_generic_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_generic_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>wool_generic_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/cobblestone_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>cobblestone_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/cobblestone.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/cobblestone.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -866,77 +867,77 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone_overlay.png
 		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Cobblestone</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_acacia.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>acacia</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_acacia.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_big_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>big_oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_big_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_birch.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>birch</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_birch.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_jungle.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>jungle</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_jungle.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/planks_spruce.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>spruce</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_spruce.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_acacia.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>acacia</OPTIONS>
@@ -944,11 +945,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png
 		./colour_log_acacia.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_big_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>big_oak</OPTIONS>
@@ -956,11 +957,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png
 		./colour_log_big_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>oak</OPTIONS>
@@ -968,11 +969,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png
 		./colour_log_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_spruce.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>spruce</OPTIONS>
@@ -980,11 +981,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png
 		./colour_log_spruce.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_birch.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs_birch.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -992,11 +993,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_birch_overlay.png
 		./colour_log_birch.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_jungle.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs_jungle.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1004,22 +1005,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_jungle_overlay.png
 		./colour_log_jungle.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bookshelf_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_any_texture_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/bookshelf_overlay 0.075</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bookshelf_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bookshelf.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bookshelf.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1027,198 +1028,198 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bookshelf_overlay.png
 		./assets/minecraft/textures/blocks/planks_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Bookshelf</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_black.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_black.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_blue.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_blue.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_brown.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_brown.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_cyan.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_cyan.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_gray.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_gray.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_green.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_green.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_light_blue.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_light_blue.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_lime.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_lime.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_magenta.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_magenta.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_orange.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_orange.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_pink.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_pink.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_purple.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_purple.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_red.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_red.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_silver.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_silver.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_white.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_white.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/wool_colored_yellow.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_yellow.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>glass</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_black.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
@@ -1226,11 +1227,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_black.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_blue.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
@@ -1238,11 +1239,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_blue.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_brown.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
@@ -1250,11 +1251,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_brown.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_cyan.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
@@ -1262,11 +1263,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_cyan.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_gray.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
@@ -1274,11 +1275,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_gray.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_green.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
@@ -1286,11 +1287,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_green.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_light_blue.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
@@ -1298,11 +1299,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_light_blue.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_lime.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
@@ -1310,11 +1311,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_lime.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_magenta.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
@@ -1322,11 +1323,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_magenta.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_orange.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
@@ -1334,11 +1335,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_orange.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pink.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
@@ -1346,11 +1347,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_pink.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_purple.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
@@ -1358,11 +1359,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_purple.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_red.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
@@ -1370,11 +1371,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_red.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_silver.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
@@ -1382,11 +1383,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_silver.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_white.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
@@ -1394,11 +1395,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_white.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_yellow.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
@@ -1406,11 +1407,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass.png
 		./colour_yellow.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_acacia_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>acacia</OPTIONS>
@@ -1420,11 +1421,11 @@
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_acacia.png
 		./colour_log_acacia.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_big_oak_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>big_oak</OPTIONS>
@@ -1434,11 +1435,11 @@
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_big_oak.png
 		./colour_log_big_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_birch_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>birch</OPTIONS>
@@ -1448,11 +1449,11 @@
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_birch.png
 		./colour_log_birch.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_jungle_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>jungle</OPTIONS>
@@ -1462,11 +1463,11 @@
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_jungle.png
 		./colour_log_jungle.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_oak_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>oak</OPTIONS>
@@ -1476,11 +1477,11 @@
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_oak.png
 		./colour_log_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/log_spruce_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>spruce</OPTIONS>
@@ -1490,22 +1491,22 @@
 		./assets/minecraft/textures/blocks/log_generic_top_2.png
 		./colour_planks_spruce.png
 		./colour_log_spruce.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>glass_pane_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_black.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>black</OPTIONS>
@@ -1513,11 +1514,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_black.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_blue.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>blue</OPTIONS>
@@ -1525,11 +1526,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_blue.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_brown.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>brown</OPTIONS>
@@ -1537,11 +1538,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_brown.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_cyan.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>cyan</OPTIONS>
@@ -1549,11 +1550,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_cyan.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_gray.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>gray</OPTIONS>
@@ -1561,11 +1562,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_gray.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_green.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>green</OPTIONS>
@@ -1573,11 +1574,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_green.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_light_blue.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>light_blue</OPTIONS>
@@ -1585,11 +1586,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_light_blue.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_lime.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>lime</OPTIONS>
@@ -1597,11 +1598,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_lime.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_magenta.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>magenta</OPTIONS>
@@ -1609,11 +1610,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_magenta.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_orange.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>orange</OPTIONS>
@@ -1621,11 +1622,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_orange.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_pink.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>pink</OPTIONS>
@@ -1633,11 +1634,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_pink.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_purple.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>purple</OPTIONS>
@@ -1645,11 +1646,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_purple.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_red.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>red</OPTIONS>
@@ -1657,11 +1658,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_red.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_silver.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>silver</OPTIONS>
@@ -1669,11 +1670,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_silver.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_white.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>white</OPTIONS>
@@ -1681,11 +1682,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_white.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_yellow.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>yellow</OPTIONS>
@@ -1693,11 +1694,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/glass_pane_top.png
 		./colour_yellow.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/stonebrick.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1705,22 +1706,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_overlay.png
 		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Stone brick</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/stonebrick_mossy.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1728,22 +1729,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png
 		./assets/minecraft/textures/blocks/stonebrick.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Stone brick (mossy)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_mossy_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/stonebrick_cracked.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1751,44 +1752,44 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png
 		./assets/minecraft/textures/blocks/stonebrick.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Stone brick (cracked)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>stonebrick_cracked_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/grass_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>grass_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_top.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/ladder_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_basic_block_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>ladder_overlay 0.075</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/ladder_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/ladder.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/ladder.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1796,44 +1797,44 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_oak.png
 		./assets/minecraft/textures/blocks/ladder_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Ladder</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/tallgrass.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>tallgrass</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/tallgrass.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Tallgrass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sand_overlay.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand_colour.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>sand_colour</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/sand_colour.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/sand.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sand.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1841,22 +1842,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/sand_colour.png
 		./assets/minecraft/textures/blocks/sand_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Sand</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/red_sand_colour.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>red_sand_colour</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/red_sand_colour.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/red_sand.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/red_sand.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1864,22 +1865,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/red_sand_colour.png
 		./assets/minecraft/textures/blocks/sand_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Sand (red)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/coal_ore_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>coal_ore_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/coal_ore_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/coal_ore.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/overlay.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/stone ./assets/minecraft/textures/blocks/coal_ore_overlay ./assets/minecraft/textures/blocks/coal_ore</OPTIONS>
@@ -1887,22 +1888,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
 		./assets/minecraft/textures/blocks/coal_ore_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Ore (Coal)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_covers_underlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>bed_covers_underlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_covers_underlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_covers.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1910,22 +1911,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise_colour.png
 		./assets/minecraft/textures/blocks/bed_covers_underlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_wood_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>bed_wood_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_wood_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_wood.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_wood.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1933,11 +1934,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/bed_wood_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -1945,154 +1946,154 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/bed_wood.png
 		./assets/minecraft/textures/blocks/bed_covers.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_end.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_end</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_side.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_feet_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>bed_feet_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_side.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_side</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_top</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/bed_head_end.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>bed_head_end</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>leaves_oak</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/leaves_oak.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_acacia.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>leaves_acacia</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/leaves_acacia.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_birch.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>leaves_birch</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/leaves_birch.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./noise.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>noise</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./noise_colour.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_faded_colour.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_cutout.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>torch_on_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_cutout.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>torch_on_base</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_base.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on_shaft.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/torch_shaft.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -2100,11 +2101,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_cutout.png
 		./assets/minecraft/textures/blocks/log_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/torch_on.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/torch.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -2112,33 +2113,33 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/torch_on_base.png
 		./assets/minecraft/textures/blocks/torch_on_shaft.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Torch</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_top_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/crafting_table_top_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_decal.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_top_decal</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/crafting_table_top_decal.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_top.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/crafting_table_top.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -2147,33 +2148,33 @@
 		<DEPENDS>./colour_planks_oak.png
 		./assets/minecraft/textures/blocks/crafting_table_top_decal.png
 		./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_front_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/crafting_table_front_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_decal.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_front_decal</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/crafting_table_front_decal.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_front.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/crafting_table.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>front</OPTIONS>
@@ -2182,33 +2183,33 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/crafting_table_front_decal.png
 		./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_side_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/crafting_table_side_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_decal.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>crafting_table_side_decal</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/crafting_table_side_decal.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/crafting_table_side.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/crafting_table.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>side</OPTIONS>
@@ -2217,33 +2218,33 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/crafting_table_side_decal.png
 		./assets/minecraft/textures/blocks/crafting_table_side_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/clay_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/clay_overlay.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./noise.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/clay_colour.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>clay_colour</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/clay_colour.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/clay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/clay.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -2251,22 +2252,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/clay_colour.png
 		./assets/minecraft/textures/blocks/clay_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Clay</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/redstone_ore_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>redstone_ore_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/redstone_ore_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/redstone_ore.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/overlay.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/stone ./assets/minecraft/textures/blocks/redstone_ore_overlay ./assets/minecraft/textures/blocks/redstone_ore</OPTIONS>
@@ -2274,143 +2275,143 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
 		./assets/minecraft/textures/blocks/redstone_ore_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Ore (Redstone)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/iron_bars.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_any_texture_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/iron_bars 0.125</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/iron_bars.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Iron Bars</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_0.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_0</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_0.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_1.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_1</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_1.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_2.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_2</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_2.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_3.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_3</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_3.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_4.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_4</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_4.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_5.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_5</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_5.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_6.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_6</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_6.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_7.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_7</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_7.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_8.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_8</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_8.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/destroy_stage_9.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>destroy_stage_9</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/destroy_stage_9.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/diamond_ore_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>diamond_ore_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/diamond_ore_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/diamond_ore.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/overlay.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/stone ./assets/minecraft/textures/blocks/diamond_ore_overlay ./assets/minecraft/textures/blocks/diamond_ore</OPTIONS>
@@ -2418,22 +2419,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
 		./assets/minecraft/textures/blocks/diamond_ore_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Ore (Diamond)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/trapdoor_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_basic_block_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>trapdoor_overlay 0.075</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/trapdoor_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/trapdoor.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/trapdoor.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -2441,56 +2442,56 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./colour_planks_oak.png
 		./assets/minecraft/textures/blocks/trapdoor_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Trapdoor</DESCRIPTION>
 	</ITEM>
 
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>door_wood_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/door_wood_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood_decal.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>door_wood_decal</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/door_wood_decal.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_overlay_plank.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_overlay_plank.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_overlay_log.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_overlay_log.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/log_generic_overlay.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>wood</OPTIONS>
@@ -2500,56 +2501,56 @@
 		./assets/minecraft/textures/blocks/door_wood_overlay.png
 		./assets/minecraft/textures/blocks/door_overlay_plank.png
 		./assets/minecraft/textures/blocks/door_wood_decal.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood_upper.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>wood upper</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/door_wood.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Door (Oak)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_wood_lower.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>wood lower</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/door_wood.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Door (Oak)</DESCRIPTION>
 	</ITEM>
 
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_overlay.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>door_dark_oak_overlay</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/door_dark_oak_overlay.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_decal.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>door_dark_oak_decal</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/door_dark_oak_decal.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>dark_oak</OPTIONS>
@@ -2559,29 +2560,28 @@
 		./assets/minecraft/textures/blocks/door_dark_oak_overlay.png
 		./assets/minecraft/textures/blocks/door_overlay_log.png
 		./assets/minecraft/textures/blocks/door_dark_oak_decal.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_upper.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>dark_oak upper</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/door_dark_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Door (Big Oak)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_lower.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_parts.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>dark_oak lower</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/door_dark_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Door (Big Oak)</DESCRIPTION>
 	</ITEM>
 </BLOCK>
@@ -2589,17 +2589,18 @@
 <ENTITY>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_front_cutout.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_entity.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>sign_planks_front_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/entity/sign_planks_front_cutout.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_front.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sign.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_front</OPTIONS>
@@ -2608,22 +2609,22 @@
 		<DEPENDS>./assets/minecraft/textures/entity/sign_planks_front_cutout.png
 		./assets/minecraft/textures/blocks/planks_oak.png
 		./colour_planks_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_base_cutout.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_entity.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>sign_planks_base_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/entity/sign_planks_base_cutout.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_planks_base.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sign.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks_base</OPTIONS>
@@ -2631,22 +2632,22 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/entity/sign_planks_base_cutout.png
 		./assets/minecraft/textures/blocks/planks_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_log_cutout.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_entity.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>sign_log_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/entity/sign_log_cutout.svg</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign_log.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sign.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log</OPTIONS>
@@ -2655,11 +2656,11 @@
 		<DEPENDS>./assets/minecraft/textures/entity/sign_log_cutout.png
 		./assets/minecraft/textures/blocks/log_oak.png
 		./colour_log_oak.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/sign.png</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sign.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>all</OPTIONS>
@@ -2668,7 +2669,6 @@
 		<DEPENDS>./assets/minecraft/textures/entity/sign_log.png
 		./assets/minecraft/textures/entity/sign_planks_base.png
 		./assets/minecraft/textures/entity/sign_planks_front.png</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Sign</DESCRIPTION>
 	</ITEM>
 </ENTITY>
@@ -2676,24 +2676,24 @@
 <OTHER>
 	<ITEM>
 		<NAME>./pack.mcmeta</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/pack_meta.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./pack_template.mcmeta</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Pack file</DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./README.md</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT>./conf/readme.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./README_template.md</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
 		<DESCRIPTION>Readme</DESCRIPTION>
 	</ITEM>
 </OTHER>
@@ -2701,6 +2701,7 @@
 <DEMO>
 	<ITEM>
 		<NAME>./demos/planks_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wood.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks 0</OPTIONS>
@@ -2712,11 +2713,11 @@
 		./assets/minecraft/textures/blocks/planks_jungle.png
 		./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/planks_spruce.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/planks_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wood.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>planks 1</OPTIONS>
@@ -2728,11 +2729,11 @@
 		./assets/minecraft/textures/blocks/planks_jungle.png
 		./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/planks_spruce.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/log_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wood.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log 0</OPTIONS>
@@ -2744,11 +2745,11 @@
 		./assets/minecraft/textures/blocks/log_jungle.png
 		./assets/minecraft/textures/blocks/log_oak.png
 		./assets/minecraft/textures/blocks/log_spruce.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/log_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wood.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>log 1</OPTIONS>
@@ -2760,11 +2761,11 @@
 		./assets/minecraft/textures/blocks/log_jungle.png
 		./assets/minecraft/textures/blocks/log_oak.png
 		./assets/minecraft/textures/blocks/log_spruce.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/grass_dirt_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/grass_dirt.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>0</OPTIONS>
@@ -2772,11 +2773,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_side.png
 		./assets/minecraft/textures/blocks/dirt.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/grass_dirt_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/grass_dirt.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>1</OPTIONS>
@@ -2784,143 +2785,143 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/grass_side.png
 		./assets/minecraft/textures/blocks/dirt.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/wool_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/wool_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wool.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/glass_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/glass_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/glass.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/stone_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/stone.png stone 0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/stone_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/stone.png stone 1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/brick_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/brick.png brick 0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/brick.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/brick_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/brick.png brick 1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/brick.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/cobblestone_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/cobblestone.png cobblestone 0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/cobblestone_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>./assets/minecraft/textures/blocks/cobblestone.png cobblestone 1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/cobblestone.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/stonebrick_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/stonebrick.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/stonebrick_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/stonebrick.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/bookshelf_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/bookshelf.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>0</OPTIONS>
@@ -2928,11 +2929,11 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/bookshelf.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/bookshelf_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/bookshelf.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>1</OPTIONS>
@@ -2940,29 +2941,28 @@
 		<IMAGE>YES</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
 		./assets/minecraft/textures/blocks/bookshelf.png</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/ores_0.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/ores.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>0</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./demos/ores_1.png</NAME>
+		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/ores.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>1</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 </DEMO>
@@ -2970,66 +2970,62 @@
 <RESOURCES>
 	<ITEM>
 		<NAME>./conf/vector_any_texture_noisify.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>NO</IMAGE>
-		<DEPENDS>./noise.png
-		./conf/vector_any_texture_noisify.sh</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
+		<DEPENDS>./noise.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/vector_basic_block_noisify.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>NO</IMAGE>
-		<DEPENDS>./noise.png
-		./conf/vector_basic_block_noisify.sh</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
+		<DEPENDS>./noise.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/planks.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>NO</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png
-		./conf/planks.sh</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
+		<DEPENDS>./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/bed_parts.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>NO</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed.png
-		./conf/bed_parts.sh</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
+		<DEPENDS>./assets/minecraft/textures/blocks/bed.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/wool.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>NO</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png
-		./conf/wool.sh</DEPENDS>
-		<OPTIONAL>NO</OPTIONAL>
+		<DEPENDS>./assets/minecraft/textures/blocks/wool_generic_overlay.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/demos/wool.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -3050,13 +3046,12 @@
 		./assets/minecraft/textures/blocks/wool_colored_red.png
 		./assets/minecraft/textures/blocks/wool_colored_silver.png
 		./assets/minecraft/textures/blocks/wool_colored_white.png
-		./assets/minecraft/textures/blocks/wool_colored_yellow.png
-		./conf/demos/wool.sh</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
+		./assets/minecraft/textures/blocks/wool_colored_yellow.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/demos/glass.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -3077,13 +3072,12 @@
 		./assets/minecraft/textures/blocks/glass_red.png
 		./assets/minecraft/textures/blocks/glass_silver.png
 		./assets/minecraft/textures/blocks/glass_white.png
-		./assets/minecraft/textures/blocks/glass_yellow.png
-		./conf/demos/glass.sh</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
+		./assets/minecraft/textures/blocks/glass_yellow.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/demos/stonebrick.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -3091,13 +3085,12 @@
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick.png
 		./assets/minecraft/textures/blocks/stonebrick_mossy.png
-		./assets/minecraft/textures/blocks/stonebrick_cracked.png
-		./conf/demos/stonebrick.sh</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
+		./assets/minecraft/textures/blocks/stonebrick_cracked.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
 		<NAME>./conf/demos/ores.sh</NAME>
+		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
@@ -3106,9 +3099,7 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/stone.png
 		./assets/minecraft/textures/blocks/coal_ore.png
 		./assets/minecraft/textures/blocks/redstone_ore.png
-		./assets/minecraft/textures/blocks/diamond_ore.png
-		./conf/demos/ores.sh</DEPENDS>
-		<OPTIONAL>YES</OPTIONAL>
+		./assets/minecraft/textures/blocks/diamond_ore.png</DEPENDS>
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 </RESOURCES>
