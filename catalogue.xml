@@ -1,6 +1,6 @@
 <BLOCK>
 	<ITEM>
-		<NAME>./pack.png</NAME>
+		<PROVIDES>./pack.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_any_texture.sh</SCRIPT>
 		<SIZE>128</SIZE>
@@ -11,7 +11,7 @@
 		<DESCRIPTION>Pack logo</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/dirt.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -22,7 +22,7 @@
 		<DESCRIPTION>Dirt</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/grass_side_base.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/grass_side_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/grass_side_base.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -34,7 +34,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/grass_side.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/grass_side.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/grass_side.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -46,7 +46,7 @@
 		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/grass_side_snowed.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/grass_side_snowed.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -58,7 +58,7 @@
 		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay_other.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/grass_side_overlay_other.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -69,7 +69,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/grass_side_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/grass_side_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -80,7 +80,7 @@
 		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/grass_side_snowed_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/grass_side_snowed_overlay.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -93,7 +93,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/grass_side_snowed_colour.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -104,7 +104,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_black_base.png</NAME>
+		<PROVIDES>./colour_black_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -115,7 +115,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_blue_base.png</NAME>
+		<PROVIDES>./colour_blue_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -126,7 +126,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_brown_base.png</NAME>
+		<PROVIDES>./colour_brown_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -137,7 +137,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_cyan_base.png</NAME>
+		<PROVIDES>./colour_cyan_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -148,7 +148,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_gray_base.png</NAME>
+		<PROVIDES>./colour_gray_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -159,7 +159,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_green_base.png</NAME>
+		<PROVIDES>./colour_green_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -170,7 +170,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_light_blue_base.png</NAME>
+		<PROVIDES>./colour_light_blue_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -181,7 +181,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_lime_base.png</NAME>
+		<PROVIDES>./colour_lime_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -192,7 +192,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_magenta_base.png</NAME>
+		<PROVIDES>./colour_magenta_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -203,7 +203,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_orange_base.png</NAME>
+		<PROVIDES>./colour_orange_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -214,7 +214,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_pink_base.png</NAME>
+		<PROVIDES>./colour_pink_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -225,7 +225,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_purple_base.png</NAME>
+		<PROVIDES>./colour_purple_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -236,7 +236,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_red_base.png</NAME>
+		<PROVIDES>./colour_red_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -247,7 +247,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_silver_base.png</NAME>
+		<PROVIDES>./colour_silver_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -258,7 +258,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_white_base.png</NAME>
+		<PROVIDES>./colour_white_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -269,7 +269,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_yellow_base.png</NAME>
+		<PROVIDES>./colour_yellow_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -280,7 +280,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_acacia_base.png</NAME>
+		<PROVIDES>./colour_log_acacia_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -291,7 +291,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_big_oak_base.png</NAME>
+		<PROVIDES>./colour_log_big_oak_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -302,7 +302,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_birch_base.png</NAME>
+		<PROVIDES>./colour_log_birch_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -313,7 +313,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_jungle_base.png</NAME>
+		<PROVIDES>./colour_log_jungle_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -324,7 +324,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_oak_base.png</NAME>
+		<PROVIDES>./colour_log_oak_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -335,7 +335,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_spruce_base.png</NAME>
+		<PROVIDES>./colour_log_spruce_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -346,7 +346,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_acacia_base.png</NAME>
+		<PROVIDES>./colour_planks_acacia_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -357,7 +357,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_big_oak_base.png</NAME>
+		<PROVIDES>./colour_planks_big_oak_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -368,7 +368,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_birch_base.png</NAME>
+		<PROVIDES>./colour_planks_birch_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -379,7 +379,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_jungle_base.png</NAME>
+		<PROVIDES>./colour_planks_jungle_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -390,7 +390,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_oak_base.png</NAME>
+		<PROVIDES>./colour_planks_oak_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -401,7 +401,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_spruce_base.png</NAME>
+		<PROVIDES>./colour_planks_spruce_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_base_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -412,7 +412,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_black.png</NAME>
+		<PROVIDES>./colour_black.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -424,7 +424,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_blue.png</NAME>
+		<PROVIDES>./colour_blue.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -436,7 +436,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_brown.png</NAME>
+		<PROVIDES>./colour_brown.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -448,7 +448,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_cyan.png</NAME>
+		<PROVIDES>./colour_cyan.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -460,7 +460,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_gray.png</NAME>
+		<PROVIDES>./colour_gray.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -472,7 +472,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_green.png</NAME>
+		<PROVIDES>./colour_green.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -484,7 +484,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_light_blue.png</NAME>
+		<PROVIDES>./colour_light_blue.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -496,7 +496,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_lime.png</NAME>
+		<PROVIDES>./colour_lime.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -508,7 +508,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_magenta.png</NAME>
+		<PROVIDES>./colour_magenta.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -520,7 +520,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_orange.png</NAME>
+		<PROVIDES>./colour_orange.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -532,7 +532,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_pink.png</NAME>
+		<PROVIDES>./colour_pink.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -544,7 +544,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_purple.png</NAME>
+		<PROVIDES>./colour_purple.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -556,7 +556,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_red.png</NAME>
+		<PROVIDES>./colour_red.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -568,7 +568,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_silver.png</NAME>
+		<PROVIDES>./colour_silver.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -580,7 +580,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_white.png</NAME>
+		<PROVIDES>./colour_white.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -592,7 +592,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_yellow.png</NAME>
+		<PROVIDES>./colour_yellow.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -604,7 +604,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_acacia.png</NAME>
+		<PROVIDES>./colour_log_acacia.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -616,7 +616,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_big_oak.png</NAME>
+		<PROVIDES>./colour_log_big_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -628,7 +628,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_birch.png</NAME>
+		<PROVIDES>./colour_log_birch.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -640,7 +640,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_jungle.png</NAME>
+		<PROVIDES>./colour_log_jungle.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -652,7 +652,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_oak.png</NAME>
+		<PROVIDES>./colour_log_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -664,7 +664,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_log_spruce.png</NAME>
+		<PROVIDES>./colour_log_spruce.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -676,7 +676,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_acacia.png</NAME>
+		<PROVIDES>./colour_planks_acacia.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -688,7 +688,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_big_oak.png</NAME>
+		<PROVIDES>./colour_planks_big_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -700,7 +700,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_birch.png</NAME>
+		<PROVIDES>./colour_planks_birch.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -712,7 +712,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_jungle.png</NAME>
+		<PROVIDES>./colour_planks_jungle.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -724,7 +724,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_oak.png</NAME>
+		<PROVIDES>./colour_planks_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -736,7 +736,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./colour_planks_spruce.png</NAME>
+		<PROVIDES>./colour_planks_spruce.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -748,7 +748,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/brick.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/brick.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_any_texture_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -759,7 +759,7 @@
 		<DESCRIPTION>Brick</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/stone.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/stone.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -770,7 +770,7 @@
 		<DESCRIPTION>Stone</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_generic_top_1.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_generic_top_1.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -781,7 +781,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_generic_top_2.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_generic_top_2.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -792,7 +792,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_jungle_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_jungle_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -803,7 +803,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_generic_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_generic_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -814,7 +814,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_birch_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_birch_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -825,7 +825,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/planks_generic_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/planks_generic_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -836,7 +836,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_generic_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_generic_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -847,7 +847,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/cobblestone_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/cobblestone_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -858,7 +858,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/cobblestone.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/cobblestone.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/cobblestone.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -870,7 +870,7 @@
 		<DESCRIPTION>Cobblestone</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/planks_acacia.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/planks_acacia.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -881,7 +881,7 @@
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/planks_big_oak.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/planks_big_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -892,7 +892,7 @@
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/planks_birch.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/planks_birch.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -903,7 +903,7 @@
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/planks_jungle.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/planks_jungle.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -914,7 +914,7 @@
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/planks_oak.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/planks_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -925,7 +925,7 @@
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/planks_spruce.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/planks_spruce.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/planks.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -936,7 +936,7 @@
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_acacia.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_acacia.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -948,7 +948,7 @@
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_big_oak.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_big_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -960,7 +960,7 @@
 		<DESCRIPTION>Planks</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_oak.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -972,7 +972,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_spruce.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_spruce.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -984,7 +984,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_birch.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_birch.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs_birch.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -996,7 +996,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_jungle.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_jungle.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/logs_jungle.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1008,7 +1008,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bookshelf_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bookshelf_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_any_texture_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1019,7 +1019,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bookshelf.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bookshelf.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bookshelf.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1031,7 +1031,7 @@
 		<DESCRIPTION>Bookshelf</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_black.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_black.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1042,7 +1042,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_blue.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_blue.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1053,7 +1053,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_brown.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_brown.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1064,7 +1064,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_cyan.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_cyan.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1075,7 +1075,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_gray.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_gray.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1086,7 +1086,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_green.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_green.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1097,7 +1097,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_light_blue.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_light_blue.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1108,7 +1108,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_lime.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_lime.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1119,7 +1119,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_magenta.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_magenta.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1130,7 +1130,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_orange.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_orange.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1141,7 +1141,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_pink.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_pink.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1152,7 +1152,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_purple.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_purple.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1163,7 +1163,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_red.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_red.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1174,7 +1174,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_silver.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_silver.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1185,7 +1185,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_white.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_white.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1196,7 +1196,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/wool_colored_yellow.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/wool_colored_yellow.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1207,7 +1207,7 @@
 		<DESCRIPTION>Wool</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1218,7 +1218,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_black.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_black.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1230,7 +1230,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_blue.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_blue.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1242,7 +1242,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_brown.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_brown.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1254,7 +1254,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_cyan.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_cyan.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1266,7 +1266,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_gray.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_gray.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1278,7 +1278,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_green.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_green.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1290,7 +1290,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_light_blue.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_light_blue.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1302,7 +1302,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_lime.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_lime.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1314,7 +1314,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_magenta.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_magenta.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1326,7 +1326,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_orange.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_orange.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1338,7 +1338,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pink.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pink.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1350,7 +1350,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_purple.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_purple.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1362,7 +1362,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_red.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_red.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1374,7 +1374,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_silver.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_silver.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1386,7 +1386,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_white.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_white.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1398,7 +1398,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_yellow.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_yellow.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1410,7 +1410,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_acacia_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_acacia_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1424,7 +1424,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_big_oak_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_big_oak_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1438,7 +1438,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_birch_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_birch_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1452,7 +1452,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_jungle_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_jungle_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1466,7 +1466,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_oak_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_oak_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1480,7 +1480,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/log_spruce_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/log_spruce_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/log_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1494,7 +1494,7 @@
 		<DESCRIPTION>Logs</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1505,7 +1505,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_black.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_black.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1517,7 +1517,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_blue.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_blue.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1529,7 +1529,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_brown.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_brown.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1541,7 +1541,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_cyan.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_cyan.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1553,7 +1553,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_gray.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_gray.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1565,7 +1565,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_green.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_green.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1577,7 +1577,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_light_blue.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_light_blue.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1589,7 +1589,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_lime.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_lime.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1601,7 +1601,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_magenta.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_magenta.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1613,7 +1613,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_orange.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_orange.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1625,7 +1625,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_pink.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_pink.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1637,7 +1637,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_purple.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_purple.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1649,7 +1649,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_red.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_red.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1661,7 +1661,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_silver.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_silver.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1673,7 +1673,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_white.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_white.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1685,7 +1685,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/glass_pane_top_yellow.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/glass_pane_top_yellow.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/glass_pane_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1697,7 +1697,7 @@
 		<DESCRIPTION>Glass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/stonebrick.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/stonebrick.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/stonebrick.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1709,7 +1709,7 @@
 		<DESCRIPTION>Stone brick</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/stonebrick_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/stonebrick_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1720,7 +1720,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/stonebrick_mossy.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/stonebrick_mossy.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1732,7 +1732,7 @@
 		<DESCRIPTION>Stone brick (mossy)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/stonebrick_mossy_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1743,7 +1743,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/stonebrick_cracked.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/stonebrick_cracked.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1755,7 +1755,7 @@
 		<DESCRIPTION>Stone brick (cracked)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/stonebrick_cracked_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1766,7 +1766,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/grass_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/grass_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1777,7 +1777,7 @@
 		<DESCRIPTION>Grass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/ladder_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/ladder_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_basic_block_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1788,7 +1788,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/ladder.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/ladder.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/ladder.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1800,7 +1800,7 @@
 		<DESCRIPTION>Ladder</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/tallgrass.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/tallgrass.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1811,7 +1811,7 @@
 		<DESCRIPTION>Tallgrass</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/sand_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/sand_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sand_overlay.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1822,7 +1822,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/sand_colour.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/sand_colour.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1833,7 +1833,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/sand.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/sand.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sand.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1845,7 +1845,7 @@
 		<DESCRIPTION>Sand</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/red_sand_colour.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/red_sand_colour.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1856,7 +1856,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/red_sand.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/red_sand.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/red_sand.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1868,7 +1868,7 @@
 		<DESCRIPTION>Sand (red)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/coal_ore_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/coal_ore_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1879,7 +1879,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/coal_ore.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/coal_ore.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/overlay.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1891,7 +1891,7 @@
 		<DESCRIPTION>Ore (Coal)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_covers_underlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_covers_underlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1902,7 +1902,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_covers.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_covers.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1914,7 +1914,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_wood_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_wood_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1925,7 +1925,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_wood.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_wood.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_wood.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1937,7 +1937,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1949,7 +1949,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_feet_end.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_feet_end.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1960,7 +1960,7 @@
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_feet_side.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_feet_side.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1971,7 +1971,7 @@
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_feet_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_feet_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1982,7 +1982,7 @@
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_head_side.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_head_side.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -1993,7 +1993,7 @@
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_head_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_head_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2004,7 +2004,7 @@
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_head_end.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/bed_head_end.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/bed_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2015,7 +2015,7 @@
 		<DESCRIPTION>Bed</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/leaves_oak.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/leaves_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2026,7 +2026,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/leaves_acacia.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/leaves_acacia.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2037,7 +2037,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/leaves_birch.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/leaves_birch.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2048,7 +2048,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./noise.png</NAME>
+		<PROVIDES>./noise.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2059,7 +2059,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./noise_colour.png</NAME>
+		<PROVIDES>./noise_colour.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/noise_faded_colour.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2070,7 +2070,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/torch_on_cutout.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/torch_on_cutout.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2081,7 +2081,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/torch_on_base.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/torch_on_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2092,7 +2092,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/torch_on_shaft.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/torch_on_shaft.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/torch_shaft.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2104,7 +2104,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/torch_on.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/torch_on.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/torch.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2116,7 +2116,7 @@
 		<DESCRIPTION>Torch</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_top_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2127,7 +2127,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_top_decal.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_top_decal.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2138,7 +2138,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_top.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_top.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/crafting_table_top.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2151,7 +2151,7 @@
 		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_front_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2162,7 +2162,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_front_decal.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_front_decal.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2173,7 +2173,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_front.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_front.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/crafting_table.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2186,7 +2186,7 @@
 		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_side_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2197,7 +2197,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_side_decal.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_side_decal.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2208,7 +2208,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/crafting_table_side.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/crafting_table_side.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/crafting_table.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2221,7 +2221,7 @@
 		<DESCRIPTION>Crafting Table</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/clay_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/clay_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/clay_overlay.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2232,7 +2232,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/clay_colour.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/clay_colour.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2243,7 +2243,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/clay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/clay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/clay.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2255,7 +2255,7 @@
 		<DESCRIPTION>Clay</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/redstone_ore_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/redstone_ore_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2266,7 +2266,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/redstone_ore.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/redstone_ore.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/overlay.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2278,7 +2278,7 @@
 		<DESCRIPTION>Ore (Redstone)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/iron_bars.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/iron_bars.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_any_texture_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2289,7 +2289,7 @@
 		<DESCRIPTION>Iron Bars</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_0.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_0.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2300,7 +2300,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_1.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_1.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2311,7 +2311,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_2.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_2.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2322,7 +2322,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_3.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_3.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2333,7 +2333,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_4.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_4.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2344,7 +2344,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_5.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_5.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2355,7 +2355,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_6.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_6.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2366,7 +2366,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_7.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_7.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2377,7 +2377,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_8.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_8.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2388,7 +2388,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/destroy_stage_9.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/destroy_stage_9.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2399,7 +2399,7 @@
 		<DESCRIPTION>Destroy Stages</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/diamond_ore_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/diamond_ore_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2410,7 +2410,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/diamond_ore.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/diamond_ore.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/overlay.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2422,7 +2422,7 @@
 		<DESCRIPTION>Ore (Diamond)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/trapdoor_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/trapdoor_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/vector_basic_block_noisify.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2433,7 +2433,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/trapdoor.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/trapdoor.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/trapdoor.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2446,7 +2446,7 @@
 	</ITEM>
 
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_wood_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_wood_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2457,7 +2457,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_wood_decal.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_wood_decal.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2468,7 +2468,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_overlay_plank.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_overlay_plank.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_overlay_plank.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2479,7 +2479,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_overlay_log.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_overlay_log.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_overlay_log.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2490,7 +2490,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_wood.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_wood.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2504,7 +2504,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_wood_upper.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_wood_upper.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2515,7 +2515,7 @@
 		<DESCRIPTION>Door (Oak)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_wood_lower.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_wood_lower.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2527,7 +2527,7 @@
 	</ITEM>
 
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_overlay.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_dark_oak_overlay.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2538,7 +2538,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_decal.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_dark_oak_decal.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2549,7 +2549,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_dark_oak.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_dark_oak.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2563,7 +2563,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_upper.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_dark_oak_upper.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2574,7 +2574,7 @@
 		<DESCRIPTION>Door (Big Oak)</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/door_dark_oak_lower.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/blocks/door_dark_oak_lower.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/door_parts.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2588,7 +2588,7 @@
 
 <ENTITY>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/entity/sign_planks_front_cutout.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/entity/sign_planks_front_cutout.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_entity.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2599,7 +2599,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/entity/sign_planks_front.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/entity/sign_planks_front.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sign.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2612,7 +2612,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/entity/sign_planks_base_cutout.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/entity/sign_planks_base_cutout.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_entity.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2623,7 +2623,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/entity/sign_planks_base.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/entity/sign_planks_base.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sign.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2635,7 +2635,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/entity/sign_log_cutout.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/entity/sign_log_cutout.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>%stdconf%/vector_basic_entity.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2646,7 +2646,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/entity/sign_log.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/entity/sign_log.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sign.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2659,7 +2659,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/entity/sign.png</NAME>
+		<PROVIDES>./assets/minecraft/textures/entity/sign.png</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/sign.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2675,7 +2675,7 @@
 
 <OTHER>
 	<ITEM>
-		<NAME>./pack.mcmeta</NAME>
+		<PROVIDES>./pack.mcmeta</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/pack_meta.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2686,7 +2686,7 @@
 		<DESCRIPTION>Pack file</DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./README.md</NAME>
+		<PROVIDES>./README.md</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT>./conf/readme.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2700,7 +2700,7 @@
 
 <DEMO>
 	<ITEM>
-		<NAME>./demos/planks_0.png</NAME>
+		<PROVIDES>./demos/planks_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wood.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2716,7 +2716,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/planks_1.png</NAME>
+		<PROVIDES>./demos/planks_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wood.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2732,7 +2732,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/log_0.png</NAME>
+		<PROVIDES>./demos/log_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wood.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2748,7 +2748,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/log_1.png</NAME>
+		<PROVIDES>./demos/log_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wood.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2764,7 +2764,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/grass_dirt_0.png</NAME>
+		<PROVIDES>./demos/grass_dirt_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/grass_dirt.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2776,7 +2776,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/grass_dirt_1.png</NAME>
+		<PROVIDES>./demos/grass_dirt_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/grass_dirt.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2788,7 +2788,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/wool_0.png</NAME>
+		<PROVIDES>./demos/wool_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2799,7 +2799,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/wool_1.png</NAME>
+		<PROVIDES>./demos/wool_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/wool.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2810,7 +2810,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/glass_0.png</NAME>
+		<PROVIDES>./demos/glass_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2821,7 +2821,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/glass_1.png</NAME>
+		<PROVIDES>./demos/glass_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/glass.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2832,7 +2832,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/stone_0.png</NAME>
+		<PROVIDES>./demos/stone_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2843,7 +2843,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/stone_1.png</NAME>
+		<PROVIDES>./demos/stone_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2854,7 +2854,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/brick_0.png</NAME>
+		<PROVIDES>./demos/brick_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2865,7 +2865,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/brick_1.png</NAME>
+		<PROVIDES>./demos/brick_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2876,7 +2876,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/cobblestone_0.png</NAME>
+		<PROVIDES>./demos/cobblestone_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2887,7 +2887,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/cobblestone_1.png</NAME>
+		<PROVIDES>./demos/cobblestone_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/any_texture.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2898,7 +2898,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/stonebrick_0.png</NAME>
+		<PROVIDES>./demos/stonebrick_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/stonebrick.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2909,7 +2909,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/stonebrick_1.png</NAME>
+		<PROVIDES>./demos/stonebrick_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/stonebrick.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2920,7 +2920,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/bookshelf_0.png</NAME>
+		<PROVIDES>./demos/bookshelf_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/bookshelf.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2932,7 +2932,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/bookshelf_1.png</NAME>
+		<PROVIDES>./demos/bookshelf_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/bookshelf.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2944,7 +2944,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/ores_0.png</NAME>
+		<PROVIDES>./demos/ores_0.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/ores.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2955,7 +2955,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./demos/ores_1.png</NAME>
+		<PROVIDES>./demos/ores_1.png</PROVIDES>
 		<VARIANT>+optional</VARIANT>
 		<SCRIPT>./conf/demos/ores.sh</SCRIPT>
 		<SIZE></SIZE>
@@ -2969,7 +2969,7 @@
 
 <RESOURCES>
 	<ITEM>
-		<NAME>./conf/vector_any_texture_noisify.sh</NAME>
+		<PROVIDES>./conf/vector_any_texture_noisify.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
@@ -2980,7 +2980,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./conf/vector_basic_block_noisify.sh</NAME>
+		<PROVIDES>./conf/vector_basic_block_noisify.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
@@ -2991,7 +2991,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./conf/planks.sh</NAME>
+		<PROVIDES>./conf/planks.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
@@ -3002,7 +3002,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./conf/bed_parts.sh</NAME>
+		<PROVIDES>./conf/bed_parts.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
@@ -3013,7 +3013,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./conf/wool.sh</NAME>
+		<PROVIDES>./conf/wool.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
@@ -3024,7 +3024,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./conf/demos/wool.sh</NAME>
+		<PROVIDES>./conf/demos/wool.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
@@ -3050,7 +3050,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./conf/demos/glass.sh</NAME>
+		<PROVIDES>./conf/demos/glass.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
@@ -3076,7 +3076,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./conf/demos/stonebrick.sh</NAME>
+		<PROVIDES>./conf/demos/stonebrick.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>
@@ -3089,7 +3089,7 @@
 		<DESCRIPTION></DESCRIPTION>
 	</ITEM>
 	<ITEM>
-		<NAME>./conf/demos/ores.sh</NAME>
+		<PROVIDES>./conf/demos/ores.sh</PROVIDES>
 		<VARIANT></VARIANT>
 		<SCRIPT></SCRIPT>
 		<SIZE></SIZE>

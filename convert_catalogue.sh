@@ -31,12 +31,12 @@ local __value="$(__get_value_piped "${__field}" <<< "${__input}")"
 
 if ! [ -z "${__value}" ]; then
 
-if ! [ "${__value}" = 'NO' ] && ! [ "${__field}" = 'NAME' ]; then
+if ! [ "${__value}" = 'NO' ] && ! [ "${__field}" = 'PROVIDES' ]; then
     echo -n '  '
 fi
 
 case "${__field}" in
-    "SCRIPT" | "DESCRIPTION" | "OPTIONS" | "NAME" | "VARIANT")
+    "SCRIPT" | "DESCRIPTION" | "OPTIONS" | "VARIANT")
         echo "$(tr '[A-Z]' '[a-z]' <<< ${__field}): \"${__value}\""
         ;;
     "SIZE")
@@ -47,7 +47,7 @@ case "${__field}" in
             echo "$(tr '[A-Z]' '[a-z]' <<< ${__field}): $(tr '[A-Z]' '[a-z]' <<< ${__value})"
         fi
         ;;
-    "DEPENDS")
+    "PROVIDES" | "DEPENDS")
         echo "$(tr '[A-Z]' '[a-z]' <<< ${__field}):"
         while read -r __entry; do
             echo "  - \"${__entry}\""
@@ -59,7 +59,7 @@ esac
 fi
 }
 
-__fields='NAME
+__fields='PROVIDES
 VARIANT
 SCRIPT
 SIZE
