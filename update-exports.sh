@@ -3,11 +3,11 @@
 __verbose='0'
 __no_push='0'
 
-export __run_dir="$(dirname "$(readlink -f "$(which 'smelt')")")"
-export __smelt_setup_bin="${__run_dir}/smelt_setup.sh"
+export __run_dir="$(dirname "$(readlink -f "$(which 'furnace')")")"
+export __furnace_setup_bin="${__run_dir}/furnace_setup.sh"
 
 # get set up
-source "${__smelt_setup_bin}" &> /dev/null || { echo "Failed to load setup \"${__smelt_setup_bin}\""; exit 1; }
+source "${__furnace_setup_bin}" &> /dev/null || { echo "Failed to load setup \"${__furnace_setup_bin}\""; exit 1; }
 
 # Print help
 __usage () {
@@ -73,9 +73,9 @@ fi
 __date="$(date -u +%Y-%m-%d_%H-%M-%S)"
 
 if [ "${__verbose}" = '1' ]; then
-    smelt --mobile --force-optimize --compress ${__sizes}
+    furnace --mobile --force-optimize --compress ${__sizes}
 else
-    smelt --mobile --force-optimize --compress --quiet ${__sizes}
+    furnace --mobile --force-optimize --compress --quiet ${__sizes}
 fi
 
 if [ "${__no_push}" = '0' ]; then
@@ -90,13 +90,13 @@ fi
 
 for __size in ${__sizes}; do
 
-    __pack_name="$("${__smelt_render_bin}" -n "${__size}")"
+    __pack_name="$("${__furnace_render_bin}" -n "${__size}")"
 
     __file="${__pack_name}.zip"
 
 	cp "${__file}" "../Angl-Resource-Pack-Export/${__file}"
 
-	__pack_name="$("${__smelt_render_bin}" -m -n "${__size}")"
+	__pack_name="$("${__furnace_render_bin}" -m -n "${__size}")"
 
 	__file="${__pack_name}.zip"
 

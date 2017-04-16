@@ -1,4 +1,4 @@
-#smeltconfig#
+#furnaceconfig#
 echo 'something to use a pipe' | rev > /dev/null
 compgen -A variable > /tmp/tmpvars
 ################################################################
@@ -9,7 +9,7 @@ __name='Angl'
 
 __sizes='32 64 128 256 512 1024'
 
-__smelt_make_mobile_bin='./convert_to_mobile.sh'
+__furnace_make_mobile_bin='./convert_to_mobile.sh'
 
 __optimizer='optipng'
 

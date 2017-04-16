@@ -33,7 +33,7 @@ First, an explaination of the syntax in use here:
 
 **NAME** describes the output file name achieved. Formatted relative to the top folder of the resource pack.
 
-**CONFIG** describes what file is used to process the file. More on this later. Also formatted relative to the top folder of the resource pack. The use of the macro %stdconf% indicates the common folder for scripts which are included with smelt. Custom scripts usually go in './conf/'.
+**CONFIG** describes what file is used to process the file. More on this later. Also formatted relative to the top folder of the resource pack. The use of the macro %stdconf% indicates the common folder for scripts which are included with furnace. Custom scripts usually go in './conf/'.
 
 **SIZE** describes what size to process the file with. Rarely used. If blank, uses pack size. Mainly included for pack logo. Any positive integer will work.
 
@@ -74,7 +74,7 @@ The script vector\_basic\_block.sh saves us re-writing a script for each file. T
 
 All being well in the world, this should be ready for rendering.
 
-So, run `smelt`, and the new texture should be found, rendered and packaged with the others.
+So, run `furnace`, and the new texture should be found, rendered and packaged with the others.
 
 ***
 

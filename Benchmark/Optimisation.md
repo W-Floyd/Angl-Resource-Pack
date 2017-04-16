@@ -2,7 +2,7 @@ All benchmarks run on i7 6500U, 16GB RAM.
 Each run includes XML parsing, run from a cleaned git instance.  
 
 ```
-$ smelt --xml-only -t && echo && smelt -qt --no-optimize
+$ furnace --xml-only -t && echo && furnace -qt --no-optimize
 INFO - Only processing XML files
 TIME - Processed XML in 9.508343449 seconds
 
@@ -37,7 +37,7 @@ Angl-1024px.zip -  13,822,266 bytes
 ```
 
 ```
-$ smelt --xml-only -t && echo && smelt -qt --force-optimize --optimizer optipng 
+$ furnace --xml-only -t && echo && furnace -qt --force-optimize --optimizer optipng 
 INFO - Only processing XML files
 TIME - Processed XML in 9.817593965 seconds
 
@@ -71,7 +71,7 @@ Angl-1024px.zip - 12,407,678 bytes
 ```
 
 ```
-$ smelt --xml-only -t && echo && smelt -qt --force-optimize --optimizer zopflipng 
+$ furnace --xml-only -t && echo && furnace -qt --force-optimize --optimizer zopflipng 
 INFO - Only processing XML files
 TIME - Processed XML in 12.634905151 seconds
 
@@ -105,7 +105,7 @@ Angl-1024px.zip - 12,407,678 bytes
 ```
 
 ```
-$ smelt --xml-only -t && echo && smelt -qt --force-optimize --optimizer pngcrush
+$ furnace --xml-only -t && echo && furnace -qt --force-optimize --optimizer pngcrush
 INFO - Only processing XML files
 TIME - Processed XML in 9.960904180 seconds
 

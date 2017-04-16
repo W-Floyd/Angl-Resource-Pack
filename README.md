@@ -25,8 +25,8 @@ It includes preset grids and canvas size to keep you on track.
 
 ***
 
-You will need https://github.com/W-Floyd/smelt to render (Linux only).  
+You will need https://github.com/W-Floyd/furnace to render (Linux only).  
 
-This is the reference resource pack for my tool smelt. As such, smelt evolves to suite my needs, hopefully in a pack-agnostic way. Until this pack reaches 100% completion, it is entirely likely that smelt will not see a version release. I have a number of plans that will require replacing bits of my script system, none of which I feel should be forced on anyone else.
+This is the reference resource pack for my tool furnace. As such, furnace evolves to suite my needs, hopefully in a pack-agnostic way. Until this pack reaches 100% completion, it is entirely likely that furnace will not see a version release. I have a number of plans that will require replacing bits of my script system, none of which I feel should be forced on anyone else.
 
 ***
