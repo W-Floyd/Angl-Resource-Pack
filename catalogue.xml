@@ -2056,140 +2056,746 @@
 		<COMMON>Ore (Coal)</COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_covers_underlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png</NAME>
+		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_covers_underlay</OPTIONS>
+		<OPTIONS>./bed/bed_cover_cutout</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
-		<CLEANUP>./assets/minecraft/textures/blocks/bed_covers_underlay.svg</CLEANUP>
+		<CLEANUP>./assets/minecraft/textures/entity/bed/bed_cover_cutout.svg</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_covers.png</NAME>
-		<CONFIG>./conf/bed_covers.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_decal.png</NAME>
+		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./bed/bed_decal</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/entity/bed/bed_decal.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_plank_cutout.png</NAME>
+		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./bed/bed_plank_cutout</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/entity/bed/bed_plank_cutout.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_wood_cutout.png</NAME>
+		<CONFIG>./conf/vector_basic_entity.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./bed/bed_wood_cutout</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/entity/bed/bed_wood_cutout.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_base_plank.png</NAME>
+		<CONFIG>./conf/bed_base_plank.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./noise_colour.png
-		./assets/minecraft/textures/blocks/bed_covers_underlay.png</DEPENDS>
+		<DEPENDS>./colour_planks_oak.png
+		./assets/minecraft/textures/blocks/planks_generic_overlay.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_wood_overlay.png</NAME>
-		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_plank.png</NAME>
+		<CONFIG>./conf/bed_plank.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_wood_overlay</OPTIONS>
+		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
-		<CLEANUP>./assets/minecraft/textures/blocks/bed_wood_overlay.svg</CLEANUP>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_base_plank.png</DEPENDS>
+		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_wood.png</NAME>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_base_wood.png</NAME>
+		<CONFIG>./conf/bed_base_wood.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_planks_oak.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_wood.png</NAME>
 		<CONFIG>./conf/bed_wood.sh</CONFIG>
 		<SIZE></SIZE>
 		<OPTIONS></OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/planks_oak.png
-		./assets/minecraft/textures/blocks/bed_wood_overlay.png</DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_base_wood.png
+		./assets/minecraft/textures/entity/bed/bed_wood_cutout.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
+
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed.png</NAME>
-		<CONFIG>./conf/bed.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_black.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS></OPTIONS>
+		<OPTIONS>black</OPTIONS>
 		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS>./assets/minecraft/textures/blocks/bed_wood.png
-		./assets/minecraft/textures/blocks/bed_covers.png</DEPENDS>
+		<DEPENDS>./colour_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_feet_end.png</NAME>
-		<CONFIG>./conf/bed_parts.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_black.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_feet_end</OPTIONS>
-		<KEEP>YES</KEEP>
+		<OPTIONS>black</OPTIONS>
+		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_black.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_feet_side.png</NAME>
-		<CONFIG>./conf/bed_parts.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/black.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_feet_side</OPTIONS>
+		<OPTIONS>black</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_black.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_feet_top.png</NAME>
-		<CONFIG>./conf/bed_parts.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_blue.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_feet_top</OPTIONS>
-		<KEEP>YES</KEEP>
+		<OPTIONS>blue</OPTIONS>
+		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
+		<DEPENDS>./colour_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_head_side.png</NAME>
-		<CONFIG>./conf/bed_parts.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_blue.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_head_side</OPTIONS>
-		<KEEP>YES</KEEP>
+		<OPTIONS>blue</OPTIONS>
+		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_blue.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_head_top.png</NAME>
-		<CONFIG>./conf/bed_parts.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/blue.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_head_top</OPTIONS>
+		<OPTIONS>blue</OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_blue.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
-		<NAME>./assets/minecraft/textures/blocks/bed_head_end.png</NAME>
-		<CONFIG>./conf/bed_parts.sh</CONFIG>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_brown.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>bed_head_end</OPTIONS>
-		<KEEP>YES</KEEP>
+		<OPTIONS>brown</OPTIONS>
+		<KEEP>NO</KEEP>
 		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
+		<DEPENDS>./colour_brown.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Bed</COMMON>
+		<COMMON></COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_brown.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>brown</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_brown.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/brown.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>brown</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_brown.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_cyan.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>cyan</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_cyan.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_cyan.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>cyan</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_cyan.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/cyan.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>cyan</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_cyan.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_gray.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>gray</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_gray.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_gray.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>gray</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_gray.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/gray.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>gray</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_gray.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_green.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>green</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_green.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_green.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>green</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_green.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/green.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>green</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_green.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_light_blue.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>light_blue</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_light_blue.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_light_blue.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>light_blue</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_light_blue.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/light_blue.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>light_blue</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_light_blue.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_lime.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>lime</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_lime.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_lime.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>lime</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_lime.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/lime.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>lime</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_lime.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_magenta.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>magenta</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_magenta.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_magenta.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>magenta</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_magenta.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/magenta.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>magenta</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_magenta.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_orange.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>orange</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_orange.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_orange.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>orange</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_orange.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/orange.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>orange</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_orange.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_pink.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>pink</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_pink.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_pink.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>pink</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_pink.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/pink.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>pink</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_pink.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_purple.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>purple</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_purple.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_purple.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>purple</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_purple.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/purple.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>purple</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_purple.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_red.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>red</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_red.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_red.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>red</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_red.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/red.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>red</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_red.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_silver.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>silver</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_silver.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_silver.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>silver</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_silver.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/silver.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>silver</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_silver.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_white.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>white</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_white.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_white.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>white</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_white.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/white.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>white</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_white.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_yellow.png</NAME>
+		<CONFIG>./conf/bed_cover_colour.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>yellow</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_yellow.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_yellow.png</NAME>
+		<CONFIG>./conf/bed_cover.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>yellow</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_cover_cutout.png
+		./assets/minecraft/textures/entity/bed/bed_cover_base_yellow.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/entity/bed/yellow.png</NAME>
+		<CONFIG>./conf/bed.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>yellow</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/entity/bed/bed_plank.png
+		./assets/minecraft/textures/entity/bed/bed_wood.png
+		./assets/minecraft/textures/entity/bed/bed_cover_yellow.png
+		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/leaves_oak.png</NAME>
 		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
