@@ -1,17 +1,5 @@
 <BLOCK>
 	<ITEM>
-		<NAME>./pack.png</NAME>
-		<CONFIG>./conf/vector_any_texture.sh</CONFIG>
-		<SIZE>128</SIZE>
-		<OPTIONS>./pack white</OPTIONS>
-		<KEEP>YES</KEEP>
-		<IMAGE>YES</IMAGE>
-		<DEPENDS></DEPENDS>
-		<CLEANUP>./pack.svg</CLEANUP>
-		<OPTIONAL>NO</OPTIONAL>
-		<COMMON>Pack logo</COMMON>
-	</ITEM>
-	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
 		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
 		<SIZE></SIZE>
@@ -3950,6 +3938,30 @@
 </ENTITY>
 
 <OTHER>
+	<ITEM>
+		<NAME>./pack.png</NAME>
+		<CONFIG>./conf/vector_any_texture.sh</CONFIG>
+		<SIZE>128</SIZE>
+		<OPTIONS>./pack white</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./pack.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Pack logo</COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/gui/title/mojang.png</NAME>
+		<CONFIG>./conf/vector_any_texture.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/gui/title/mojang white</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/gui/title/mojang.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Mojang logo</COMMON>
+	</ITEM>
 	<ITEM>
 		<NAME>./pack.mcmeta</NAME>
 		<CONFIG>./conf/pack_meta.sh</CONFIG>
