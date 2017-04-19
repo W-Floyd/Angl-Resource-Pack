@@ -2912,7 +2912,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_blue.png</NAME>
@@ -2952,7 +2952,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_brown.png</NAME>
@@ -2992,7 +2992,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_cyan.png</NAME>
@@ -3032,7 +3032,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_gray.png</NAME>
@@ -3072,7 +3072,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_green.png</NAME>
@@ -3112,7 +3112,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_light_blue.png</NAME>
@@ -3152,7 +3152,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_lime.png</NAME>
@@ -3192,7 +3192,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_magenta.png</NAME>
@@ -3232,7 +3232,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_orange.png</NAME>
@@ -3272,7 +3272,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_pink.png</NAME>
@@ -3312,7 +3312,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_purple.png</NAME>
@@ -3352,7 +3352,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_red.png</NAME>
@@ -3392,7 +3392,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_silver.png</NAME>
@@ -3432,7 +3432,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_white.png</NAME>
@@ -3472,7 +3472,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/entity/bed/bed_cover_base_yellow.png</NAME>
@@ -3512,7 +3512,7 @@
 		./assets/minecraft/textures/entity/bed/bed_decal.png</DEPENDS>
 		<CLEANUP></CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
-		<COMMON></COMMON>
+		<COMMON>Bed</COMMON>
 	</ITEM>
 </ENTITY>
 
