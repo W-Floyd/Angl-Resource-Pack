@@ -2884,6 +2884,210 @@
 		<OPTIONAL>NO</OPTIONAL>
 		<COMMON>Concrete</COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_generic_overlay.png</NAME>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>concrete_powder_generic_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/concrete_powder_generic_overlay.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_black.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>black</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_black.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_blue.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>blue</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_blue.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_brown.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>brown</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_brown.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_cyan.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>cyan</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_cyan.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_gray.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>gray</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_gray.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_green.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>green</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_green.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_light_blue.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>light_blue</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_light_blue.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_lime.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>lime</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_lime.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_magenta.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>magenta</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_magenta.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_orange.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>orange</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_orange.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_pink.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>pink</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_pink.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_purple.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>purple</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_purple.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_red.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>red</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_red.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_silver.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>silver</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_silver.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_white.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>white</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_white.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
+ 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/concrete_powder_yellow.png</NAME>
+		<CONFIG>./conf/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>yellow</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./colour_yellow.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Concrete Powder</COMMON>
+	</ITEM>
 </BLOCK>
 
 <ENTITY>
@@ -4060,6 +4264,30 @@
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./demos/concrete_powder_0.png</NAME>
+		<CONFIG>./conf/demos/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/concrete_powder_1.png</NAME>
+		<CONFIG>./conf/demos/concrete_powder.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
 </DEMO>
 
 <RESOURCES>
@@ -4207,6 +4435,18 @@
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
+		<NAME>./conf/concrete_powder.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/concrete_powder_generic_overlay.png</DEPENDS>
+		<CLEANUP>./conf/concrete_powder.sh</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
 		<NAME>./conf/demos/concrete.sh</NAME>
 		<CONFIG></CONFIG>
 		<SIZE></SIZE>
@@ -4230,6 +4470,33 @@
 		./assets/minecraft/textures/blocks/concrete_white.png
 		./assets/minecraft/textures/blocks/concrete_yellow.png</DEPENDS>
 		<CLEANUP>./conf/demos/concrete.sh</CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./conf/demos/concrete_powder.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/concrete_powder_black.png
+		./assets/minecraft/textures/blocks/concrete_powder_blue.png
+		./assets/minecraft/textures/blocks/concrete_powder_brown.png
+		./assets/minecraft/textures/blocks/concrete_powder_cyan.png
+		./assets/minecraft/textures/blocks/concrete_powder_gray.png
+		./assets/minecraft/textures/blocks/concrete_powder_green.png
+		./assets/minecraft/textures/blocks/concrete_powder_light_blue.png
+		./assets/minecraft/textures/blocks/concrete_powder_lime.png
+		./assets/minecraft/textures/blocks/concrete_powder_magenta.png
+		./assets/minecraft/textures/blocks/concrete_powder_orange.png
+		./assets/minecraft/textures/blocks/concrete_powder_pink.png
+		./assets/minecraft/textures/blocks/concrete_powder_purple.png
+		./assets/minecraft/textures/blocks/concrete_powder_red.png
+		./assets/minecraft/textures/blocks/concrete_powder_silver.png
+		./assets/minecraft/textures/blocks/concrete_powder_white.png
+		./assets/minecraft/textures/blocks/concrete_powder_yellow.png</DEPENDS>
+		<CLEANUP>./conf/demos/concrete_powder.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
