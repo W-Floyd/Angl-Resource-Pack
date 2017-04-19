@@ -3,6 +3,8 @@
 ### This is a WIP, *many* textures have yet to be added.
 ### Currently undergoing changes (mostly in another branch). Here be dragons.
 
+![Logo](https://github.com/W-Floyd/Angl-Resource-Pack/raw/master/logo.png)
+
 ***
 
 If you just want to download the resource pack, look here: https://github.com/W-Floyd/Angl-Resource-Pack-Export
