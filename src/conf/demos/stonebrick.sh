@@ -2,7 +2,8 @@
 
 __stonebricks='stonebrick
 stonebrick_cracked
-stonebrick_mossy'
+stonebrick_mossy
+stonebrick_carved'
 
 __num_stonebricks="$(echo "${__stonebricks}" | wc -l )"
 

@@ -1868,6 +1868,31 @@
 		<COMMON></COMMON>
 	</ITEM>
 	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/stonebrick_carved.png</NAME>
+		<CONFIG>./conf/stonebrick_carved.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick_carved_overlay.png
+		./assets/minecraft/textures/blocks/stone.png</DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Stone brick (carved)</COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./assets/minecraft/textures/blocks/stonebrick_carved_overlay.png</NAME>
+		<CONFIG>./conf/vector_basic_block.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>stonebrick_carved_overlay</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/blocks/stonebrick_carved_overlay.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stonebrick_mossy.png</NAME>
 		<CONFIG>./conf/stonebrick_mossy.sh</CONFIG>
 		<SIZE></SIZE>
@@ -4402,7 +4427,8 @@
 		<IMAGE>NO</IMAGE>
 		<DEPENDS>./assets/minecraft/textures/blocks/stonebrick.png
 		./assets/minecraft/textures/blocks/stonebrick_mossy.png
-		./assets/minecraft/textures/blocks/stonebrick_cracked.png</DEPENDS>
+		./assets/minecraft/textures/blocks/stonebrick_cracked.png
+		./assets/minecraft/textures/blocks/stonebrick_carved.png</DEPENDS>
 		<CLEANUP>./conf/demos/stonebrick.sh</CLEANUP>
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
