@@ -3,3 +3,4 @@ Angl-*px*/
 *.zip
 src/xml/*
 tmp/*
+*.csv
