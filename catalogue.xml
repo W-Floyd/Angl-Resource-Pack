@@ -4036,6 +4036,30 @@
 		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
+	<ITEM>
+		<NAME>./demos/concrete_0.png</NAME>
+		<CONFIG>./conf/demos/concrete.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>0</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./demos/concrete_1.png</NAME>
+		<CONFIG>./conf/demos/concrete.sh</CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS>1</OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP></CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
 </DEMO>
 
 <RESOURCES>
@@ -4180,6 +4204,33 @@
 		<DEPENDS>./assets/minecraft/textures/blocks/concrete_generic_overlay.png</DEPENDS>
 		<CLEANUP>./conf/concrete.sh</CLEANUP>
 		<OPTIONAL>NO</OPTIONAL>
+		<COMMON></COMMON>
+	</ITEM>
+	<ITEM>
+		<NAME>./conf/demos/concrete.sh</NAME>
+		<CONFIG></CONFIG>
+		<SIZE></SIZE>
+		<OPTIONS></OPTIONS>
+		<KEEP>NO</KEEP>
+		<IMAGE>NO</IMAGE>
+		<DEPENDS>./assets/minecraft/textures/blocks/concrete_black.png
+		./assets/minecraft/textures/blocks/concrete_blue.png
+		./assets/minecraft/textures/blocks/concrete_brown.png
+		./assets/minecraft/textures/blocks/concrete_cyan.png
+		./assets/minecraft/textures/blocks/concrete_gray.png
+		./assets/minecraft/textures/blocks/concrete_green.png
+		./assets/minecraft/textures/blocks/concrete_light_blue.png
+		./assets/minecraft/textures/blocks/concrete_lime.png
+		./assets/minecraft/textures/blocks/concrete_magenta.png
+		./assets/minecraft/textures/blocks/concrete_orange.png
+		./assets/minecraft/textures/blocks/concrete_pink.png
+		./assets/minecraft/textures/blocks/concrete_purple.png
+		./assets/minecraft/textures/blocks/concrete_red.png
+		./assets/minecraft/textures/blocks/concrete_silver.png
+		./assets/minecraft/textures/blocks/concrete_white.png
+		./assets/minecraft/textures/blocks/concrete_yellow.png</DEPENDS>
+		<CLEANUP>./conf/demos/concrete.sh</CLEANUP>
+		<OPTIONAL>YES</OPTIONAL>
 		<COMMON></COMMON>
 	</ITEM>
 </RESOURCES>
