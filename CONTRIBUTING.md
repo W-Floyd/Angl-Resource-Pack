@@ -81,3 +81,27 @@ So, run `furnace`, and the new texture should be found, rendered and packaged wi
 Note that if you have unsatisfied dependancies, the script will proceed without that file and any dependant files. Overall, errors are unforgiving - things must be **perfect** to function correctly.
 
 Also, to elaborate on the **COMMON** field, it is subjective. For example, 'Andesite' could just as easily have been 'Stone (Andesite)'. Up to you, just keep it consistant so grouping works.
+
+***
+
+## Helpful hints
+
+Colours:
+```
+black
+blue
+brown
+cyan
+gray
+green
+light_blue
+lime
+magenta
+orange
+pink
+purple
+red
+silver
+white
+yellow
+```
