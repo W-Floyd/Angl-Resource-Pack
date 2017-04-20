@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   viewBox="0 0 128 128"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.1 unknown"
+   sodipodi:docname="compass_movement.svg">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5056"
+       x="-0.732"
+       width="2.464"
+       y="-0.065357143"
+       height="1.1307143">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.05"
+         id="feGaussianBlur5058" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="57.944101"
+     inkscape:cy="44.814105"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     width="512px"
+     inkscape:window-width="2160"
+     inkscape:window-height="1321"
+     inkscape:window-x="0"
+     inkscape:window-y="49"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3338"
+       empspacing="8" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-924.3622)">
+    <path
+       style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5056)"
+       d="M 64 8 C 64 8 59 48 59 64 C 59 80 64 120 64 120 C 64 120 69 80 69 64 C 69 48 64 8 64 8 z "
+       transform="translate(0,924.3622)"
+       id="path5047" />
+    <path
+       id="path4509"
+       d="m 64,1044.3622 c 0,0 -5,-40 -5,-56 a 4.9999828,4.9999828 0 0 1 5,-5 4.9999828,4.9999828 0 0 1 5,5 c 0,16 -5,56 -5,56 z"
+       style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 64 8 C 64 8 59 48 59 64 A 4.9999828 4.9999828 0 0 0 64 69 A 4.9999828 4.9999828 0 0 0 69 64 C 69 48 64 8 64 8 z "
+       transform="translate(0,924.3622)"
+       id="path4485" />
+  </g>
+</svg>
