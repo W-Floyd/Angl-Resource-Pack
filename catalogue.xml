@@ -3952,9 +3952,9 @@
 	</ITEM>
 	<ITEM>
 		<NAME>./assets/minecraft/textures/gui/title/mojang.png</NAME>
-		<CONFIG>./conf/vector_any_texture.sh</CONFIG>
+		<CONFIG>./conf/mojang_logo.sh</CONFIG>
 		<SIZE></SIZE>
-		<OPTIONS>./assets/minecraft/textures/gui/title/mojang white</OPTIONS>
+		<OPTIONS></OPTIONS>
 		<KEEP>YES</KEEP>
 		<IMAGE>YES</IMAGE>
 		<DEPENDS></DEPENDS>
