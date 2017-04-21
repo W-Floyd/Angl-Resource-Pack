@@ -15,7 +15,7 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92.1 unknown"
    sodipodi:docname="iron_bars.svg"
    style="enable-background:new">
   <defs
@@ -32,18 +32,6 @@
          offset="1"
          style="stop-color:#000000;stop-opacity:0" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4593">
-      <stop
-         style="stop-color:#808080;stop-opacity:1;"
-         offset="0"
-         id="stop4589" />
-      <stop
-         style="stop-color:#808080;stop-opacity:0;"
-         offset="1"
-         id="stop4591" />
-    </linearGradient>
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4744"
@@ -54,17 +42,6 @@
        fy="170"
        r="20"
        gradientTransform="matrix(1,0,0,4.4828427,0,-592.08326)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4593"
-       id="radialGradient4613"
-       cx="16"
-       cy="42"
-       fx="16"
-       fy="42"
-       r="20"
-       gradientTransform="matrix(1,0,0,4.4828427,0,-146.27939)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -152,16 +129,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="-105.82375"
-     inkscape:cy="54.746942"
+     inkscape:cx="40.900906"
+     inkscape:cy="54.241866"
      inkscape:document-units="px"
      inkscape:current-layer="g4660"
      showgrid="true"
      units="px"
-     inkscape:window-width="3840"
-     inkscape:window-height="2018"
+     inkscape:window-width="2160"
+     inkscape:window-height="1321"
      inkscape:window-x="0"
-     inkscape:window-y="86"
+     inkscape:window-y="49"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
