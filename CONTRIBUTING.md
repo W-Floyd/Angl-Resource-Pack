@@ -105,3 +105,5 @@ silver
 white
 yellow
 ```
+
+Use that list for scripting and such, when you have to produce bulk textures (clay, glass, etc.)
