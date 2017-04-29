@@ -15,7 +15,7 @@ Copy an entry from an existing texture similar to your own. I *HIGHLY* recommend
 ```
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/dirt.png</NAME>
-		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>dirt</OPTIONS>
 		<KEEP>YES</KEEP>
@@ -33,11 +33,11 @@ First, an explaination of the syntax in use here:
 
 **NAME** describes the output file name achieved. Formatted relative to the top folder of the resource pack.
 
-**CONFIG** describes what file is used to process the file. More on this later. Also formatted relative to the top folder of the resource pack. The use of the macro %stdconf% indicates the common folder for scripts which are included with furnace. Custom scripts usually go in './conf/'.
+**SCRIPT** describes what file is used to process the file. More on this later. Also formatted relative to the top folder of the resource pack. The use of the macro %stdconf% indicates the common folder for scripts which are included with furnace. Custom scripts usually go in './conf/'.
 
 **SIZE** describes what size to process the file with. Rarely used. If blank, uses pack size. Mainly included for pack logo. Any positive integer will work.
 
-**OPTIONS** describes any options to pass to the script. Placed after SIZE, as SIZE is passed as an option to all CONFIG scripts.
+**OPTIONS** describes any options to pass to the script. Placed after SIZE, as SIZE is passed as an option to all SCRIPT scripts.
 
 **KEEP** describes whether the produced file is intended for inclusion in the final resource pack. YES or NO answer. So if you are processing a working only file (an overlay, for instance), this is set to NO. Otherwise, YES.
 
@@ -58,7 +58,7 @@ So, we've added an entry that looks like:
 ```
 	<ITEM>
 		<NAME>./assets/minecraft/textures/blocks/stone_andesite.png</NAME>
-		<CONFIG>%stdconf%/vector_basic_block.sh</CONFIG>
+		<SCRIPT>%stdconf%/vector_basic_block.sh</SCRIPT>
 		<SIZE></SIZE>
 		<OPTIONS>stone_andesite</OPTIONS>
 		<KEEP>YES</KEEP>
