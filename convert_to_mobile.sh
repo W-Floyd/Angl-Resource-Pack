@@ -98,4 +98,43 @@ __popd
 
 rm -r './textures/gui/title/'
 
+################################################################################
+
+__uuid="$(uuidgen)"
+
+echo "{
+  \"header\": {
+    \"pack_id\": \"${__uuid}\",
+    \"name\": \"Angl\",
+    \"packs_version\": \"0.0.1\",
+    \"description\": \"A vector resource pack\",
+    \"modules\": [
+      {
+        \"description\": \"A vector resource pack\",
+        \"version\": \"0.0.1\",
+        \"uuid\": \"${__uuid}\",
+        \"type\": \"resources\"
+      }
+    ]
+  }
+}" > pack_manifest.json
+
+echo "{
+   \"format_version\" : 1,
+   \"header\" : {
+      \"description\" : \"A vector resource pack\",
+      \"name\" : \"Angl\",
+      \"uuid\" : \"$(uuidgen)\",
+      \"version\" : [ 0, 0, 1 ]
+   },
+   \"modules\" : [
+      {
+         \"description\" : \"A vector resource pack\",
+         \"type\" : \"resources\",
+         \"uuid\" : \"$(uuidgen)\",
+         \"version\" : [ 0, 0, 1 ]
+      }
+   ]
+}" > manifest.json
+
 exit
