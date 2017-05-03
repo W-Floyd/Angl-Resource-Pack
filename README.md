@@ -17,9 +17,13 @@ This is *mostly* to showcase my method and history of development, hopefully to 
 
 Open source doesn't mean you can do whatever you want with it. Follow common etiquette - this is my work, don't steal (or 'borrow') my textures.  
 
-Other than outright straling though, I'm pretty relaxed. Just raise an issue or email me or something if you have a question or request - I won't bite.  
+Other than outright stealing though, I'm pretty relaxed. Just raise an issue or email me or something if you have a question or request - I won't bite.  
 
-*However*, I'm more than happy for the rest of my work to be used by other. That includes all the scripts, either as direct drop in replacements, or as bases for other work. The catalogue is also a good base to work from (insomuch as knowing how to fill out fields).
+I'm more than happy for the rest of my work to be used by other. That includes all the scripts, either as direct drop in replacements, or as bases for other work. The catalogue is also a good base to work from (insomuch as knowing how to fill out fields).
+
+***
+
+Note that size 2048 is the largest size I can completely process, in all forms. As it is, it takes 100% of 16GB RAM and 80% of 4GB swap to do the compositing for the mobile pack (clock becomes a huge image). At that point though, you're crazy.
 
 ***
 
