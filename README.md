@@ -1,15 +1,10 @@
+![Logo](https://github.com/W-Floyd/Angl-Resource-Pack/raw/master/logo.png)
 # Angl-Resource-Pack
 ## An open-source vector based Minecraft resource pack.
 ### This is a WIP, *many* textures have yet to be added.
-### Currently undergoing changes (mostly in another branch). Here be dragons.
+#### Changes occur often, here be dragons.
 
-![Logo](https://github.com/W-Floyd/Angl-Resource-Pack/raw/master/logo.png)
-
-***
-
-If you just want to download the resource pack, look here: https://github.com/W-Floyd/Angl-Resource-Pack-Export
-
-***
+## Some notes
 
 This is *mostly* to showcase my method and history of development, hopefully to help someone else someday.  
 
