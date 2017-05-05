@@ -5179,6 +5179,18 @@
 		<COMMON>Pack logo</COMMON>
 	</ITEM>
 	<ITEM>
+		<NAME>./assets/minecraft/textures/map/map_background.png</NAME>
+		<SCRIPT>./conf/vector_any_texture.sh</SCRIPT>
+		<SIZE></SIZE>
+		<OPTIONS>./assets/minecraft/textures/map/map_background</OPTIONS>
+		<KEEP>YES</KEEP>
+		<IMAGE>YES</IMAGE>
+		<DEPENDS></DEPENDS>
+		<CLEANUP>./assets/minecraft/textures/map/map_background.svg</CLEANUP>
+		<OPTIONAL>NO</OPTIONAL>
+		<COMMON>Map Background</COMMON>
+	</ITEM>
+	<ITEM>
 		<NAME>./assets/minecraft/textures/gui/title/mojang.png</NAME>
 		<SCRIPT>./conf/mojang_logo.sh</SCRIPT>
 		<SIZE></SIZE>
