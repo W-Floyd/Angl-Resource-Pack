@@ -116,7 +116,7 @@ ls -1 "${__split_dir}/split/items" | while read -r __item; do
 
     if __check_variant "$(__format_variants "${__variant}")" "$(__format_variants "$(if __test_field variant <<< "${__fields}"; then __get_value variant <<< "${__read_item}"; else __field_default variant; fi)")"; then
 
-        __name="$(__get_value name <<< "${__read_item}")"
+        __name="$(__get_value provides <<< "${__read_item}")"
 
         if ! [ -e "${__split_dir}/variants/${__variant}/variant/${__name}" ]; then
 
