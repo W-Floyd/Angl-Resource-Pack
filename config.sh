@@ -15,3 +15,5 @@ __max_optimize='512'
 __max_optional='2048'
 
 __should_optimize='1'
+
+__pack_depends='convert composite montage mogrify identify'
