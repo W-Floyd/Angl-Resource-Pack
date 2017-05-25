@@ -53,13 +53,3 @@ while read -r __wool; do
 done <<< "${__colours}"
 
 }
-
-###############################################################
-# Export functions
-###############################################################
-#
-# Do this so that any child shells have these functions
-###############################################################
-for __function in $(compgen -A function); do
-	export -f ${__function}
-done
