@@ -1,5 +1,6 @@
 *.png
 Angl-*px*/
+*.tar.gz
 *.zip
 src/xml/*
 tmp/*
