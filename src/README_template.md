@@ -1,10 +1,13 @@
 # Angl-Resource-Pack
-##An open-source vector based Minecraft resource pack.
+## An open-source vector based Minecraft resource pack.
 ***
-####This pack was exported on:
+#### This pack was exported on:
 %DATE%
 ***
-####This pack was rendered at:
+#### This pack was rendered as of commit:
+%COMMIT%
+***
+#### This pack was rendered at:
 %SIZE%
 ***
 
