@@ -1,26 +1,18 @@
 #!/bin/bash
 
-__woods='acacia
+__colours='acacia
 big_oak
 birch
 jungle
 oak
 spruce'
 
-__num_woods="$(echo "${__woods}" | wc -l )"
+__num_colours="$(wc -l <<< "${__colours}")"
 
-echo "${__woods}" | while read -r __wood; do
+__imgseq="$(while read -r __colour; do echo -n "./assets/minecraft/textures/blocks/${2}_${__colour}.png ./assets/minecraft/textures/blocks/${2}_${__colour}.png "; done <<< "${__colours}")"
 
-    __tile "./assets/minecraft/textures/blocks/${2}_${__wood}.png" 2x2 "./demos/${2}_${__wood}.png" "${3}"
+__imgseq="${__imgseq} ${__imgseq}"
 
-done
-
-__custom_tile $(echo "${__woods}" | while read -r __wood; do echo -n "./demos/${2}_${__wood}.png "; done) "${__num_woods}x1" "0" "./demos/${2}_${3}.png"
-
-echo "${__woods}" | while read -r __wood; do
-
-    rm "./demos/${2}_${__wood}.png"
-
-done
+__custom_tile ${__imgseq} "$((__num_colours*2))x2" "${3}" "./demos/${2}_${3}.png"
 
 exit

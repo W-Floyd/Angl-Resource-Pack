@@ -1,24 +1,16 @@
 #!/bin/bash
 
-__stonebricks='stonebrick
+__colours='stonebrick
 stonebrick_cracked
 stonebrick_mossy
 stonebrick_carved'
 
-__num_stonebricks="$(echo "${__stonebricks}" | wc -l )"
+__num_colours="$(wc -l <<< "${__colours}")"
 
-echo "${__stonebricks}" | while read -r __stonebrick; do
+__imgseq="$(while read -r __colour; do echo -n "./assets/minecraft/textures/blocks/${__colour}.png ./assets/minecraft/textures/blocks/${__colour}.png "; done <<< "${__colours}")"
 
-    __tile "./assets/minecraft/textures/blocks/${__stonebrick}.png" 2x2 "./demos/${__stonebrick}.png" "${2}"
+__imgseq="${__imgseq} ${__imgseq}"
 
-done
-
-__custom_tile $(echo "${__stonebricks}" | while read -r __stonebrick; do echo -n "./demos/${__stonebrick}.png "; done) "${__num_stonebricks}x1" "0" "./demos/stonebrick_${2}.png"
-
-echo "${__stonebricks}" | while read -r __stonebrick; do
-
-    rm "./demos/${__stonebrick}.png"
-
-done
+__custom_tile ${__imgseq} "$((__num_colours*2))x2" "${2}" "./demos/stonebrick_${2}.png"
 
 exit
