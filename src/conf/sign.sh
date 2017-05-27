@@ -1,29 +1,27 @@
 #!/bin/bash
 
-__pushd ./assets/minecraft/textures/entity/
+__pushd './assets/minecraft/textures/entity/'
 
 __fudge_value='0.8'
 
-case "$2" in
-    "planks_front")
-        __overlay_texture="../blocks/planks_oak.png"
-        __colour="../../../../colour_planks_oak.png"
+case "${2}" in
+    'planks_front')
+        __overlay_texture='../blocks/planks_oak.png'
+        __colour='../../../../colour_planks_oak.png'
         __fade_level='0.5'
         ;;
-	"planks_base")
-        __overlay_texture="../blocks/planks_oak.png"
-        __colour="../../../../colour_planks_oak.png"
+	'planks_base')
+        __overlay_texture='../blocks/planks_oak.png'
+        __colour='../../../../colour_planks_oak.png'
         __fade_level='0'
 		;;
-	"log")
-        __overlay_texture="../blocks/log_oak.png"
-        __colour="../../../../colour_log_oak.png"
+	'log')
+        __overlay_texture='../blocks/log_oak.png'
+        __colour='../../../../colour_log_oak.png'
         __fade_level='0.5'
 		;;
-	"all")
-	    __overlay "sign_planks_front.png" "sign_planks_base.png" "sign_.png"
-	    __overlay "sign_.png" "sign_log.png" "sign.png"
-	    rm "sign_.png"
+	'all')
+	    __stack 'sign.png' 'sign_planks_front.png' 'sign_planks_base.png' 'sign_log.png'
 	    exit
 	    ;;
 esac

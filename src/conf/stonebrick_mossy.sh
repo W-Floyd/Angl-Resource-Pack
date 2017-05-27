@@ -1,8 +1,8 @@
 #!/bin/bash
 
-__pushd ./assets/minecraft/textures/blocks/
+__pushd './assets/minecraft/textures/blocks/'
 
-__overlay stonebrick.png stonebrick_mossy_overlay.png stonebrick_mossy.png
+__stack 'stonebrick_mossy.png' 'stonebrick.png' 'stonebrick_mossy_overlay.png'
 
 __popd
 

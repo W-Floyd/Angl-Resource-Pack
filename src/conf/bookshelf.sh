@@ -1,8 +1,8 @@
 #!/bin/bash
 
-__pushd ./assets/minecraft/textures/blocks/
+__pushd './assets/minecraft/textures/blocks/'
 
-__overlay planks_oak.png bookshelf_overlay.png bookshelf.png
+__stack 'bookshelf.png' 'planks_oak.png' 'bookshelf_overlay.png'
 
 __popd
 

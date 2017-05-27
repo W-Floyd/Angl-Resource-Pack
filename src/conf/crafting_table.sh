@@ -1,12 +1,10 @@
 #!/bin/bash
 
-__pushd ./assets/minecraft/textures/blocks/
+shift
 
-__overlay planks_oak.png crafting_table_${2}_overlay.png crafting_table_${2}_.png
+__pushd './assets/minecraft/textures/blocks/'
 
-__overlay crafting_table_${2}_.png crafting_table_${2}_decal.png crafting_table_${2}.png
-
-rm crafting_table_${2}_.png
+__stack "crafting_table_${1}.png" 'planks_oak.png' "crafting_table_${1}_overlay.png" "crafting_table_${1}_decal.png"
 
 __popd
 

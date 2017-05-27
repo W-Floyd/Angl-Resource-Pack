@@ -15,7 +15,7 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.0 r"
+   inkscape:version="0.92.1 r"
    sodipodi:docname="noise.svg">
   <defs
      id="defs4">
@@ -1568,17 +1568,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="-30.615518"
-     inkscape:cy="-6.7775139"
+     inkscape:zoom="4.7550782"
+     inkscape:cx="48.196988"
+     inkscape:cy="-6.0015718"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="2018"
-     inkscape:window-x="1920"
-     inkscape:window-y="86"
+     inkscape:window-height="2024"
+     inkscape:window-x="0"
+     inkscape:window-y="64"
      inkscape:window-maximized="0"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -1599,7 +1599,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2376,9 +2376,10 @@
        inkscape:connector-curvature="0" />
     <g
        id="g4466"
-       style="opacity:0.60667904">
+       style="opacity:0.75">
       <g
-         id="g4468">
+         id="g4468"
+         style="">
         <path
            style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 28,944.36216 -4,4 4,4 4,-4 z"

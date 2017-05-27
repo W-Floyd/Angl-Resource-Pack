@@ -1,6 +1,6 @@
 #!/bin/bash
 
-__pushd ./assets/minecraft/textures/entity/bed/
+__pushd './assets/minecraft/textures/entity/bed/'
 
 __clip_src_in './bed_wood_cutout.png' './bed_base_wood.png' './tmp_cover.png'
 

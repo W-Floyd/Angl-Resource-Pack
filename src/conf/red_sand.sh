@@ -1,8 +1,8 @@
 #!/bin/bash
 
-__pushd ./assets/minecraft/textures/blocks/
+__pushd './assets/minecraft/textures/blocks/'
 
-__overlay red_sand_colour.png sand_overlay.png red_sand.png
+__stack 'red_sand.png' 'red_sand_colour.png' 'sand_overlay.png'
 
 __popd
 

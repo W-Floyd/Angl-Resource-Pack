@@ -1,8 +1,10 @@
 #!/bin/bash
 
-__pushd ./assets/minecraft/textures/blocks/
+__pushd './assets/minecraft/textures/blocks/'
 
-__multiply stone.png cobblestone_overlay.png cobblestone.png
+# TODO - Change cobblestone to have correct highlights, then use __multiscreen
+
+__multiply 'stone.png' 'cobblestone_overlay.png' 'cobblestone.png'
 
 __popd
 
