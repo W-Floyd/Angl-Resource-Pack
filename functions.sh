@@ -38,18 +38,6 @@ fi
 
 __num_colours="$(echo "${__colours}" | wc -l)"
 
-while read -r __colour; do
-
-    __tile "${__prefix}${__colour}.png" 2x1 "./demos/${__name}_${__colour}.png" "${1}"
-
-done <<< "${__colours}"
-
-__custom_tile $(while read -r __colour; do echo -n "./demos/${__name}_${__colour}.png "; done <<< "${__colours}") "$((__num_colours/4))x4" "0" "./demos/${__name}_${1}.png"
-
-while read -r __wool; do
-
-    rm "./demos/${__name}_${__wool}.png"
-
-done <<< "${__colours}"
+__custom_tile $(while read -r __colour; do echo -n "${__prefix}${__colour}.png "; echo -n "${__prefix}${__colour}.png "; done <<< "${__colours}") "$((__num_colours/2))x4" "${1}" "./demos/${__name}_${1}.png"
 
 }
